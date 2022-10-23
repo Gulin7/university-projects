@@ -16,60 +16,44 @@ def show_menu():
 
 def run_app():
     my_list = []
-    command = 1
-    while command != 0:
-        ok = 0
-        while ok == 0:
+    while True:
+        while True:
+            command = 0
             try:
                 command = int(input("Choose a command: "))
-                ok = 1
-            except:
+                break
+            except ValueError:
                 print("You didn't enter a valid command! Try again!")
-                ok = 0
             if command < 0 or command > 3:
                 print("You didn't enter a valid command! Try again!")
-                ok = 0
         if command == 1:
-            ok = 0
             my_list = []
-            while ok == 0:
+            while True:
                 try:
                     n = int(input("Choose a number: "))
-                    ok = 1
-                except:
+                    break
+                except ValueError:
                     print("You didn't enter a number! Try again!")
-                    ok = 0
             while n > 0:
                 my_list.append(random.randint(1, 100))
                 n -= 1
             print(f"The list is {my_list} !")
-        elif command == 2:
+        else:
             if len(my_list) == 0:
                 print("There is no list to be sorted yet!")
             else:
-                ok = 0
-                while ok == 0:
+                while True:
                     try:
-                        step2 = int(input("Enter an integer: "))
-                        ok = 1
-                    except:
+                        step = int(input("Enter an integer: "))
+                        break
+                    except ValueError:
                         print("You didn't enter an integer! Try again!")
-                        ok = 0
-                insert_sort(my_list, step2)
-                print(f"The sorted list is {my_list} !")
-        elif command == 3:
-            if len(my_list) == 0:
-                print("There is no list to be sorted yet! Enter 1!")
-            else:
-                ok = 0
-                while ok == 0:
-                    try:
-                        step3 = int(input("Enter an integer: "))
-                        ok = 1
-                    except:
-                        print("You didn't enter an integer! Try again!")
-                        ok = 0
-                comb_sort(my_list,step3)
-                print(f"The sorted list is {my_list} !")
+                if command == 2:
+                    insert_sort(my_list, step)
+                    print(f"The sorted list is {my_list} !")
+                else:
+                    comb_sort(my_list, step)
+                    print(f"The sorted list is {my_list} !")
         if command == 0:
             print("You've exit the app! :(")
+            break
