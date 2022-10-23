@@ -1,0 +1,41 @@
+GRADE:
+50% assignments
+50% sesiune
+bonus points for attendance
+bonus assignments 
+-----------------
+leetcode.com - platform for coding
+(like infoarena, but in english)
+Two Sum and Add Two Numbers in C on leetcode
+Challanges for New Users for yourself
+--------------------
+printf - to print to the screen
+printf("hello world");  can print hello world, but
+print("%s\n", "hello world"); says: print hello world as a string followed by a newline
+------------
+STRUCTURE OF A C PROGRAM
+#include <stdio.h>
+int main(){
+	int ...;
+	printf("%d -ce urmeaza- %d...", variabile);
+	return 0;
+}
+---------------------
+COMMANDS IN LINUX:
+mkdir nume_file ; to create a directory(fisier)
+cd ./ ; for current folder(directory)
+cd .. ; to go to previous directory: parent directory
+gcc print.c to run it
+gcc -o nume.out nume.c to create it on the nume.out
+./name.out ; to show the contents
+touch file.extension ; to create a file with a certain 
+ls ; to see whats in your current directory
+ls -a ; to see the extensions
+echo text ; to print text in the terminal 
+-------------------------------------
+You can fill spaces:
+printf("%-3d",0); => start: 0
+or justify content:
+printf("%+3d",0); => start:  +0
+-----------------
+scanf("%d", &number); to get the input in the var called number, integer input
