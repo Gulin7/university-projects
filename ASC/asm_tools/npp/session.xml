@@ -1,11 +1,6 @@
 <NotepadPlus>
     <Session activeView="0">
-        <mainView activeIndex="0">
-            <File firstVisibleLine="12" xOffset="0" scrollWidth="1287" startPos="1084" endPos="1084" selMode="0" lang="Assembly" encoding="-1" filename="C:\Coding_projects\University-Projects\ASC\lab3\7_unsigned_add\7_u_a.asm" backupFilePath="" originalFileLastModifTimestamp="1666610409" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="-1544054084" mapWrapIndentMode="-1" mapIsWrap="no" />
-            <File firstVisibleLine="13" xOffset="0" scrollWidth="1287" startPos="1400" endPos="1400" selMode="0" lang="Assembly" encoding="-1" filename="C:\Coding_projects\University-Projects\ASC\lab3\7_signed_add\7_s_a.asm" backupFilePath="" originalFileLastModifTimestamp="1666610389" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="7077888" mapWrapIndentMode="-1" mapIsWrap="no" />
-            <File firstVisibleLine="9" xOffset="0" scrollWidth="1287" startPos="834" endPos="834" selMode="0" lang="Assembly" encoding="-1" filename="C:\Coding_projects\University-Projects\ASC\lab3\7_unsigned_mul\7_u_m.asm" backupFilePath="" originalFileLastModifTimestamp="1666610389" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="0" mapWrapIndentMode="-1" mapIsWrap="no" />
-            <File firstVisibleLine="14" xOffset="0" scrollWidth="1287" startPos="1537" endPos="1537" selMode="0" lang="Assembly" encoding="-1" filename="C:\Coding_projects\University-Projects\ASC\lab3\7_signed_mul\7_s_m.asm" backupFilePath="" originalFileLastModifTimestamp="1666610348" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="1143275520" mapWrapIndentMode="-1" mapIsWrap="no" />
-        </mainView>
+        <mainView activeIndex="0" />
         <subView activeIndex="0" />
     </Session>
 </NotepadPlus>

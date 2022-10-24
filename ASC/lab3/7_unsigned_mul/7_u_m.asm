@@ -47,10 +47,8 @@ segment code use32 class=code
         cdq ; edx:eax = ()/()+ a*c+e-doubleword
         sub eax,[x]
         sbb edx,[x+4]
-        
         ; in edx:eax we have the result
         
-    
         ; exit(0)
         push    dword 0      ; push the parameter for exit onto the stack
         call    [exit]       ; call exit to terminate the program

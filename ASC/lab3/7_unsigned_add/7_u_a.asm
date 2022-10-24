@@ -29,7 +29,7 @@ segment code use32 class=code
         mov EAX, [d]
         mov EDX, [d+4]
         add eax,[d]
-        adc edx,[d+4]
+        adc edx, [d+4]
         clc
         add eax,[d]
         adc edx, [d+4] ; in EDX:EAX we have d+d+d
@@ -40,9 +40,9 @@ segment code use32 class=code
         mov dword[r], ECX 
         mov dword[r+4], 0 ; we store ECX in r
         SUB dword[r],eax
-        sbb dword[r+4],edx ; we substract edx:eax from r
+        sbb dword[r+4], edx ; we substract edx:eax from r
         clc
-        add dword[r],ebx ; we add ebx to r
+        add dword[r], ebx ; we add ebx to r
         ;adc dword[r+4],0 ;not sure if needed; maybe when the result is too big for dword
         mov EAX,[r]
         mov EDX,[r+4] ; we store the final result in edx:eax
