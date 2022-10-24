@@ -10,33 +10,45 @@ import exit msvcrt.dll    ; exit is a function that ends the calling process. It
 
 ; our data is declared here (the variables needed by our program)
 segment data use32 class=data
-    ; a,b,c - byte, d - word
-    a db 4
-    b db 3
-    c db 2
-    d dw 1
-
+    ; SIGNED
+    a db 14
+    b db 5
+    c dw -8
+    e dd 416
+    x dq 3000
+    
 ; our code starts here
 segment code use32 class=code
     start:
-        ; [2*(a+b)-5*c]*(d-3)
-        ; a=4, b=3, c=2, d=1 the result is: (2*7-5*2)*(-2)=4*(-2)=-8
-        mov BL,byte[a]
-        add BL, byte[b]
-        mov AL,2 ; we store 2 in AL so we can multiply it with (a+b)
-        imul BL ; in AX we will have the result of 2*(a+b) = 2*7=14
-        mov BX, AX ; we store 2*(a+b) in BX
-        mov AL,5
-        mov CL, byte[c]
-        imul CL ; in AX we now have 5*c=10
-        sub BX,AX ; in BX we will have the result of [2*(a+b)-5*c]
-        mov AX, word[d]
-        sub AX,3 ; we put in AX: d-3
-        mov DX,0 ; we put 0 in DX so it's empty for the next multiplication that's done with words
-        imul BX ; we multiply BX with AX and we have the result on DX:AX
+        ; (a-2)/(b+c)+a*c+e-x; a,b-byte; c-word; e-doubleword; x-qword
+        ; a=14, b=5,c=-8, e=416, x=3000
+        ; 12/(-3) + 14*(-8)+406 -3000 = -4-112+416- 3000 = 300-3000=-2700
+        mov al,[b]
+        cbw ; ax=b
+        add ax,[c]
+        mov bx,ax ; bx=(b+c)
+        mov al,[a]
+        sub al,2
+        cbw
+        cwd ; dx:ax=a-2 
+        idiv bx ; dx:ax= ()/()
+        mov bx,ax ; bx= ()/()
+        mov al,[a]
+        cbw
+        imul word[c] ; dx:ax = a*c
+                    ; bx=()/()
+        push dx
+        push ax
+        pop ecx ;ecx=a*c
+        mov ax,bx
+        cwde ; eax=()/()
+        add eax, ecx ; eax=()/()+a*c
+        add eax,[e] ; eax = ()/()+a*c+e 
+        cdq 
+        sub eax,[x]
+        sbb edx,[x+4]
+        ;final result on edx:eax
         
-    
-    
         ; exit(0)
         push    dword 0      ; push the parameter for exit onto the stack
         call    [exit]       ; call exit to terminate the program

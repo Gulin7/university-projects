@@ -1,0 +1,14 @@
+IMPLEMENT 2 TECHNIQUES:
+1.Backtracking - for week 5
+2. Dynamic Programming - for week 6
+backtracking: 3
+dynamic: 2
+------------------------------------
+1.Backtracking:
+- implement it in 2 ways: recursive and iterative
+- solve a problem in the 2 ways
+- lecture on teams
+- explain the time complexity for the solution
+
+2. Dynamic
+-implement it dynamic and normally

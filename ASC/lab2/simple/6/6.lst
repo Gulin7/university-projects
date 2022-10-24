@@ -19,7 +19,7 @@
     19 00000000 66BA0000                        mov DX,0
     20 00000004 66B80100                        mov AX,1
     21 00000008 66BB0001                        mov BX,256
-    22 0000000C 66F7E3                          mul BX
+    22 0000000C 66F7E3                          mul BX ; DX:AX has the final result
     23                                      
     24                                          ; exit(0)
     25 0000000F 6A00                            push    dword 0      ; push the parameter for exit onto the stack

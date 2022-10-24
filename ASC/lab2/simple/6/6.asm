@@ -19,7 +19,7 @@ segment code use32 class=code
         mov DX,0
         mov AX,1
         mov BX,256
-        mul BX
+        mul BX ; DX:AX has the final result
     
         ; exit(0)
         push    dword 0      ; push the parameter for exit onto the stack
