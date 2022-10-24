@@ -23,10 +23,10 @@ segment code use32 class=code
         ; a= 7, b=24, c=6 => 28
         mov al, byte[a]
         mov bl, byte[b]
-        mul bl
+        imul bl
         ; the result of a*b is stored in AX
         mov BL, byte[c]
-        div BL ; this divides AX with BL; the final result is stored on AL
+        idiv BL ; this divides AX with BL; the final result is stored on AL
     
         ; exit(0)
         push    dword 0      ; push the parameter for exit onto the stack

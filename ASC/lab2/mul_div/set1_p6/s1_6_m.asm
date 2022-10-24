@@ -24,16 +24,16 @@ segment code use32 class=code
         mov BL,byte[a]
         add BL, byte[b]
         mov AL,2 ; we store 2 in AL so we can multiply it with (a+b)
-        mul BL ; in AX we will have the result of 2*(a+b) = 2*7=14
+        imul BL ; in AX we will have the result of 2*(a+b) = 2*7=14
         mov BX, AX ; we store 2*(a+b) in BX
         mov AL,5
-        mov CL,byte[c]
-        mul CL ; in AX we now have 5*c=10
+        mov CL, byte[c]
+        imul CL ; in AX we now have 5*c=10
         sub BX,AX ; in BX we will have the result of [2*(a+b)-5*c]
-        mov AX,word[d]
+        mov AX,mword[d]
         sub AX,3 ; we put in AX: d-3
         mov DX,0 ; we put 0 in DX so it's empty for the next multiplication that's done with words
-        mul BX ; we multiply BX with AX and we have the result on DX:AX
+        imul BX ; we multiply BX with AX and we have the result on DX:AX
         
     
     

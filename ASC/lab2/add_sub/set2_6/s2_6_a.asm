@@ -27,7 +27,7 @@ segment code use32 class=code
         mov CX, word[b]
         add CX,word[c] ; CX=b+c 
         sub AX,BX
-        add AX,CX ; We store the final result in AX
+        add AX,CX ; We store the final result in AX ( for bigger numbers everything should be converted to dw)
     
         ; exit(0)
         push    dword 0      ; push the parameter for exit onto the stack

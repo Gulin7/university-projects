@@ -27,7 +27,7 @@
     27 00000014 668B0D[02000000]                mov CX, word[b]
     28 0000001B 66030D[04000000]                add CX,word[c] ; CX=b+c 
     29 00000022 6629D8                          sub AX,BX
-    30 00000025 6601C8                          add AX,CX ; We store the final result in AX
+    30 00000025 6601C8                          add AX,CX ; We store the final result in AX ( for bigger numbers it should be converted to dw)
     31                                      
     32                                          ; exit(0)
     33 00000028 6A00                            push    dword 0      ; push the parameter for exit onto the stack

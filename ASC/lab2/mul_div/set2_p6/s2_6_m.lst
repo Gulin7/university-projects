@@ -23,10 +23,10 @@
     23                                          ; a= 7, b=24, c=6 => 28
     24 00000000 A0[00000000]                    mov al, byte[a]
     25 00000005 8A1D[01000000]                  mov bl, byte[b]
-    26 0000000B F6E3                            mul bl
+    26 0000000B F6EB                            imul bl
     27                                          ; the result of a*b is stored in AX
     28 0000000D 8A1D[02000000]                  mov BL, byte[c]
-    29 00000013 F6F3                            div BL ; this divides AX with BL; the final result is stored on AL
+    29 00000013 F6FB                            idiv BL ; this divides AX with BL; the final result is stored on AL
     30                                      
     31                                          ; exit(0)
     32 00000015 6A00                            push    dword 0      ; push the parameter for exit onto the stack

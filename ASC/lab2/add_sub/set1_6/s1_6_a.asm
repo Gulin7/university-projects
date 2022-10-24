@@ -23,13 +23,18 @@ segment code use32 class=code
         ; For a=1,b=5,c=3,d=3 the result is: (1+5)-(1+3)+(3-1)=6-4+2=4
         mov AL,byte[b]
         add AL,byte[a] ;AL= a+b 
-        mov CL,byte[d]
-        add CL,byte[a] ;CL=a+d 
-        mov BL, byte[c]
-        sub BL, byte[a] ; BL=c-a 
-        sub AL,CL
-        ADD AL,BL 
-        ;in AL we store the operation ( one byte: byte-byte=byte, byte+byte=byte )
+        cbw ; AX =a+b
+        mov CX, AX ; CX=a+b
+        mov AL,byte[d]
+        add AL,byte[a] ;AL=a+d 
+        cbw ; AX=a+d
+        mov BX,AX
+        mov AL, byte[c]
+        sub AL, byte[a] ; AL=c-a 
+        cbw ; AX=c-a
+        sub CX,BX
+        ADD CX,AX
+        ;in CX we store the final result
     
         ; exit(0)
         push    dword 0      ; push the parameter for exit onto the stack

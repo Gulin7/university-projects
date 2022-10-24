@@ -6,11 +6,6 @@
         <Replace name="    " />
     </FindHistory>
     <History nbMaxFile="10" inSubMenu="no" customLength="-1">
-        <File filename="C:\Coding_projects\University_Projects\ASC\lab2\add_sub\set2_6\set2_p6.asm" />
-        <File filename="C:\Coding_projects\University_Projects\ASC\lab2\mul_div\set1_p6\s1_6_m.asm" />
-        <File filename="C:\Coding_projects\University_Projects\ASC\lab2\add_sub\set2_6\s2_6_a.asm" />
-        <File filename="C:\Coding_projects\University_Projects\ASC\lab2\add_sub\set1_6\s1_6_a.asm" />
-        <File filename="C:\Coding_projects\University_Projects\ASC\lab2\simple\6\6.asm" />
         <File filename="C:\Coding_projects\University_Projects\ASC\lab2\mul_div\set2_p6\s2_6_m.asm" />
         <File filename="C:\Coding_projects\University_Projects\ASC\lab2\mul_div\set2_p30\s2_30_m.asm" />
         <File filename="C:\Coding_projects\University_Projects\ASC\lab2\mul_div\set2_p21\s2_21_m.asm" />
@@ -50,7 +45,7 @@
         <GUIConfig name="ScintillaGlobalSettings" enableMultiSelection="no" />
         <GUIConfig name="openSaveDir" value="0" defaultDirPath="" />
         <GUIConfig name="titleBar" short="no" />
-        <GUIConfig name="stylerTheme" path="D:\Code\University-Projects\ASC\asm_tools\npp\stylers.xml" />
+        <GUIConfig name="stylerTheme" path="C:\Coding_projects\University-Projects\ASC\asm_tools\npp\stylers.xml" />
         <GUIConfig name="wordCharList" useDefault="yes" charsAdded="" />
         <GUIConfig name="delimiterSelection" leftmostDelimiter="40" rightmostDelimiter="41" delimiterSelectionOnEntireDocument="no" />
         <GUIConfig name="multiInst" setting="0" />
@@ -63,7 +58,7 @@
             <ActiveTabs cont="0" activeTab="-1" />
             <ActiveTabs cont="1" activeTab="-1" />
             <ActiveTabs cont="2" activeTab="-1" />
-            <ActiveTabs cont="3" activeTab="-1" />
+            <ActiveTabs cont="3" activeTab="0" />
         </GUIConfig>
     </GUIConfigs>
     <ProjectPanels>
