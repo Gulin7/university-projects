@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="947d7585-683f-411f-8f4a-b5cbc3b0192e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../A2/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/../A2/functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A2/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/../A2/menu.py" afterDir="false" />
-    </list>
+    <list default="true" id="947d7585-683f-411f-8f4a-b5cbc3b0192e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,7 +20,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/Code/University-Projects/Fundamentals of programming/Assignment 1"
+    "last_opened_file_path": "D:/Code/Bro_Code/Set3"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
