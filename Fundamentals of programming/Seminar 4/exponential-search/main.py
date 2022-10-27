@@ -5,6 +5,7 @@ def binary_search(arr, lft, rgt, num):
     if lft <= rgt:
         mid = (lft + rgt) // 2
         if arr[mid] == num:
+            #print('Item found :D')
             return True
         elif num > arr[mid]:
             binary_search(arr, mid + 1, rgt, num)
@@ -37,7 +38,7 @@ if __name__ == '__main__':
             break
         except ValueError:
             print('You didn\'t enter a valid value.')
-
+    print(exponential_search(my_list, x))
     if exponential_search(my_list, x):
         print('Item found!')
     else:
