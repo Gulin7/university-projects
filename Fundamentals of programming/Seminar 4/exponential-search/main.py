@@ -8,9 +8,9 @@ def binary_search(arr, lft, rgt, num):
             # print('Item found :D')
             return True
         elif num > arr[mid]:
-            binary_search(arr, mid + 1, rgt, num)
+            return binary_search(arr, mid + 1, rgt, num)
         else:
-            binary_search(arr, lft, mid - 1, num)
+            return binary_search(arr, lft, mid - 1, num)
     else:
         return False
 
