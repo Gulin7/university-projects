@@ -11,17 +11,17 @@ import exit msvcrt.dll    ; exit is a function that ends the calling process. It
 ; our data is declared here (the variables needed by our program)
 segment data use32 class=data
     ; UNSIGNED!!!
-    a db 6
-    b db 1
-    c dw 3
-    e dd 10
-    x dq 4029
+    a db 34
+    b db 2
+    c dw 6
+    e dd 4000
+    x dq 4098
 
 ; our code starts here
 segment code use32 class=code
     start:
         ;(a-2)/(b+c)+a*c+e-x; a,b-byte; c-word; e-doubleword; x-qword
-        ; 4/4+18+10-4020 = 29-4029=-4000
+        ; 32/8+34*6+10-4098 = 110
         mov al,[b]
         cbw ; ax=b
         mov bx,ax ;bx=b

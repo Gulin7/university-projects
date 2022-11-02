@@ -36,7 +36,7 @@
     36 00000030 89D8                            mov EAX,EBX
     37 00000032 99                              cdq ; in edx:eax we have c+c+c-b 
     38 00000033 0305[07000000]                  add eax,dword[d]
-    39 00000039 1315[0B000000]                  adc edx, dword[d+4] ; final result is in edx:eax
+    39 00000039 1315[0B000000]                  adc edx, dword[d+4] ; final result is in edx:eax 
     40                                          
     41                                          ; exit(0)
     42 0000003F 6A00                            push    dword 0      ; push the parameter for exit onto the stack

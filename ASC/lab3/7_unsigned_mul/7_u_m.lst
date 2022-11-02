@@ -11,17 +11,17 @@
     11                                  ; our data is declared here (the variables needed by our program)
     12                                  segment data use32 class=data
     13                                      ; UNSIGNED!!!
-    14 00000000 06                          a db 6
-    15 00000001 01                          b db 1
-    16 00000002 0300                        c dw 3
-    17 00000004 0A000000                    e dd 10
-    18 00000008 BD0F000000000000            x dq 4029
+    14 00000000 22                          a db 34
+    15 00000001 02                          b db 2
+    16 00000002 0600                        c dw 6
+    17 00000004 A00F0000                    e dd 4000
+    18 00000008 0210000000000000            x dq 4098
     19                                  
     20                                  ; our code starts here
     21                                  segment code use32 class=code
     22                                      start:
     23                                          ;(a-2)/(b+c)+a*c+e-x; a,b-byte; c-word; e-doubleword; x-qword
-    24                                          ; 4/4+18+10-4020 = 29-4029=-4000
+    24                                          ; 32/8+34*6+10-4098 = 110
     25 00000000 A0[01000000]                    mov al,[b]
     26 00000005 6698                            cbw ; ax=b
     27 00000007 6689C3                          mov bx,ax ;bx=b

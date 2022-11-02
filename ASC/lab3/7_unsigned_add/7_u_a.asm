@@ -11,9 +11,9 @@ import exit msvcrt.dll    ; exit is a function that ends the calling process. It
 ; our data is declared here (the variables needed by our program)
 segment data use32 class=data
     ;a - byte, b - word, c - double word, d - qword - Unsigned representation
-    a db 3
+    a db 7
     b dw 5
-    c dd 12
+    c dd 120
     d dq 20
     r resq 1
 
@@ -21,27 +21,26 @@ segment data use32 class=data
 segment code use32 class=code
     start:
         ;c-(d+d+d)+(a-b)
-        ;12-(20+20+20)+(3-5) = 12-60-2=-50
+        ;120-(20+20+20)+(7-5) = 120-60+2=62
+        mov ebx,0 
         mov bl, [a]
-        mov bh,0
-        mov AX,[b]
+        mov AX, [b]
         sub BX,AX ; BX= a-b
         mov EAX, [d]
-        mov EDX, [d+4]
+        mov EDX, [d+4] ; EDX:EAX=d
         add eax,[d]
-        adc edx, [d+4]
-        clc
+        adc edx, [d+4] ; EDX:EAX=d+d
         add eax,[d]
         adc edx, [d+4] ; in EDX:EAX we have d+d+d
-        mov CX,BX
+        mov CX,BX ; CX = a-b
         mov EBX,0
-        mov BX,CX; EBX=a-b
-        mov ECX,[c] ; ECX=c 
-        mov dword[r], ECX 
-        mov dword[r+4], 0 ; we store ECX in r
+        mov BX,CX; EBX = a-b
+        mov ECX, dword[c] ; ECX=c 
+        mov dword[r], 0
+        mov dword[r+4], 0
+        mov dword[r], ECX ; r=ECX=c
         SUB dword[r],eax
         sbb dword[r+4], edx ; we substract edx:eax from r
-        clc
         add dword[r], ebx ; we add ebx to r
         ;adc dword[r+4],0 ;not sure if needed; maybe when the result is too big for dword
         mov EAX,[r]

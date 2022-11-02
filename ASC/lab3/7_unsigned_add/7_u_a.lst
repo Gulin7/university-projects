@@ -11,9 +11,9 @@
     11                                  ; our data is declared here (the variables needed by our program)
     12                                  segment data use32 class=data
     13                                      ;a - byte, b - word, c - double word, d - qword - Unsigned representation
-    14 00000000 03                          a db 3
+    14 00000000 07                          a db 7
     15 00000001 0500                        b dw 5
-    16 00000003 0C000000                    c dd 12
+    16 00000003 78000000                    c dd 120
     17 00000007 1400000000000000            d dq 20
     18 0000000F <res 00000008>              r resq 1
     19                                  
@@ -21,33 +21,33 @@
     21                                  segment code use32 class=code
     22                                      start:
     23                                          ;c-(d+d+d)+(a-b)
-    24                                          ;12-(20+20+20)+(3-5) = 12-60-2=-50
-    25 00000000 8A1D[00000000]                  mov bl, [a]
-    26 00000006 B700                            mov bh,0
-    27 00000008 66A1[01000000]                  mov AX,[b]
-    28 0000000E 6629C3                          sub BX,AX ; BX= a-b
-    29 00000011 A1[07000000]                    mov EAX, [d]
-    30 00000016 8B15[0B000000]                  mov EDX, [d+4]
-    31 0000001C 0305[07000000]                  add eax,[d]
-    32 00000022 1315[0B000000]                  adc edx, [d+4]
-    33 00000028 F8                              clc
-    34 00000029 0305[07000000]                  add eax,[d]
-    35 0000002F 1315[0B000000]                  adc edx, [d+4] ; in EDX:EAX we have d+d+d
-    36 00000035 6689D9                          mov CX,BX
-    37 00000038 BB00000000                      mov EBX,0
-    38 0000003D 6689CB                          mov BX,CX; EBX=a-b
-    39 00000040 8B0D[03000000]                  mov ECX,[c] ; ECX=c 
-    40 00000046 890D[0F000000]                  mov dword[r], ECX 
-    41 0000004C C705[13000000]0000-             mov dword[r+4], 0 ; we store ECX in r
-    41 00000054 0000               
-    42 00000056 2905[0F000000]                  SUB dword[r],eax
-    43 0000005C 1915[13000000]                  sbb dword[r+4], edx ; we substract edx:eax from r
-    44 00000062 F8                              clc
-    45 00000063 011D[0F000000]                  add dword[r], ebx ; we add ebx to r
-    46                                          ;adc dword[r+4],0 ;not sure if needed; maybe when the result is too big for dword
-    47 00000069 A1[0F000000]                    mov EAX,[r]
-    48 0000006E 8B15[13000000]                  mov EDX,[r+4] ; we store the final result in edx:eax
-    49                                      
-    50                                          ; exit(0)
-    51 00000074 6A00                            push    dword 0      ; push the parameter for exit onto the stack
-    52 00000076 FF15[00000000]                  call    [exit]       ; call exit to terminate the program
+    24                                          ;120-(20+20+20)+(7-5) = 120-60+2=62
+    25 00000000 BB00000000                      mov ebx,0 
+    26 00000005 8A1D[00000000]                  mov bl, [a]
+    27 0000000B 66A1[01000000]                  mov AX, [b]
+    28 00000011 6629C3                          sub BX,AX ; BX= a-b
+    29 00000014 A1[07000000]                    mov EAX, [d]
+    30 00000019 8B15[0B000000]                  mov EDX, [d+4] ; EDX:EAX=d
+    31 0000001F 0305[07000000]                  add eax,[d]
+    32 00000025 1315[0B000000]                  adc edx, [d+4] ; EDX:EAX=d+d
+    33 0000002B 0305[07000000]                  add eax,[d]
+    34 00000031 1315[0B000000]                  adc edx, [d+4] ; in EDX:EAX we have d+d+d
+    35 00000037 6689D9                          mov CX,BX ; CX = a-b
+    36 0000003A BB00000000                      mov EBX,0
+    37 0000003F 6689CB                          mov BX,CX; EBX = a-b
+    38 00000042 8B0D[03000000]                  mov ECX, dword[c] ; ECX=c 
+    39 00000048 C705[0F000000]0000-             mov dword[r], 0
+    39 00000050 0000               
+    40 00000052 C705[13000000]0000-             mov dword[r+4], 0
+    40 0000005A 0000               
+    41 0000005C 890D[0F000000]                  mov dword[r], ECX ; r=ECX=c
+    42 00000062 2905[0F000000]                  SUB dword[r],eax
+    43 00000068 1915[13000000]                  sbb dword[r+4], edx ; we substract edx:eax from r
+    44 0000006E 011D[0F000000]                  add dword[r], ebx ; we add ebx to r
+    45                                          ;adc dword[r+4],0 ;not sure if needed; maybe when the result is too big for dword
+    46 00000074 A1[0F000000]                    mov EAX,[r]
+    47 00000079 8B15[13000000]                  mov EDX,[r+4] ; we store the final result in edx:eax
+    48                                      
+    49                                          ; exit(0)
+    50 0000007F 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    51 00000081 FF15[00000000]                  call    [exit]       ; call exit to terminate the program
