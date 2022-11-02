@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int main()
 {
@@ -26,4 +26,3 @@ int main()
   printf("The minimum numbers of coins needed is: %d\n", coins);
   return 0;
 }
-
