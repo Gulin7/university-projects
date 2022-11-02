@@ -3,7 +3,7 @@
 int main()
 {
   int coins = 0, k;
-  printf('Enter a number: ');
+  printf("Enter a number: ");
   scanf("%d", &k);
   while (k > 0)
   {
@@ -23,6 +23,6 @@ int main()
       k -= 1;
     }
   }
-  printf("The minimum numbers of coins needed is: %d", coins);
+  printf("The minimum numbers of coins needed is: %d\n", coins);
   return 0;
 }
