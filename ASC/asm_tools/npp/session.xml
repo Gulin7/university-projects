@@ -1,7 +1,7 @@
 <NotepadPlus>
     <Session activeView="0">
         <mainView activeIndex="0">
-            <File firstVisibleLine="4" xOffset="0" scrollWidth="1170" startPos="889" endPos="889" selMode="0" lang="Assembly" encoding="-1" filename="D:\Code\university-projects\ASC\lab3\7_unsigned_mul\7_u_m.asm" backupFilePath="" originalFileLastModifTimestamp="1667153904" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="0" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="16" xOffset="0" scrollWidth="1521" startPos="1427" endPos="1427" selMode="0" lang="Assembly" encoding="-1" filename="C:\Coding_projects\University-Projects\ASC\lab4\pr7-lab4.asm" backupFilePath="" originalFileLastModifTimestamp="1667812432" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="-1" mapWrapIndentMode="-1" mapIsWrap="no" />
         </mainView>
         <subView activeIndex="0" />
     </Session>
