@@ -6,16 +6,15 @@
         <Replace name="    " />
     </FindHistory>
     <History nbMaxFile="10" inSubMenu="no" customLength="-1">
-        <File filename="C:\Coding_projects\University-Projects\ASC\lab2\mul_div\set1_p6\s1_6_m.asm" />
         <File filename="C:\Coding_projects\University-Projects\ASC\lab2\simple\6\6.asm" />
         <File filename="C:\Coding_projects\University-Projects\ASC\lab2\mul_div\set2_p6\s2_6_m.asm" />
         <File filename="C:\Coding_projects\University-Projects\ASC\lab3\7_unsigned_add\7_u_a.asm" />
         <File filename="C:\Coding_projects\University-Projects\ASC\lab3\7_signed_add\7_s_a.asm" />
         <File filename="C:\Coding_projects\University-Projects\ASC\lab3\7_unsigned_mul\7_u_m.asm" />
         <File filename="C:\Coding_projects\University-Projects\ASC\lab3\7_signed_mul\7_s_m.asm" />
-        <File filename="D:\Code\university-projects\ASC\lab3\7_signed_add\7_s_a.asm" />
         <File filename="D:\Code\university-projects\ASC\lab3\7_signed_mul\7_s_m.asm" />
         <File filename="D:\Code\university-projects\ASC\lab3\7_unsigned_add\7_u_a.asm" />
+        <File filename="D:\Code\university-projects\ASC\lab3\7_unsigned_mul\7_u_m.asm" />
     </History>
     <GUIConfigs>
         <GUIConfig name="ToolBar" visible="yes">standard</GUIConfig>
@@ -59,11 +58,12 @@
         <GUIConfig name="SmartHighLight" matchCase="no" wholeWordOnly="yes" useFindSettings="no" onAnotherView="no">yes</GUIConfig>
         <GUIConfig name="ScintillaPrimaryView" lineNumberMargin="show" bookMarkMargin="show" indentGuideLine="show" folderMarkStyle="box" lineWrapMethod="aligned" currentLineHilitingShow="show" scrollBeyondLastLine="no" disableAdvancedScrolling="no" wrapSymbolShow="hide" Wrap="yes" borderEdge="yes" edge="no" edgeNbColumn="80" zoom="3" zoom2="0" whiteSpaceShow="hide" eolShow="hide" borderWidth="2" smoothFont="no" />
         <GUIConfig name="DockingManager" leftWidth="200" rightWidth="200" topHeight="200" bottomHeight="246">
+            <PluginDlg pluginName="Notepad++::InternalFunction" id="44085" curr="0" prev="-1" isVisible="yes" />
             <PluginDlg pluginName="AsmPlugin.dll" id="2" curr="3" prev="-1" isVisible="yes" />
-            <ActiveTabs cont="0" activeTab="-1" />
+            <ActiveTabs cont="0" activeTab="0" />
             <ActiveTabs cont="1" activeTab="-1" />
             <ActiveTabs cont="2" activeTab="-1" />
-            <ActiveTabs cont="3" activeTab="0" />
+            <ActiveTabs cont="3" activeTab="-1" />
         </GUIConfig>
     </GUIConfigs>
     <ProjectPanels>
@@ -71,4 +71,7 @@
         <ProjectPanel id="1" workSpaceFile="" />
         <ProjectPanel id="2" workSpaceFile="" />
     </ProjectPanels>
+    <FileBrowser latestSelectedItem="D:\Code\university-projects\ASC\lab3\7_signed_mul">
+        <root foldername="D:\Code\university-projects\ASC\lab3" />
+    </FileBrowser>
 </NotepadPlus>
