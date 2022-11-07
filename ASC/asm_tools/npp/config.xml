@@ -6,7 +6,6 @@
         <Replace name="    " />
     </FindHistory>
     <History nbMaxFile="10" inSubMenu="no" customLength="-1">
-        <File filename="C:\Coding_projects\University-Projects\ASC\lab2\mul_div\set1_p6\s1_6_m.asm" />
         <File filename="C:\Coding_projects\University-Projects\ASC\lab2\simple\6\6.asm" />
         <File filename="C:\Coding_projects\University-Projects\ASC\lab2\mul_div\set2_p6\s2_6_m.asm" />
         <File filename="C:\Coding_projects\University-Projects\ASC\lab3\7_unsigned_add\7_u_a.asm" />
@@ -16,6 +15,7 @@
         <File filename="D:\Code\university-projects\ASC\lab3\7_signed_add\7_s_a.asm" />
         <File filename="D:\Code\university-projects\ASC\lab3\7_signed_mul\7_s_m.asm" />
         <File filename="D:\Code\university-projects\ASC\lab3\7_unsigned_add\7_u_a.asm" />
+        <File filename="C:\Coding_projects\University-Projects\ASC\lab4\pr7-lab4.asm" />
     </History>
     <GUIConfigs>
         <GUIConfig name="ToolBar" visible="yes">standard</GUIConfig>
