@@ -16,13 +16,26 @@ segment data use32 class=data
     ;D: 1, 2, 3, 6, 5, 9, 7, 4
     s1 db 1,3,5,7
     s2 db 2,6,9,4
-    e equ $-s2
-    d resb e*2
+    e equ $-s2 ; e is the length of one set
+    d resb e*2 ; we reserve enough bytes to store the intercalating sets
 
 ; our code starts here
 segment code use32 class=code
     start:
-        mov ecx, e*2
+        mov ecx, e
+        jecxz out
+        mov esi, 0 ; starting the i from 0
+        repeat:
+        mov edx, s1
+        mov al, [edx+esi]
+        mov edx, s2
+        mov bl, [edx+esi]
+        mov edx, d
+        mov [edx+esi*2], al
+        mov [edx+esi*2+1], bl
+        inc esi
+        loop repeat
+        out:
         
         ; exit(0)
         push    dword 0      ; push the parameter for exit onto the stack
