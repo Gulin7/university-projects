@@ -1,0 +1,32 @@
+APPLICATION WITH CONSOLE BASED MENU
+problem number: 2
+-------------------
+Manages a list of elements - can be various things
+Modular programming!
+-----------------------------
+Create a menu that displays all functionalities(as commands)
+for the UI - the user must use a specific command for every functionality of the program
+--------------
+					Modular programming
+You need to have: 
+functions.py
+ui.py
+start.py
+functions can't call ui!
+--------------
+have 10 random elements at the beginning of the list
+--------------
+you have a list of lists or a list of dictionaries
+--------------
+your application should never clash(use try/except so it always works, returning a command line
+'error' message if smth is wrong)
+--------------
+write specifications for all functions in functions.py
+--------------
+write automatic tests with assert:
+for all functions in functions.py related to A and B
+(the first 2 sets of functionalities out of the 5)
+--------------
+assert<expression>(the expression can be true or false)
+if the expression is false then it will throw an error
+--------------
