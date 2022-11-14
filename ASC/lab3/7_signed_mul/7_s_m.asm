@@ -43,10 +43,13 @@ segment code use32 class=code
         mov ax,bx
         cwde ; eax=()/()
         add eax, ecx ; eax=()/()+a*c
-        add eax,[e] ; eax = ()/()+a*c+e 
-        cdq 
-        sub eax,[x]
-        sbb edx,[x+4]
+        cdq
+        mov ebx, eax
+        mov ecx, edx
+        mov eax, [e]
+        cdq
+        add eax, ebx
+        adc edx, ecx
         ;final result on edx:eax
         
         ; exit(0)

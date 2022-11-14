@@ -22,7 +22,7 @@ segment code use32 class=code
     start:
         ;c-(d+d+d)+(a-b)
         ;120-(20+20+20)+(7-5) = 120-60+2=62
-        mov ebx,0 
+        mov bh,0 
         mov bl, [a]
         mov AX, [b]
         sub BX,AX ; BX= a-b
