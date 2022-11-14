@@ -14,8 +14,8 @@
         <File filename="D:\Code\university-projects\ASC\lab3\7_signed_mul\7_s_m.asm" />
         <File filename="D:\Code\university-projects\ASC\lab3\7_unsigned_add\7_u_a.asm" />
         <File filename="C:\Coding_projects\University-Projects\ASC\lab4\pr7-lab4.asm" />
-        <File filename="D:\Code\university-projects\ASC\lab4\pr7-lab4.asm" />
         <File filename="D:\Code\university-projects\ASC\lab5\pr7_lab5.asm" />
+        <File filename="D:\Code\university-projects\ASC\lab4\pr7-lab4.asm" />
     </History>
     <GUIConfigs>
         <GUIConfig name="ToolBar" visible="yes">standard</GUIConfig>
@@ -64,7 +64,7 @@
             <ActiveTabs cont="0" activeTab="-1" />
             <ActiveTabs cont="1" activeTab="-1" />
             <ActiveTabs cont="2" activeTab="-1" />
-            <ActiveTabs cont="3" activeTab="0" />
+            <ActiveTabs cont="3" activeTab="-1" />
         </GUIConfig>
     </GUIConfigs>
     <ProjectPanels>
@@ -72,7 +72,7 @@
         <ProjectPanel id="1" workSpaceFile="" />
         <ProjectPanel id="2" workSpaceFile="" />
     </ProjectPanels>
-    <FileBrowser latestSelectedItem="D:\Code\university-projects\ASC\lab5\pr7_lab5.asm">
-        <root foldername="D:\Code\university-projects\ASC\lab5" />
+    <FileBrowser latestSelectedItem="D:\Code\university-projects\ASC\lab4">
+        <root foldername="D:\Code\university-projects\ASC\lab4" />
     </FileBrowser>
 </NotepadPlus>
