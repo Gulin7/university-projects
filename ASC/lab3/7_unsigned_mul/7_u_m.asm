@@ -28,23 +28,23 @@ segment code use32 class=code
         add bx,[c] ; in bx=b+c
         mov al,[a] ; al=a
         sub al,2 ; al=a-2
-        cbw ; ax=a-2
-        cwd ; in dx:ax =(a-2)
+        mov ah, 0; ax=a-2
+        mov dx, 0 ; in dx:ax =(a-2)
         div bx ; in dx:ax = (a-2)/(b+c)
         mov cx, ax ; in cx= (a-2)/(b+c)
         mov al,[a] ; al=a
-        cbw ;ax=a 
+        mov ah, 0 ;ax=a 
         mul word[c] ; dx:ax = a*c
                     ; cx= ()/()
         push dx
         push ax
         pop ebx ; ebx=a*c
-        mov ax,cx
-        cwde ; eax=()/()
+        mov eax, 0
+        mov ax,cx ; eax=()/()
         add ebx,eax ; ebx=()/()+a*c
         add ebx,[e] ; ebx = ()/()+a*c+e 
         mov eax,ebx
-        cdq ; edx:eax = ()/()+ a*c+e-doubleword
+        mov edx, 0 ; edx:eax = ()/()+ a*c+e-doubleword
         sub eax,[x]
         sbb edx,[x+4]
         ; in edx:eax we have the result
