@@ -3,12 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="88caf025-f4ff-421f-80f9-9875c127cb23" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/../../../../UBB/fp/a6-Gulin7/src/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../UBB/fp/a6-Gulin7/src/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../UBB/fp/a6-Gulin7/src/functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../UBB/fp/a6-Gulin7/src/start.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../UBB/fp/a6-Gulin7/src/start.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../UBB/fp/a6-Gulin7/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../UBB/fp/a6-Gulin7/.idea/a6-Gulin7.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../UBB/fp/a6-Gulin7/.idea/a6-Gulin7.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../UBB/fp/a6-Gulin7/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../UBB/fp/a6-Gulin7/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../UBB/fp/a6-Gulin7/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../UBB/fp/a6-Gulin7/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../UBB/fp/a6-Gulin7/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../UBB/fp/a6-Gulin7/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../UBB/fp/a6-Gulin7/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../UBB/fp/a6-Gulin7/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../UBB/fp/a6-Gulin7/src/operations.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../UBB/fp/a6-Gulin7/src/operations.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../UBB/fp/a6-Gulin7/src/ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../UBB/fp/a6-Gulin7/src/ui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/A6-filip.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/A6-filip.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment 6/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment 6/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment 6/operations.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment 6/operations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment 6/ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment 6/ui.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +37,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Coding_projects/UBB/fp/a5-Gulin7"
+    "last_opened_file_path": "D:/Code/university-projects/Fundamentals of programming/Assignments/A6-filip"
   }
 }]]></component>
   <component name="RunManager">

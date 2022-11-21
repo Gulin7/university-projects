@@ -1,4 +1,4 @@
-from root.a6.ui import ui as ui
+import ui as ui
 
 
 def main():

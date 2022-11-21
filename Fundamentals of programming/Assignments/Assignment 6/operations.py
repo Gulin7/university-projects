@@ -1,4 +1,4 @@
-from root.a6.domain import entities
+import entities
 import copy
 import random
 

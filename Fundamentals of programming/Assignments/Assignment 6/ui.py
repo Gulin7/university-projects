@@ -1,8 +1,8 @@
 #
 # This is the program's UI module. The user interface and all interaction with the user (print and input statements) are found here
 #
-from root.a6.domain import entities
-from root.a6.domain import operations
+import entities
+import operations
 
 
 def read_command():
