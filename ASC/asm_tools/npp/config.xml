@@ -59,9 +59,9 @@
         <GUIConfig name="SmartHighLight" matchCase="no" wholeWordOnly="yes" useFindSettings="no" onAnotherView="no">yes</GUIConfig>
         <GUIConfig name="ScintillaPrimaryView" lineNumberMargin="show" bookMarkMargin="show" indentGuideLine="show" folderMarkStyle="box" lineWrapMethod="aligned" currentLineHilitingShow="show" scrollBeyondLastLine="no" disableAdvancedScrolling="no" wrapSymbolShow="hide" Wrap="yes" borderEdge="yes" edge="no" edgeNbColumn="80" zoom="3" zoom2="0" whiteSpaceShow="hide" eolShow="hide" borderWidth="2" smoothFont="no" />
         <GUIConfig name="DockingManager" leftWidth="200" rightWidth="200" topHeight="200" bottomHeight="246">
-            <PluginDlg pluginName="Notepad++::InternalFunction" id="44085" curr="0" prev="-1" isVisible="no" />
+            <PluginDlg pluginName="Notepad++::InternalFunction" id="44085" curr="0" prev="-1" isVisible="yes" />
             <PluginDlg pluginName="AsmPlugin.dll" id="2" curr="3" prev="-1" isVisible="yes" />
-            <ActiveTabs cont="0" activeTab="-1" />
+            <ActiveTabs cont="0" activeTab="0" />
             <ActiveTabs cont="1" activeTab="-1" />
             <ActiveTabs cont="2" activeTab="-1" />
             <ActiveTabs cont="3" activeTab="-1" />
@@ -72,8 +72,7 @@
         <ProjectPanel id="1" workSpaceFile="" />
         <ProjectPanel id="2" workSpaceFile="" />
     </ProjectPanels>
-    <FileBrowser latestSelectedItem="C:\Coding_projects\University-Projects\ASC\lab4\pr7-lab4.asm">
-        <root foldername="C:\Coding_projects\University-Projects\ASC\lab4" />
-        <root foldername="C:\Coding_projects\University-Projects\ASC\lab3" />
+    <FileBrowser latestSelectedItem="C:\Coding_projects\University-Projects\ASC\lab5">
+        <root foldername="C:\Coding_projects\University-Projects\ASC\lab5" />
     </FileBrowser>
 </NotepadPlus>

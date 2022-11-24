@@ -1,6 +1,8 @@
 <NotepadPlus>
     <Session activeView="0">
-        <mainView activeIndex="0" />
+        <mainView activeIndex="0">
+            <File firstVisibleLine="10" xOffset="0" scrollWidth="1794" startPos="789" endPos="789" selMode="0" lang="Assembly" encoding="-1" filename="C:\Coding_projects\University-Projects\ASC\lab5\pr7_lab5.asm" backupFilePath="" originalFileLastModifTimestamp="1669018516" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="6553700" mapWrapIndentMode="-1" mapIsWrap="no" />
+        </mainView>
         <subView activeIndex="0" />
     </Session>
 </NotepadPlus>
