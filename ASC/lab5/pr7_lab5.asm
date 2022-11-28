@@ -23,14 +23,14 @@ segment data use32 class=data
 segment code use32 class=code
     start:
         mov ecx, e
-        jecxz out
+        jecxz out ; if no elements -> jump to the end
         mov esi, 0 ; starting the i from 0
         repeat:
-        mov edx, s1
+        mov edx, s1 ; load the adress of s1 in edx
         mov al, [edx+esi]
         mov edx, s2
         mov bl, [edx+esi]
-        mov edx, d
+        mov edx, d ;
         mov [edx+esi*2], al
         mov [edx+esi*2+1], bl
         inc esi

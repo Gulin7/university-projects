@@ -1,0 +1,22 @@
+ASSIGNMENT 7 -> PROBLEM: 2
+REPOSITORY:
+textFile.txt - IF U CLOSE THE PROBLEM, ALL CHANGES ARE SAVED INTO A FILE
+- put in text all the current data
+Binary - pickle package -> you can store python objects into a file and transforms 
+them automatically into binary
+-------------------------------
+main.py creates a service, repository and ui classes
+service can work with any kind of repository
+service = receives a repository as a parameter, either a memory/textfile/binary 
+ui just uses the service
+-------------------------------
+bonus posibilities:
+-> you get bonuses if you implement what is bonus:
+-> applied to final lab grade
+-> 1st bonus: implement a bonus repository that uses json or xml :=0.1 for final lab grade
+-> 2nd bonus: settings.properties files to choose the repo and file path :=0.1 points
+-> 3rd bonus: implemenet repo with an actual database (SQL or any other data base) := 0.1 points
+-------------------------------
+week 10 - first test!!!
+1h work / 1h grading
+week 11 will have both a7 and a8!!!!
