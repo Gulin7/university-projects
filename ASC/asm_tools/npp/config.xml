@@ -10,7 +10,6 @@
         <root foldername="C:\Coding_projects\University-Projects\ASC\lab3" />
     </FileBrowser>
     <History nbMaxFile="10" inSubMenu="no" customLength="-1">
-        <File filename="D:\Code\university-projects\ASC\lab3\7_signed_add\7_s_a.asm" />
         <File filename="D:\Code\university-projects\ASC\lab3\7_signed_mul\7_s_m.asm" />
         <File filename="D:\Code\university-projects\ASC\lab3\7_unsigned_add\7_u_a.asm" />
         <File filename="D:\Code\university-projects\ASC\lab5\pr7_lab5.asm" />
@@ -20,6 +19,7 @@
         <File filename="C:\Coding_projects\University-Projects\ASC\lab3\7_signed_mul\7_s_m.asm" />
         <File filename="C:\Coding_projects\University-Projects\ASC\lab3\7_unsigned_mul\7_u_m.asm" />
         <File filename="C:\Coding_projects\University-Projects\ASC\lab4\pr7-lab4.asm" />
+        <File filename="C:\Coding_projects\University-Projects\ASC\lab_work_8\labwork.asm" />
     </History>
     <GUIConfigs>
         <GUIConfig name="ToolBar" visible="yes">standard</GUIConfig>
@@ -68,7 +68,7 @@
             <ActiveTabs cont="0" activeTab="-1" />
             <ActiveTabs cont="1" activeTab="-1" />
             <ActiveTabs cont="2" activeTab="-1" />
-            <ActiveTabs cont="3" activeTab="0" />
+            <ActiveTabs cont="3" activeTab="-1" />
         </GUIConfig>
     </GUIConfigs>
     <ProjectPanels>

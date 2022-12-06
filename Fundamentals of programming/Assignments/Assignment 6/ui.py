@@ -72,6 +72,8 @@ def insert_contestant(all_contestants, p1, p2, p3, aux, position):
                 operations.insert_contestant(all_contestants, p1, p2, p3, position)
         except ValueError as ve:
             print("Invalid input! ", ve)
+        except:
+            print('Invalid input!')
 
 
 def remove_contestant(all_contestants, *args):
