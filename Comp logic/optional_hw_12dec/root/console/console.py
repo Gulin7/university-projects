@@ -72,8 +72,9 @@ def add_2_numbers():
     number1_in_base10 = convert_to_base10(number1, base)
     number2_in_base10 = convert_to_base10(number2, base)
     result_in_base10 = number1_in_base10 + number2_in_base10
+    if result_in_base10 == int(result_in_base10):
+        result_in_base10 = int(result_in_base10)
     print(f"""Your result is:
--> in base 10: {result_in_base10}
 -> in base {base}: {convert_from_base10_to_base(result_in_base10, base)}""")
 
 
@@ -88,8 +89,9 @@ def sub_2_numbers():
     number1_in_base10 = convert_to_base10(number1, base)
     number2_in_base10 = convert_to_base10(number2, base)
     result_in_base10 = number1_in_base10 - number2_in_base10
+    if result_in_base10 == int(result_in_base10):
+        result_in_base10 = int(result_in_base10)
     print(f"""Your result is:
--> in base 10: {result_in_base10}
 -> in base {base}: {convert_from_base10_to_base(result_in_base10, base)}""")
 
 
@@ -116,6 +118,37 @@ def convert_number():
         result_in_base10 = convert_to_base10(number, number_base)
         result = convert_from_base10_to_base(result_in_base10, convert_to_this_base)
         print(result)
+
+
+def multiply_numbers():
+    print('Enter the 2 numbers you want to multiply as well as their base: ')
+    base = get_base()
+    print('First number: ')
+    number1 = get_number_in_base(base)
+    print('The second number: ')
+    number2 = get_number_in_base(base)
+    number1_base10 = convert_to_base10(number1, base)
+    number2_base10 = convert_to_base10(number2, base)
+    result = number1_base10 * number2_base10
+    result = convert_from_base10_to_base(result, base)
+    print(f'In base {base}, {number1} * {number2} == {result}')
+
+
+def divide_numbers():
+    print('Enter the 2 numbers you want to divide as well as their base: ')
+    base = get_base()
+    print('First number: ')
+    number1 = get_number_in_base(base)
+    print('The second number: ')
+    number2 = get_number_in_base(base)
+
+    number1_base10 = convert_to_base10(number1, base)
+    number2_base10 = convert_to_base10(number2, base)
+
+    result = number1_base10 / number2_base10
+    result = convert_from_base10_to_base(result, base)
+
+    print(f'In base {base}, {number1} / {number2} == {result}')
 
 
 def show_menu():
@@ -150,8 +183,8 @@ def run_console():
         elif command == 'sub':
             sub_2_numbers()
         elif command == 'multiply':
-            pass
+            multiply_numbers()
         elif command == 'divide':
-            pass
+            divide_numbers()
         elif command == 'convert':
             convert_number()

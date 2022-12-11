@@ -6,7 +6,10 @@ def check_number_and_base(number, base):
     :param base: the given base
     :return: True if number is in base "base", false otherwise
     """
-    copy = int(number)
+    try:
+        copy = int(number)
+    except:
+        return False
     while copy > 0:
         digit = copy % 10
         if digit > 10:
