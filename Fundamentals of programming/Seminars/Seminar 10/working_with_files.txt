@@ -1,0 +1,15 @@
+class ProductFileRepository(ProductRepository):
+	def __init__(self, file_name):
+		super().__init__()
+		# with super we call the init of the ProductRepository object
+		# 
+		self.__file_name = file_name
+		self.__load_data()
+
+	def __load_data(self):
+		with open(self.__file_name) as f:
+		# TO OPEN A FILE 
+		# you can iterrate the file line by line: for line in f...
+			for line in f:
+				pass
+		#FOR ALL PARAMETERS GOTTEN FROM A TEXT FILE YOU NEED TO SPECIFY IT'S TYPE!		
