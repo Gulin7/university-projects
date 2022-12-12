@@ -2,6 +2,12 @@ from root.services.functions import *
 
 
 def base2_to_base4(number_in_base2):
+    """
+    RAPID CONVERT FROM BASE2 TO BASE4
+
+    :param number_in_base2: number in base2
+    :return: number in base4
+    """
     rapid_convert = {'00': '0', '01': '1',
                      '10': '2', '11': '3', }
     number_base2_as_string = str(number_in_base2)
@@ -14,6 +20,12 @@ def base2_to_base4(number_in_base2):
 
 
 def base2_to_base8(number_in_base2):
+    """
+    RAPID CONVERT FROM BASE2 TO BASE8
+
+    :param number_in_base2: number in base 2
+    :return: number in base 8
+    """
     rapid_convert = {'000': '0', '001': '1',
                      '010': '2', '011': '3',
                      '100': '4', '101': '5',
@@ -28,6 +40,12 @@ def base2_to_base8(number_in_base2):
 
 
 def base2_to_base16(number_in_base2):
+    """
+    RAPID CONVERT FROM BASE2 TO BASE16
+
+    :param number_in_base2: number in base2
+    :return: number in base8
+    """
     rapid_convert = {'0000': '0', '0001': '1', '0010': '2', '0011': '3',
                      '0100': '4', '0101': '5', '0110': '6', '0111': '7',
                      '1000': '8', '1001': '9', '1010': 'A', '1011': 'B',
@@ -42,6 +60,13 @@ def base2_to_base16(number_in_base2):
 
 
 def rapid_convert_from_base2_to_given_base(number_in_base2, given_base):
+    """
+    Rapid convert a number in base2 to a given base, that can be 4, 8 or 16
+
+    :param number_in_base2:
+    :param given_base:
+    :return:
+    """
     if given_base == 4:
         return base2_to_base4(number_in_base2)
     elif given_base == 8:
@@ -81,4 +106,5 @@ def rapid_convert_to_base2_from_given_base(number, given_base):
     elif given_base == 16:
         for index in range(len(number_as_string)):
             number_in_base2 = number_in_base2 + str(base16_to_base2[number_as_string[index]])
+    #print(number_in_base2)
     return number_in_base2

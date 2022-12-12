@@ -95,6 +95,12 @@ def create_dict_with_number_and_base(number, base):
 
 
 def convert_list_number_to_string(number_as_list):
+    """
+    Converts a list representing a number to a string.
+
+    :param number_as_list: list, representing a number
+    :return: the number as a string
+    """
     number_as_string = ''
     for index in range(len(number_as_list)):
         number_as_string = str(number_as_list[index]) + number_as_string
