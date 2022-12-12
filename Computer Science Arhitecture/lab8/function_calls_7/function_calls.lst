@@ -1,0 +1,48 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit, printf               ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    10                                  import printf msvcrt.dll
+    11                                  
+    12                                  ; our data is declared here (the variables needed by our program)
+    13                                  segment data use32 class=data
+    14                                      ;Two natural numbers a and b (a: dword, b: dword, defined in the data segment) are given. Calculate a/b and display the remainder in the following format: "<a> mod <b> = ;<remainder>". Example: for a = 23, b = 5
+    15                                      ;The values will be displayed in decimal format (base 10) with sign.
+    16 00000000 17000000                    a dd 23
+    17 00000004 05000000                    b dd 5
+    18 00000008 00000000                    result dd 0
+    19 0000000C 2564206D6F64202564-         format db '%d mod %d = %d', 0
+    19 00000015 203D20256400       
+    20                                  
+    21                                  ; our code starts here
+    22                                  segment code use32 class=code
+    23                                      start:
+    24 00000000 A1[00000000]                    mov EAX, dword[a]
+    25 00000005 BA00000000                      mov EDX, 0
+    26 0000000A 8B1D[04000000]                  mov EBX, dword[b]
+    27 00000010 F7F3                            div EBX ; in EDX we have the remainder
+    28                                          ;mov ECX, dword[a]
+    29                                          ;mov ebx, dword[b]
+    30                                          ;push dword EDX
+    31                                          ;push dword EBX
+    32                                          ;push dword ECX
+    33                                          ;push format
+    34                                          ;----------------
+    35                                          ;PUSH ON REVERSE C ORDER THE PARAMETERS  
+    36 00000012 8915[08000000]                  mov [result], edx
+    37 00000018 FF35[08000000]                  push dword[result]
+    38 0000001E FF35[04000000]                  push dword[b]
+    39 00000024 FF35[00000000]                  push dword[a]
+    40 0000002A 68[0C000000]                    push dword format
+    41                                          ;CALL THE FUNCTIONS PRINTF
+    42 0000002F FF15[00000000]                  call [printf]
+    43 00000035 83C410                          add esp, 4*4
+    44                                          
+    45                                          ; exit(0)
+    46 00000038 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    47 0000003A FF15[00000000]                  call    [exit]       ; call exit to terminate the program
