@@ -1,7 +1,6 @@
 from math import sqrt
 import random
 import copy
-from ui import *
 
 """
     CREATES A NUMBER AS A LIST/DICT, MODIFY THE ORDER OR COMMENT 1 OUT TO WORK WITH THE DIFFERENT STRUCTURE
@@ -21,7 +20,7 @@ def create_number(real_part, imaginary_part):
     return complex_number
 
 
-#def create_number(real_part, imaginary_part):
+def create_number(real_part, imaginary_part):
     """
         This function creates an imaginary number as a dictionary.
 
@@ -30,8 +29,8 @@ def create_number(real_part, imaginary_part):
     :return: a dictionary with the keys real and imaginary
             representing the real/imaginary parts of a complex number
         """
-    #complex_number = {'real': real_part, 'imag': imaginary_part}
-    #return complex_number
+    complex_number = {'real': real_part, 'imag': imaginary_part}
+    return complex_number
 
 
 def calculate_modulus(real_part, imaginary_part):
@@ -100,7 +99,7 @@ def to_string(num_list):
 """
 
 
-def generate_random_complex_number_list(length):
+def generate_random_complex_number_set(length):
     """
     Generates a list of complex numbers.
 
@@ -109,11 +108,11 @@ def generate_random_complex_number_list(length):
     """
     complex_set = list()
     for i in range(length):
-        complex_set.append([random.randint(-100, 100), random.randint(-100, 100)])
+        complex_set.append([random.randint(-20, 20), random.randint(-20, 20)])
     return complex_set
 
 
-#def generate_random_complex_number_list(length):
+#def generate_random_complex_number_set(length):
     """
     Generates a list of complex numbers.
 
@@ -122,7 +121,7 @@ def generate_random_complex_number_list(length):
     """
     #complex_set = list()
     #for i in range(length):
-        #complex_set.append({'real': random.randint(-100, 100), 'imag': random.randint(-100, 100)})
+        #complex_set.append({'real': random.randint(-20, 20), 'imag': random.randint(-20, 20)})
     #return complex_set
 
 
@@ -160,6 +159,12 @@ def longest_subarray_modulus(complex_set):
 
 # 2nd implementation, using dynamic programming
 def longest_subarray_modulus(complex_set):
+    """
+    This function computes and returns the longest subarray with modulus between 0 and 10.
+
+    :param complex_set: a set of complex number, given as a list or dict( 'imag'/'real' keys)
+    :return: the longest subarray that has complex numbers with modulus in range [0,10]
+    """
     length = len(complex_set)
     maxim_length = -1
     maxim_length_position = 0

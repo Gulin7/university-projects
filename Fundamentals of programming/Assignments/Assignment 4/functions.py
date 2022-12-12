@@ -97,7 +97,7 @@ def dynamic_sum(my_list, sum):
                 matrix[i][j] = matrix[i-1][j]
             else:
                 matrix[i][j] = (matrix[i-1][j] or matrix[i-1][j-my_list[i-1]])
-    if not matrix[length][sum]:
+    if not matrix[length][sum]: #matrix[i][j]
         print('No solution :(')
     else:
         nr_of_elements = length

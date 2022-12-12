@@ -8,52 +8,72 @@ def show_menu():
     print(
         """                        MENU
             Press:
-            1-To generate a list of n random numbers ( n is your choice :) )
-            2-Sort the list using the insertion sort
+            1-To generate a list of random numbers 
+            2-Sort the list using the insert sort
             3-Sort the list using the comb sort
-            0-Exit menu""")
+            0-Exit menu
+            -------------------------------------
+            For 1, you will be asked to input a number that will represent the lenght of the list.
+            For 2 and 3, you will be asked to input a number that will represent how often will the
+            partially sorted list be printed.""")
 
 
 def run_app():
     my_list = []
-    while True:
-        while True:
-            command = 0
+    command = 1
+    while command != 0:
+        ok = 0
+        while ok == 0:
             try:
                 command = int(input("Choose a command: "))
-                break
-            except ValueError:
+                ok = 1
+            except:
                 print("You didn't enter a valid command! Try again!")
-            if command < 0 or command > 3:
-                print("You didn't enter a valid command! Try again!")
+                ok = 0
+        if command < 0 or command > 3:
+            print("You didn't enter a valid command! Try again!")
+            ok = 0
         if command == 1:
+            ok = 0
             my_list = []
-            while True:
+            while ok == 0:
                 try:
                     n = int(input("Choose a number: "))
-                    break
-                except ValueError:
+                    ok = 1
+                except:
                     print("You didn't enter a number! Try again!")
+                    ok = 0
             while n > 0:
                 my_list.append(random.randint(1, 100))
                 n -= 1
             print(f"The list is {my_list} !")
-        else:
+        elif command == 2:
             if len(my_list) == 0:
-                print("There is no list to be sorted yet!")
+                print("There is no list to be sorted yet! Enter 1 to generate a list!")
             else:
-                while True:
+                ok = 0
+                while ok == 0:
                     try:
-                        step = int(input("Enter an integer: "))
-                        break
-                    except ValueError:
+                        step2 = int(input("Enter an integer: "))
+                        ok = 1
+                    except:
                         print("You didn't enter an integer! Try again!")
-                if command == 2:
-                    insert_sort(my_list, step)
-                    print(f"The sorted list is {my_list} !")
-                else:
-                    comb_sort(my_list, step)
-                    print(f"The sorted list is {my_list} !")
+                        ok = 0
+                insert_sort(my_list, step2)
+                print(f"The sorted list is {my_list} !")
+        elif command == 3:
+            if len(my_list) == 0:
+                print("There is no list to be sorted yet! Enter 1 to generate a list!")
+            else:
+                ok = 0
+                while ok == 0:
+                    try:
+                        step3 = int(input("Enter an integer: "))
+                        ok = 1
+                    except:
+                        print("You didn't enter an integer! Try again!")
+                        ok = 0
+                comb_sort(my_list, step3)
+                print(f"The sorted list is {my_list} !")
         if command == 0:
             print("You've exit the app! :(")
-            break

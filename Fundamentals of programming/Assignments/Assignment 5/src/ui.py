@@ -39,7 +39,7 @@ def display_set(complex_set):
     string_set = list()
     for i in complex_set:
         string_set.append(to_string(i))
-    print(f"The longest increasing subsequence is {string_set} of length {len(string_set)}!")
+    print(f"The current set is: \n{string_set} of length {len(string_set)}!")
 
 
 def display_subarray_w_length(complex_set):
@@ -52,7 +52,7 @@ def display_subarray_w_length(complex_set):
     string_set = list()
     for i in range(len(complex_set)):
         string_set.append(to_string(complex_set[i]))
-    print(f"The longest subarray is {string_set} of length {len(string_set)}!")
+    print(f"The longest subarray is: \n{string_set} of length {len(string_set)}!")
 
 
 def show_menu():
@@ -69,8 +69,20 @@ def show_menu():
 
 
 def run_application():
+    """
+    This functions runs the app.
+
+    It asks the user a command until it the app is left(command 4) and displays to the console whatever is required.
+    Command 1: the user can input a set of complex numbers.
+    Command 2: the current list/dict of complex numbers is displayed.
+    Command 3: 2 computations are done ( with outside functions ) and the results are displayed. There are 2
+    sub-options for this command, A/a and B/b .
+    Command 4: leaves the app.
+    Command 5: creates a list/dict with random complex numbers.
+    :return:
+    """
     show_menu()
-    complex_set = generate_random_complex_number_list(10)
+    complex_set = generate_random_complex_number_set(10)
     while True:
         # following gets the command
         while True:
@@ -92,13 +104,13 @@ def run_application():
                     length = int(input("Enter the list length(integer): "))
                     break
                 except ValueError:
-                    print("Invalid length!")
+                    print("Invalid length! ")
             complex_set.clear()
             if command == 1:
                 for index in range(length):
                     complex_set.append(input_number())
             else:
-                complex_set = generate_random_complex_number_list(length)
+                complex_set = generate_random_complex_number_set(length)
         if command == 2:
             display_set(complex_set)
         if command == 3:
@@ -111,13 +123,14 @@ def run_application():
                     if option == 'A' or option == 'B':
                         break
                     else:
-                        print("Invalid command!")
+                        print("Invalid command! ")
                 except ValueError:
-                    print("Invalid command!")
+                    print("Invalid command! ")
             if option == 'A':
                 result = []
                 result = longest_increasing_modulus_subsequence(0, [], [], complex_set, result)
-                print(f"The subsequence is {result} of length {len(result)}!")
+                print(f"The subsequence is: "
+                      f"{result} of length {len(result)}!")
             else:
                 result = longest_subarray_modulus(complex_set)
                 display_subarray_w_length(result)
