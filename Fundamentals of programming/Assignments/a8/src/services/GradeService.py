@@ -1,3 +1,5 @@
+import random
+
 from src.domain.Grade import Grade
 from src.exceptions.exceptions import *
 from src.repository.GradeRepository import GradeRepository
@@ -9,8 +11,9 @@ class GradeService:
     def __init__(self, grade_repository: GradeRepository, discipline_service: DisciplineService,
                  stud_service: StudentService):
         self.__grade_repository = grade_repository  # self.__grade_repository  is a DICT of grades
-        self.__discipline_serice = discipline_service
+        self.__discipline_service = discipline_service
         self.__student_service = stud_service
+        self.__generate_grades()
 
     def add(self, new_grade: Grade):
         """
@@ -21,8 +24,11 @@ class GradeService:
         """
         if not self.__student_service.find_id(new_grade.get_grade_student_id()):
             raise StudentOrDisciplineInexistingError('inexisting student or discipline')
-        if not self.__discipline_serice.find_id(new_grade.get_grade_discipline_id()):
+        if not self.__discipline_service.find_id(new_grade.get_grade_discipline_id()):
             raise StudentOrDisciplineInexistingError('inexisting student or discipline')
+        self.__grade_repository.add(new_grade)
+        self.__discipline_service.add_grade(new_grade)
+        self.__student_service.add_grade(new_grade)
 
     def delete(self, grade_id):
         """
@@ -33,11 +39,13 @@ class GradeService:
         """
         if not self.__student_service.find_id(grade_id[1]):
             raise StudentOrDisciplineInexistingError('inexisting student or discipline')
-        if not self.__discipline_serice.find_id(grade_id[0]):
+        if not self.__discipline_service.find_id(grade_id[0]):
             raise StudentOrDisciplineInexistingError('inexisting student or discipline')
+        # self.__student_service.delete(self.__student_service.get_student_by_id(grade_id[1]))
+        # self.__discipline_service.delete(self.__discipline_service.get_discipline_by_id(grade_id[0]))
+        self.__discipline_service.delete_grade(self.get_by_id(grade_id))
+        self.__student_service.delete_grade(self.get_by_id(grade_id))
         self.__grade_repository.delete(grade_id)
-        self.__student_service.delete(self.__student_service.get_student_by_id(grade_id[1]))
-        self.__discipline_serice.delete(self.__discipline_serice.get_discipline_by_id(grade_id[0]))
 
     def get_all(self):
         """
@@ -48,12 +56,11 @@ class GradeService:
         return self.__grade_repository.get_all()
 
     def get_by_id(self, grade_id):
-        if self.find_id(grade_id):
-            for grade in self.get_all():
-                if grade.get_id() == grade:
-                    return grade
-        else:
-            return False
+        for grade in self.get_all():
+            if grade.get_id() == grade_id:
+                return grade
+
+        return False
 
     def update(self, grade: Grade, new_grade: Grade):
         """
@@ -63,6 +70,8 @@ class GradeService:
         :return:
         """
         self.__grade_repository.update(grade, new_grade)
+        self.__discipline_service.update_grade(grade, new_grade)
+        self.__student_service.update_grade(grade, new_grade)
 
     def update_all(self, new_grade_repo: GradeRepository):
         """
@@ -96,3 +105,9 @@ class GradeService:
         :return: int, number of grades
         """
         return len(list(self.get_all().values()))
+
+    def __generate_grades(self):
+        for discipline in self.__discipline_service.get_all():
+            for student in self.__student_service.get_all():
+                grade = Grade(discipline.get_discipline_id(), student.get_student_id(), random.randint(1, 10))
+                self.add(grade)

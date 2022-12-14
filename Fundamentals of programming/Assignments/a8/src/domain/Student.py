@@ -1,3 +1,4 @@
+from src.domain.Grade import Grade
 from src.exceptions.exceptions import *
 
 
@@ -11,6 +12,7 @@ class Student:
             raise InvalidStudentAttribute('invalid attribute')
         self.__student_id = student_id
         self.__name = name
+        self.__all_grades = []
 
     """
     GETTERS AND SETTERS
@@ -41,3 +43,23 @@ class Student:
 
     def is_equal(self, other_student):
         return self.get_name() == other_student.get_name() and self.get_student_id() == other_student.get_student_id()
+
+    def add_grade(self, grade: Grade):
+        self.__all_grades.append(grade)
+
+    def delete_grade(self, grade: Grade):
+        self.__all_grades.remove(grade)
+
+    def update_grade(self, grade: Grade, new_grade: Grade):
+        for _grade in self.__all_grades:
+            if _grade == grade:
+                _grade = new_grade
+                return
+
+    def get_average_grade(self):
+        average = 0
+        total = 0
+        for grade in self.__all_grades:
+            total += 1
+            average += grade.get_grade_value()
+        return average / total

@@ -125,7 +125,7 @@ def run_grade_repository_tests():
         grade_repo.add(grade2)
     except ExistingEntityError as eee:
         assert str(eee) == 'existing grade'
-    assert (len(grade_repo.get_all()) == 2)
+    assert (len(grade_repo.get_all()) == 3)
     # ASSERT UPDATE AND FIND FUNCTION
     grade_value3 = 2
     grade3 = Grade(discipline_id1, student_id1, grade_value3)

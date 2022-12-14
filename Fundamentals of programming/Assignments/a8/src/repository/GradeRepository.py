@@ -19,8 +19,6 @@ class GradeRepository:
         :param new_grade:Grade
         :return:none
         """
-        if new_grade in self.__grade_repository:
-            raise ExistingEntityError('existing grade')
         self.__grade_repository.append(new_grade)
 
     def update(self, grade: Grade, new_grade: Grade):
@@ -47,14 +45,14 @@ class GradeRepository:
         """
         self.__grade_repository = copy.deepcopy(new_grade_repo)
 
-    def delete(self, grade: Grade):
+    def delete(self, grade_id):
         """
         Deletes grade that is in the repository.
 
-        :param grade: Grade
+        :param grade_id: grade_id
         :return: none
         """
-        gr = self.find(grade)
+        gr = self.find_id(grade_id)
         if gr:
             self.__grade_repository.remove(gr)
         else:

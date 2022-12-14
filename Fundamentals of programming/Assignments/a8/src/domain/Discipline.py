@@ -1,3 +1,4 @@
+from src.domain.Grade import Grade
 from src.exceptions.exceptions import InvalidDisciplineAttribute
 
 
@@ -11,6 +12,7 @@ class Discipline:
             raise InvalidDisciplineAttribute('invalid attribute')
         self.__discipline_id = discipline_id
         self.__name = name
+        self.__all_grades = []
 
     """
     GETTERS AND SETTERS
@@ -41,3 +43,27 @@ class Discipline:
 
     def is_equal(self, other_discipline):
         return self.get_name() == other_discipline.get_name() and self.get_discipline_id() == other_discipline.get_discipline_id()
+
+    """
+    GRADES
+    """
+
+    def add_grade(self, grade: Grade):
+        self.__all_grades.append(grade)
+
+    def delete_grade(self, grade: Grade):
+        self.__all_grades.remove(grade)
+
+    def update_grade(self, grade: Grade, new_grade: Grade):
+        for _grade in self.__all_grades:
+            if _grade == grade:
+                _grade = new_grade
+                return
+
+    def get_average_grade(self):
+        average = 0
+        total = 0
+        for grade in self.__all_grades:
+            total += 1
+            average += grade.get_grade_value()
+        return average / total

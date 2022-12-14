@@ -1,10 +1,15 @@
+import random
+
 from src.domain.Discipline import Discipline
+from src.domain.Grade import Grade
 from src.repository.DisciplineRepository import DisciplineRepository
 
 
 class DisciplineService:
     def __init__(self, discipline_repository: DisciplineRepository):
         self.__discipline_repository = discipline_repository
+        self.__generate_disciplines()
+        self.discipline_grades = []
 
     def add(self, new_discipline: Discipline):
         """
@@ -76,3 +81,35 @@ class DisciplineService:
 
     def get_discipline_by_id(self, disc_id):
         return self.__discipline_repository.get_discipline_by_id(disc_id)
+
+    def get_discipline_by_name(self, disc_name):
+        return self.__discipline_repository.get_discipline_by_name(disc_name)
+
+    def __generate_disciplines(self):
+        list_of_disciplines = ['Mathematics', 'English', 'Romanian', 'Informatics', 'History', 'Geography', 'Biology']
+        for i in range(1, 5):
+            while True:
+                try:
+                    new_discipline = Discipline(i, random.choice(list_of_disciplines))
+                    self.add(new_discipline)
+                    break
+                except:
+                    pass
+
+    def find_name(self, discipline_name):
+        return self.__discipline_repository.find_name(discipline_name)
+
+    def add_grade(self, grade: Grade):
+        for discipline in self.__discipline_repository.get_all():
+            if discipline.get_discipline_id() == grade.get_grade_discipline_id():
+                discipline.add_grade(grade)
+
+    def delete_grade(self, grade: Grade):
+        for discipline in self.__discipline_repository.get_all():
+            if discipline.get_discipline_id() == grade.get_grade_discipline_id():
+                discipline.delete_grade(grade)
+
+    def update_grade(self, grade: Grade, new_grade: Grade):
+        for discipline in self.__discipline_repository.get_all():
+            if discipline.get_discipline_id() == grade.get_grade_discipline_id():
+                discipline.update_grade(grade, new_grade)

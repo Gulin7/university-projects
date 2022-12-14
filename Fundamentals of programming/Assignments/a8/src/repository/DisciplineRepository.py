@@ -22,6 +22,9 @@ class DisciplineRepository:
         for discipline in self.__discipline_repository:
             if discipline.get_discipline_id() == new_discipline.get_discipline_id():
                 raise ExistingEntityError('existing discipline id')
+        for discipline in self.__discipline_repository:
+            if discipline.get_name() == new_discipline.get_name():
+                raise ExistingEntityError('existing discipline name')
         self.__discipline_repository.append(new_discipline)
 
     def update(self, discipline: Discipline, new_discipline: Discipline):
@@ -99,7 +102,7 @@ class DisciplineRepository:
         :return:
         """
         for discipline in self.__discipline_repository:
-            if discipline.get_discipline_id() == discipline_id:
+            if discipline.get_discipline_id() == int(discipline_id):
                 return discipline
         return False
 
@@ -116,6 +119,12 @@ class DisciplineRepository:
 
     def get_discipline_by_id(self, disc_id):
         for discipline in self.__discipline_repository:
-            if discipline.get_discipline_id() == disc_id:
+            if int(discipline.get_discipline_id()) == int(disc_id):
+                return discipline
+        raise InexistingEntityError('inexisting discipline')
+
+    def get_discipline_by_name(self, disc_name):
+        for discipline in self.__discipline_repository:
+            if discipline.get_name() == disc_name:
                 return discipline
         raise InexistingEntityError('inexisting discipline')

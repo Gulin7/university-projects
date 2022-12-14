@@ -22,6 +22,9 @@ class StudentRepository:
         for student in self.__student_repository:
             if student.get_student_id() == new_student.get_student_id():
                 raise ExistingEntityError('existing student id')
+        for student in self.__student_repository:
+            if student.get_name() == new_student.get_name():
+                raise ExistingEntityError('existing student name')
         self.__student_repository.append(new_student)
 
     def update(self, student: Student, new_student: Student):
@@ -112,6 +115,6 @@ class StudentRepository:
 
     def get_student_by_id(self, stud_id):
         for student in self.__student_repository:
-            if student.get_student_id() == stud_id:
+            if student.get_student_id() == int(stud_id):
                 return student
         raise InexistingEntityError('inexisting student')

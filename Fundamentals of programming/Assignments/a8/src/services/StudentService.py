@@ -1,3 +1,6 @@
+import random
+
+from src.domain.Grade import Grade
 from src.domain.Student import Student
 from src.exceptions.exceptions import *
 from src.repository.StudentRepository import StudentRepository
@@ -6,6 +9,7 @@ from src.repository.StudentRepository import StudentRepository
 class StudentService:
     def __init__(self, student_repository: StudentRepository):
         self.__student_repository = student_repository
+        self.__generate_students()
 
     def add(self, new_student: Student):
         """
@@ -108,3 +112,29 @@ class StudentService:
 
     def get_student_by_id(self, stud_id):
         return self.__student_repository.get_student_by_id(stud_id)
+
+    def __generate_students(self):
+        list_of_students = ['Tudor Grigorescu', 'Vlad Popescu', 'Oana Marcel', 'Razvan Pop', 'Narcis Mirth',
+                            'Viorel Manolache', 'David Seu', 'Bogdan Suciu', 'Erik Maidik']
+        for i in range(1, 5):
+            while True:
+                try:
+                    self.add(Student(i, random.choice(list_of_students)))
+                    break
+                except:
+                    pass
+
+    def add_grade(self, grade: Grade):
+        for student in self.__student_repository.get_all():
+            if student.get_student_id() == grade.get_grade_student_id():
+                student.add_grade(grade)
+
+    def delete_grade(self, grade: Grade):
+        for student in self.__student_repository.get_all():
+            if student.get_student_id() == grade.get_grade_student_id():
+                student.delete_grade(grade)
+
+    def update_grade(self, grade: Grade, new_grade: Grade):
+        for student in self.__student_repository.get_all():
+            if student.get_student_id() == grade.get_grade_student_id():
+                student.update_grade(grade, new_grade)
