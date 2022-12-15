@@ -1,7 +1,10 @@
+from dataclasses import dataclass
+
 from src.domain.Grade import Grade
 from src.exceptions.exceptions import *
 
 
+@dataclass
 class Student:
     def __init__(self, student_id, name):
         try:

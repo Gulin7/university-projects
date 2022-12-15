@@ -1,6 +1,9 @@
+from dataclasses import dataclass
+
 from src.exceptions.exceptions import *
 
 
+@dataclass
 class Grade:
     def __init__(self, discipline_id, student_id, grade_value):
         try:

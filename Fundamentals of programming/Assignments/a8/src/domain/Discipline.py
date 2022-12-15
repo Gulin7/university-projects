@@ -1,7 +1,10 @@
+from dataclasses import dataclass
+
 from src.domain.Grade import Grade
 from src.exceptions.exceptions import InvalidDisciplineAttribute
 
 
+@dataclass
 class Discipline:
     def __init__(self, discipline_id, name):
         try:
