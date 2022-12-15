@@ -47,7 +47,7 @@ class Console:
                         'search discipline name', 'failing students', 'top students', 'disciplines with grades',
                         'display grades']
 
-        command = input('👑 Enter your command senpai🍙🎌: ').lower()
+        command = input('👑 Enter your command senpai🍙🎌: ').lower().lstrip(' ').rstrip(' ')
         if command not in all_commands:
             raise InvalidInput('invalid command')
         return command
@@ -215,7 +215,7 @@ class Console:
 
     def give_grade(self):
         try:
-            stud_id = int(input('Enter student id'))
+            stud_id = int(input('Enter student id: '))
             discipline_id = int(input('Enter discipline id: '))
             grade_value = int(input('Enter  grade_value: '))
             grade = Grade(discipline_id, stud_id, grade_value)
@@ -230,43 +230,33 @@ class Console:
             print('Invalid command! 👎')
 
     def search_student_id(self):
-        while True:
-            try:
-                student_id = int(input('Enter a student id: '))
-                if student_id < 0:
-                    print('Invalid student id!')
-                else:
-                    break
-            except ValueError:
-                print('Invalid student id!')
-        print(self.__student_service.find_id(student_id))
+        try:
+            student_id = int(input('Enter a student id: '))
+            if student_id < 0:
+                raise InexistingEntityError('student does not exist 👎')
+            else:
+                student = self.__student_service.get_by_id(student_id)
+                print(student)
+        except ValueError:
+            print('Invalid student id!')
+        except InexistingEntityError as iee:
+            print(iee)
 
     def search_student_name(self):
         try:
             student_name = input('Enter a name: ')
-            student = self.__student_service.find_name(student_name)
-            if student:
-                print(student)
-            else:
-                print('Student not found. 🙈')
+            student = self.__student_service.get_by_name(student_name)
+            print(student)
         except InexistingEntityError as iee:
             print(iee)
 
     def search_discipline_id(self):
-        while True:
-            try:
-                disc_id = int(input('Enter discipline id: '))
-                if disc_id < 0:
-                    print('Invalid discipline id!')
-                else:
-                    discipline = self.__discipline_service.get_discipline_by_id(disc_id)
-                    if discipline:
-                        print(discipline)
-                    else:
-                        print('Inexisting discipline!')
-                    break
-            except ValueError:
-                print('Invalid discipline id!')
+        try:
+            disc_id = int(input('Enter discipline id: '))
+            discipline = self.__discipline_service.get_discipline_by_id(disc_id)
+            print(discipline)
+        except ValueError:
+            print('Invalid discipline id!')
 
     def search_discipline_name(self):
         discipline_name = input('Enter discipline name: ')
@@ -290,7 +280,15 @@ class Console:
             print(student)
 
     def top_students(self):
-        pass
+        list_of_students = []
+        for grade in self.__grade_service.get_all():
+            stud_id = grade.get_grade_student_id()
+            student = self.__student_service.get_by_id(stud_id)
+            if student not in list_of_students:
+                list_of_students.append(student)
+        list_of_students.sort(key=lambda x: x.get_average_grade(), reverse=True)
+        for student in list_of_students:
+            print(f"{student} has a grade average of: {student.get_average_grade()}")
 
     def disciplines_with_grades(self):
         list_of_disciplines = []
@@ -299,7 +297,9 @@ class Console:
             disc = self.__discipline_service.find_id(disc_id)
             if disc not in list_of_disciplines:
                 list_of_disciplines.append(disc)
-        # todo: sort by grade descending ( each discipline has an average )
+        list_of_disciplines.sort(key=lambda x: x.get_average_grade(), reverse=True)
+        for discipline in list_of_disciplines:
+            print(f"{discipline} average grade is: {discipline.get_average_grade()}")
 
     def display_grades(self):
         for grade in self.__grade_service.get_all():
