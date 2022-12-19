@@ -10,8 +10,6 @@
         <root foldername="C:\Coding_projects\University-Projects\ASC\lab3" />
     </FileBrowser>
     <History nbMaxFile="10" inSubMenu="no" customLength="-1">
-        <File filename="D:\Code\university-projects\ASC\lab4\pr7-lab4.asm" />
-        <File filename="C:\Coding_projects\University-Projects\ASC\lab3\7_unsigned_add\7_u_a.asm" />
         <File filename="C:\Coding_projects\University-Projects\ASC\lab3\7_signed_add\7_s_a.asm" />
         <File filename="C:\Coding_projects\University-Projects\ASC\lab3\7_signed_mul\7_s_m.asm" />
         <File filename="C:\Coding_projects\University-Projects\ASC\lab3\7_unsigned_mul\7_u_m.asm" />
@@ -20,6 +18,7 @@
         <File filename="D:\Code\university-projects\Computer Science Arhitecture\lab8\text_file_op_7\text_file_op.asm" />
         <File filename="D:\Code\university-projects\Computer Science Arhitecture\lab8\function_calls_7\function_calls.asm" />
         <File filename="D:\Code\university-projects\Computer Science Arhitecture\lab8\ex7.asm" />
+        <File filename="C:\Coding_projects\University-Projects\Computer Science Arhitecture\asm_tools\nasm\example_sum.asm" />
     </History>
     <GUIConfigs>
         <GUIConfig name="ToolBar" visible="yes">standard</GUIConfig>
@@ -54,7 +53,7 @@
         <GUIConfig name="ScintillaGlobalSettings" enableMultiSelection="no" />
         <GUIConfig name="openSaveDir" value="0" defaultDirPath="" />
         <GUIConfig name="titleBar" short="no" />
-        <GUIConfig name="stylerTheme" path="D:\Code\university-projects\Computer Science Arhitecture\asm_tools\npp\stylers.xml" />
+        <GUIConfig name="stylerTheme" path="C:\Coding_projects\University-Projects\Computer Science Arhitecture\asm_tools\npp\stylers.xml" />
         <GUIConfig name="wordCharList" useDefault="yes" charsAdded="" />
         <GUIConfig name="delimiterSelection" leftmostDelimiter="40" rightmostDelimiter="41" delimiterSelectionOnEntireDocument="no" />
         <GUIConfig name="multiInst" setting="0" />
@@ -62,7 +61,7 @@
         <GUIConfig name="searchEngine" searchEngineChoice="2" searchEngineCustom="" />
         <GUIConfig name="SmartHighLight" matchCase="no" wholeWordOnly="yes" useFindSettings="no" onAnotherView="no">yes</GUIConfig>
         <GUIConfig name="ScintillaPrimaryView" lineNumberMargin="show" bookMarkMargin="show" indentGuideLine="show" folderMarkStyle="box" lineWrapMethod="aligned" currentLineHilitingShow="show" scrollBeyondLastLine="no" disableAdvancedScrolling="no" wrapSymbolShow="hide" Wrap="yes" borderEdge="yes" edge="no" edgeNbColumn="80" zoom="5" zoom2="0" whiteSpaceShow="hide" eolShow="hide" borderWidth="2" smoothFont="no" />
-        <GUIConfig name="DockingManager" leftWidth="200" rightWidth="200" topHeight="200" bottomHeight="246">
+        <GUIConfig name="DockingManager" leftWidth="200" rightWidth="200" topHeight="200" bottomHeight="199">
             <PluginDlg pluginName="AsmPlugin.dll" id="2" curr="3" prev="-1" isVisible="yes" />
             <PluginDlg pluginName="Notepad++::InternalFunction" id="44085" curr="0" prev="-1" isVisible="no" />
             <ActiveTabs cont="0" activeTab="-1" />
