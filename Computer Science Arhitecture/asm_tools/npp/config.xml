@@ -10,15 +10,16 @@
         <root foldername="C:\Coding_projects\University-Projects\ASC\lab3" />
     </FileBrowser>
     <History nbMaxFile="10" inSubMenu="no" customLength="-1">
-        <File filename="C:\Coding_projects\University-Projects\ASC\lab3\7_signed_add\7_s_a.asm" />
-        <File filename="C:\Coding_projects\University-Projects\ASC\lab3\7_signed_mul\7_s_m.asm" />
-        <File filename="C:\Coding_projects\University-Projects\ASC\lab3\7_unsigned_mul\7_u_m.asm" />
         <File filename="C:\Coding_projects\University-Projects\ASC\lab4\pr7-lab4.asm" />
         <File filename="C:\Coding_projects\University-Projects\ASC\lab_work_8\labwork.asm" />
         <File filename="D:\Code\university-projects\Computer Science Arhitecture\lab8\text_file_op_7\text_file_op.asm" />
         <File filename="D:\Code\university-projects\Computer Science Arhitecture\lab8\function_calls_7\function_calls.asm" />
         <File filename="D:\Code\university-projects\Computer Science Arhitecture\lab8\ex7.asm" />
         <File filename="C:\Coding_projects\University-Projects\Computer Science Arhitecture\asm_tools\nasm\example_sum.asm" />
+        <File filename="D:\Code\university-projects\Computer Science Arhitecture\for_practical_exam\lab_8_pr_34.asm" />
+        <File filename="D:\Code\university-projects\Computer Science Arhitecture\for_practical_exam\lab_8_pr_44.asm" />
+        <File filename="D:\Code\university-projects\Computer Science Arhitecture\for_practical_exam\lab_8_pr_35.asm" />
+        <File filename="D:\Code\university-projects\Computer Science Arhitecture\for_practical_exam\lab8_pr_12.asm" />
     </History>
     <GUIConfigs>
         <GUIConfig name="ToolBar" visible="yes">standard</GUIConfig>
@@ -53,7 +54,7 @@
         <GUIConfig name="ScintillaGlobalSettings" enableMultiSelection="no" />
         <GUIConfig name="openSaveDir" value="0" defaultDirPath="" />
         <GUIConfig name="titleBar" short="no" />
-        <GUIConfig name="stylerTheme" path="C:\Coding_projects\University-Projects\Computer Science Arhitecture\asm_tools\npp\stylers.xml" />
+        <GUIConfig name="stylerTheme" path="D:\Code\university-projects\Computer Science Arhitecture\asm_tools\npp\stylers.xml" />
         <GUIConfig name="wordCharList" useDefault="yes" charsAdded="" />
         <GUIConfig name="delimiterSelection" leftmostDelimiter="40" rightmostDelimiter="41" delimiterSelectionOnEntireDocument="no" />
         <GUIConfig name="multiInst" setting="0" />
