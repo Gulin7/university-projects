@@ -63,3 +63,4 @@ class MemoryRepo:
         if expense not in self._repo:
             raise ValueError("inexisting entity!")
         self._repo.remove(expense)
+
