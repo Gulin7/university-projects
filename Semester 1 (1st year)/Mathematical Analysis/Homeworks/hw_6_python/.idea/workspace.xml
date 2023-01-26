@@ -1,0 +1,1057 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c3702dc3-d8fc-4aa5-871b-8848d58d74fc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../C Programming/for_test/Prog_C.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../C Programming/hw3/categ1_problem1/bin/Debug/categ1_problem1.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../C Programming/hw3/categ1_problem1/categ1_problem1.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../C Programming/hw3/categ1_problem1/categ1_problem1.depend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../C Programming/hw3/categ1_problem1/categ1_problem1.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../C Programming/hw3/categ1_problem1/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../C Programming/hw3/categ1_problem1/obj/Debug/main.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../C Programming/hw3/categ1_problem2/bin/Debug/categ1_problem2.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../C Programming/hw3/categ1_problem2/categ1_problem2.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../C Programming/hw3/categ1_problem2/categ1_problem2.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../C Programming/hw3/categ1_problem2/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../C Programming/hw3/categ1_problem2/obj/Debug/main.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../C Programming/in_teams/ex1.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../C Programming/in_teams/ex1.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../C Programming/in_teams/ex2.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../C Programming/in_teams/ex2.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../C Programming/in_teams/ex3.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../C Programming/in_teams/ex3.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../C Programming/in_teams/ex4.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../C Programming/in_teams/ex4.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../C Programming/lab1/ex2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../C Programming/lab1/ex2.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../C Programming/lab1/hello.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../C Programming/lab1/hello.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../C Programming/lab2/ex1.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../C Programming/lab2/ex1.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../C Programming/lab2/print.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../C Programming/lab2/print.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../C Programming/lab2/printf2.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../C Programming/lab2/printf2.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../C Programming/lab3/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../C Programming/lab3/array.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../C Programming/lab3/array.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../C Programming/lab3/array1.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../C Programming/lab3/switch.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../C Programming/lab3/switch.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../C Programming/lab5/exercise1.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../C Programming/lab5/exercise1.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../C Programming/lab5/factorial.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../C Programming/lab5/factorial.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computational Logic/optional_hw_12dec/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computational Logic/optional_hw_12dec/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computational Logic/optional_hw_12dec/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computational Logic/optional_hw_12dec/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computational Logic/optional_hw_12dec/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computational Logic/optional_hw_12dec/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computational Logic/optional_hw_12dec/.idea/optional_hw_12dec.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computational Logic/optional_hw_12dec/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computational Logic/optional_hw_12dec/root/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computational Logic/optional_hw_12dec/root/console/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computational Logic/optional_hw_12dec/root/console/console.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computational Logic/optional_hw_12dec/root/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computational Logic/optional_hw_12dec/root/services/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computational Logic/optional_hw_12dec/root/services/conversions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computational Logic/optional_hw_12dec/root/services/functions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computational Logic/optional_hw_12dec/root/services/rapid_conversions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computational Logic/optional_hw_12dec/root/tests/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computational Logic/optional_hw_12dec/root/tests/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/2022_2s_Complement_Analysis.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/2022_Location_counter_and_pointer_arithmetic.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/CERINTE.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/1/1.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/1/1.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/1/1.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/1/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/10/10.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/10/10.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/10/10.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/10/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/11/11.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/11/11.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/11/11.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/11/ana.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/12/12.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/12/12.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/12/12.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/12/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/13/13.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/13/13.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/13/13.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/14/14_copie.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/14/14_copie.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/14/14_copie.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/14/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/15/15.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/15/15.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/15/15.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/15/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/16/16.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/16/16.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/16/16.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/16/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/17/17.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/17/17.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/17/17.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/17/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/18/18.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/18/18.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/18/18.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/18/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/2/2.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/2/2.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/2/2.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/2/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/21/21.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/21/21.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/21/21.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/21/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/3/3.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/3/3.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/3/3.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/4/4.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/4/4.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/4/4.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/5/5.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/5/5.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/5/5.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/6/6.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/6/6.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/6/6.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/6/citire_fisier_afisare_ecran.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/6/citire_fisier_afisare_ecran.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/6/citire_fisier_afisare_ecran.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/6/numere.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/7/7.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/7/7.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/7/7.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/7/bun.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/7/bun.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/7/bun.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/7/iesire.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/7/ioana.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/7/ioana.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/7/ioana.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/7/lab_clasa/clasa.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/7/lab_clasa/clasa.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/7/lab_clasa/clasa.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/7/lab_clasa/text.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/8/8.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/8/8.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/8/8.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/8/AbCdEf.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/9/9.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/9/9.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/9/9.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/9/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/REZOLVARI/9/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/citire_afisare.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN PRACTIC/greseli.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/1/cerinta.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/1/program/main.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/1/program/main.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/1/program/main.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/1/rezolvare.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/2/cerinta.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/2/program/main.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/2/program/main.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/2/program/main.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/2/rezolvare.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/3/cerinta.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/3/program/3.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/3/program/3.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/3/program/3.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/3/program2.0/ALINK.EXE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/3/program2.0/a.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/3/program2.0/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/3/program2.0/a.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/3/program2.0/a.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/3/program2.0/b.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/3/program2.0/b.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/3/program2.0/b.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/3/program2.0/nasm.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/3/rezolvare.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/4/cerinta.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/4/program/4.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/4/program/4.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/4/program/4.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/4/program2.0/second_try.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/4/program2.0/second_try.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/4/program2.0/second_try.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/4/rezolvare.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/5/cerinta.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/5/program/5.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/5/program/5.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/5/program/5.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/6/cerinta.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/6/program/ALINK.EXE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/6/program/a.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/6/program/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/6/program/a.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/6/program/a.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/6/program/b.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/6/program/b.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/6/program/nasm.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/6/rezolvare.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/examene vechi/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/examene vechi/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/examene vechi/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/examene vechi/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/examene vechi/5.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/ASC/EXAMEN SESIUNE/examene vechi/6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/CarteVancea.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/Cursuri/ASC 1.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/Cursuri/ASC 2.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/Cursuri/ASC 3 COLOR.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/Cursuri/ASC 4.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/Cursuri/ASC 5.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/Cursuri/ASC 6.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/Cursuri/ASC 7.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/Cursuri/ASC 8.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/Cursuri/ASC 9.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/Cursuri/ASC CURS 11.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/Cursuri/ASC CURS 12.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/Cursuri/ASC-Curs-1.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/1/cerinta.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/1/program/main.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/1/program/main.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/1/program/main.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/1/rezolvare.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/2/cerinta.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/2/program/main.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/2/program/main.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/2/program/main.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/2/rezolvare.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/3/cerinta.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/3/program/3.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/3/program/3.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/3/program/3.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/3/program2.0/ALINK.EXE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/3/program2.0/a.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/3/program2.0/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/3/program2.0/a.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/3/program2.0/a.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/3/program2.0/b.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/3/program2.0/b.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/3/program2.0/b.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/3/program2.0/nasm.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/3/rezolvare.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/4/cerinta.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/4/program/4.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/4/program/4.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/4/program/4.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/4/program2.0/second_try.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/4/program2.0/second_try.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/4/program2.0/second_try.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/4/rezolvare.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/5/cerinta.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/5/program/5.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/5/program/5.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/5/program/5.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/6/cerinta.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/6/program/ALINK.EXE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/6/program/a.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/6/program/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/6/program/a.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/6/program/a.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/6/program/b.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/6/program/b.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/6/program/nasm.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/6/rezolvare.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/examene vechi/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/examene vechi/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/examene vechi/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/examene vechi/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/examene vechi/5.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/EXAMEN SESIUNE/examene vechi/6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/Instruction Prefix Bytes_EN.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/JMP instruction analysis. NEAR and  FAR jumps.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/Lectii/Ch2/2.6.1_2.6.3.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/Lectii/Ch2/2.6.5.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/Lectii/Ch2/Address registers and address computation.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/Lectii/Ch2/Rezumat_27_oct.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/Lectii/Ch3/Bitwise_operators.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/Lectii/Ch3/Ch3.1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/Lectii/Ch3/Data_definition_directives.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/Lectii/Ch3/Location_Counter.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/Lectii/Ch3/Pointer_arithmetic.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/Lectii/Ch3/Type_operators&amp;operands_DT.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/Lectii/Ch4/Conditional_jumps_instructions.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/Lectii/Ch4/Exemple_comentate.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/Lectii/Ch4/Instructions_part_II.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/Lectii/Ch4/NASM string constants.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/Lectii/Ch4/Short_JMP_vs_Long_JMP.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/Lectii/Ch4/XLAT_and_LEA_instructions.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/ASC/Overflowing_concept_analysis.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/LAB/Lab 2_221017_114304.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/Lectures/2022_2s_Complement_Analysis.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/Lectures/Address registers and address computation.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/Lectures/Chapter_3_Basic_elem_of_assembly_language/Basic_Elements_of_Assembly_Language.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/Lectures/Chapter_3_Basic_elem_of_assembly_language/Bitwise_operators.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/Lectures/Chapter_3_Basic_elem_of_assembly_language/Data_definition_directives.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/Lectures/Chapter_3_Basic_elem_of_assembly_language/Location_Counter.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/Lectures/Chapter_3_Basic_elem_of_assembly_language/Offset_prefixing_examples.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/Lectures/Chapter_3_Basic_elem_of_assembly_language/Part_I_II_Basic_Elements_of_Assembly_Language.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/Lectures/Chapter_3_Basic_elem_of_assembly_language/Pointer_arithmetic.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/Lectures/Chapter_3_Basic_elem_of_assembly_language/Type_operators&amp;operands_DT.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/Lectures/Chapter_4_Instructions/Conditional_jumps_instructions.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/Lectures/Chapter_4_Instructions/Instructions_part_II.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/Lectures/Chapter_4_Instructions/NASM string constants.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/Lectures/Chapter_4_Instructions/Short_JMP_vs_Long_JMP.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/Lectures/Chapter_4_Instructions/XLAT_and_LEA_instructions.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/Lectures/Conversions_classification.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/Lectures/December_22/2022_Location_counter_and_pointer_arithmetic.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/Lectures/December_22/JMP instruction analysis. NEAR and  FAR jumps.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/Lectures/Exemple_comentate.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/Lectures/Instruction Prefix Bytes_EN.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/Lectures/Machine_instr_Representation/Addressing Method Codes.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/Lectures/Machine_instr_Representation/Coloana_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/Lectures/Machine_instr_Representation/Intel x86 Assembler Instruction Set Opcode Table.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/Lectures/Machine_instr_Representation/Machine_instr_representation_Offset_spec_formula.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/Lectures/Machine_instr_Representation/Rezumat_27_oct.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/Lectures/Machine_instr_Representation/SIB_Byte_values.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/Lectures/Machine_instr_Representation/modr_16bit_intel_addressing_form.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/Lectures/Multimodule Programming/Call_entry_exit_code generation  responsabilities.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/Lectures/Multimodule Programming/Call_entry_exit_code.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/Lectures/Multimodule Programming/Entry_phase.PDF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/Lectures/Multimodule Programming/Multimodule_programming_part1.ppsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/Lectures/Multimodule Programming/Multimodule_programming_part2.ppsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/Lectures/Multimodule Programming/Volatile vs nonvolatile  resources.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/Lectures/Overflowing_concept_analysis.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/Lectures/v3_Registers_and_Flags_of_80x86_Architecture.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/nasm/ALINK.EXE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/nasm/ALINK.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/nasm/BOOKMARK.DLL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/nasm/Cmdline.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/nasm/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/nasm/OLLYDBG.EXE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/nasm/OLLYDBG.HLP" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/nasm/PSAPI.DLL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/nasm/Uninstall.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/nasm/build_nasm.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/nasm/dbghelp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/nasm/example.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/nasm/example.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/nasm/example.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/nasm/example.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/nasm/example_sum.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/nasm/example_sum.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/nasm/history.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/nasm/license.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/nasm/nasm.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/nasm/nasm.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/nasm/nasmpath.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/nasm/ndisasm.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/nasm/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/nasm/register.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/nasm/rtn.RC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/nasm/rtn.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/nasm/rtn.res" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/nasm/run_nasm.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/nasm/template.mac" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/npp/Plugins/AsmPlugin.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/npp/Plugins/Config/asmPlugin.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/npp/Plugins/Config/asm_template.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/npp/Plugins/Config/asm_template_ro.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/npp/SciLexer.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/npp/change.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/npp/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/npp/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/npp/contextMenu.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/npp/doLocalConf.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/npp/exemplu.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/npp/langs.model.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/npp/langs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/npp/license.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/npp/notepad++.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/npp/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/npp/session.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/npp/session.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/npp/shortcuts.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/npp/stylers.model.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/npp/stylers.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/ollydbg/6.udd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/ollydbg/6_001.udd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/ollydbg/6_002.udd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/ollydbg/6_003.udd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/ollydbg/7_s_a.udd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/ollydbg/7_s_a_001.udd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/ollydbg/7_s_m.udd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/ollydbg/7_s_m_001.udd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/ollydbg/7_u_a.udd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/ollydbg/7_u_a_001.udd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/ollydbg/7_u_a_002.udd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/ollydbg/7_u_m.udd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/ollydbg/7_u_m_001.udd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/ollydbg/KERNEL32.udd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/ollydbg/KERNELBASE.udd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/ollydbg/apphelp.udd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/ollydbg/function_calls.udd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/ollydbg/help.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/ollydbg/lab1.udd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/ollydbg/lab2_mul_set2_pr9.udd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/ollydbg/lab_8_pr_34.udd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/ollydbg/lab_8_pr_44.udd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/ollydbg/msvcrt.udd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/ollydbg/new 1.udd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/ollydbg/new 1_001.udd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/ollydbg/ntdll.udd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/ollydbg/ollydbg.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/ollydbg/ollydbg.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/ollydbg/pr7-lab4.udd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/ollydbg/pr7_lab5.udd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/ollydbg/s1_6_a.udd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/ollydbg/s1_6_a_001.udd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/ollydbg/s1_6_m.udd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/ollydbg/s2_21_m.udd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/ollydbg/s2_30_m.udd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/ollydbg/s2_6_a.udd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/ollydbg/s2_6_a_001.udd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/ollydbg/s2_6_m.udd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/ollydbg/s2_6_m_001.udd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/ollydbg/set1_6_mul.udd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/ollydbg/testing_bitwise_op.udd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/asm_tools/ollydbg/text_file_op_3.udd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/for_practical_exam/lab8_pr_12.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/for_practical_exam/lab8_pr_12.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/for_practical_exam/lab8_pr_12.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/for_practical_exam/lab_8_pr_34.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/for_practical_exam/lab_8_pr_34.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/for_practical_exam/lab_8_pr_34.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/for_practical_exam/lab_8_pr_35.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/for_practical_exam/lab_8_pr_44.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/for_practical_exam/lab_8_pr_44.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/for_practical_exam/lab_8_pr_44.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/for_practical_exam/lab_8_pr_59.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/for_practical_exam/lab_8_pr_59.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/for_practical_exam/lab_8_pr_59.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/for_practical_exam/problem34lab8.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/for_practical_exam/problem35lab8.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/for_practical_exam/problem44lab8.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/for_practical_exam/suciu_te_iubesc_mult.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab11/Lab 11/ALINK.EXE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab11/Lab 11/alink" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab11/Lab 11/check_big_case.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab11/Lab 11/check_big_case.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab11/Lab 11/check_small_case.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab11/Lab 11/check_small_case.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab11/Lab 11/main.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab11/Lab 11/main.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab11/Lab 11/main.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab11/Lab 11/nasm.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab12/lab12/check_big_case.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab12/lab12/check_big_case.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab12/lab12/check_small_case.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab12/lab12/check_small_case.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab12/lab12/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab12/lab12/main.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab12/lab12/main.ilk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab12/lab12/main.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab12/lab12/main.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab12/lab12/nasm.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab2/add_sub/set1_6/s1_6_a.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab2/add_sub/set1_6/s1_6_a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab2/add_sub/set1_6/s1_6_a.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab2/add_sub/set1_6/s1_6_a.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab2/add_sub/set2_6/s2_6_a.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab2/add_sub/set2_6/s2_6_a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab2/add_sub/set2_6/s2_6_a.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab2/lab2_notes.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab2/mul_div/set1_p6/s1_6_m.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab2/mul_div/set1_p6/s1_6_m.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab2/mul_div/set1_p6/s1_6_m.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab2/mul_div/set2_p21/s2_21_m.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab2/mul_div/set2_p21/s2_21_m.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab2/mul_div/set2_p21/s2_21_m.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab2/mul_div/set2_p30/s2_30_m.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab2/mul_div/set2_p30/s2_30_m.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab2/mul_div/set2_p30/s2_30_m.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab2/mul_div/set2_p6/s2_6_m.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab2/mul_div/set2_p6/s2_6_m.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab2/mul_div/set2_p6/s2_6_m.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab2/mul_div/set2_p9/set2_p9.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab2/simple/6/6.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab2/simple/6/6.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab2/simple/6/6.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab3/7_signed_add/7_s_a.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab3/7_signed_add/7_s_a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab3/7_signed_add/7_s_a.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab3/7_signed_mul/7_s_m.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab3/7_signed_mul/7_s_m.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab3/7_signed_mul/7_s_m.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab3/7_unsigned_add/7_u_a.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab3/7_unsigned_add/7_u_a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab3/7_unsigned_add/7_u_a.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab3/7_unsigned_mul/7_u_m.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab3/7_unsigned_mul/7_u_m.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab3/7_unsigned_mul/7_u_m.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab3/7_unsigned_mul/7_u_m.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab3/problems.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab4/pr7-lab4.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab4/pr7-lab4.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab4/pr7-lab4.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab5/pr7_lab5.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab5/pr7_lab5.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab5/pr7_lab5.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab6/new 1.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab6/new 1.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab6/new 1.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab8/ex7.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab8/function_calls_7.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab8/function_calls_7/function_calls.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab8/function_calls_7/function_calls.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab8/function_calls_7/function_calls.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab8/text_file_7.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab8/text_file_7/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab8/text_file_7/text_file_operations_ex7.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab8/text_file_7/text_file_operations_ex7.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab8/text_file_7/text_file_operations_ex7.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab8/text_file_op_3/input.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab8/text_file_op_3/text_file_op_3.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab8/text_file_op_3/text_file_op_3.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab8/text_file_op_3/text_file_op_3.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab8/text_file_op_7/given_file.txt.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab8/text_file_op_7/output_file.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab8/text_file_op_7/text_file_op.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab8/text_file_op_7/text_file_op.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab8/text_file_op_7/text_file_op.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/lab_work_8/labwork.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/limit_testing/testing_bitwise_op.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/limit_testing/testing_bitwise_op.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/limit_testing/testing_bitwise_op.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/limit_testing/testing_bitwise_op.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/summary/2-complement.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/summary/2complement2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/summary/Bitwise_operations.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/summary/Flags.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/summary/Flags2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/summary/Modular_programming.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/summary/Modular_programming_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/summary/Overflow.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/summary/Overflow2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Computer Science Arhitecture/summary/Registers.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/.idea/Assignment 1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/assignement/p1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/assignement/p1/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/assignement/p1/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/assignement/p1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/assignement/p1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/assignement/p1/.idea/p1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/assignement/p1/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/assignement/p2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/assignement/p2/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/assignement/p2/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/assignement/p2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/assignement/p2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/assignement/p2/.idea/p2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/assignement/p2/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/assignement/p3/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/assignement/p3/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/assignement/p3/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/assignement/p3/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/assignement/p3/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/assignement/p3/.idea/p3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/assignement/p3/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/assignement/problems.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/assignment 1/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/assignment 1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/assignment 1/.idea/a1-Gulin7.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/assignment 1/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/assignment 1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/assignment 1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/assignment 1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/assignment 1/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/assignment 1/p1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/assignment 1/p2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/assignment 1/p3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/exercises.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set1/set1p1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set1/set1p1/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set1/set1p1/.idea/A1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set1/set1p1/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set1/set1p1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set1/set1p1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set1/set1p1/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set1/set1p2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set1/set1p2/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set1/set1p2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set1/set1p2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set1/set1p2/.idea/set1p2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set1/set1p2/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set1/set1p3/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set1/set1p3/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set1/set1p3/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set1/set1p3/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set1/set1p3/.idea/set1p3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set1/set1p3/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set1/set1p4/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set1/set1p4/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set1/set1p4/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set1/set1p4/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set1/set1p4/.idea/set1p4.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set1/set1p4/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set1/set1p5/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set1/set1p5/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set1/set1p5/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set1/set1p5/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set1/set1p5/.idea/set1p5.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set1/set1p5/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set2/set2p10/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set2/set2p10/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set2/set2p10/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set2/set2p10/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set2/set2p10/.idea/set2p10.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set2/set2p10/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set2/set2p10/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set2/set2p11/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set2/set2p11/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set2/set2p11/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set2/set2p11/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set2/set2p11/.idea/set2p11.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set2/set2p11/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set2/set2p6/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set2/set2p6/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set2/set2p6/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set2/set2p6/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set2/set2p6/.idea/set2p6.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set2/set2p6/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set2/set2p7/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set2/set2p7/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set2/set2p7/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set2/set2p7/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set2/set2p7/.idea/set2p7.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set2/set2p7/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set2/set2p8/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set2/set2p8/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set2/set2p8/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set2/set2p8/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set2/set2p8/.idea/set2p8.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set2/set2p8/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set2/set2p9/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set2/set2p9/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set2/set2p9/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set2/set2p9/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set2/set2p9/.idea/set2p9.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set2/set2p9/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set3/set3p12/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set3/set3p12/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set3/set3p12/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set3/set3p12/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set3/set3p12/.idea/set3p12.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set3/set3p12/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set3/set3p13/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set3/set3p13/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set3/set3p13/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set3/set3p13/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set3/set3p13/.idea/set3p13.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set3/set3p13/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set3/set3p14/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set3/set3p14/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set3/set3p14/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set3/set3p14/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set3/set3p14/.idea/set3p14.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set3/set3p14/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set3/set3p15/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set3/set3p15/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set3/set3p15/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set3/set3p15/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set3/set3p15/.idea/set3p15.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 1/set3/set3p15/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 2/.idea/A2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 2/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 2/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 2/functions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 2/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 2/menu.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 3/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 3/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 3/.idea/a3-Gulin7.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 3/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 3/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 3/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 3/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 3/Comb_sort_complexity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 3/Insert_sort_complexity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 3/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 3/functions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 3/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 3/menu.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 4/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 4/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 4/.idea/a4-Gulin7.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 4/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 4/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 4/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 4/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 4/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 4/assignment 4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 4/functions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 4/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 5/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 5/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 5/.idea/a5-Gulin7.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 5/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 5/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 5/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 5/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 5/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 5/problems" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 5/src/functions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 5/src/program.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 5/src/ui.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 6/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 6/.idea/Assignment 6.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 6/.idea/a6-Gulin7.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 6/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 6/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 6/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 6/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 6/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 6/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 6/a6-ex.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 6/entities.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 6/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 6/operations.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 6/src/a6-ex.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 6/src/entities.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 6/src/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 6/src/operations.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 6/src/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 6/src/ui.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 6/ui.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 7/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 7/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 7/.idea/a7-Gulin7.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 7/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 7/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 7/.idea/dataSources/f6e470ba-e8bf-404b-ad00-c2c3a2394dc1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 7/.idea/dataSources/f6e470ba-e8bf-404b-ad00-c2c3a2394dc1/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 7/.idea/dataSources/f6e470ba-e8bf-404b-ad00-c2c3a2394dc1/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 7/.idea/dataSources/f6e470ba-e8bf-404b-ad00-c2c3a2394dc1/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 7/.idea/dataSources/f6e470ba-e8bf-404b-ad00-c2c3a2394dc1/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 7/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 7/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 7/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 7/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 7/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 7/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 7/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 7/how to.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 7/src/BinaryFileRepo.pickle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 7/src/JsonRepo.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 7/src/TextFileRepo.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 7/src/data/expenses" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 7/src/domain/Expense.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 7/src/domain/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 7/src/infrastructure/BinaryFileRepo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 7/src/infrastructure/JsonRepo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 7/src/infrastructure/MemoryRepo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 7/src/infrastructure/SQLRepo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 7/src/infrastructure/TextFileRepo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 7/src/infrastructure/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 7/src/infrastructure/file_repository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 7/src/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 7/src/services/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 7/src/services/expenses_services.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 7/src/settings.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 7/src/testing/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 7/src/testing/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 7/src/ui/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 7/src/ui/ui.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/Assignment 8/to_do.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/a8/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/a8/.idea/a8.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/a8/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/a8/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/a8/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/a8/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/a8/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/a8/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/a8/src/domain/Discipline.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/a8/src/domain/Grade.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/a8/src/domain/Student.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/a8/src/domain/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/a8/src/exceptions/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/a8/src/exceptions/exceptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/a8/src/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/a8/src/repository/DisciplineRepository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/a8/src/repository/GradeRepository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/a8/src/repository/StudentRepository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/a8/src/repository/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/a8/src/services/DisciplineService.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/a8/src/services/GradeService.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/a8/src/services/StudentService.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/a8/src/services/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/a8/src/tests/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/a8/src/tests/domain_tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/a8/src/tests/repository_tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/a8/src/tests/services_tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/a8/src/tests/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/a8/src/ui/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Assignments/a8/src/ui/console.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/OOP(ython)/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/OOP(ython)/.idea/OOP(ython).iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/OOP(ython)/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/OOP(ython)/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/OOP(ython)/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/OOP(ython)/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/OOP(ython)/OOP(ython)/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/OOP(ython)/OOP(ython)/domain/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/OOP(ython)/OOP(ython)/domain/entities.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/OOP(ython)/OOP(ython)/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 10/working_with_files.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 3/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 3/.idea/Seminar 2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 3/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 3/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 3/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 3/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 3/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 4/exponential-search/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 4/exponential-search/.idea/exponentia-search.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 4/exponential-search/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 4/exponential-search/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 4/exponential-search/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 4/exponential-search/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 4/exponential-search/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 4/find-max/.idea/find-max.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 4/find-max/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 4/find-max/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 4/find-max/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 4/find-max/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 4/find-max/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 4/find-max/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 4/gcd/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 4/gcd/.idea/gcd.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 4/gcd/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 4/gcd/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 4/gcd/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 4/gcd/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 4/gcd/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 4/raise-to-pow/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 4/raise-to-pow/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 4/raise-to-pow/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 4/raise-to-pow/.idea/raise-to-pow.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 4/raise-to-pow/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 4/raise-to-pow/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 4/raise-to-pow/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 8/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 8/.idea/Seminar 8.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 8/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 8/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 8/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 8/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 8/root/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 8/root/a7gulin/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 8/root/a7gulin/domain/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 8/root/a7gulin/domain/entities.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 8/root/a7gulin/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 8/root/a7gulin/repository/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 8/root/a7gulin/repository/expenses_repository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 8/root/a7gulin/service/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 8/root/a7gulin/service/expenses_service.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 8/root/a7gulin/ui/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 8/root/a7gulin/ui/console.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/Seminars/Seminar 8/theory" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/final_exam_preparations/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/final_exam_preparations/.idea/final_exam_preparations.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/final_exam_preparations/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/final_exam_preparations/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/final_exam_preparations/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/final_exam_preparations/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/final_exam_preparations/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/final_exam_preparations/hangman/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/final_exam_preparations/hangman/.idea/hangman.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/final_exam_preparations/hangman/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/final_exam_preparations/hangman/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/final_exam_preparations/hangman/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/final_exam_preparations/hangman/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/final_exam_preparations/hangman/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/final_exam_preparations/hangman/controller/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/final_exam_preparations/hangman/controller/controller.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/final_exam_preparations/hangman/domain/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/final_exam_preparations/hangman/domain/entities.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/final_exam_preparations/hangman/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/final_exam_preparations/hangman/repo/TextFileRepo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/final_exam_preparations/hangman/repo/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/final_exam_preparations/hangman/repo/repository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/final_exam_preparations/hangman/text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/final_exam_preparations/hangman/ui/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/final_exam_preparations/hangman/ui/console.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/final_exam_preparations/written_tries/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/final_exam_preparations/written_tries/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/final_exam_preparations/written_tries/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/final_exam_preparations/written_tries/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/final_exam_preparations/written_tries/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/final_exam_preparations/written_tries/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/final_exam_preparations/written_tries/.idea/written_tries.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/final_exam_preparations/written_tries/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/tests-examples/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/tests-examples/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/tests-examples/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/tests-examples/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/tests-examples/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/tests-examples/.idea/tests-examples.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/tests-examples/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/tests-examples/src/functions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/tests-examples/src/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Fundamentals of programming/tests-examples/src/ui.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Mathematical Analysis/hm6/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Mathematical Analysis/hm6/.idea/hm6.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Mathematical Analysis/hm6/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Mathematical Analysis/hm6/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Mathematical Analysis/hm6/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Mathematical Analysis/hm6/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Mathematical Analysis/hm6/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Mathematical Analysis/hm6/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Mathematical Analysis/hw4/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Mathematical Analysis/hw4/.idea/hw4.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Mathematical Analysis/hw4/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Mathematical Analysis/hw4/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Mathematical Analysis/hw4/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Mathematical Analysis/hw4/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Mathematical Analysis/hw4/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Mathematical Analysis/hw5/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Mathematical Analysis/hw5/.idea/hw5.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Mathematical Analysis/hw5/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Mathematical Analysis/hw5/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Mathematical Analysis/hw5/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Mathematical Analysis/hw5/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Mathematical Analysis/hw5/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Mathematical Analysis/hw5/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Mathematical Analysis/hw7/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Mathematical Analysis/hw7/.idea/hw7.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Mathematical Analysis/hw7/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Mathematical Analysis/hw7/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Mathematical Analysis/hw7/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Mathematical Analysis/hw7/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Mathematical Analysis/hw7/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Mathematical Analysis/hw7/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Mathematical Analysis/hw8/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Mathematical Analysis/hw8/.idea/hw8.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Mathematical Analysis/hw8/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Mathematical Analysis/hw8/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Mathematical Analysis/hw8/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Mathematical Analysis/hw8/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Mathematical Analysis/hw8/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../all_notes/C Programming/New Section 1.one" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../all_notes/C Programming/Open Notebook.onetoc2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../all_notes/C Programming/lab2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../all_notes/C Programming/lab3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../all_notes/Computational Logic/LC_Curs3.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../all_notes/Computer Science Arhitecture/Computer Science Arhitecture Lectures/ASC 1.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../all_notes/Computer Science Arhitecture/Computer Science Arhitecture Lectures/ASC 2.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../all_notes/Computer Science Arhitecture/Computer Science Arhitecture Lectures/ASC 3 COLOR.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../all_notes/Computer Science Arhitecture/Computer Science Arhitecture Lectures/ASC 3.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../all_notes/Computer Science Arhitecture/Computer Science Arhitecture Lectures/ASC 4.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../all_notes/Computer Science Arhitecture/Computer Science Arhitecture Lectures/ASC 5.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../all_notes/Computer Science Arhitecture/Computer Science Arhitecture Lectures/ASC 6.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../all_notes/Computer Science Arhitecture/Computer Science Arhitecture Lectures/ASC 7.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../all_notes/Computer Science Arhitecture/Computer Science Arhitecture Lectures/ASC 8.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../all_notes/Computer Science Arhitecture/Computer Science Arhitecture Lectures/ASC 9.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../all_notes/Computer Science Arhitecture/Computer Science Arhitecture Lectures/ASC-Curs-1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../all_notes/Fundamentals of Programming/FP 2ND LECTURE/2nd Seminar.one" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../all_notes/Fundamentals of Programming/FP 2ND LECTURE/Note_fp_lec_2.one" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../all_notes/Fundamentals of Programming/FP 2ND LECTURE/OneNote_RecycleBin/New Section 1.one" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../all_notes/Fundamentals of Programming/FP 2ND LECTURE/OneNote_RecycleBin/OneNote_DeletedPages.one" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../all_notes/Fundamentals of Programming/FP 2ND LECTURE/OneNote_RecycleBin/Open Notebook.onetoc2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../all_notes/Fundamentals of Programming/FP 2ND LECTURE/Open Notebook.onetoc2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../all_notes/Fundamentals of Programming/FP/3rd Seminar.one" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../all_notes/Fundamentals of Programming/FP/Open Notebook.onetoc2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../all_notes/Fundamentals of Programming/fp lecture 11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../all_notes/Fundamentals of Programming/fp sem3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../all_notes/General_notes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../all_notes/Mathematical Analysis/midterm_theory/toate formulele.pdf" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2I1j4DDjeogu6Vzl9uamwgj60AK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="hm6" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c3702dc3-d8fc-4aa5-871b-8848d58d74fc" name="Changes" comment="" />
+      <created>1669355789828</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669355789828</updated>
+      <workItem from="1674712375385" duration="275000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/main_py$main.coverage" NAME="main Coverage Results" MODIFIED="1674712384558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

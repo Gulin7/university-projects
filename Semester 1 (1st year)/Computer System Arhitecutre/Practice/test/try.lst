@@ -1,0 +1,117 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit  , printf, scanf, fread, fwrite, fscanf, fprintf, fopen, fclose             
+     8                                  import exit msvcrt.dll    
+     9                                  import printf msvcrt.dll
+    10                                  import scanf  msvcrt.dll
+    11                                  import fopen  msvcrt.dll
+    12                                  import fclose msvcrt.dll
+    13                                  import fread msvcrt.dll
+    14                                  import fwrite msvcrt.dll
+    15                                  import fscanf msvcrt.dll
+    16                                  import fprintf msvcrt.dll
+    17                                  ; our data is declared here (the variables needed by our program)
+    18                                  segment data use32 class=data
+    19                                      ; Se citeste de la tastatura un nume de fisier input.txt si un caracter c. Fisierul input.txt contine cuvinte separate prin #. Sa se scrie in fisierul output.txt doar cuvintele in care apare caracterul c citit p
+    20                                      ; input.txt: borcan#ridichi#padurar#para   c: r     output.txt: borcan#para
+    21 00000000 <res 00000064>              input_name resb 100
+    22 00000064 6F75747075742E7478-         output_name db "output.txt", 0
+    22 0000006D 7400               
+    23 0000006F 257300                      s_format db "%s", 0
+    24 00000072 256300                      c_format db "%c", 0
+    25 00000075 7700                        write_mode db "w", 0
+    26 00000077 7200                        read_mode db "r", 0
+    27 00000079 <res 00000004>              input_descriptor resd 1
+    28 0000007D <res 00000004>              write_descriptor resd 1
+    29 00000081 456E74657220612066-         print_format db "Enter a file name: ", 0
+    29 0000008A 696C65206E616D653A-
+    29 00000093 2000               
+    30 00000095 456E74657220612063-         char_format db "Enter a character: ", 0
+    30 0000009E 68617261637465723A-
+    30 000000A7 2000               
+    31 000000A9 00                          char db 0
+    32 000000AA <res 00000064>              text resb 100
+    33 0000010E <res 00000001>              citit resb 1
+    34                                  
+    35                                  
+    36                                  ; our code starts here
+    37                                  segment code use32 class=code
+    38                                      start:
+    39 00000000 68[95000000]                    push dword char_format
+    40 00000005 FF15[00000000]                  call [printf]
+    41 0000000B 83C404                          add esp, 4*1
+    42                                  
+    43 0000000E 68[A9000000]                    push dword char
+    44 00000013 68[72000000]                    push dword c_format
+    45 00000018 FF15[00000000]                  call [scanf]
+    46 0000001E 83C408                          add esp, 4*2
+    47                                  
+    48 00000021 68[81000000]                    push dword print_format
+    49 00000026 FF15[00000000]                  call [printf]
+    50 0000002C 83C404                          add esp, 4*1
+    51                                  
+    52 0000002F 68[00000000]                    push dword input_name
+    53 00000034 68[6F000000]                    push dword s_format
+    54 00000039 FF15[00000000]                  call [scanf]
+    55 0000003F 83C408                          add esp, 4*2
+    56                                  
+    57                                          ; OPENING THE FILES
+    58 00000042 68[77000000]                    push dword read_mode
+    59 00000047 68[00000000]                    push dword input_name
+    60 0000004C FF15[00000000]                  call [fopen]
+    61 00000052 83C408                          add esp, 4*2
+    62 00000055 A3[79000000]                    mov [input_descriptor], eax
+    63                                          
+    64 0000005A 68[75000000]                    push dword write_mode
+    65 0000005F 68[64000000]                    push dword output_name
+    66 00000064 FF15[00000000]                  call [fopen]
+    67 0000006A 83C408                          add esp, 4*2
+    68 0000006D A3[7D000000]                    mov [write_descriptor], eax
+    69                                          
+    70                                          ; PARSING THE FILE
+    71                                          ;mov edi, text
+    72                                          ;loop.:
+    73                                          ;push dword citit
+    74                                          ;push dword 1
+    75                                          ;push dword 1
+    76                                          ;push dword [input_descriptor]
+    77                                          ;call [fread]
+    78                                          ;add esp, 4*4
+    79                                          ;cmp eax, 0
+    80                                          ;je end
+    81                                          ;mov al, byte[citit]
+    82                                          ;stosb
+    83                                          ;jmp loop.
+    84                                          ;end:
+    85                                          
+    86 00000072 68[AA000000]                    push dword text
+    87 00000077 68[6F000000]                    push dword s_format
+    88 0000007C FF35[79000000]                  push dword [input_descriptor]
+    89 00000082 FF15[00000000]                  call [fscanf]
+    90 00000088 83C40C                          add esp, 4*3
+    91                                          
+    92                                          ;mov al, 0
+    93                                          ;stosb ; we put '\0' at the end of the text string
+    94                                          
+    95 0000008B 68[AA000000]                    push dword text
+    96 00000090 68[6F000000]                    push dword s_format
+    97 00000095 FF35[7D000000]                  push dword [write_descriptor]
+    98 0000009B FF15[00000000]                  call [fprintf]
+    99 000000A1 83C40C                          add esp, 4*3
+   100                                  
+   101                                          ; CLOSING THE FILES
+   102 000000A4 FF35[79000000]                  push dword [input_descriptor]
+   103 000000AA FF15[00000000]                  call [fclose]
+   104 000000B0 83C404                          add esp, 4*1
+   105                                          
+   106 000000B3 FF35[7D000000]                  push dword [write_descriptor]
+   107 000000B9 FF15[00000000]                  call [fclose]
+   108 000000BF 83C404                          add esp, 4*1
+   109                                  
+   110                                          ; exit(0)
+   111 000000C2 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+   112 000000C4 FF15[00000000]                  call    [exit]       ; call exit to 

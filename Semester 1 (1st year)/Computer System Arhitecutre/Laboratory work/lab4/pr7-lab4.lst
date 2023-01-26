@@ -1,0 +1,40 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    10                                  
+    11                                  ; our data is declared here (the variables needed by our program)
+    12                                  segment data use32 class=data
+    13                                      ; Given the words A and B, compute the doubleword C:
+    14                                      ;the bits 0-4 of C have the value 1
+    15                                      ;the bits 5-11 of C are the same as the bits 0-6 of A
+    16                                      ;the bits 16-31 of C have the value 0000000001100101b
+    17                                      ;the bits 12-15 of C are the same as the bits 8-11 of B
+    18 00000000 FF03                        a dw 1023
+    19 00000002 FF03                        b dw 1023
+    20 00000004 00000000                    c dd 0
+    21                                  
+    22                                  ; our code starts here
+    23                                  segment code use32 class=code
+    24                                      start:
+    25 00000000 B11F                            mov cl, 11111b
+    26 00000002 080D[04000000]                  or [c], cl ; first 5 bits are 1
+    27 00000008 66A1[00000000]                  mov ax, [a] ; ax=a
+    28 0000000E 6683E07F                        and ax, 1111111b ; ax = 00...00 and the first 7 bits of a
+    29 00000012 66C1E005                        shl ax, 5 ; we shift the bits  00...7bits.. 00000
+    30 00000016 660905[04000000]                or [c], ax 
+    31 0000001D B165                            mov cl, 1100101b
+    32 0000001F 080D[06000000]                  or [c+2], cl
+    33 00000025 668B1D[02000000]                mov bx, [b] ; same process as with a
+    34 0000002C 6681E3000F                      and bx, 111100000000b
+    35 00000031 66C1E304                        shl bx, 4
+    36 00000035 66091D[04000000]                or [c], bx 
+    37 0000003C 8B1D[04000000]                  mov EBX, [c]
+    38                                          ; exit(0)
+    39 00000042 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    40 00000044 FF15[00000000]                  call    [exit]       ; call exit to terminate the program

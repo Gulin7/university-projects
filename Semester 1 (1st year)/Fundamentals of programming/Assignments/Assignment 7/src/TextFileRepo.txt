@@ -1,0 +1,11 @@
+18, 18, Gifts
+10, 587, Clothes
+21, 293, Jewelry
+29, 660, Cinema
+10, 342, Groceries
+30, 833, Jewelry
+30, 28, VideoGames
+30, 501, Food
+27, 847, Cinema
+14, 439, Insurance
+5, 100, pizza

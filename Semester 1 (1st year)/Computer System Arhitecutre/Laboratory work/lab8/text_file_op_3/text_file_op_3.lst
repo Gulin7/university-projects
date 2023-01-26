@@ -1,0 +1,73 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    10                                  extern fopen, fclose, printf, fscanf
+    11                                  import fopen msvcrt.dll
+    12                                  import fclose msvcrt.dll
+    13                                  import printf msvcrt.dll
+    14                                  import fscanf msvcrt.dll
+    15                                  
+    16                                  ; our data is declared here (the variables needed by our program)
+    17                                  segment data use32 class=data
+    18                                      ; A text file is given. Read the content of the file, count the number of even digits and display the result on the screen. The name of text file is defined in the data segment.
+    19 00000000 696E7075742E747874-         input_file db "input.txt", 0
+    19 00000009 00                 
+    20 0000000A 7200                        modread db "r", 0
+    21 0000000C 00000000                    f dd 0
+    22 00000010 256400                      format db "%d", 0
+    23 00000013 00000000                    total dd 0
+    24 00000017 <res 00000004>              n resd 1
+    25 0000001B 54686520746F74616C-         print_format db 'The total number of even numbers is %d', 0
+    25 00000024 206E756D626572206F-
+    25 0000002D 66206576656E206E75-
+    25 00000036 6D6265727320697320-
+    25 0000003F 256400             
+    26                                  
+    27                                  ; our code starts here
+    28                                  segment code use32 class=code
+    29                                      start:
+    30                                          ; ...
+    31 00000000 68[0A000000]                    push dword modread
+    32 00000005 68[00000000]                    push dword input_file
+    33 0000000A FF15[00000000]                  call [fopen]
+    34 00000010 83C408                          add esp, 4*2
+    35 00000013 83F800                          cmp eax, 0
+    36 00000016 7453                            je out
+    37 00000018 A3[0C000000]                    mov [f], eax
+    38                                          repeat:
+    39                                              ; read a number
+    40 0000001D 68[17000000]                        push dword n
+    41 00000022 68[10000000]                        push dword format
+    42 00000027 FF35[0C000000]                      push dword[f]
+    43 0000002D FF15[00000000]                      call [fscanf]
+    44 00000033 83C40C                              add esp, 4*3
+    45                                              ; compare eax to 0
+    46 00000036 83F800                              cmp eax, 0
+    47 00000039 7417                                je error ; jump if eax == 0 cause that means it didnt read a nuber
+    48 0000003B 8B1D[17000000]                      mov ebx, [n] 
+    49 00000041 F7C301000000                        test ebx, 1
+    50 00000047 7507                                jnz odd
+    51 00000049 8305[13000000]01                    add dword[total], 1
+    52                                              odd:
+    53 00000050 EBCB                            jmp repeat
+    54                                          error:
+    55 00000052 A1[13000000]                    mov eax, [total]
+    56                                          ;print the total
+    57 00000057 FF35[13000000]                  push dword[total]
+    58 0000005D 68[10000000]                    push dword format
+    59 00000062 FF15[00000000]                  call[printf]
+    60 00000068 83C408                          add esp, 4*2
+    61                                          out:
+    62                                          ;close the file
+    63 0000006B FF35[0C000000]                  push dword[f]
+    64 00000071 FF15[00000000]                  call [fclose]
+    65 00000077 83C404                          add esp, 4
+    66                                          ; exit(0)
+    67 0000007A 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    68 0000007C FF15[00000000]                  call    [exit]       ; call exit to terminate the program

@@ -1,0 +1,67 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    10                                  
+    11                                  ; our data is declared here (the variables needed by our program)
+    12                                  segment data use32 class=data
+    13                                      ; a,b,c,d-byte, e,f,g,h-word
+    14 00000000 03                          a db 3
+    15 00000001 03                          b db 3
+    16 00000002 03                          c db 3
+    17 00000003 03                          d db 3
+    18 00000004 0300                        e dw 3
+    19 00000006 0300                        f dw 3
+    20 00000008 0300                        g dw 3
+    21 0000000A 0300                        h dw 3
+    22 0000000C 0100                        aux dw 1
+    23                                  
+    24                                  ; our code starts here
+    25                                  segment code use32 class=code
+    26                                      start:
+    27                                          ; L2 mul/div set2 21: (f*g-a*b*e)/(h+c*d)
+    28                                          ; a=b=c=d=e=f=g=h=3: (9-27)/(3+9) = -18/12 = -2, remainder= 6
+    29 00000000 66BA0000                        mov DX,0
+    30 00000004 66A1[06000000]                  mov AX, word[f]
+    31 0000000A 668B1D[08000000]                mov BX, word[g]
+    32 00000011 66F7E3                          mul BX
+    33                                          ; in DX:AX we have the result of f*g
+    34 00000014 6689C1                          mov CX, AX
+    35 00000017 8A1D[00000000]                  mov BL, byte[a]
+    36 0000001D A0[01000000]                    mov AL, byte[b]
+    37 00000022 F6E3                            mul BL ; in AX we now have a*b 
+    38 00000024 66A3[0C000000]                  mov [aux],AX
+    39 0000002A 66A1[04000000]                  mov AX, word[e]
+    40 00000030 6689D3                          mov BX,DX
+    41 00000033 66F725[0C000000]                mul word[aux]
+    42                                          ; In DX:AX we have a*b*e, while in BX:CX we have f*g 
+    43 0000003A 6629D3                          sub BX,DX
+    44 0000003D 6629C1                          SUB CX,AX
+    45                                          ; we now have the result of (f*g-a*b*e) in BX:CX
+    46 00000040 8A15[03000000]                  mov DL, byte[d]
+    47 00000046 A0[02000000]                    mov AL, byte[c]
+    48 0000004B F6E2                            mul DL
+    49                                          ; ON AX we have c*d
+    50 0000004D 660305[0A000000]                add AX,word[h]
+    51                                          ;BX:CX contains (f*g-a*b*e), and AX contains h+c*d
+    52                                          ;I need to move BX:CX to EAX and AX to DX then to CX
+    53 00000054 6689C2                          mov DX, AX
+    54 00000057 6689D8                          mov AX,BX
+    55 0000005A C1E010                          shl eax,16
+    56 0000005D 6689C8                          mov ax,cx
+    57                                          ;we now have (f*g-a*b*e) in EAX and (h+c*d) in DX 
+    58 00000060 B900000000                      mov ECX, 0
+    59 00000065 6689D1                          mov CX,DX
+    60 00000068 66BA0000                        mov DX,0
+    61                                          ;we now divide by ECX
+    62 0000006C F7F1                            div ECX
+    63                                          ; now we hhave 6 in DX and -2 in AX, teoretically
+    64                                      
+    65                                          ; exit(0)
+    66 0000006E 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    67 00000070 FF15[00000000]                  call    [exit]       ; call exit to terminate the program
