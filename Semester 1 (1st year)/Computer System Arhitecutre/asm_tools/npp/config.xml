@@ -10,15 +10,6 @@
         <root foldername="C:\Coding_projects\University-Projects\ASC\lab3" />
     </FileBrowser>
     <History nbMaxFile="10" inSubMenu="no" customLength="-1">
-<<<<<<< HEAD
-        <File filename="C:\Coding_projects\University-Projects\ASC\lab_work_8\labwork.asm" />
-        <File filename="D:\Code\university-projects\Computer Science Arhitecture\lab8\text_file_op_7\text_file_op.asm" />
-        <File filename="D:\Code\university-projects\Computer Science Arhitecture\lab8\function_calls_7\function_calls.asm" />
-        <File filename="D:\Code\university-projects\Computer Science Arhitecture\lab8\ex7.asm" />
-        <File filename="C:\Coding_projects\University-Projects\Computer Science Arhitecture\asm_tools\nasm\example_sum.asm" />
-        <File filename="D:\Code\university-projects\Computer Science Arhitecture\for_practical_exam\lab_8_pr_34.exe" />
-=======
-        <File filename="D:\Code\university-projects\Computer Science Arhitecture\for_practical_exam\lab_8_pr_35.asm" />
         <File filename="D:\Code\university-projects\Computer Science Arhitecture\for_practical_exam\lab8_pr_12.asm" />
         <File filename="C:\Coding_projects\University-Projects\Computer Science Arhitecture\for_practical_exam\lab_8_pr_35.asm" />
         <File filename="C:\Coding_projects\University-Projects\Computer Science Arhitecture\for_practical_exam\lab_8_pr_44.asm" />
@@ -27,7 +18,8 @@
         <File filename="C:\Coding_projects\University-Projects\Computer Science Arhitecture\test\test.asm" />
         <File filename="C:\Coding_projects\University-Projects\Computer Science Arhitecture\for_practical_exam\lab_8_pr_34.asm" />
         <File filename="C:\Coding_projects\University-Projects\Computer Science Arhitecture\test\new 1.asm" />
->>>>>>> de97093a226084ac4cbbc5d83c0848b8f71541e8
+        <File filename="D:\Code\university-projects\Semester 1 (1st year)\Computer System Arhitecutre\THEORY\ASC\ASC\EXAMEN SESIUNE\1\program\main.asm" />
+        <File filename="D:\Code\university-projects\Semester 1 (1st year)\Computer System Arhitecutre\Practice\limit_testing\test_smth.asm" />
     </History>
     <GUIConfigs>
         <GUIConfig name="ToolBar" visible="yes">standard</GUIConfig>
@@ -62,7 +54,7 @@
         <GUIConfig name="ScintillaGlobalSettings" enableMultiSelection="no" />
         <GUIConfig name="openSaveDir" value="0" defaultDirPath="" />
         <GUIConfig name="titleBar" short="no" />
-        <GUIConfig name="stylerTheme" path="C:\Coding_projects\University-Projects\Computer Science Arhitecture\asm_tools\npp\stylers.xml" />
+        <GUIConfig name="stylerTheme" path="D:\Code\university-projects\Semester 1 (1st year)\Computer System Arhitecutre\asm_tools\npp\stylers.xml" />
         <GUIConfig name="wordCharList" useDefault="yes" charsAdded="" />
         <GUIConfig name="delimiterSelection" leftmostDelimiter="40" rightmostDelimiter="41" delimiterSelectionOnEntireDocument="no" />
         <GUIConfig name="multiInst" setting="0" />
@@ -76,7 +68,7 @@
             <ActiveTabs cont="0" activeTab="-1" />
             <ActiveTabs cont="1" activeTab="-1" />
             <ActiveTabs cont="2" activeTab="-1" />
-            <ActiveTabs cont="3" activeTab="-1" />
+            <ActiveTabs cont="3" activeTab="0" />
         </GUIConfig>
     </GUIConfigs>
     <ProjectPanels>
