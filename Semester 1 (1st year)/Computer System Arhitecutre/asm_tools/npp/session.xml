@@ -1,7 +1,8 @@
 <NotepadPlus>
     <Session activeView="0">
-        <mainView activeIndex="0">
-            <File firstVisibleLine="0" xOffset="0" scrollWidth="1404" startPos="684" endPos="684" selMode="0" lang="Assembly" encoding="-1" filename="D:\Code\university-projects\Semester 1 (1st year)\Computer System Arhitecutre\Practice\limit_testing\erik.asm" backupFilePath="" originalFileLastModifTimestamp="1674764531" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="4980812" mapWrapIndentMode="-1" mapIsWrap="no" />
+        <mainView activeIndex="1">
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="1" startPos="684" endPos="684" selMode="0" lang="Assembly" encoding="-1" filename="D:\Code\university-projects\Semester 1 (1st year)\Computer System Arhitecutre\Practice\limit_testing\erik.asm" backupFilePath="" originalFileLastModifTimestamp="1674764531" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="4980812" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="45" xOffset="0" scrollWidth="1692" startPos="0" endPos="0" selMode="0" lang="Assembly" encoding="-1" filename="D:\Code\university-projects\Semester 1 (1st year)\Computer System Arhitecutre\THEORY\ASC\EXAMEN SESIUNE\4\program\4.asm" backupFilePath="" originalFileLastModifTimestamp="1673796022" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="3014757" mapWrapIndentMode="-1" mapIsWrap="no" />
         </mainView>
         <subView activeIndex="0" />
     </Session>
