@@ -3,9 +3,9 @@
 
 #include <stdio.h>
 
-void show_menu() {
+void showMenu() {
 	/*
-	PRINTS THE MENU!
+	PRINTS THE MENU
 	*/
 	printf("\n MENU \n");
 	printf("1. Read sequences and find the current and global maxim.\n");
@@ -16,6 +16,8 @@ void show_menu() {
 int insideInterval(int lowerLimit, int upperLimit, int numberToCheck) {
 	/*
 	Checks if a number is inside an interval.
+	lowerLimit represents the lower limit of the interval; analogy for the upperLimit
+	numberToCheck := the number we check ( if it's in the interval or not )
 	*/
 	if (numberToCheck >= lowerLimit && numberToCheck <= upperLimit)
 		return 1;
@@ -33,10 +35,11 @@ int determineMaxim(int firstNumber, int secondNumber) {
 
 int main() {
 
-	int command = -1, startOfSubsequence = 1, endOfSubsequence = 1, givenVector[1001] = { 0 };
+	int command = -1;
+	int startOfSubsequence = 1, endOfSubsequence = 1, givenVector[1001] = { 0 };
 	int currentMaxim = -1, globalMaxim = -1;
 	int upperLimit, lowerLimit, vectorLength, currentStartOfSequence = 1, currentEndOfSequence = 1;
-	show_menu();
+	showMenu();
 	while (command) {
 		printf("\nEnter a command: ");
 		scanf("%d", &command);
@@ -48,6 +51,10 @@ int main() {
 			break;
 		}
 		else if (command == 2) {
+			startOfSubsequence = 1;
+			endOfSubsequence = 1;
+			currentStartOfSequence = 1;
+			currentEndOfSequence = 1;
 			printf("Enter the length of the vector: ");
 			scanf("%d", &vectorLength);
 			for (int index = 1; index <= vectorLength; index++) {
@@ -77,6 +84,7 @@ int main() {
 		else {
 			int lastRead = 0;
 			currentMaxim = -1;
+			globalMaxim = -1;
 			while (lastRead != -1) {
 				printf("\nEnter a number: ");
 				scanf("%d", &lastRead);
