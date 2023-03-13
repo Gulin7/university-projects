@@ -13,7 +13,7 @@ void showMenu() {
 	printf("0. Exit the application.\n");
 }
 
-int insideInterval(int lowerLimit, int upperLimit, int numberToCheck) {
+int isInsideInterval(int lowerLimit, int upperLimit, int numberToCheck) {
 	/*
 	Checks if a number is inside an interval.
 	lowerLimit represents the lower limit of the interval; analogy for the upperLimit
@@ -24,7 +24,7 @@ int insideInterval(int lowerLimit, int upperLimit, int numberToCheck) {
 	return 0;
 }
 
-int determineMaxim(int firstNumber, int secondNumber) {
+int determineMaximum(int firstNumber, int secondNumber) {
 	/*
 	Returns the biggest out of 2 numbers.
 	*/
@@ -50,11 +50,13 @@ int main() {
 			printf("You\'ve left the app!");
 			break;
 		}
-		else if (command == 2) {
+		else if (command == 2) { // COMMAND 2
+			// RESET THE SEQUENCE INDICES
 			startOfSubsequence = 1;
 			endOfSubsequence = 1;
 			currentStartOfSequence = 1;
 			currentEndOfSequence = 1;
+			
 			printf("Enter the length of the vector: ");
 			scanf("%d", &vectorLength);
 			for (int index = 1; index <= vectorLength; index++) {
@@ -66,7 +68,7 @@ int main() {
 			printf("Enter an end of interval: ");
 			scanf("%d", &upperLimit);
 			for (int index = 1; index <= vectorLength; index++) {
-				if (!insideInterval(lowerLimit, upperLimit, givenVector[index])) { // We check if the number is not in the given interval
+				if (!isInsideInterval(lowerLimit, upperLimit, givenVector[index])) { // We check if the number is not in the given interval
 					if ((currentEndOfSequence - currentStartOfSequence) > (endOfSubsequence - startOfSubsequence)) {
 						// if the number is not in the interval, then we check to see if the current interval is longer than the current longest
 						startOfSubsequence = currentStartOfSequence;
@@ -81,6 +83,7 @@ int main() {
 			}
 			printf("The longest subsequence is between %d and %d", startOfSubsequence, endOfSubsequence);
 		}
+		// COMMAND 1
 		else {
 			int lastRead = 0;
 			currentMaxim = -1;
@@ -91,16 +94,16 @@ int main() {
 				// We read a number, then if that number is 0 we compare the global and current maxim to check which one is bigger and we print
 				// the current maxim. We then make currentMaxim = -1 and proceed with reading the next sequence
 				if (lastRead == 0) {
-					globalMaxim = determineMaxim(globalMaxim, currentMaxim);
+					globalMaxim = determineMaximum(globalMaxim, currentMaxim);
 					printf("The current maxim is %d", currentMaxim);
 					currentMaxim = -1;
 				}// if the lastRead is not 0 nor -1 then we just check to see if it's bigger than the currentMaxim
 				else if (lastRead != -1) {
-					currentMaxim = determineMaxim(currentMaxim, lastRead);
+					currentMaxim = determineMaximum(currentMaxim, lastRead);
 				}
 				else if (lastRead == -1) {
 					printf("The maxim of the current sequence is %d.", currentMaxim);
-					globalMaxim = determineMaxim(globalMaxim, currentMaxim);
+					globalMaxim = determineMaximum(globalMaxim, currentMaxim);
 				}
 			}
 			printf("\nThe global maxim is %d", globalMaxim);
