@@ -1,0 +1,3 @@
+D:/Code/Projects/UBB/OOP/a23/cmake-build-debug/CMakeFiles/a23.dir
+D:/Code/Projects/UBB/OOP/a23/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Code/Projects/UBB/OOP/a23/cmake-build-debug/CMakeFiles/rebuild_cache.dir
