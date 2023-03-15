@@ -73,39 +73,39 @@ void generateMedicines(Service *service) {
 
     Medicine *medicine2 = createMedicine("Dexocalm", 8, 8, 25);
     addToRepository(service->repository, copyMedicine(medicine2));
-    destroyMedicine(medicine1);
+    destroyMedicine(medicine2);
 
     Medicine *medicine3 = createMedicine("Claritin", 3, 21, 40);
     addToRepository(service->repository, copyMedicine(medicine3));
-    destroyMedicine(medicine1);
+    destroyMedicine(medicine3);
 
     Medicine *medicine4 = createMedicine("Coldtusin", 3, 14, 25);
     addToRepository(service->repository, copyMedicine(medicine4));
-    destroyMedicine(medicine1);
+    destroyMedicine(medicine4);
 
     Medicine *medicine5 = createMedicine("Nurofen", 3, 17, 8);
     addToRepository(service->repository, copyMedicine(medicine5));
-    destroyMedicine(medicine1);
+    destroyMedicine(medicine5);
 
     Medicine *medicine6 = createMedicine("Magnevie", 3, 4, 30);
     addToRepository(service->repository, copyMedicine(medicine6));
-    destroyMedicine(medicine1);
+    destroyMedicine(medicine6);
 
     Medicine *medicine7 = createMedicine("Trachisan", 3, 8, 10);
     addToRepository(service->repository, copyMedicine(medicine7));
-    destroyMedicine(medicine1);
+    destroyMedicine(medicine7);
 
     Medicine *medicine8 = createMedicine("Detrical", 3, 4, 7);
     addToRepository(service->repository, copyMedicine(medicine8));
-    destroyMedicine(medicine1);
+    destroyMedicine(medicine8);
 
     Medicine *medicine9 = createMedicine("Decasept", 3, 3, 5);
     addToRepository(service->repository, copyMedicine(medicine9));
-    destroyMedicine(medicine1);
+    destroyMedicine(medicine9);
 
     Medicine *medicine10 = createMedicine("Fervex", 5, 22, 20);
     addToRepository(service->repository, copyMedicine(medicine10));
-    destroyMedicine(medicine1);
+    destroyMedicine(medicine10);
 }
 
 MedicineRepository *filterByPrice(MedicineRepository *repository, double price) {
