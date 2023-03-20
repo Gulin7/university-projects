@@ -90,6 +90,8 @@ class DirectedGraph:
         if self.isEdge(edgeToAdd):
             raise ValueError('Edge already exists!')
 
+        self.__dictIn[endVertex].append(startVertex)
+
     def removeEdge(self, edgeToRemove: tuple):
         """
         Removes and edge from the graph.
@@ -108,3 +110,21 @@ class DirectedGraph:
 
     def getSetOfVertices(self):
         return self.getDictIn().keys()
+
+    def getInDegree(self, vertex):
+        pass
+
+    def getOutDegree(self, vertex):
+        pass
+
+    def getAllEdges(self):
+        pass
+
+    def getOutBoundEdges(self, vertex: int):
+        pass
+
+    def getInBoundEdges(self, vertex: int):
+        pass
+
+    def createCopy(self):
+        pass
