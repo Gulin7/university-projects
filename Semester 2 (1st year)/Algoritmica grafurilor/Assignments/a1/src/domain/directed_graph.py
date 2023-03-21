@@ -111,20 +111,45 @@ class DirectedGraph:
     def getSetOfVertices(self):
         return self.getDictIn().keys()
 
-    def getInDegree(self, vertex):
-        pass
+    def getInDegree(self, vertex: int):
+        if not self.isVertex(vertex):
+            raise ValueError('Vertex does not exist!')
+        return len(self.__dictIn[vertex])
 
-    def getOutDegree(self, vertex):
-        pass
+    def getOutDegree(self, vertex: int):
+        if not self.isVertex(vertex):
+            raise ValueError('Vertex does not exist!')
+        return len(self.__dictOut)
 
     def getAllEdges(self):
-        pass
+        edges = []
+        for vertex in self.getSetOfVertices():
+            for edge in self.getOutBoundEdges(vertex):
+                edges.append(edge)
+
+        return edges
 
     def getOutBoundEdges(self, vertex: int):
-        pass
+        edges = []
+        for outVertex in self.__dictOut[vertex]:
+            edges.append((vertex, outVertex))
+
+        return edges
 
     def getInBoundEdges(self, vertex: int):
-        pass
+        edges = []
+        for inVertex in self.__dictIn[vertex]:
+            edges.append((inVertex, vertex))
+
+        return edges
 
     def createCopy(self):
-        pass
+        copyGraph = DirectedGraph(self.getNumberOfVertices())
+
+        for vertex in self.__dictIn.keys():
+            copyGraph.addVertex(vertex)
+
+        for edge in self.getAllEdges():
+            copyGraph.addEdge(edge)
+
+        return copyGraph
