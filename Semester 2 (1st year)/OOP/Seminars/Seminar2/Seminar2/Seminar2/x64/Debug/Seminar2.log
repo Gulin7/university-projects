@@ -1,0 +1,6 @@
+﻿  DynamicVector.cpp
+  main.cpp
+  Song.cpp
+C:\Codes\university-projects\Semester 2 (1st year)\OOP\Seminars\Seminar2\Seminar2\Seminar2\Song.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  Generating Code...
+  Seminar2.vcxproj -> C:\Codes\university-projects\Semester 2 (1st year)\OOP\Seminars\Seminar2\Seminar2\x64\Debug\Seminar2.exe
