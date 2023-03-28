@@ -4,7 +4,6 @@
 
 #ifndef A23_OPERATION_STACK_H
 #define A23_OPERATION_STACK_H
-#define _CRT_SECURE_NO_WARNINGS
 
 #include "../dynamicArray/dynamicArray.h"
 #include "../domain/domain.h"

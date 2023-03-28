@@ -4,7 +4,6 @@
 
 #ifndef A23_GULIN7_SERVICE_H
 #define A23_GULIN7_SERVICE_H
-#define _CRT_SECURE_NO_WARNINGS
 
 #include "../repository/repository.h"
 #include "../operationStack/operation_stack.h"
