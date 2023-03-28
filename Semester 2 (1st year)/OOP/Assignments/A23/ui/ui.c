@@ -8,12 +8,12 @@
 #include <string.h>
 
 
-UI *createUI(Service *service) {
+Ui *createUI(Service *service) {
 
     if (service == NULL)
         return NULL;
 
-    UI *ui = (UI *) malloc(sizeof(UI));
+    Ui *ui = (Ui *) malloc(sizeof(Ui));
 
     if (ui == NULL)
         return NULL;
@@ -23,7 +23,7 @@ UI *createUI(Service *service) {
     return ui;
 }
 
-void destroyUI(UI *ui) {
+void destroyUI(Ui *ui) {
     if (ui == NULL)
         return;
     destroyService(ui->service);
@@ -44,10 +44,21 @@ void showMenu() {
 }
 
 int getCommandInput() {
+
     int command;
     printf("Enter a command: ");
-    scanf("%d", &command);
+    if (scanf("%d", &command) != 1) {
+        command = -1;
+        while (getchar() != '\n') {}
+        printf("Invalid input. Please enter a valid command.\n");
+        return getCommandInput();
+    }
+    if (command > 9 || command < 1) {
+        printf("Invalid input. Please enter a valid command.");
+        return getCommandInput();
+    }
     return command;
+
 }
 
 char *getNameInput() {
@@ -60,26 +71,53 @@ char *getNameInput() {
 
 int getQuantityInput() {
     int quantity;
-    printf("Enter a quantity: ");
-    scanf("%d", &quantity);
+    printf("Enter your quantity: ");
+    if (scanf("%d", &quantity) != 1) {
+        quantity = -1;
+        while (getchar() != '\n') {}
+        printf("Invalid input. Please enter a valid quantity.\n");
+        return getQuantityInput();
+    }
+    if (quantity < 0) {
+        printf("Invalid input. Please enter a valid quantity.\n");
+        return getQuantityInput();
+    }
     return quantity;
 }
 
 int getConcentrationInput() {
     int concentration;
-    printf("Enter a concentration: ");
-    scanf("%d", &concentration);
+    printf("Enter your concentration: ");
+    if (scanf("%d", &concentration) != 1) {
+        concentration = -1;
+        while (getchar() != '\n') {}
+        printf("Invalid input. Please enter a valid concentration.\n");
+        return getConcentrationInput();
+    }
+    if (concentration < 0) {
+        printf("Invalid input. Please enter a valid concentration.\n");
+        return getConcentrationInput();
+    }
     return concentration;
 }
 
 double getPriceInput() {
     int price;
-    printf("Enter a price: ");
-    scanf("%d", &price);
+    printf("Enter your price: ");
+    if (scanf("%d", &price) != 1) {
+        price = -1;
+        while (getchar() != '\n') {}
+        printf("Invalid input. Please enter a valid price.\n");
+        return getPriceInput();
+    }
+    if (price <= 0) {
+        printf("Invalid input. Please enter a valid price.\n");
+        return getPriceInput();
+    }
     return price;
 }
 
-void addMedicine(UI *ui) {
+void addMedicine(Ui *ui) {
     char *name = getNameInput();
     int concentration = getConcentrationInput();
     int quantity = getQuantityInput();
@@ -90,7 +128,7 @@ void addMedicine(UI *ui) {
     free(name);
 }
 
-void deleteMedicine(UI *ui) {
+void deleteMedicine(Ui *ui) {
     char *name = getNameInput();
     int concentration = getConcentrationInput();
 
@@ -99,7 +137,7 @@ void deleteMedicine(UI *ui) {
     free(name);
 }
 
-void updateMedicine(UI *ui) {
+void updateMedicine(Ui *ui) {
     char *name = getNameInput();
     int concentration = getConcentrationInput();
     int newQuantity = getQuantityInput();
@@ -110,14 +148,14 @@ void updateMedicine(UI *ui) {
     free(name);
 }
 
-void showAll(UI *ui) {
+void showAll(Ui *ui) {
     MedicineRepository *repository = ui->service->repository;
     int lengthOfRepository = getSize(repository);
     for (int index = 0; index < lengthOfRepository; index++)
         toString(repository->medicines->elements[index]);
 }
 
-void showMedicinesContainingInputString(UI *ui) {
+void showMedicinesContainingInputString(Ui *ui) {
     char inputString[20];
     printf("Enter a string: ");
     scanf("%s", inputString);
@@ -129,14 +167,23 @@ void showMedicinesContainingInputString(UI *ui) {
     }
 }
 
-void runUi(UI *ui) {
+void showMedicineShortInSupply(Ui *ui) {
+    int supply;
+    printf("Enter a supply: ");
+    scanf("%d", &supply);
+    for (int index = 0; index < getServiceSize(ui->service); index++)
+        if (getQuantity(ui->service->repository->medicines->elements[index]) < supply)
+            toString(ui->service->repository->medicines->elements[index]);
+}
+
+void runUi(Ui *ui) {
     generateMedicines(ui->service);
 
     while (1) {
         showMenu();
 
         int command = getCommandInput();
-
+        int outcome = 0;
         //showAll(ui);
 
         switch (command) {
@@ -156,10 +203,18 @@ void runUi(UI *ui) {
                 showMedicinesContainingInputString(ui);
                 break;
             case 6:
-                break;
+                showMedicineShortInSupply(ui);
             case 7:
+                outcome = undoOperation(ui->service);
+                if (outcome == 0) {
+                    printf("There are no more operations to undo!\n");
+                }
                 break;
             case 8:
+                outcome = redoOperation(ui->service);
+                if (outcome == 0) {
+                    printf("There are no more operations to redo!\n");
+                }
                 break;
             case 9:
                 printf("You left the app!");

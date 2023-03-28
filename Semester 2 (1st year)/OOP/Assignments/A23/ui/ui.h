@@ -10,23 +10,23 @@
 #include "../services/service.h"
 
 /*
- * Struct that stores the UI information.
+ * Struct that stores the Ui information.
  * */
 typedef struct {
     Service *service;
-} UI;
+} Ui;
 
 /*
  */
-UI *createUI(Service *service);
+Ui *createUI(Service *service);
 
 /*
 */
-void destroyUI(UI *ui);
+void destroyUI(Ui *ui);
 
 /*
  * Main function
  * */
-void runUi(UI *ui);
+void runUi(Ui *ui);
 
 #endif //A23_GULIN7_UI_H

@@ -6,18 +6,20 @@
 #define A23_GULIN7_SERVICE_H
 
 #include "../repository/repository.h"
-
+#include "../operationStack/operation_stack.h"
 
 /*
  * Struct that stores information about the service
  * */
 typedef struct {
     MedicineRepository *repository;
+    OperationStack *undoStack;
+    OperationStack *redoStack;
 } Service;
 
 /*
  */
-Service *createService(MedicineRepository *repository);
+Service *createService(MedicineRepository *repository, OperationStack *undoStack, OperationStack *redoStack);
 
 /*
  *
@@ -51,10 +53,23 @@ void sortMedicines(Service *service);
  * */
 void generateMedicines(Service *service);
 
+/*
+ */
+
+int getServiceSize(Service *service);
 
 /*
  */
 MedicineRepository *filterByPrice(MedicineRepository *repository, double price);
 
+/*
+ *
+ */
+int undoOperation(Service* service);
+
+/*
+ *
+ */
+int redoOperation(Service* service);
 
 #endif //A23_GULIN7_SERVICE_H

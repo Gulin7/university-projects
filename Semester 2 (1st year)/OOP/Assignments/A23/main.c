@@ -5,16 +5,19 @@
 #include "repository/repository.h"
 
 #include "services/service.h"
-
+#include "tests/tests.h"
 #include "ui/ui.h"
 
 int main() {
+    testAll();
 
     MedicineRepository *repository = createRepository();
+    OperationStack *undoStack = createOperationStack();
+    OperationStack *redoStack = createOperationStack();
 
-    Service *service = createService(repository);
+    Service *service = createService(repository, undoStack, redoStack);
 
-    UI *ui = createUI(service);
+    Ui *ui = createUI(service);
 
     runUi(ui);
 

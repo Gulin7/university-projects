@@ -85,7 +85,7 @@ void updateArray(DynamicArray *array, int position, TElem newElement) {
 
 int findElementInArray(DynamicArray *array, TElem elementSearched) {
     for (int index = 0; index < array->size; index++)
-        if (*getName(array->elements[index]) == *getName(elementSearched) &&
+        if (*getName(array->elements[index]) == *   getName(elementSearched) &&
             getConcentration(array->elements[index]) == getConcentration(elementSearched)) {
             return index;
         }
