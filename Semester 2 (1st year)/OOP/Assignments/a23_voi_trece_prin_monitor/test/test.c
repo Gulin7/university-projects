@@ -52,7 +52,7 @@ void testRepository() {
     // TESTING UPDATE
     Medicine *newMedicine = createMedicine("Paracetamol", 5, 420, 6.9);
     addToRepository(repository, medicine);
-    *updateMedicineInRepository(repository, newMedicine);
+    updateRepository(repository, newMedicine);
     assert(repository->medicines->elements[getSize(repository) - 1] == newMedicine);
 
     destroyMedicine(medicine);
