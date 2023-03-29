@@ -7,8 +7,10 @@
 
 Operation *createOperation(Medicine *medicine, char *type) {
     Operation *operation = (Operation *) malloc(sizeof(Operation));
+
     operation->medicine = medicine;
     operation->operationType = (char *) malloc(sizeof(char) * strlen(type) + 1);
+
     strcpy(operation->operationType, type);
 
     return operation;
@@ -21,7 +23,7 @@ void destroyOperation(Operation *operation) {
 }
 
 Operation *operationCopy(Operation *operation) {
-    Operation *newOperation = createOperation(operation->medicine, operation->operationType);
+    Operation *newOperation = createOperation(getOperationMedicine(operation), getOperationType(operation));
     return newOperation;
 }
 
@@ -34,13 +36,15 @@ char *getOperationType(Operation *operation) {
 }
 
 OperationStack *createOperationStack() {
-    OperationStack *stack = (OperationStack *) malloc(sizeof(OperationStack));
-    if(stack == NULL)
+    OperationStack *operationStack = (OperationStack *) malloc(sizeof(OperationStack));
+    // Handling NULL/dangling pointers
+    if (operationStack == NULL) {
         return NULL;
+    }
 
-    stack->operations = createArray(100);
+    operationStack->operations = createArray(20);
 
-    return stack;
+    return operationStack;
 }
 
 void destroyOperationStack(OperationStack *stack) {
@@ -49,16 +53,17 @@ void destroyOperationStack(OperationStack *stack) {
 }
 
 void pushOperation(OperationStack *stack, Operation *operation) {
-    addElement(stack->operations, operation);
+    Operation *newOperation = operationCopy(operation);
+    addElement(stack->operations, newOperation);
+    destroyOperation(newOperation);
 }
 
 Operation *popOperation(OperationStack *stack) {
-    if(getSizeArray(stack->operations) == 0)
+    if (getSizeArray(stack->operations) == 0)
         return NULL;
 
-    Operation *operation = stack->operations->elements[stack->operations->size-1];
-    stack->operations->size --;
+    Operation *operation = stack->operations->elements[stack->operations->size - 1];
+    stack->operations->size--;
 
     return operation;
-
 }

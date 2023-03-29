@@ -9,7 +9,7 @@
 #include "../undo_redo/undo_redo.h"
 
 /*
- *
+ * Struct that stores the service.
  */
 typedef struct {
     MedicineRepository *repository;
@@ -20,7 +20,7 @@ typedef struct {
 /*
  *
  */
-Service *createService(MedicineRepository *repository, OperationStack *undostack, OperationStack *redostack);
+Service *createService(MedicineRepository *repository, OperationStack *undoStack, OperationStack *redoStack);
 
 /*
  *
@@ -60,17 +60,21 @@ int getServiceSize(Service *service);
 /*
  *
  */
+void generateMedicines(Service *service);
+
+/*
+ *
+ */
 MedicineRepository *filterByPrice(MedicineRepository *repository, double price);
 
 /*
  *
  */
-int undoOperation();
+int undoOperation(Service *service);
 
 /*
  *
  */
-int redoOperation();
-
+int redoOperation(Service *service);
 
 #endif //A23_VOI_TRECE_PRIN_MONITOR_SERVICE_H
