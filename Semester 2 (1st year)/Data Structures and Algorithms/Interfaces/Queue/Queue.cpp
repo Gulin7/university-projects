@@ -8,10 +8,10 @@ using namespace std;
 Queue::Queue() {
 	//TODO - Implementation
 	this->size = 0;
-	this->capacity = 1024;
+	this->capacity = 10;
 	this->front = 0;
 	this->rear = 0;
-	this->queue =(TElem*) malloc(sizeof(TElem) * this->capacity);
+	this->queue = new TElem[10];
 }
 
 
@@ -20,11 +20,16 @@ void Queue::push(TElem elem) {
 	if (elem == NULL)
 		return;
 	if (this->size == this->capacity){
-		this->capacity *= 2;
-		this->queue = (TElem*) realloc(this->queue, sizeof(TElem) * this->capacity);
+		// we need to reallocate the memory
+		this->resize(this->capacity * 2);
+		this->front = 0;
+		this->rear = this->size;
 	}
-	this->queue[this->size] = elem;
+	this->queue[this->rear] = elem;
+	this->rear += 1;
 	this->size += 1;
+	if (this->rear > this->size)
+		this->rear = 0;
 }
 
 
@@ -33,7 +38,7 @@ TElem Queue::top() const {
 	if (this->size == 0)
 		throw exception("Queue is empty!");
 	if (this->size != 0)
-		return this->queue[0];
+		return this->queue[front];
 
 	return NULL_TELEM;
 }
@@ -42,12 +47,10 @@ TElem Queue::pop() {
 	//TODO - Implementation
 	if (this->size == 0)
 		throw exception("Queue is empty!");
-
 	if (this->size != 0) {
 		this->size--;
-		TElem toReturn = this->queue[0];
-		for (int index = 0; index < size; index++)
-			this->queue[index] = this->queue[index + 1];
+		TElem toReturn = this->queue[front];
+		this->front++;
 		return toReturn;
 	}
 	return NULL_TELEM;
@@ -63,6 +66,33 @@ bool Queue::isEmpty() const {
 
 Queue::~Queue() {
 	//TODO - Implementation
-	free(this->queue);
+	delete[] this->queue;
 }
+
+void Queue::resize(int newCapacity)
+{
+	TElem* newArray = new TElem[newCapacity];
+	
+	if (this->front <= this->rear)
+	{
+		int k = 0;
+		for (int index = this->front; index < this->rear; index++)
+			newArray[k++] = this->queue[index];
+	}
+	else {
+		int k = 0;
+		for (int index = this->front; index < this->capacity; index++)
+			newArray[k++] = this->queue[index];
+		for (int index = 0; index < this->rear; index++) {
+			newArray[k++] = this->queue[index];
+		}
+	}
+	this->capacity = newCapacity;
+	
+	delete[] this->queue;
+
+	this->queue = newArray;
+
+}
+
 

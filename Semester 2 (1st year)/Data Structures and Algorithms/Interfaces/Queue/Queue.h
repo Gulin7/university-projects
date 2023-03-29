@@ -38,4 +38,7 @@ public:
 
 	// destructor
 	~Queue();
+
+private:
+	void resize(int newCapacity);
 };

@@ -8,6 +8,8 @@ class Stack
 private:
 
 	//TODO - Representation
+	TElem* stack;
+	int capacity, size;
 	
 public:
 
@@ -30,5 +32,8 @@ public:
 	
 	//destructor
 	~Stack();
+
+private:
+	void resize(int newCapacity);
 };
 
