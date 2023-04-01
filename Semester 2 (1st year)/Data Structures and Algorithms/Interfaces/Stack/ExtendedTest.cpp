@@ -154,6 +154,24 @@ void testPushPop() {
 		}
 	}
 }
+void testPopMinimum() {
+	cout << "Test pop minimum" << endl;
+	Stack s;
+	assert(s.isEmpty());
+	s.push(0);
+	s.push(1);
+	s.push(2);
+	s.push(3);
+	s.push(0);
+	s.push(5);
+	TElem element = s.popMinium();
+	assert(element == 0);
+	assert(s.popMinium() == 0);
+	assert(s.top() == 5);
+	assert(s.popMinium() == 1);
+	assert(s.popMinium() == 2);
+
+}
 
 void testAllExtended() {
 	testCreate();
@@ -161,4 +179,5 @@ void testAllExtended() {
 	testPop();
 	testPushPop();
 	testQuantity();
+	testPopMinimum();
 }

@@ -17,8 +17,6 @@ Queue::Queue() {
 
 void Queue::push(TElem elem) {
 	//TODO - Implementation
-	if (elem == NULL)
-		return;
 	if (this->size == this->capacity){
 		// we need to reallocate the memory
 		this->resize(this->capacity * 2);
@@ -26,10 +24,10 @@ void Queue::push(TElem elem) {
 		this->rear = this->size;
 	}
 	this->queue[this->rear] = elem;
-	this->rear += 1;
+	this->rear = (this->rear + 1) % this->capacity;			
 	this->size += 1;
-	if (this->rear > this->size)
-		this->rear = 0;
+	// worst case : resize => n
+	// best case: 1
 }
 
 
@@ -39,7 +37,7 @@ TElem Queue::top() const {
 		throw exception("Queue is empty!");
 	if (this->size != 0)
 		return this->queue[front];
-
+	// 1 in every case
 	return NULL_TELEM;
 }
 
@@ -50,9 +48,10 @@ TElem Queue::pop() {
 	if (this->size != 0) {
 		this->size--;
 		TElem toReturn = this->queue[front];
-		this->front++;
+		this->front = (this->front+1)%this->capacity;
 		return toReturn;
 	}
+	// teta 1 every case
 	return NULL_TELEM;
 }
 
@@ -61,6 +60,8 @@ bool Queue::isEmpty() const {
 	if (this->size == 0)
 		return true;
 	return false;
+	// teta 1 every case
+
 }
 
 
@@ -73,26 +74,15 @@ void Queue::resize(int newCapacity)
 {
 	TElem* newArray = new TElem[newCapacity];
 	
-	if (this->front <= this->rear)
-	{
-		int k = 0;
-		for (int index = this->front; index < this->rear; index++)
-			newArray[k++] = this->queue[index];
-	}
-	else {
-		int k = 0;
-		for (int index = this->front; index < this->capacity; index++)
-			newArray[k++] = this->queue[index];
-		for (int index = 0; index < this->rear; index++) {
-			newArray[k++] = this->queue[index];
-		}
-	}
+	for (int index = 0; index < this->size; index++)
+		newArray[index] = this->queue[(index + this->front) % this->capacity];
+
 	this->capacity = newCapacity;
 	
 	delete[] this->queue;
 
 	this->queue = newArray;
-
+	// o(n) ; it parses through all the stack everytime
 }
 
 

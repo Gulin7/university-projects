@@ -26,12 +26,18 @@ public:
 	//removes and returns the element from the top of the Stack
 	//throws exception if the stack is empty
 	TElem pop();
+
+	// pops one occurance of the minimum element from the stack
+	// all are integers;
+	TElem popMinium();
 	   
 	//checks if the stack is empty
 	bool isEmpty() const;
 	
 	//destructor
 	~Stack();
+
+	
 
 private:
 	void resize(int newCapacity);
