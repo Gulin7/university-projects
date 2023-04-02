@@ -2,7 +2,7 @@
 
 Service* createService(Repository* repo, OperationStack* undo, OperationStack* redo)
 {
-    return nullptr;
+    return NULL;
 }
 
 void destroyService(Service* service)
@@ -11,7 +11,7 @@ void destroyService(Service* service)
 
 Repository* getRepository(Service* service)
 {
-    return nullptr;
+    return NULL;
 }
 
 int addService(Service* service, char* name, int concentration, int quantity, double price)
@@ -44,7 +44,7 @@ int getServiceSize(Service* service)
 
 Repository* filterByPrice(Repository* repository, double price)
 {
-    return nullptr;
+    return NULL;
 }
 
 int undo(Service* service)

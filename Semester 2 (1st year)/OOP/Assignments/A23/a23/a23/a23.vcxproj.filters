@@ -36,6 +36,9 @@
     <ClCompile Include="undoRedo.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ui.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="test.h">
@@ -54,6 +57,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="undoRedo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

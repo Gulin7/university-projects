@@ -133,6 +133,7 @@
     <ClCompile Include="repository.c" />
     <ClCompile Include="service.c" />
     <ClCompile Include="test.c" />
+    <ClCompile Include="ui.c" />
     <ClCompile Include="undoRedo.c" />
   </ItemGroup>
   <ItemGroup>
@@ -141,6 +142,7 @@
     <ClInclude Include="repository.h" />
     <ClInclude Include="service.h" />
     <ClInclude Include="test.h" />
+    <ClInclude Include="ui.h" />
     <ClInclude Include="undoRedo.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

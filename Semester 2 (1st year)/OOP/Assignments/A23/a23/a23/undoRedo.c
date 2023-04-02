@@ -2,17 +2,17 @@
 
 Operation* createOperation(Medicine* medicine, char* type)
 {
-    return nullptr;
+    return NULL;
 }
 
 Medicine* getOperationMedicine(Operation* operation)
 {
-    return nullptr;
+    return NULL;
 }
 
 OperationStack* createOperationStack()
 {
-    return nullptr;
+    return NULL;
 }
 
 void destroyOperationStack(OperationStack* stack)
@@ -25,5 +25,5 @@ void pushOperation(OperationStack* stack, Operation* operation)
 
 Operation* popOperation(OperationStack* stack)
 {
-    return nullptr;
+    return NULL;
 }

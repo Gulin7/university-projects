@@ -1,0 +1,17 @@
+﻿  ui.c
+C:\Codes\university-projects\Semester 2 (1st year)\OOP\Assignments\A23\a23\a23\ui.c(43,9): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Codes\university-projects\Semester 2 (1st year)\OOP\Assignments\A23\a23\a23\ui.c(61,5): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Codes\university-projects\Semester 2 (1st year)\OOP\Assignments\A23\a23\a23\ui.c(68,9): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Codes\university-projects\Semester 2 (1st year)\OOP\Assignments\A23\a23\a23\ui.c(84,9): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Codes\university-projects\Semester 2 (1st year)\OOP\Assignments\A23\a23\a23\ui.c(100,9): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Codes\university-projects\Semester 2 (1st year)\OOP\Assignments\A23\a23\a23\ui.c(119,5): warning C4013: 'addToService' undefined; assuming extern returning int
+C:\Codes\university-projects\Semester 2 (1st year)\OOP\Assignments\A23\a23\a23\ui.c(128,5): warning C4013: 'deleteFromService' undefined; assuming extern returning int
+C:\Codes\university-projects\Semester 2 (1st year)\OOP\Assignments\A23\a23\a23\ui.c(139,5): warning C4013: 'updateInService' undefined; assuming extern returning int
+C:\Codes\university-projects\Semester 2 (1st year)\OOP\Assignments\A23\a23\a23\ui.c(146,30): warning C4013: 'getSize' undefined; assuming extern returning int
+C:\Codes\university-projects\Semester 2 (1st year)\OOP\Assignments\A23\a23\a23\ui.c(158,13): warning C4013: 'strstr' undefined; assuming extern returning int
+C:\Codes\university-projects\Semester 2 (1st year)\OOP\Assignments\A23\a23\a23\ui.c(154,5): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Codes\university-projects\Semester 2 (1st year)\OOP\Assignments\A23\a23\a23\ui.c(166,5): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Codes\university-projects\Semester 2 (1st year)\OOP\Assignments\A23\a23\a23\ui.c(202,23): warning C4013: 'undoOperation' undefined; assuming extern returning int
+C:\Codes\university-projects\Semester 2 (1st year)\OOP\Assignments\A23\a23\a23\ui.c(208,23): warning C4013: 'redoOperation' undefined; assuming extern returning int
+  undoRedo.c
+  Generating Code...

@@ -2,7 +2,7 @@
 
 Repository* createRepository()
 {
-    return nullptr;
+    return NULL;
 }
 
 void destroyRepository(Repository* repo)
@@ -21,10 +21,10 @@ int addRepository(Repository* repo, Medicine* medicine)
 
 Medicine* deleteRepository(Repository* repo, char* name, int concentration)
 {
-    return nullptr;
+    return NULL;
 }
 
 Medicine* updateRepository(Repository* repo, Medicine* medicine)
 {
-    return nullptr;
+    return NULL;
 }

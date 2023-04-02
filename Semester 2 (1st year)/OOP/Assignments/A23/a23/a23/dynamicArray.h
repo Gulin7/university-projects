@@ -16,7 +16,7 @@ typedef struct {
 /*
 * 
 */
-DynamicArray* createDynamicArray();
+DynamicArray* createDynamicArray(int capacity);
 
 /*
 * 
