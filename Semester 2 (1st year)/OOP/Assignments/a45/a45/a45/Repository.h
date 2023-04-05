@@ -9,8 +9,8 @@ private:
 public:
 	Repository(DynamicVector<Event> events = NULL);
 	DynamicVector<Event> getAllEvents();
-	bool addEventToRepository(Event eventToAdd);
-	bool removeEventFromRepository(int positionToRemove);
-	bool updateEventInRepository(int positionToUpdate, Event newEvent);
+	bool addEvent(Event eventToAdd);
+	bool removeEvent(int positionToRemove);
+	bool updateEvent(int positionToUpdate, Event newEvent);
 	int findEventPosition(Event eventSearched);
 };

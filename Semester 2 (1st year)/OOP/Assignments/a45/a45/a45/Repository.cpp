@@ -10,7 +10,7 @@ DynamicVector<Event> Repository::getAllEvents()
 	return this->events;
 }
 
-bool Repository::addEventToRepository(Event eventToAdd)
+bool Repository::addEvent(Event eventToAdd)
 {
 	if (this->events.findPosition(eventToAdd) != -1)
 		return false;
@@ -18,7 +18,7 @@ bool Repository::addEventToRepository(Event eventToAdd)
 	return true;
 }
 
-bool Repository::removeEventFromRepository(int positionToRemove)
+bool Repository::removeEvent(int positionToRemove)
 {
 	if (positionToRemove < 0 || positionToRemove >= this->events.getSize())
 		return false;
@@ -26,7 +26,7 @@ bool Repository::removeEventFromRepository(int positionToRemove)
 	return true;
 }
 
-bool Repository::updateEventInRepository(int positionToUpdate, Event newEvent)
+bool Repository::updateEvent(int positionToUpdate, Event newEvent)
 {
 	if (positionToUpdate < 0 || positionToUpdate >= this->events.getSize())
 		return false;

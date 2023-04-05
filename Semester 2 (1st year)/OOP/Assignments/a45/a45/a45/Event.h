@@ -44,5 +44,4 @@ public:
 	bool operator==(const Event& eventToCheck);
 	void operator=(const Event& eventToCopy);
 
-	void showEvent();
 };

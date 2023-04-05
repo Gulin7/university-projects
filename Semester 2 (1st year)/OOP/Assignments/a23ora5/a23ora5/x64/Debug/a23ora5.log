@@ -1,0 +1,4 @@
+﻿  main.c
+C:\Codes\university-projects\Semester 2 (1st year)\OOP\Assignments\a23ora5\a23ora5\main.c(2,2): warning C4013: 'printf' undefined; assuming extern returning int
+main.obj : error LNK2019: unresolved external symbol printf referenced in function main
+C:\Codes\university-projects\Semester 2 (1st year)\OOP\Assignments\a23ora5\x64\Debug\a23ora5.exe : fatal error LNK1120: 1 unresolved externals

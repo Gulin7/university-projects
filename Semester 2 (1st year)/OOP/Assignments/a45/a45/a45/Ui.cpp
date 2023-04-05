@@ -44,7 +44,7 @@ void Ui::addEvent()
 	std::cin.ignore();
 	std::getline(std::cin, link);
 
-	bool check = this->administratorService.addEventToService(title, description, date, time, numberOfPeople, link);
+	bool check = this->administratorService.addEvent(title, description, date, time, numberOfPeople, link);
 	if (check == true)
 		std::cout << "Event added!\n";
 	else
@@ -62,7 +62,7 @@ void Ui::removeEvent()
 	std::cout << "Enter a description: ";
 	std::getline(std::cin, description);
 
-	bool check = this->administratorService.removeEventFromService(title, description);
+	bool check = this->administratorService.removeEvent(title, description);
 	if (check == true)
 		std::cout << "Event does not exist!\n";
 	else
@@ -113,7 +113,7 @@ void Ui::updateEvent()
 	std::cin.ignore();
 	std::getline(std::cin, newLink);
 
-	bool check = this->administratorService.updateEventInService(title, description, newTitle, newDescription, newDate, newTime, newNumberOfPeople, newLink);
+	bool check = this->administratorService.updateEvent(title, description, newTitle, newDescription, newDate, newTime, newNumberOfPeople, newLink);
 	if (check == false)
 		std::cout << "Event does not exist!\n";
 	else
@@ -127,7 +127,7 @@ void Ui::displayEvents()
 	{
 		Event event = events.getElement(index);
 		std::cout << "#" << index + 1 << std::endl;
-		event.showEvent();
+		showEvent(event);
 	}
 }
 
@@ -190,7 +190,7 @@ void Ui::searchByMonth()
 			return;
 		}
 		Event currentEvent = foundEvents.getElement(currentPosition);
-		currentEvent.showEvent();
+		showEvent(currentEvent);
 
 		std::cout << "Do you want to add this event to your event list? 1=yes, 2=no.\n";
 		std::cout << "Enter 0 to leave.\n";
@@ -251,7 +251,7 @@ void Ui::showEventList()
 	for (int index = 0; index < events.getSize(); index++) {
 		Event event = events.getElement(index);
 		std::cout << "#" << index + 1 << std::endl;
-		event.showEvent();
+		showEvent(event);
 	}
 }
 
@@ -296,6 +296,16 @@ void Ui::userMode()
 		}
 	}
 	return;
+}
+
+void Ui::showEvent(Event event)
+{
+	std::cout << "Title: " << event.getTitle() << std::endl;
+	std::cout << "Description: " << event.getDescription() << std::endl;
+	std::cout << "Date: " << event.getDate().day << ":" << event.getDate().month << ":" << event.getDate().year << std::endl;
+	std::cout << "Time: " << event.getTime().hour << ":" << event.getTime().minute << std::endl;
+	std::cout << "Number of people: " << event.getNumberOfPeople() << std::endl;
+	std::cout << "Link: " <<event.getLink() << std::endl;
 }
 
 void Ui::runUi()

@@ -87,12 +87,3 @@ void Event::operator=(const Event& eventToCopy)
 	this->link = eventToCopy.link;
 }
 
-void Event::showEvent()
-{
-	std::cout << "Title: " << this->title << std::endl;
-	std::cout << "Description: " << this->description<< std::endl;
-	std::cout << "Date: " << this->date.day << ":" << this->date.month << ":" << this->date.year << std::endl;
-	std::cout << "Time: " << this->time.hour << ":" << this->time.minute << std::endl;
-	std::cout << "Number of people: " << this->numberOfPeople << std::endl;
-	std::cout << "Link: " << this->link << std::endl;
-}

@@ -1,19 +1,27 @@
 #include <iostream>
 #include "Ui.h"
+#include "Tests.h"
+#include <crtdbg.h>
 
 int main() {
-	DynamicVector<Event> events;
-	DynamicVector<Event> events_user;
-	
-	Repository repository{ events };
-	Repository repository_user{ events_user };
+	{
+		runAllTests();
 
-	AdministratorService administratorService{ repository };
-	administratorService.generateEvents();
+		DynamicVector<Event> events;
+		DynamicVector<Event> events_user;
 
-	UserService userService{ repository_user };
+		Repository repository{ events };
+		Repository repository_user{ events_user };
 
-	Ui ui{ administratorService, userService };
+		AdministratorService administratorService{ repository };
+		administratorService.generateEvents();
 
-	ui.runUi();
+		UserService userService{ repository_user };
+
+		Ui ui{ administratorService, userService };
+
+		ui.runUi();
+	}
+
+	_CrtDumpMemoryLeaks();
 }

@@ -1,6 +1,7 @@
 #pragma once
 #include "AdministratorService.h"
 #include "UserService.h"
+#include "Event.h"
 
 class Ui
 {
@@ -24,6 +25,8 @@ public:
 	void showEventList();
 	void showUserMenu();
 	void userMode();
+
+	void showEvent(Event event);
 
 	void runUi();
 };
