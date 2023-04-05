@@ -1,0 +1,9 @@
+﻿  main.c
+main.obj : error LNK2019: unresolved external symbol createRepository referenced in function main
+main.obj : error LNK2019: unresolved external symbol createOperationStack referenced in function main
+main.obj : error LNK2019: unresolved external symbol createService referenced in function main
+main.obj : error LNK2019: unresolved external symbol testAll referenced in function main
+main.obj : error LNK2019: unresolved external symbol createUI referenced in function main
+main.obj : error LNK2019: unresolved external symbol destroyUI referenced in function main
+main.obj : error LNK2019: unresolved external symbol runUi referenced in function main
+D:\Code\university-projects\Semester 2 (1st year)\Data Structures and Algorithms\Assignments\A1stack\a23ora5\x64\Debug\a23ora5.exe : fatal error LNK1120: 7 unresolved externals
