@@ -1,0 +1,3 @@
+C:/Codes/university-projects/Semester 2 (1st year)/OOP/Assignments/a23clion/cmake-build-debug/CMakeFiles/a23clion.dir
+C:/Codes/university-projects/Semester 2 (1st year)/OOP/Assignments/a23clion/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Codes/university-projects/Semester 2 (1st year)/OOP/Assignments/a23clion/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,9 +1,0 @@
-# ninja log v5
-25	198	7021320674397424	CMakeFiles/a23_3rd.dir/operation.c.obj	246370c93ab7bb76
-1	207	7021320674407401	CMakeFiles/a23_3rd.dir/tests.c.obj	ed9145375006a3f0
-31	209	7021320674423755	CMakeFiles/a23_3rd.dir/medicine.c.obj	2f4e94988e59d719
-18	213	7021320674433020	CMakeFiles/a23_3rd.dir/dynamicArray.c.obj	119bc0f5ea752bca
-6	217	7021320674548780	CMakeFiles/a23_3rd.dir/main.c.obj	358b6f901b986e72
-12	230	7021320674730018	CMakeFiles/a23_3rd.dir/repository.c.obj	352d3584e13ea2d6
-39	232	7021320674768875	CMakeFiles/a23_3rd.dir/service.c.obj	25cafbb4de9d57d9
-3	87	7021320913045843	CMakeFiles/a23_3rd.dir/ui.c.obj	163dc818305aff9

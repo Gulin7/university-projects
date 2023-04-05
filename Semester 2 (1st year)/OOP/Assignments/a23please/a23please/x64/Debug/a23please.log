@@ -1,0 +1,11 @@
+﻿  operation_stack.c
+C:\Users\gulin\OneDrive\Desktop\wetransfer_a23_2023-04-04_2341\a23\operationStack\operation_stack.c(15,5): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  repository.c
+  service.c
+C:\Users\gulin\OneDrive\Desktop\wetransfer_a23_2023-04-04_2341\a23\services\service.c(166,9): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\gulin\OneDrive\Desktop\wetransfer_a23_2023-04-04_2341\a23\services\service.c(171,9): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\gulin\OneDrive\Desktop\wetransfer_a23_2023-04-04_2341\a23\services\service.c(196,9): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\gulin\OneDrive\Desktop\wetransfer_a23_2023-04-04_2341\a23\services\service.c(201,9): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  tests.c
+  ui.c
+  Generating Code...

@@ -28,7 +28,7 @@ class DirectedGraph:
         :param vertexToCheck: int, represents a vertex
         :return: bool
         """
-        if vertexToCheck not in self.__dictIn:
+        if vertexToCheck not in self.__dictIn.keys():
             return False
         return True
 

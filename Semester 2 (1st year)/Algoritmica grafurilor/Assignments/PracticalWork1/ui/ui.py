@@ -201,17 +201,16 @@ The out degree is: {outDegree}""")
                 filename = self.getFileName()
                 graph = readGraphFromFileStandard(filename)
                 print("Graph read!")
-
             elif command == 12:
                 # read 2
                 filename = self.getFileName()
                 graph = readGraphFromFile2(filename)
                 print("Graph read!")
-
             elif command == 13:
                 # write to file
                 filename = self.getFileName()
-                graph = writeGraphToFile(filename, graph)
+                copyGraph = graph.createCopy()
+                copyGraph = writeGraphToFile(filename, graph)
                 print("Graph successfully written!")
             elif command == 14:
                 # gen random
