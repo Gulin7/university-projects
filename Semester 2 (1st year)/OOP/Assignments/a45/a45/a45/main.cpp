@@ -7,8 +7,8 @@ int main() {
 	{
 		runAllTests();
 
-		DynamicVector<Event> events;
-		DynamicVector<Event> events_user;
+		std::vector<Event> events;
+		std::vector<Event> events_user;
 
 		Repository repository{ events };
 		Repository repository_user{ events_user };

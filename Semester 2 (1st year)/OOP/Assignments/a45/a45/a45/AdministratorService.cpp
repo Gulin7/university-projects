@@ -52,12 +52,12 @@ bool AdministratorService::increaseNumberOfPeople(std::string title, std::string
 	time.minute = 1;
 	Event eventToFind{ title, description, date, time, 0, "" };
 	int position = this->eventRepository.findEventPosition(eventToFind);
-	Event eventToUpdate = this->eventRepository.getAllEvents().getElement(position);
+	Event eventToUpdate = this->eventRepository.getAllEvents()[position];
 	Event eventUpdated{ title, description, eventToUpdate.getDate(), eventToUpdate.getTime(), eventToUpdate.getNumberOfPeople() + 1, eventToUpdate.getLink() };
 	return this->eventRepository.updateEvent(position, eventUpdated);
 }
 
-DynamicVector<Event> AdministratorService::getAllEvents()
+std::vector<Event> AdministratorService::getAllEvents()
 {
 	return this->eventRepository.getAllEvents();
 }

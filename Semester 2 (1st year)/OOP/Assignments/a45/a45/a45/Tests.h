@@ -9,9 +9,6 @@
 // EVENT
 void testEvent();
 
-// DYNAMIC VECTOR
-void testDynamicVector();
-
 // REPOSITORY
 void testRepositoryAdd();
 

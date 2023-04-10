@@ -122,10 +122,10 @@ void Ui::updateEvent()
 
 void Ui::displayEvents()
 {
-	DynamicVector<Event>  events = this->administratorService.getAllEvents();
-	for (int index = 0; index < events.getSize(); index++)
+	std::vector<Event>  events = this->administratorService.getAllEvents();
+	for (int index = 0; index < events.size(); index++)
 	{
-		Event event = events.getElement(index);
+		Event event = events[index];
 		std::cout << "#" << index + 1 << std::endl;
 		showEvent(event);
 	}
@@ -180,16 +180,16 @@ void Ui::searchByMonth()
 	std::cout << "\nSearch a month: ";
 	std::cin >> month;
 
-	DynamicVector<Event> foundEvents = this->userService.getEventOfGivenMonth(this->administratorService.getAllEvents(), month);
+	std::vector<Event> foundEvents = this->userService.getEventOfGivenMonth(this->administratorService.getAllEvents(), month);
 	
 	int currentPosition = 0;
 	while (true) {
-		if (currentPosition >= foundEvents.getSize())
+		if (currentPosition >= foundEvents.size())
 		{
 			std::cout << "No events left.\n";
 			return;
 		}
-		Event currentEvent = foundEvents.getElement(currentPosition);
+		Event currentEvent = foundEvents[currentPosition];
 		showEvent(currentEvent);
 
 		std::cout << "Do you want to add this event to your event list? 1=yes, 2=no.\n";
@@ -247,9 +247,9 @@ void Ui::removeEventFromEvenList()
 
 void Ui::showEventList()
 {
-	DynamicVector <Event> events = this->userService.getEventList();
-	for (int index = 0; index < events.getSize(); index++) {
-		Event event = events.getElement(index);
+	std::vector <Event> events = this->userService.getEventList();
+	for (int index = 0; index < events.size(); index++) {
+		Event event = events[index];
 		std::cout << "#" << index + 1 << std::endl;
 		showEvent(event);
 	}

@@ -7,10 +7,11 @@ UserService::UserService(Repository events) :
 
 bool UserService::addEventToList(Event eventToAdd)
 {
-	if (this->eventlist.findPosition(eventToAdd) != -1)
+	auto iterator = std::find(this->eventlist.begin(), this->eventlist.end(), eventToAdd);
+	if (iterator != this->eventlist.end())
 		return false;
 
-	this->eventlist.addElement(eventToAdd);
+	this->eventlist.push_back(eventToAdd);
 	return true;
 }
 
@@ -25,29 +26,27 @@ bool UserService::removeEventFromList(std::string title, std::string description
 	time.hour = 0;
 	time.minute = 0;
 	Event event{ title, description, date, time, 0, "" };
-	int position = this->eventlist.findPosition(event);
-	if (position < 0 || position >= this->eventlist.getSize())
+	auto iterator = std::find(this->eventlist.begin(), this->eventlist.end(), event);
+	if (iterator == this->eventlist.end())
 		return false;
-	this->eventlist.removeElement(position);
+	this->eventlist.erase(iterator);
 	return true;
 
 }
 
-DynamicVector<Event> UserService::getEventOfGivenMonth(DynamicVector<Event> events, int month)
+std::vector<Event> UserService::getEventOfGivenMonth(std::vector<Event> events, int month)
 {
-	DynamicVector <Event> eventsFound;
-	int size = events.getSize();
-	for (int index = 0; index < size; index++)
-	{
-		Event event = events.getElement(index);
+	std::vector <Event> eventsFound;
+	int size = events.size();
+	for (int index = 0; index < size; index++){
+		Event event = events[index];
 		if (event.getDate().month == month)
-			eventsFound.addElement(event);
-
+			eventsFound.push_back(event);
 	}
 	return eventsFound;
 }
 
-DynamicVector<Event> UserService::getEventList()
+std::vector<Event> UserService::getEventList()
 {
 	return this->eventlist;
 }

@@ -1,5 +1,6 @@
 #include "Tests.h"
 #include <assert.h>
+#include <vector>
 
 /// <summary>
 /// EVENT TESTS
@@ -12,6 +13,14 @@ void testEvent() {
 	date.year = 2023;
 	time.hour = 8;
 	time.minute = 25;
+
+	Date date2;
+	Time time2;
+	date2.day = 3;
+	date2.month = 5;
+	date2.year = 2024;
+	time2.hour = 5;
+	time2.minute = 25;
 	
 	Event event("Concert", "Cool!", date, time, 0, "www.facebook.com");
 
@@ -44,45 +53,13 @@ void testEvent() {
 	assert(event.getLink() == "www.youtube.com");
 	event.setNumberOfPeople(3);
 	assert(event.getNumberOfPeople() == 3);
-
-}
-
-/// <summary>
-/// DYNAMIC VECTOR TESTS
-/// </summary>
-void testDynamicVector(){
-
-	DynamicVector<int> testVector;
-	assert(testVector.getSize() == 0);
-
-	// ADDS MULTIPLE ELEMENTS
-	for (int index = 0; index < 100; index++)
-		testVector.addElement(index);
-	assert(testVector.getSize() == 100);
-
-	// ADD
-	for(int index=0;index<100;index++)
-		assert(testVector.getElement(index) == index);
-
-	// UPDATE
-	testVector.updateElement(0, 5);
-	testVector.updateElement(1, 15);
-	testVector.updateElement(16, 32);
-	assert(testVector.getElement(0) == 5);
-	assert(testVector.getElement(1) == 15);
-	assert(testVector.getElement(16) == 32);
-
-	// DELETE
-	testVector.removeElement(55);
-	assert(testVector.getSize() == 99);
-	testVector.removeElement(33);
-	assert(testVector.getSize() == 98);
-
-	// FIND
-	assert(testVector.findPosition(14) == 14);
-	assert(testVector.findPosition(33) == -1);
-
-	assert(testVector.getSize() == 98);
+	event.setDate(date2);
+	event.setTime(time2);
+	assert(event.getDate().day == date2.day);
+	assert(event.getDate().month == date2.month);
+	assert(event.getDate().year == date2.year);
+	assert(event.getTime().hour == time2.hour);
+	assert(event.getTime().minute == time2.minute);
 
 }
 
@@ -114,16 +91,21 @@ void testRepositoryAdd()
 	Event event3("Event3", "Description3", date3, time3, 3, "link3");
 
 	// CREATE REPO
-	DynamicVector<Event> events;
+	std::vector<Event> events;
 	Repository repository{ events };
 
 	// TEST ADD
 	repository.addEvent(event1);
-	assert(repository.getAllEvents().getSize() == 1);
+	assert(repository.getAllEvents().size() == 1);
 	repository.addEvent(event2);
-	assert(repository.getAllEvents().getSize() == 2);
+	assert(repository.getAllEvents().size() == 2);
 	repository.addEvent(event3);
-	assert(repository.getAllEvents().getSize() == 3);
+	assert(repository.getAllEvents().size() == 3);
+
+	// TEST NO ADD DUPLICATES
+	assert(repository.addEvent(event1) == false);
+	assert(repository.addEvent(event2) == false);
+	assert(repository.addEvent(event3) == false);
 
 	// TEST FIND
 	assert(repository.findEventPosition(event1) == 0);
@@ -156,17 +138,21 @@ void testRepositoryRemove()
 	Event event3("Event3", "Description3", date3, time3, 3, "link3");
 
 	// CREATE REPO
-	DynamicVector<Event> events;
+	std::vector<Event> events;
 	Repository repository{ events };
+
+	// TEST REMOVE NOT EXISTING
+	assert(repository.removeEvent(0) == false);
 
 	// ADD EVENTS
 	repository.addEvent(event1);
 	repository.addEvent(event2);
 	repository.addEvent(event3);
 
+
 	// TEST REMOVE
 	repository.removeEvent(0);
-	assert(repository.getAllEvents().getSize() == 2);
+	assert(repository.getAllEvents().size() == 2);
 	assert(repository.findEventPosition(event1) == -1);
 }
 
@@ -195,7 +181,7 @@ void testRepositoryUpdate()
 	Event event3("Event3", "Description3", date3, time3, 3, "link3");
 
 	// CREATE REPO
-	DynamicVector<Event> events;
+	std::vector<Event> events;
 	Repository repository{ events };
 
 	// ADD EVENTS
@@ -203,9 +189,12 @@ void testRepositoryUpdate()
 	repository.addEvent(event2);
 	repository.addEvent(event3);
 
+	// TEST UPDATE NOT GOOD POS
+	assert(repository.updateEvent(-1, event2) == false);
+
 	// TEST UPDATE
 	repository.updateEvent(0, event2);
-	assert(repository.getAllEvents().getElement(0) == event2);
+	assert(repository.getAllEvents()[0] == event2);
 	assert(repository.findEventPosition(event1) == -1);
 }
 
@@ -214,7 +203,7 @@ void testRepositoryUpdate()
 /// </summary>
 void testUserServiceAdd()
 {
-	DynamicVector<Event> events;
+	std::vector<Event> events;
 	Repository repository{ events };
 	UserService userService{ repository };
 
@@ -228,14 +217,17 @@ void testUserServiceAdd()
 	Event event1("Event1", "Description1", date1, time1, 1, "link1");
 	// ADD
 	userService.addEventToList(event1);
-	assert(userService.getEventList().getElement(0) == event1);
-	assert(userService.getEventList().getSize() == 1);
+	assert(userService.getEventList()[0] == event1);
+	assert(userService.getEventList().size() == 1);
+
+	// ADD ALREADY EXISTING
+	assert(userService.addEventToList(event1) == false);
 
 }
 
 void testUserServiceRemove()
 {
-	DynamicVector<Event> events;
+	std::vector<Event> events;
 	Repository repository{ events };
 	UserService userService{ repository };
 
@@ -247,17 +239,21 @@ void testUserServiceRemove()
 	time1.hour = 1;
 	time1.minute = 1;
 	Event event1("Event1", "Description1", date1, time1, 1, "link1");
+
+	// REMOVE NOT EXISTING
+	assert(userService.removeEventFromList(event1.getTitle(), event1.getDescription()) == false);
+
 	userService.addEventToList(event1);
 
 	// REMOVE THE ELEMENT
 	userService.removeEventFromList(event1.getTitle(), event1.getDescription());
-	assert(userService.getEventList().getSize() == 0); // test if the userService events is now empty
+	assert(userService.getEventList().size() == 0); // test if the userService events is now empty
 
 }
 
 void testUserServiceGetByMonth()
 {
-	DynamicVector<Event> events;
+	std::vector<Event> events;
 	Repository repository{ events };
 	UserService userService{ repository };
 
@@ -272,7 +268,7 @@ void testUserServiceGetByMonth()
 	userService.addEventToList(event1);
 
 	// SEARCH BY MONTH
-	assert(userService.getEventOfGivenMonth(userService.getEventList(), 1).getElement(0) == event1);
+	assert(userService.getEventOfGivenMonth(userService.getEventList(), 1)[0] == event1);
 }
 
 /// <summary>
@@ -280,7 +276,7 @@ void testUserServiceGetByMonth()
 /// </summary>
 void testAdministratorServiceAdd()
 {
-	DynamicVector<Event> events;
+	std::vector<Event> events;
 	Repository repository{ events };
 	AdministratorService administratorService{ repository };
 
@@ -296,17 +292,17 @@ void testAdministratorServiceAdd()
 
 	// ADD
 	administratorService.addEvent(event1.getTitle(), event1.getDescription(), event1.getDate(), event1.getTime(), event1.getNumberOfPeople(), event1.getLink());
-	assert(administratorService.getAllEvents().getSize() == 1);
-	assert(administratorService.getAllEvents().getElement(0) == event1);
+	assert(administratorService.getAllEvents().size() == 1);
+	assert(administratorService.getAllEvents()[0] == event1);
 
 	// INCREASE NUMBER OF PEOPLE
 	administratorService.increaseNumberOfPeople(event1.getTitle(), event1.getDescription());
-	assert(administratorService.getAllEvents().getElement(0) == event2);	
+	assert(administratorService.getAllEvents()[0] == event2);
 }
 
 void testAdministratorServiceRemove()
 {
-	DynamicVector<Event> events;
+	std::vector<Event> events;
 	Repository repository{ events };
 	AdministratorService administratorService{ repository };
 
@@ -323,17 +319,17 @@ void testAdministratorServiceRemove()
 	//add the 2 events
 	administratorService.addEvent(event1.getTitle(), event1.getDescription(), event1.getDate(), event1.getTime(), event1.getNumberOfPeople(), event1.getLink());
 	administratorService.addEvent(event2.getTitle(), event2.getDescription(), event2.getDate(), event2.getTime(), event2.getNumberOfPeople(), event2.getLink());
-	assert(administratorService.getAllEvents().getSize() == 2);
+	assert(administratorService.getAllEvents().size() == 2);
 	//REMOVE EVENT1
 	administratorService.removeEvent(event2.getTitle(), event2.getDescription());
-	assert(administratorService.getAllEvents().getSize() == 1);
-	assert(administratorService.getAllEvents().getElement(0) == event1);
+	assert(administratorService.getAllEvents().size() == 1);
+	assert(administratorService.getAllEvents()[0] == event1);
 
 }
 
 void testAdministratorServiceUpdate()
 {
-	DynamicVector<Event> events;
+	std::vector<Event> events;
 	Repository repository{ events };
 	AdministratorService administratorService{ repository };
 
@@ -352,19 +348,19 @@ void testAdministratorServiceUpdate()
 	//update the event
 	administratorService.updateEvent(event1.getTitle(), event1.getDescription(), "1", "1", date1, time1, 100, "no");
 	Event updatedEvent("1", "1", date1, time1, 100, "no");
-	assert(administratorService.getAllEvents().getSize() == 1);
-	assert(administratorService.getAllEvents().getElement(0) == updatedEvent);
+	assert(administratorService.getAllEvents().size() == 1);
+	assert(administratorService.getAllEvents()[0] == updatedEvent);
 }
 
 void testAdministratorServiceGenerators()
 {
-	DynamicVector<Event> events;
+	std::vector<Event> events;
 	Repository repository{ events };
 	AdministratorService administratorService{ repository };
 	administratorService.generateEvents();
 
 	// TEST GENERATE EVENTS 
-	assert(administratorService.getAllEvents().getSize() == 10);
+	assert(administratorService.getAllEvents().size() == 10);
 	// TEST DATE GENERATOR
 	Date date = administratorService.generateDate();
 	assert(date.day >= 1 && date.day <= 31);
@@ -385,8 +381,6 @@ void runAllTests()
 {
 	//event
 	testEvent();
-	//dynamic vector
-	testDynamicVector();
 	//repository
 	testRepositoryAdd();
 	testRepositoryRemove();

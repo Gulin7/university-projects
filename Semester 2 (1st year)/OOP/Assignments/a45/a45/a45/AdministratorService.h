@@ -1,5 +1,6 @@
 #pragma once
 #include "Repository.h"
+#include <vector>
 
 class AdministratorService
 {
@@ -12,7 +13,7 @@ public:
 	bool removeEvent(std::string title, std::string description);
 	bool updateEvent(std::string title, std::string description, std::string newTitle, std::string newDescription, Date newDate, Time newTime, int newNumberOfPeople, std::string newLink);
 	bool increaseNumberOfPeople(std::string title, std::string description);
-	DynamicVector<Event> getAllEvents();
+	std::vector<Event> getAllEvents();
 	void generateEvents();
 	Date generateDate();
 	Time generateTime();
