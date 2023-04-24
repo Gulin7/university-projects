@@ -23,7 +23,6 @@ bool AdministratorService::removeEvent(std::string title, std::string descriptio
 	Event eventToRemove{ title, description,date,time, 0, "" };
 	int positionToRemove = this->eventRepository.findEventPosition(eventToRemove);
 	return this->eventRepository.removeEvent(positionToRemove);
-
 }
 
 bool AdministratorService::updateEvent(std::string title, std::string description, std::string newTitle, std::string newDescription, Date newDate, Time newTime, int newNumberOfPeople, std::string newLink)

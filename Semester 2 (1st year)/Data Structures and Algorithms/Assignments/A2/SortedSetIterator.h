@@ -10,6 +10,8 @@ private:
 	SortedSetIterator(const SortedSet& m);
 
 	//TODO - Representation
+	Node* currentNode;
+
 
 public:
 	void first();

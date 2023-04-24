@@ -3,6 +3,16 @@
 #include <iostream>
 #include <cstdlib>
 
+#define USERADD 1
+#define USERREMOVE 2
+#define USERSHOW 3
+#define USEREXIT 0
+
+#define ADMINADD 1
+#define ADMINREMOVE 2
+#define ADMINUPDATE 3
+#define ADMINSHOW 4
+#define ADMINEXIT 0
 
 Ui::Ui(AdministratorService administratorService, UserService userService) :
 	administratorService{administratorService}, userService{userService}
@@ -123,10 +133,11 @@ void Ui::updateEvent()
 void Ui::displayEvents()
 {
 	std::vector<Event>  events = this->administratorService.getAllEvents();
-	for (int index = 0; index < events.size(); index++)
+	int index = 1;
+	for (const auto& event: events)
 	{
-		Event event = events[index];
-		std::cout << "#" << index + 1 << std::endl;
+		std::cout << "#" << index << std::endl;
+		index++;
 		showEvent(event);
 	}
 }
@@ -150,19 +161,19 @@ void Ui::administratorMode()
 		std::cin >> option;
 		switch (option)
 		{
-		case 1:
+		case ADMINADD:
 			addEvent();
 			break;
-		case 2:
+		case ADMINREMOVE:
 			removeEvent();
 			break;
-		case 3:
+		case ADMINUPDATE:
 			updateEvent();
 			break;
-		case 4:
+		case ADMINSHOW:
 			displayEvents();
 			break;
-		case 0:
+		case ADMINEXIT:
 			std::cout << "You left admin mode! \n";
 			return;
 		default:
@@ -248,9 +259,10 @@ void Ui::removeEventFromEvenList()
 void Ui::showEventList()
 {
 	std::vector <Event> events = this->userService.getEventList();
-	for (int index = 0; index < events.size(); index++) {
-		Event event = events[index];
-		std::cout << "#" << index + 1 << std::endl;
+	int index = 1;
+	for (const auto& event: events) {
+		std::cout << "#" << index << std::endl;
+		index++;
 		showEvent(event);
 	}
 }
@@ -278,16 +290,16 @@ void Ui::userMode()
 		//}
 		switch (option)
 		{
-		case 1:
+		case USERADD:
 			searchByMonth();
 			break;
-		case 2:
+		case USERREMOVE:
 			removeEventFromEvenList();
 			break;
-		case 3:
+		case USERSHOW:
 			showEventList();
 			break;
-		case 0:
+		case USEREXIT:
 			std::cout << "You left the user mode!\n";
 			return;
 		default:
