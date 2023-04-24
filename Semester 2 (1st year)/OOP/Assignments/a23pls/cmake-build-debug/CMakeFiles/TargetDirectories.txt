@@ -1,3 +1,0 @@
-C:/Codes/university-projects/Semester 2 (1st year)/OOP/Assignments/a23pls/cmake-build-debug/CMakeFiles/a23pls.dir
-C:/Codes/university-projects/Semester 2 (1st year)/OOP/Assignments/a23pls/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Codes/university-projects/Semester 2 (1st year)/OOP/Assignments/a23pls/cmake-build-debug/CMakeFiles/rebuild_cache.dir

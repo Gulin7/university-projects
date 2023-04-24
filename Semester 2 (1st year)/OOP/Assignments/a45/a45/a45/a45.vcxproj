@@ -131,6 +131,7 @@
     <ClInclude Include="DynamicVector.h" />
     <ClInclude Include="Event.h" />
     <ClInclude Include="Repository.h" />
+    <ClInclude Include="Tests.h" />
     <ClInclude Include="Ui.h" />
     <ClInclude Include="UserService.h" />
   </ItemGroup>
@@ -139,6 +140,7 @@
     <ClCompile Include="Event.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Repository.cpp" />
+    <ClCompile Include="Tests.cpp" />
     <ClCompile Include="Ui.cpp" />
     <ClCompile Include="UserService.cpp" />
   </ItemGroup>

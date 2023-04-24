@@ -5,13 +5,13 @@ AdministratorService::AdministratorService(Repository eventRepository) :
 {
 }
 
-bool AdministratorService::addEventToService(std::string title, std::string description, Date date, Time time, int numberOfPeople, std::string link)
+bool AdministratorService::addEvent(std::string title, std::string description, Date date, Time time, int numberOfPeople, std::string link)
 {
 	Event eventToAdd{ title, description, date, time, numberOfPeople, link };
-	return this->eventRepository.addEventToRepository(eventToAdd);
+	return this->eventRepository.addEvent(eventToAdd);
 }
 
-bool AdministratorService::removeEventFromService(std::string title, std::string description)
+bool AdministratorService::removeEvent(std::string title, std::string description)
 {
 	Date date;
 	date.day = 1;
@@ -22,11 +22,10 @@ bool AdministratorService::removeEventFromService(std::string title, std::string
 	time.hour = 0;
 	Event eventToRemove{ title, description,date,time, 0, "" };
 	int positionToRemove = this->eventRepository.findEventPosition(eventToRemove);
-	return this->eventRepository.removeEventFromRepository(positionToRemove);
-
+	return this->eventRepository.removeEvent(positionToRemove);
 }
 
-bool AdministratorService::updateEventInService(std::string title, std::string description, std::string newTitle, std::string newDescription, Date newDate, Time newTime, int newNumberOfPeople, std::string newLink)
+bool AdministratorService::updateEvent(std::string title, std::string description, std::string newTitle, std::string newDescription, Date newDate, Time newTime, int newNumberOfPeople, std::string newLink)
 {
 	Date date;
 	date.day = 1;
@@ -38,7 +37,7 @@ bool AdministratorService::updateEventInService(std::string title, std::string d
 	Event eventToUpdate{ title, description, date, time, 0, "" };
 	Event eventUpdated{ newTitle, newDescription, newDate, newTime, newNumberOfPeople, newLink };
 	int positionToUpdate = this->eventRepository.findEventPosition(eventToUpdate);
-	return this->eventRepository.updateEventInRepository(positionToUpdate, eventUpdated);
+	return this->eventRepository.updateEvent(positionToUpdate, eventUpdated);
 }
 
 bool AdministratorService::increaseNumberOfPeople(std::string title, std::string description)
@@ -52,12 +51,12 @@ bool AdministratorService::increaseNumberOfPeople(std::string title, std::string
 	time.minute = 1;
 	Event eventToFind{ title, description, date, time, 0, "" };
 	int position = this->eventRepository.findEventPosition(eventToFind);
-	Event eventToUpdate = this->eventRepository.getAllEvents().getElement(position);
+	Event eventToUpdate = this->eventRepository.getAllEvents()[position];
 	Event eventUpdated{ title, description, eventToUpdate.getDate(), eventToUpdate.getTime(), eventToUpdate.getNumberOfPeople() + 1, eventToUpdate.getLink() };
-	return this->eventRepository.updateEventInRepository(position, eventUpdated);
+	return this->eventRepository.updateEvent(position, eventUpdated);
 }
 
-DynamicVector<Event> AdministratorService::getAllEvents()
+std::vector<Event> AdministratorService::getAllEvents()
 {
 	return this->eventRepository.getAllEvents();
 }
@@ -69,43 +68,43 @@ void AdministratorService::generateEvents()
 	
 	date = generateDate();
 	time = generateTime();
-	this->addEventToService("CodeFlight", "Cool event!", date, time, 0, "https://www.facebook.com/events/");
+	this->addEvent("CodeFlight", "Cool event!", date, time, 0, "https://www.facebook.com/events/");
 
 	date = generateDate();
 	time = generateTime();
-	this->addEventToService("InoHub", "Cool event!", date, time, 0, "https://www.facebook.com/events/");
+	this->addEvent("InoHub", "Cool event!", date, time, 0, "https://www.facebook.com/events/");
 
 	date = generateDate();
 	time = generateTime();
-	this->addEventToService("Hermes Hackathon", "Cool event!", date, time, 0, "https://www.facebook.com/events/");
+	this->addEvent("Hermes Hackathon", "Cool event!", date, time, 0, "https://www.facebook.com/events/");
 
 	date = generateDate();
 	time = generateTime();
-	this->addEventToService("Kitsch Party", "Cool event!", date, time, 0, "https://www.facebook.com/events/");
+	this->addEvent("Kitsch Party", "Cool event!", date, time, 0, "https://www.facebook.com/events/");
 
 	date = generateDate();
 	time = generateTime();
-	this->addEventToService("Pool Party", "Cool event!", date, time, 0, "https://www.facebook.com/events/");
+	this->addEvent("Pool Party", "Cool event!", date, time, 0, "https://www.facebook.com/events/");
 
 	date = generateDate();
 	time = generateTime();
-	this->addEventToService("Movie Night", "Cool event!", date, time, 0, "https://www.facebook.com/events/");
+	this->addEvent("Movie Night", "Cool event!", date, time, 0, "https://www.facebook.com/events/");
 
 	date = generateDate();
 	time = generateTime();
-	this->addEventToService("Spuma Party", "Cool event!", date, time, 0, "https://www.facebook.com/events/");
+	this->addEvent("Spuma Party", "Cool event!", date, time, 0, "https://www.facebook.com/events/");
 
 	date = generateDate();
 	time = generateTime();
-	this->addEventToService("CFR vs UCluj", "Cool event!", date, time, 0, "https://www.facebook.com/events/");
+	this->addEvent("CFR vs UCluj", "Cool event!", date, time, 0, "https://www.facebook.com/events/");
 
 	date = generateDate();
 	time = generateTime();
-	this->addEventToService("Cluj Days", "Cool event!", date, time, 0, "https://www.facebook.com/events/");
+	this->addEvent("Cluj Days", "Cool event!", date, time, 0, "https://www.facebook.com/events/");
 
 	date = generateDate();
 	time = generateTime();
-	this->addEventToService("Cluj Marathon", "Cool event!", date, time, 0, "https://www.facebook.com/events/");
+	this->addEvent("Cluj Marathon", "Cool event!", date, time, 0, "https://www.facebook.com/events/");
 
 }
 

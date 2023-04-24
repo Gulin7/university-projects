@@ -1,5 +1,6 @@
 #pragma once
 //DO NOT INCLUDE SETITERATOR
+#include <iostream>
 
 //DO NOT CHANGE THIS PART
 typedef int TElem;
@@ -8,12 +9,20 @@ typedef bool(*Relation)(TComp, TComp);
 #define NULL_TELEM -11111
 class SortedSetIterator;
 
+struct Node {
+	int data;
+	Node* next;
+	Node* prev;
+};
 
 class SortedSet {
 	friend class SortedSetIterator;
 private:
 	//TODO - Representation
-
+	Node* head;
+	Node* tail;
+	int length;
+	Relation relation;
 public:
 	//constructor
 	SortedSet(Relation r);
@@ -44,5 +53,5 @@ public:
 	// destructor
 	~SortedSet();
 
-
+	int getRange();
 };

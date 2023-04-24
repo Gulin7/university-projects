@@ -1,16 +1,16 @@
 #pragma once
 #include "Event.h"
-#include "DynamicVector.h"
+#include <vector>
 
 class Repository
 {
 private:
-	DynamicVector<Event> events;
+	std::vector<Event> events;
 public:
-	Repository(DynamicVector<Event> events = NULL);
-	DynamicVector<Event> getAllEvents();
-	bool addEventToRepository(Event eventToAdd);
-	bool removeEventFromRepository(int positionToRemove);
-	bool updateEventInRepository(int positionToUpdate, Event newEvent);
+	Repository(std::vector<Event> events = {});
+	std::vector<Event> getAllEvents();
+	bool addEvent(Event eventToAdd);
+	bool removeEvent(int positionToRemove);
+	bool updateEvent(int positionToUpdate, Event newEvent);
 	int findEventPosition(Event eventSearched);
 };

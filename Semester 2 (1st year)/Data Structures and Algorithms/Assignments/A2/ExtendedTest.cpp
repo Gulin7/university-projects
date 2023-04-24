@@ -312,6 +312,22 @@ void testQuantity(Relation r) {
 	assert(s.size() == 0);
 }
 
+void testGetRange() {
+	cout << "Test get range.\n";
+
+	SortedSet s2(rGreater);
+
+	assert(s2.getRange() == -1);
+	s2.add(100);
+	assert(s2.getRange() == 0);
+	s2.remove(100);
+	for (int i = 0; i <= 10; i++) {
+		s2.add(i);
+	}
+	assert(s2.getRange() ==10);
+
+}
+
 
 void testAllExtended() {
 
@@ -323,6 +339,6 @@ void testAllExtended() {
 	testIterator(rGreater);
 	testQuantity(rLessEqual);
 	testQuantity(rGreater);
-
+	testGetRange();
 }
 

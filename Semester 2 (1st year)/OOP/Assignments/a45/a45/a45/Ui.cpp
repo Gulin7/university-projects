@@ -3,6 +3,16 @@
 #include <iostream>
 #include <cstdlib>
 
+#define USERADD 1
+#define USERREMOVE 2
+#define USERSHOW 3
+#define USEREXIT 0
+
+#define ADMINADD 1
+#define ADMINREMOVE 2
+#define ADMINUPDATE 3
+#define ADMINSHOW 4
+#define ADMINEXIT 0
 
 Ui::Ui(AdministratorService administratorService, UserService userService) :
 	administratorService{administratorService}, userService{userService}
@@ -44,7 +54,7 @@ void Ui::addEvent()
 	std::cin.ignore();
 	std::getline(std::cin, link);
 
-	bool check = this->administratorService.addEventToService(title, description, date, time, numberOfPeople, link);
+	bool check = this->administratorService.addEvent(title, description, date, time, numberOfPeople, link);
 	if (check == true)
 		std::cout << "Event added!\n";
 	else
@@ -62,7 +72,7 @@ void Ui::removeEvent()
 	std::cout << "Enter a description: ";
 	std::getline(std::cin, description);
 
-	bool check = this->administratorService.removeEventFromService(title, description);
+	bool check = this->administratorService.removeEvent(title, description);
 	if (check == true)
 		std::cout << "Event does not exist!\n";
 	else
@@ -113,7 +123,7 @@ void Ui::updateEvent()
 	std::cin.ignore();
 	std::getline(std::cin, newLink);
 
-	bool check = this->administratorService.updateEventInService(title, description, newTitle, newDescription, newDate, newTime, newNumberOfPeople, newLink);
+	bool check = this->administratorService.updateEvent(title, description, newTitle, newDescription, newDate, newTime, newNumberOfPeople, newLink);
 	if (check == false)
 		std::cout << "Event does not exist!\n";
 	else
@@ -122,12 +132,13 @@ void Ui::updateEvent()
 
 void Ui::displayEvents()
 {
-	DynamicVector<Event>  events = this->administratorService.getAllEvents();
-	for (int index = 0; index < events.getSize(); index++)
+	std::vector<Event>  events = this->administratorService.getAllEvents();
+	int index = 1;
+	for (const auto& event: events)
 	{
-		Event event = events.getElement(index);
-		std::cout << "#" << index + 1 << std::endl;
-		event.showEvent();
+		std::cout << "#" << index << std::endl;
+		index++;
+		showEvent(event);
 	}
 }
 
@@ -150,19 +161,19 @@ void Ui::administratorMode()
 		std::cin >> option;
 		switch (option)
 		{
-		case 1:
+		case ADMINADD:
 			addEvent();
 			break;
-		case 2:
+		case ADMINREMOVE:
 			removeEvent();
 			break;
-		case 3:
+		case ADMINUPDATE:
 			updateEvent();
 			break;
-		case 4:
+		case ADMINSHOW:
 			displayEvents();
 			break;
-		case 0:
+		case ADMINEXIT:
 			std::cout << "You left admin mode! \n";
 			return;
 		default:
@@ -180,17 +191,17 @@ void Ui::searchByMonth()
 	std::cout << "\nSearch a month: ";
 	std::cin >> month;
 
-	DynamicVector<Event> foundEvents = this->userService.getEventOfGivenMonth(this->administratorService.getAllEvents(), month);
+	std::vector<Event> foundEvents = this->userService.getEventOfGivenMonth(this->administratorService.getAllEvents(), month);
 	
 	int currentPosition = 0;
 	while (true) {
-		if (currentPosition >= foundEvents.getSize())
+		if (currentPosition >= foundEvents.size())
 		{
 			std::cout << "No events left.\n";
 			return;
 		}
-		Event currentEvent = foundEvents.getElement(currentPosition);
-		currentEvent.showEvent();
+		Event currentEvent = foundEvents[currentPosition];
+		showEvent(currentEvent);
 
 		std::cout << "Do you want to add this event to your event list? 1=yes, 2=no.\n";
 		std::cout << "Enter 0 to leave.\n";
@@ -247,11 +258,12 @@ void Ui::removeEventFromEvenList()
 
 void Ui::showEventList()
 {
-	DynamicVector <Event> events = this->userService.getEventList();
-	for (int index = 0; index < events.getSize(); index++) {
-		Event event = events.getElement(index);
-		std::cout << "#" << index + 1 << std::endl;
-		event.showEvent();
+	std::vector <Event> events = this->userService.getEventList();
+	int index = 1;
+	for (const auto& event: events) {
+		std::cout << "#" << index << std::endl;
+		index++;
+		showEvent(event);
 	}
 }
 
@@ -278,16 +290,16 @@ void Ui::userMode()
 		//}
 		switch (option)
 		{
-		case 1:
+		case USERADD:
 			searchByMonth();
 			break;
-		case 2:
+		case USERREMOVE:
 			removeEventFromEvenList();
 			break;
-		case 3:
+		case USERSHOW:
 			showEventList();
 			break;
-		case 0:
+		case USEREXIT:
 			std::cout << "You left the user mode!\n";
 			return;
 		default:
@@ -296,6 +308,16 @@ void Ui::userMode()
 		}
 	}
 	return;
+}
+
+void Ui::showEvent(Event event)
+{
+	std::cout << "Title: " << event.getTitle() << std::endl;
+	std::cout << "Description: " << event.getDescription() << std::endl;
+	std::cout << "Date: " << event.getDate().day << ":" << event.getDate().month << ":" << event.getDate().year << std::endl;
+	std::cout << "Time: " << event.getTime().hour << ":" << event.getTime().minute << std::endl;
+	std::cout << "Number of people: " << event.getNumberOfPeople() << std::endl;
+	std::cout << "Link: " <<event.getLink() << std::endl;
 }
 
 void Ui::runUi()
