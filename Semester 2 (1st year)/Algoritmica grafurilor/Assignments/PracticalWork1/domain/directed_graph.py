@@ -242,7 +242,6 @@ def writeGraphToFile(filename: str, graph: DirectedGraph):
 
 def generateRandomGraph(numberOfVertices: int, numberOfEdges: int):
     graph = DirectedGraph(numberOfVertices)
-
     while numberOfEdges != 0:
         start = randint(0, numberOfVertices - 1)
         end = randint(0, numberOfVertices - 1)
@@ -253,5 +252,4 @@ def generateRandomGraph(numberOfVertices: int, numberOfEdges: int):
             numberOfEdges -= 1
         except ValueError:
             continue
-
     return graph

@@ -131,7 +131,8 @@ class Ui:
 
     def runUi(self):
         command = 0
-        graph = readGraphFromFile2('small_graph')
+        graph = readGraphFromFileStandard('graph100k.txt')
+        graph = readGraphFromFile2('small_graph2')
         while True:
             self.showMenu()
             command = self.getCommand()

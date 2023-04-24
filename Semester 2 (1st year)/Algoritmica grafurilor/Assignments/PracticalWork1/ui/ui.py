@@ -116,114 +116,117 @@ class Ui:
 
     def runUi(self):
         command = 0
-        graph = readGraphFromFileStandard('graph10k.txt')
+        graph = readGraphFromFileStandard('graph1k.txt')
         while True:
             self.showMenu()
             command = self.getCommand()
-            if command == 0:
-                print("You left the app!")
-                break
-            elif command == 1:
-                # get number of vertices
-                numberOfVertices = graph.getNumberOfVertices()
-                print(f"The number of vertices is {numberOfVertices} !")
-            elif command == 2:
-                # get set of vertices
-                setOfVertices = graph.getSetOfVertices()
-                print(f"The set of vertices is: \n {setOfVertices} !")
-            elif command == 3:
-                # check if an edge exists
-                edge = self.getEdge()
-                outcome = graph.isEdge(edge)
-                if outcome:
-                    print(f"The edge {edge} exists!")
-                else:
-                    print(f"The edge {edge} does not exist!")
-            elif command == 4:
-                # in/out Degree
-                vertex = self.getVertex()
-                inDegree = graph.getInDegree(vertex)
-                outDegree = graph.getOutDegree(vertex)
-                print(f"""The in degree is: {inDegree}
-The out degree is: {outDegree}""")
-            elif command == 5:
-                # inBound edges
-                vertex = self.getVertex()
-                print(f"The outbound edges for the vertex {vertex} are: ")
-                for vertexIn in graph.dictIn[vertex]:
-                    edge = (vertex, vertexIn)
-                    print(f"Edge: {edge} + cost:{graph.getCost(edge)}")
-            elif command == 6:
-                # outBound edges
-                vertex = self.getVertex()
-                print(f"The outbound edges for the vertex {vertex} are: ")
-                for vertexOut in graph.dictOut[vertex]:
-                    edge = (vertex, vertexOut)
-                    print(f"Edge: {edge} + cost:{graph.getCost(edge)}")
-            elif command == 7:
-                # add vertex
-                vertex = self.getVertex()
-                checkExist = graph.isVertex(vertex)
-                if checkExist:
-                    print("Vertex already exists!")
-                else:
-                    graph.addVertex(vertex)
-                    print("Vertex added!")
-            elif command == 8:
-                # remove vertex
-                vertex = self.getVertex()
-                checkExist = graph.isVertex(vertex)
-                if not checkExist:
-                    print("Vertex does not exist!")
-                else:
-                    graph.removeVertex(vertex)
-                    print("Vertex removed!")
-            elif command == 9:
-                # add edge
-                edge, cost = self.getEdgeCost()
-                checkExist = graph.isEdge(edge)
-                if checkExist:
-                    print("Edge already exists!")
-                else:
-                    print("Edge added")
-                    graph.addEdge(edge, cost)
-            elif command == 10:
-                # remove edge
-                edge = self.getEdge()
-                checkExist = graph.isEdge()
-                if checkExist:
-                    graph.removeEdge(edge)
-                    print("Edge removed!")
-                else:
-                    print("Edge does not exist!")
-            elif command == 11:
-                # read standard
-                filename = self.getFileName()
-                graph = readGraphFromFileStandard(filename)
-                print("Graph read!")
-            elif command == 12:
-                # read 2
-                filename = self.getFileName()
-                graph = readGraphFromFile2(filename)
-                print("Graph read!")
-            elif command == 13:
-                # write to file
-                filename = self.getFileName()
-                copyGraph = graph.createCopy()
-                copyGraph = writeGraphToFile(filename, graph)
-                print("Graph successfully written!")
-            elif command == 14:
-                # gen random
-                numberOfVertices = self.getNumberOfVertices()
-                numberOfEdges = self.getNumberOfEdges()
-                graph = generateRandomGraph(numberOfVertices, numberOfEdges)
-                print("Graph successfully generated!")
-            elif command == 15:
-                # show all edges
-                print(f"{graph.getAllEdges()}")
-            elif command == 16:
-                # modify a certain cost
-                edge = self.getEdge()
-                print("Enter the new cost: ")
-                cost = self.getCost()
-                graph.setCost(edge, cost)
+            try:
+                if command == 0:
+                    print("You left the app!")
+                    break
+                elif command == 1:
+                    # get number of vertices
+                    numberOfVertices = graph.getNumberOfVertices()
+                    print(f"The number of vertices is {numberOfVertices} !")
+                elif command == 2:
+                    # get set of vertices
+                    setOfVertices = graph.getSetOfVertices()
+                    print(f"The set of vertices is: \n {setOfVertices} !")
+                elif command == 3:
+                    # check if an edge exists
+                    edge = self.getEdge()
+                    outcome = graph.isEdge(edge)
+                    if outcome:
+                        print(f"The edge {edge} exists!")
+                    else:
+                        print(f"The edge {edge} does not exist!")
+                elif command == 4:
+                    # in/out Degree
+                    vertex = self.getVertex()
+                    inDegree = graph.getInDegree(vertex)
+                    outDegree = graph.getOutDegree(vertex)
+                    print(f"""The in degree is: {inDegree}
+    The out degree is: {outDegree}""")
+                elif command == 5:
+                    # inBound edges
+                    vertex = self.getVertex()
+                    print(f"The inbound edges for the vertex {vertex} are: ")
+                    for vertexIn in graph.dictIn[vertex]:
+                        edge = (vertex, vertexIn)
+                        print(f"Edge: {edge} + cost:{graph.getCost(edge)}")
+                elif command == 6:
+                    # outBound edges
+                    vertex = self.getVertex()
+                    print(f"The outbound edges for the vertex {vertex} are: ")
+                    for vertexOut in graph.dictOut[vertex]:
+                        edge = (vertex, vertexOut)
+                        print(f"Edge: {edge} + cost:{graph.getCost(edge)}")
+                elif command == 7:
+                    # add vertex
+                    vertex = self.getVertex()
+                    checkExist = graph.isVertex(vertex)
+                    if checkExist:
+                        print("Vertex already exists!")
+                    else:
+                        graph.addVertex(vertex)
+                        print("Vertex added!")
+                elif command == 8:
+                    # remove vertex
+                    vertex = self.getVertex()
+                    checkExist = graph.isVertex(vertex)
+                    if not checkExist:
+                        print("Vertex does not exist!")
+                    else:
+                        graph.removeVertex(vertex)
+                        print("Vertex removed!")
+                elif command == 9:
+                    # add edge
+                    edge, cost = self.getEdgeCost()
+                    checkExist = graph.isEdge(edge)
+                    if checkExist:
+                        print("Edge already exists!")
+                    else:
+                        print("Edge added")
+                        graph.addEdge(edge, cost)
+                elif command == 10:
+                    # remove edge
+                    edge = self.getEdge()
+                    checkExist = graph.isEdge()
+                    if checkExist:
+                        graph.removeEdge(edge)
+                        print("Edge removed!")
+                    else:
+                        print("Edge does not exist!")
+                elif command == 11:
+                    # read standard
+                    filename = self.getFileName()
+                    graph = readGraphFromFileStandard(filename)
+                    print("Graph read!")
+                elif command == 12:
+                    # read 2
+                    filename = self.getFileName()
+                    graph = readGraphFromFile2(filename)
+                    print("Graph read!")
+                elif command == 13:
+                    # write to file
+                    filename = self.getFileName()
+                    copyGraph = graph.createCopy()
+                    copyGraph = writeGraphToFile(filename, graph)
+                    print("Graph successfully written!")
+                elif command == 14:
+                    # gen random
+                    numberOfVertices = self.getNumberOfVertices()
+                    numberOfEdges = self.getNumberOfEdges()
+                    graph = generateRandomGraph(numberOfVertices, numberOfEdges)
+                    print("Graph successfully generated!")
+                elif command == 15:
+                    # show all edges
+                    print(f"{graph.getAllEdges()}")
+                elif command == 16:
+                    # modify a certain cost
+                    edge = self.getEdge()
+                    print("Enter the new cost: ")
+                    cost = self.getCost()
+                    graph.setCost(edge, cost)
+            except:
+                pass
