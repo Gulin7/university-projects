@@ -1,0 +1,17 @@
+﻿  Car.cpp
+D:\Code\university-projects\Semester 2 (1st year)\OOP\Exercises\TestExample\TestExample\Car.cpp(54,25): error C2679: binary '&&': no operator found which takes a right-hand operand of type 'std::string' (or there is no acceptable conversion)
+D:\Code\university-projects\Semester 2 (1st year)\OOP\Exercises\TestExample\TestExample\Car.cpp(54,25): message : could be 'built-in C++ operator&&(bool, bool)'
+D:\Code\university-projects\Semester 2 (1st year)\OOP\Exercises\TestExample\TestExample\Car.cpp(54,25): message : while trying to match the argument list '(bool, std::string)'
+D:\Code\university-projects\Semester 2 (1st year)\OOP\Exercises\TestExample\TestExample\Car.cpp(54,79): error C2678: binary '&&': no operator found which takes a left-hand operand of type 'const std::string' (or there is no acceptable conversion)
+D:\Code\university-projects\Semester 2 (1st year)\OOP\Exercises\TestExample\TestExample\Car.cpp(54,79): message : could be 'built-in C++ operator&&(bool, bool)'
+D:\Code\university-projects\Semester 2 (1st year)\OOP\Exercises\TestExample\TestExample\Car.cpp(54,79): message : while trying to match the argument list '(const std::string, std::string)'
+D:\Code\university-projects\Semester 2 (1st year)\OOP\Exercises\TestExample\TestExample\Car.cpp(54,114): error C2678: binary '&&': no operator found which takes a left-hand operand of type 'const std::string' (or there is no acceptable conversion)
+D:\Code\university-projects\Semester 2 (1st year)\OOP\Exercises\TestExample\TestExample\Car.cpp(54,114): message : could be 'built-in C++ operator&&(bool, bool)'
+D:\Code\university-projects\Semester 2 (1st year)\OOP\Exercises\TestExample\TestExample\Car.cpp(54,114): message : while trying to match the argument list '(const std::string, int)'
+  main.cpp
+  Repository.cpp
+  Service.cpp
+  Tests.cpp
+  Ui.cpp
+  Test1Example.cpp
+  Generating Code...
