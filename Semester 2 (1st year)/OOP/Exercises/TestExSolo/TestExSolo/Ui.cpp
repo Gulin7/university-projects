@@ -22,6 +22,24 @@ int Ui::getCommand()
 	return command;
 }
 
+int Ui::getCommand()
+{
+	int command;
+	while (true) {
+		std::cout << "\nEnter a command: ";
+		std::cin >> command;
+		if (std::cin.fail() || command < 0 || command>4) {
+			std::cout << "\nInvalid command!";
+			std::cin.clear();
+			std::cin.ignore(std::numeric_limits < std::streamsize >::max(), '\n');
+			continue;
+		}
+		else
+			break;
+	}
+	return command;
+}
+
 std::string Ui::inputModel()
 {
 	std::string model;
