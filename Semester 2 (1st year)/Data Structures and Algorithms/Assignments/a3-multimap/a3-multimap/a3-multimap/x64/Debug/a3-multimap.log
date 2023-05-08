@@ -1,0 +1,9 @@
+﻿  App.cpp
+  ExtendedTest.cpp
+C:\Codes\university-projects\Semester 2 (1st year)\Data Structures and Algorithms\Interfaces\MultiMap\ExtendedTest.cpp(243,20): warning C4101: 'ex': unreferenced local variable
+C:\Codes\university-projects\Semester 2 (1st year)\Data Structures and Algorithms\Interfaces\MultiMap\ExtendedTest.cpp(250,20): warning C4101: 'ex': unreferenced local variable
+  MultiMap.cpp
+  MultiMapIterator.cpp
+  ShortTest.cpp
+  Generating Code...
+  a3-multimap.vcxproj -> C:\Codes\university-projects\Semester 2 (1st year)\Data Structures and Algorithms\Assignments\a3-multimap\a3-multimap\x64\Debug\a3-multimap.exe
