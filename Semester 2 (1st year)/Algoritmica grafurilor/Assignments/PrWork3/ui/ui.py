@@ -118,8 +118,8 @@ class Ui:
 
     def runUi(self):
         command = 0
-        graph = readGraphFromFileStandard('graph1m.txt')
-        #graph = readGraphFromFile2('dijkstra.txt')
+        #graph = readGraphFromFileStandard('graph1m.txt')
+        graph = readGraphFromFile2('dijkstra2.txt')
         while True:
             self.showMenu()
             command = self.getCommand()

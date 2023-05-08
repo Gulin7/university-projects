@@ -176,7 +176,6 @@ class UndirectedGraph:
             queueList = [startVertex]
             newGraph.addVertex(startVertex)
             position = 0
-
             ok = True
             while ok:
                 if position == len(queueList):
@@ -187,19 +186,17 @@ class UndirectedGraph:
                     if vertex not in queueList:
                         queueList.append(vertex)
                         newGraph.addVertex(vertex)
+                    #adds the edge
                     newGraph.addEdge((queueList[position], vertex))
-
                 position += 1
-
-            listOfComponents.append(newGraph)
-
+            if (len(newGraph.getSetOfVertices()) != 0):
+                listOfComponents.append(newGraph)
             for vertex in queueList:
                 try:
                     copiedGraph.removeVertex(vertex)
                 except ValueError as ve:
                     pass
-
-        return listOfComponents
+        return listOfComponents, len(listOfComponents)
 
 
 def readGraphFromFileStandard(filename: str):
@@ -267,7 +264,7 @@ def generateRandomGraph(numberOfVertices: int, numberOfEdges: int):
         end = randint(0, numberOfVertices - 1)
         edge = (start, end)
         try:
-            graph.addEdge(edge )
+            graph.addEdge(edge)
             numberOfEdges -= 1
         except ValueError:
             continue

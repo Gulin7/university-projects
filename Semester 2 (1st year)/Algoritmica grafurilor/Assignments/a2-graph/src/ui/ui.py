@@ -131,7 +131,7 @@ class Ui:
 
     def runUi(self):
         command = 0
-        graph = readGraphFromFileStandard('graph100k.txt')
+        #graph = readGraphFromFileStandard('graph1k.txt')
         graph = readGraphFromFile2('small_graph2')
         while True:
             self.showMenu()
@@ -238,7 +238,9 @@ The out degree is: {outDegree}""")
                 # show all edges
                 print(f"{graph.getAllEdges()}")
             elif command == 16:
-                listOfComponents = graph.getConnectedComponents()
+                listOfComponents, number = graph.getConnectedComponents()
                 for graphComponent in listOfComponents:
                     print(f"{graphComponent.getAllEdges()}")
+                    print(f"{graphComponent.getSetOfVertices()}")
+                print(number)
 
