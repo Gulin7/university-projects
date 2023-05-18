@@ -1,0 +1,15 @@
+﻿  Service.cpp
+  CSVPlaylist.cpp
+  FilePlaylist.cpp
+  main.cpp
+  PlayList.cpp
+  Repository.cpp
+  RepositoryExceptions.cpp
+  Song.cpp
+  SongValidator.cpp
+  UI.cpp
+  Utils.cpp
+C:\Codes\university-projects\Semester 2 (1st year)\OOP\Seminars\Seminar5\Playlist - polymoprhic undo - stub\Playlist\Utils.cpp(11,41): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Codes\university-projects\Semester 2 (1st year)\OOP\Seminars\Seminar5\Playlist - polymoprhic undo - stub\Playlist\Utils.cpp(14,36): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
+  Playlist.vcxproj -> C:\Codes\university-projects\Semester 2 (1st year)\OOP\Seminars\Seminar5\Playlist - polymoprhic undo - stub\x64\Debug\Playlist.exe
