@@ -118,8 +118,8 @@ class Ui:
 
     def runUi(self):
         command = 0
-        #graph = readGraphFromFileStandard('graph1m.txt')
-        graph = readGraphFromFile2('dijkstra2.txt')
+        graph = readGraphFromFileStandard('graph10k.txt')
+        #graph = readGraphFromFile2('dijkstra.txt')
         while True:
             self.showMenu()
             command = self.getCommand()
@@ -256,8 +256,8 @@ class Ui:
                                     prev[y] = x
                             if x == endVertex:
                                 found = True
-                        print(dist)
-                        print(prev)
+                        #print(dist)
+                        #print(prev)
                         print(f"The distance from {startVertex} to {endVertex} is:{dist[endVertex]}!!!")
             except ValueError as ve:
                 print("Some kind of error :p", ve)
