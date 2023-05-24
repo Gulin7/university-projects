@@ -1,0 +1,2 @@
+If you want to be able to run the vsl apps directly you need to have the same path:
+C:\Codes\university-projects
