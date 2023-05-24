@@ -8,10 +8,11 @@ class MultiMapIterator
 	friend class MultiMap;
 
 private:
-	const MultiMap& col;
-	//TODO - Representation
-	int keyIndex;
-	int valueIndex;
+	const MultiMap& map;
+	int head;
+	int keysHead;
+	int current;
+
 	//DO NOT CHANGE THIS PART
 	MultiMapIterator(const MultiMap& c);
 
