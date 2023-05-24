@@ -241,7 +241,6 @@ class UndirectedGraph:
                     if vertex not in vnou:
                         cost = self.__costs[(end, vertex)]
                         heapq.heappush(pq, (cost, end, vertex))
-
         newGraph = UndirectedGraph()
         for element in minimumTree:
             vertex1 = element[0]

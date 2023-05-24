@@ -357,8 +357,35 @@ void testQuantity() {
     assert(im.valid() == false);
 }
 
+void testKeySet()
+{
+    std::cout << "Test keySet" << endl;
+    MultiMap m;
+    m.add(1, 10);
+    m.add(2, 20);
+    m.add(1, 30);
+    m.add(3, 40);
+    m.add(2, 50);
+    // Get the key set
+    vector<TKey> keys = m.keySet();
+    // Test the size of the key set and the contents
+    assert(keys.size() == 3);
+    assert(std::find(keys.begin(), keys.end(), 1) != keys.end());
+    assert(std::find(keys.begin(), keys.end(), 2) != keys.end());
+    assert(std::find(keys.begin(), keys.end(), 3) != keys.end());
+    //Add new elements
+    m.add(4, 60);
+    m.add(1, 70);
+
+    // Get the updated key set and tests its size and content
+    keys = m.keySet();
+    assert(keys.size() == 4);
+    assert(std::find(keys.begin(), keys.end(), 1) != keys.end());
+    std::cout << "Test keySet passed\n";
+}
 
 void testAllExtended() {
+    testKeySet();
     testCreate();
     testAdd();
     testRemove();

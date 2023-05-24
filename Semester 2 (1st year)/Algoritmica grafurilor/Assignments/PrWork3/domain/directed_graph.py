@@ -1,5 +1,5 @@
 from random import randint
-
+from queue import PriorityQueue
 
 class DirectedGraph:
     def __init__(self, numberOfVertices=0):
@@ -182,6 +182,31 @@ class DirectedGraph:
         if not self.isEdge(edge):
             raise ValueError('Edge does not exist!')
         self.__costs[edge] = cost
+
+    def getDistanceDijkstra(self, startVertex, endVertex):
+        if not self.isVertex(startVertex) or not self.isVertex(endVertex):
+            return -1
+
+        q = PriorityQueue()
+        prev = {}
+        dist = {}
+        q.put((0, startVertex))
+        dist[startVertex] = 0
+        found = False
+
+        while not q.empty() and not found:
+            _, x = q.get()
+            if x == endVertex:
+                found = True
+                break
+            for y in self.dictOut[x]:
+                edge = (x, y)
+                if y not in dist or dist[x] + self.getCost(edge) < dist[y]:
+                    dist[y] = dist[x] + self.getCost(edge)
+                    q.put((dist[y], y))
+                    prev[y] = x
+
+        return dist.get(endVertex, -1)
 
 
 def readGraphFromFileStandard(filename: str):

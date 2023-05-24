@@ -28,20 +28,15 @@ bool MultiMapIterator::valid() const {
 void MultiMapIterator::next() {
     if (!valid())
         throw exception();
-
     if (this->keysHead != -1 && this->map.elems[this->head].next[this->keysHead] != -1)
         this->keysHead = this->map.elems[this->head].next[this->keysHead];
-
     else {
         this->head = this->map.next[this->head];
         if (this->head != -1) {
             this->keysHead = this->map.elems[this->head].head;
             this->current++;
-
         }
-
     }
-
 }
 
 void MultiMapIterator::first() {

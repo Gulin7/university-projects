@@ -7,7 +7,7 @@ using namespace std;
 
 
 MultiMap::MultiMap() {
-    this->cap = 15;
+    this->cap = 100;
     this->currSize = 0;
     this->elems = new Keys[this->cap];
     this->next = new int[this->cap];
@@ -18,14 +18,11 @@ MultiMap::MultiMap() {
 
     this->next[this->cap - 1] = -1;
     this->firstFree = 0;
-
 }
-
 
 void MultiMap::add(TKey c, TValue v) {
     if (this->firstFree == -1)
         this->resize();
-
     // if SLLA is empty, add to front
     if (this->head == -1) {
         this->head = 0;
@@ -34,29 +31,21 @@ void MultiMap::add(TKey c, TValue v) {
         this->firstFree = this->next[0];
         this->next[head] = -1;
         this->currSize++;
-
         return;
-
     }
-
     // check if key already exists
     int current = this->head;
     int prev = -1;
-
     while (current != -1) {
         if (this->elems[current].key == c) {
             // add to already existing key
             this->elems[current].add(v);
             this->currSize++;
             return;
-
         }
-
         prev = current;
         current = this->next[current];
-
     }
-
     // key doesn't exist, create a new one at the end
     int oldFirstFree = this->firstFree;
     this->firstFree = this->next[oldFirstFree];
@@ -69,7 +58,6 @@ void MultiMap::add(TKey c, TValue v) {
 
 }
 
-
 bool MultiMap::remove(TKey c, TValue v) {
     int current = head;
     int previous = -1;
@@ -78,26 +66,19 @@ bool MultiMap::remove(TKey c, TValue v) {
     while (current != -1 && this->elems[current].key != c) {
         previous = current;
         current = this->next[current];
-
     }
-
     // can't find key
     if (current == -1)
         return false;
-
     // found key
     // try to remove value from key
     if (!this->elems[current].remove(v))
         return false;
-
     // if the key no longer has any values, remove key completely
     if (this->elems[current].currSize == 0) {
-        if (previous != -1)
-            // key is in the middle of the list
+        if (previous != -1)// key is in the middle of the list
             this->next[previous] = this->next[current];
-
-        else
-            // key is at the beginning
+        else // key is at the beginning
             this->head = this->next[current];
 
         this->next[current] = this->firstFree;
@@ -105,14 +86,10 @@ bool MultiMap::remove(TKey c, TValue v) {
 
         delete[] this->elems[current].values;
         delete[] this->elems[current].next;
-
     }
-
     this->currSize--;
     return true;
-
 }
-
 
 vector<TValue> MultiMap::search(TKey c) const {
     int current = this->head;
@@ -126,27 +103,55 @@ vector<TValue> MultiMap::search(TKey c) const {
     return this->elems[current].getElems();
 }
 
-
 int MultiMap::size() const {
     return this->currSize;
-
 }
-
 
 bool MultiMap::isEmpty() const {
     return this->currSize == 0;
-
 }
 
 MultiMapIterator MultiMap::iterator() const {
     return MultiMapIterator(*this);
 }
 
+//returns a vector with all the keys from the MultiMap
+vector<TKey> MultiMap::keySet() const
+{
+    vector<TKey> keysVector;
+    MultiMapIterator it = iterator();
+    it.first();
+
+    while (it.valid()) {
+        keysVector.push_back(it.getCurrent().first);
+        it.next();
+    }
+
+    return vector<TKey>();
+}
+
+vector<TValue> MultiMap::valueBag() const
+{
+    vector<TValue> values;
+    // Iterate through each key in the MultiMap
+    MultiMapIterator it = iterator();
+    it.first();
+    while (it.valid()) {
+        // Retrieve the values associated with the current key
+        vector<TValue> keyValues = search(it.getCurrent().first);
+
+        // Add the values to the result vector
+        for (const auto& value : keyValues) {
+            values.push_back(value);
+            it.next();
+        }
+    }
+    return values;
+}
 
 MultiMap::~MultiMap() {
     delete[] this->elems;
     delete[] this->next;
-
 }
 
 MultiMap::Keys MultiMap::keys(TKey k) {
@@ -166,13 +171,11 @@ MultiMap::Keys MultiMap::keys(TKey k) {
     keyList.firstFree = 0;
 
     return keyList;
-
 }
 
 void MultiMap::Keys::add(TValue e) {
     if (firstFree == -1)
         resize();
-
     // if SLLA is empty, add to front
     if (head == -1) {
         head = 0;
@@ -180,11 +183,8 @@ void MultiMap::Keys::add(TValue e) {
         firstFree = next[firstFree];
         next[head] = -1;
         currSize++;
-
         return;
-
     }
-
     // else add to the first free position and move firstFree to next[firstFree]
     int oldFirstFree = firstFree;
     firstFree = next[firstFree];
@@ -192,24 +192,19 @@ void MultiMap::Keys::add(TValue e) {
     next[oldFirstFree] = head;
     head = oldFirstFree;
     currSize++;
-
 }
 
 bool MultiMap::Keys::remove(TValue e) {
     int current = head;
     int previous = -1;
-
     // find the correct value
     while (current != -1 && values[current] != e) {
         previous = current;
         current = next[current];
-
     }
-
     // can't find value
     if (current == -1)
         return false;
-
     // value found is the first one
     if (previous == -1) {
         int oldFirstFree = firstFree;
@@ -220,9 +215,7 @@ bool MultiMap::Keys::remove(TValue e) {
 
         currSize--;
         return true;
-
     }
-
     // remove value in the middle of the list
     int oldFirstFree = firstFree;
     firstFree = current;
@@ -231,7 +224,6 @@ bool MultiMap::Keys::remove(TValue e) {
 
     currSize--;
     return true;
-
 }
 
 void MultiMap::Keys::resize() {
@@ -241,7 +233,6 @@ void MultiMap::Keys::resize() {
     for (int i = 0; i < cap; i++) {
         newValues[i] = values[i];
         newNext[i] = next[i];
-
     }
 
     for (int i = cap; i < cap * 2; i++)
@@ -256,7 +247,6 @@ void MultiMap::Keys::resize() {
 
     values = newValues;
     next = newNext;
-
 }
 
 vector<TValue> MultiMap::Keys::getElems() const {
@@ -265,26 +255,19 @@ vector<TValue> MultiMap::Keys::getElems() const {
     while (i != -1) {
         valuesVector.push_back(values[i]);
         i = next[i];
-
     }
-
     return valuesVector;
-
 }
 
 void MultiMap::resize() {
     Keys* newKeys = new Keys[this->cap * 2];
     int* newNext = new int[this->cap * 2];
-
     for (int i = 0; i < this->cap; i++) {
         newKeys[i] = this->elems[i];
         newNext[i] = this->next[i];
-
     }
-
     for (int i = this->cap; i < this->cap * 2; i++)
         newNext[i] = i + 1;
-
     newNext[this->cap * 2 - 1] = -1;
     this->firstFree = this->cap;
     this->cap *= 2;
@@ -294,5 +277,4 @@ void MultiMap::resize() {
 
     this->elems = newKeys;
     this->next = newNext;
-
 }

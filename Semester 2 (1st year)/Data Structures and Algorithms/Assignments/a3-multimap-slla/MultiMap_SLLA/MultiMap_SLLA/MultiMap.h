@@ -33,7 +33,6 @@ private:
         bool remove(TValue e);
         vector<TValue> getElems() const;
         void resize();
-
     };
 
     int cap;
@@ -71,6 +70,12 @@ public:
 
     //returns an iterator for the multimap
     MultiMapIterator iterator() const;
+
+    //returns a vector with all the keys from the MultiMap
+    vector<TKey> keySet() const;
+
+    //returns a vector with all the values from the MultiMap
+    vector<TValue> valueBag() const;
 
     //descturctor
     ~MultiMap();

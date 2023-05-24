@@ -1,0 +1,1 @@
+A graph with 6 vertices can't have 40 edges :(

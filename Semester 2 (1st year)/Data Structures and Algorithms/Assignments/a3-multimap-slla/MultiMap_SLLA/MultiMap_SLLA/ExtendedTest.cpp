@@ -5,7 +5,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include <vector>
-
+#include <cassert>
 #include <exception>
 
 using namespace std;
@@ -361,8 +361,34 @@ void testQuantity() {
     assert(im.valid() == false);
 }
 
+void testValueBag()
+{
+    cout << "Test valueBag" << endl;
+    // Create a MultiMap and add some key-value pairs
+    MultiMap mm;
+    mm.add(1, 10);
+    mm.add(2, 20);
+    mm.add(1, 30);
+    mm.add(3, 40);
+    mm.add(2, 50);
+    mm.add(1, 60);
+
+    // Retrieve the values using valueBag
+    vector<int> values = mm.valueBag();
+
+    // Assert the expected values
+    assert(values.size() == 6);
+    assert(values[0] == 60);
+    assert(values[1] == 30);
+    assert(values[2] == 10);
+    assert(values[3] == 50);
+    assert(values[4] == 20);
+    assert(values[5] == 40);
+    cout<<"ValueBag tests worked!\n";
+}
 
 void testAllExtended() {
+    testValueBag();
     testCreate();
     testAdd();
     testRemove();

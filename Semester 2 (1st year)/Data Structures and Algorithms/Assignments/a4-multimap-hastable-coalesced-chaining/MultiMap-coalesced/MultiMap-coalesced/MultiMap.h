@@ -62,6 +62,8 @@ public:
 
     MultiMapIterator iterator() const;
 
+    //keyset-returns a vector with all the keys from the MultiMap
+    std::vector<TKey> keySet() const;
 
     //descturctor
 

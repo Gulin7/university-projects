@@ -16,7 +16,7 @@ int MultiMap::TFunction(TKey k) //theta(1)
 
 MultiMap::MultiMap() //theta(capacity)
 {
-    this->capacity = 13;
+    this->capacity = 100    ;
     this->firstEmpty = 0;
     this->length = 0;
     this->table = new TElem[this->capacity];
@@ -30,6 +30,7 @@ MultiMap::MultiMap() //theta(capacity)
 
 void MultiMap::add(TKey c, TValue v) //O(capacity*capacity)
 {
+    //this->capacity++;
     int pos = this->TFunction(c);
     if (this->length == this->capacity) {
         this->resize(); //thata(capacity)
@@ -223,6 +224,18 @@ MultiMapIterator MultiMap::iterator() const //theta(capacity)
 {
     return MultiMapIterator(*this);
 }
+
+std::vector<TKey> MultiMap::keySet() const
+{
+    std::vector<TKey> keys;
+    for (int i = 0; i < capacity; i++) {
+        if (table[i].first != -1000000 && std::find(keys.begin(),keys.end(), table[i].first)==keys.end()){
+            keys.push_back(table[i].first);
+        }
+    }
+    return keys;
+}
+
 
 MultiMap::~MultiMap() //theta(1)
 {
