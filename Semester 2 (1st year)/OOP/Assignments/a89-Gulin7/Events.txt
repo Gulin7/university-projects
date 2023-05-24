@@ -1,0 +1,13 @@
+CodeFlight,Cool event!, 12:1:2023,20:00,52,https://www.facebook.com
+InoHub,Cool event!, 25:2:2023,15:28,126,https://www.facebook.com
+Hermes Hackthon,Cool event!, 30:3:2023,20:70,121,https://www.facebook.com
+Movie Night,Cool event!, 23:4:2023,22:60,25,https://www.facebook.com
+Pool Party,Cool event!, 11:5:2023,11:50,23,https://www.facebook.com
+Kitsch Party,Cool event!, 19:6:2023,13:05,9,https://www.facebook.com
+Spuma Party,Cool event!, 17:7:2023,17:00,5,https://www.facebook.com
+CFR VS UCluj,Cool event!, 26:8:2021,16:30,11,https://www.facebook.com
+Cluj Days,Cool event!, 28:9:2022,21:02,273,https://www.facebook.com
+Cluj Marathon,Cool event!, 18:10:2023,22:40,888,https://www.facebook.com
+Cluj Hackthon,Cool event!, 18:11:2023,22:40,888,https://www.facebook.com
+UBT VS CFR,Cool event!, 18:12:2023,22:40,888,https://www.facebook.com
+NewYearParty,Cool event!, 18:1:2023,22:40,888,https://www.facebook.com

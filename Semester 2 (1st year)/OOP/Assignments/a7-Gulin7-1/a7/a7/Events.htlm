@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Events </title>
+    </head>
+<body>
+    <table border = 1>
+        <tr>
+            <td>Title</td>
+            <td>Description</td>
+            <td>Date</td>
+            <td>Time</td>
+            <td>NumberOfPeople</td>
+            <td>Link</td>
+        </tr>
+        <tr>
+            <td>CodeFlight</td>
+            <td>Cool event!</td>
+            <td>25:12:2023</td>
+            <td>15:28</td>
+            <td>11</td>
+            <td><a href="https://www.facebook.com">Link</a></td>
+        </tr>
+        <tr>
+            <td>C++ - From Zero To Hero</td>
+            <td>Cool event!</td>
+            <td>25:12:2023</td>
+            <td>15:28</td>
+            <td>11</td>
+            <td><a href="https://www.facebook.com">Link</a></td>
+        </tr>
+        <tr>
+            <td>Game Devlopement with C++</td>
+            <td>Cool event!</td>
+            <td>25:12:2023</td>
+            <td>15:28</td>
+            <td>11</td>
+            <td><a href="https://www.facebook.com">Link</a></td>
+        </tr>
+        <tr>
+            <td>C++ Developer Roadmap</td>
+            <td>Cool event!</td>
+            <td>25:12:2023</td>
+            <td>15:28</td>
+            <td>11</td>
+            <td><a href="https://www.facebook.com">Link</a></td>
+        </tr>
+        <tr>
+            <td>Full Course - OOP in C++</td>
+            <td>Cool event!</td>
+            <td>25:12:2023</td>
+            <td>15:28</td>
+            <td>11</td>
+            <td><a href="https://www.facebook.com">Link</a></td>
+        </tr>
+</table>
+</body>
+</html>
