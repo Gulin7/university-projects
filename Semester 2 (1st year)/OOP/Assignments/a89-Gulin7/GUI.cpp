@@ -7,6 +7,7 @@
 #include <QApplication>
 #include <QScreen>
 #include <QTabWidget>
+#include <sstream>
 
 AdminGUI::AdminGUI(AdministratorService& admin) : adminService{ admin }
 {
@@ -338,6 +339,7 @@ START OF USER GUI
 void UserGUI::connectSignals()
 {
     connect(addEventButton, &QPushButton::clicked, this, &UserGUI::addEvent);
+    connect(removeEventButton, &QPushButton::clicked, this, &UserGUI::removeEvent);
     connect(skipEventButton, &QPushButton::clicked, this, &UserGUI::skipEvent);
     connect(getEventButton, &QPushButton::clicked, this, &UserGUI::getEvents);
     connect(changeFileTypeButton, &QPushButton::clicked, this, &UserGUI::changeFile);
@@ -350,28 +352,35 @@ void UserGUI::connectSignals()
 
 void UserGUI::showNextEvent()
 {
-    Event currentEvent = this->userService.getEventOfGivenMonth(this->adminService.getAllEvents(), this->editMonthComboBox->currentText().toInt())[this->currentPosition];
     this->currentPosition++;
     if (this->currentPosition == this->userService.getEventOfGivenMonth(this->adminService.getAllEvents(), this->editMonthComboBox->currentText().toInt()).size()) {
         this->currentPosition = 0;
     }
+    Event currentEvent = this->userService.getEventOfGivenMonth(this->adminService.getAllEvents(), this->editMonthComboBox->currentText().toInt())[this->currentPosition];
+    
     this->event->setText(QString::fromStdString(currentEvent.toString()));
 
+}
+
+void UserGUI::showCurrentEvent()
+{
+    Event currentEvent = this->userService.getEventOfGivenMonth(this->adminService.getAllEvents(), this->editMonthComboBox->currentText().toInt())[this->currentPosition];
+    this->event->setText(QString::fromStdString(currentEvent.toString()));
 }
 
 void UserGUI::reloadEventlist()
 {
     eventlist->clear();
-
     for (auto& event : this->userService.getEventList()->getAllEvents()) {
         auto* item = new QListWidgetItem(QString::fromStdString(event.toString()));
+        item->setData(Qt::UserRole, QString::fromStdString(event.getTitle() + ';' + event.getDescription()));
         eventlist->addItem(item);
     }
 }
 
 void UserGUI::addEvent()
 {
-    try {
+    try {      
         this->userService.addEventToList(this->userService.getEventOfGivenMonth(this->adminService.getAllEvents(), this->editMonthComboBox->currentText().toInt())[this->currentPosition]);
         this->showNextEvent();
         this->reloadEventlist();
@@ -381,6 +390,36 @@ void UserGUI::addEvent()
     }
     catch (ExceptionGUI& errorGUI) {
         QMessageBox::warning(this, "Warning!!!", QString::fromStdString(errorGUI.what()));
+    }
+}
+
+void UserGUI::removeEvent()
+{
+    try {
+        QList<QListWidgetItem*> selectedItems = this->eventlist->selectedItems();
+        // Check if any item is selected
+        if (selectedItems.isEmpty()) {
+            throw Exception("Nu-i bine");
+        }
+        std::string data = this->eventlist->currentItem()->data(Qt::UserRole).toString().toStdString();
+        std::stringstream datastream(data);
+        std::vector<std::string> datavector = {};
+        std::string token;
+        while (getline(datastream, token, ';')) {
+            datavector.push_back(token);
+        }
+        this->userService.removeEventFromList(datavector[0], datavector[1]);
+        this->adminService.decreaseNumberOfPoeple(datavector[0], datavector[1]);
+        this->reloadEventlist();
+    }
+    catch (Exception& error) {
+        QMessageBox::warning(this, "Warning!!!", QString::fromStdString(error.what()));
+    }
+    catch (ExceptionGUI& errorGUI) {
+        QMessageBox::warning(this, "Warning!!!", QString::fromStdString(errorGUI.what()));
+    }
+    catch (const std::exception& ex) {
+        QMessageBox::warning(this, "Warning!!!", QString::fromStdString("Not working :P"));
     }
 }
 
@@ -421,6 +460,7 @@ void UserGUI::getEvents()
         this->currentPosition = 0;
         this->userService.getEventOfGivenMonth(this->adminService.getAllEvents(), this->editMonthComboBox->currentText().toInt());
         this->showNextEvent();
+
     }
     catch (Exception& error) {
         QMessageBox::warning(this, "Warning!!!", QString::fromStdString(error.what()));
@@ -468,8 +508,10 @@ UserGUI::UserGUI(UserService& user, AdministratorService& admin): userService{us
     auto* buttons = new QWidget;
     auto* buttonsLayout = new QVBoxLayout{ buttons };
     this->addEventButton = new QPushButton("Add To Eventlist");
+    this->removeEventButton = new QPushButton("Remove from Eventlist");
     this->skipEventButton = new QPushButton("Skip");
     buttonsLayout->addWidget(this->addEventButton);
+    buttonsLayout->addWidget(this->removeEventButton);
     buttonsLayout->addWidget(this->skipEventButton);
     leftVbox->addWidget(buttons);
 
@@ -499,7 +541,7 @@ UserGUI::UserGUI(UserService& user, AdministratorService& admin): userService{us
     layout->addWidget(rightSide);
     auto* rightVbox = new QVBoxLayout(rightSide);
 
-    auto* eventlistName = new QLabel{ "Shopping Basket" };
+    auto* eventlistName = new QLabel{ "Eventlist" };
     rightVbox->addWidget(eventlistName);
     this->eventlist = new QListWidget;
     font = eventlist->font();

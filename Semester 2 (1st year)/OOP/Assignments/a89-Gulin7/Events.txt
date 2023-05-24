@@ -11,3 +11,4 @@ Cluj Marathon,Cool event!, 18:10:2023,22:40,888,https://www.facebook.com
 Cluj Hackthon,Cool event!, 18:11:2023,22:40,888,https://www.facebook.com
 UBT VS CFR,Cool event!, 18:12:2023,22:40,888,https://www.facebook.com
 NewYearParty,Cool event!, 18:1:2023,22:40,888,https://www.facebook.com
+Marcel's Part, The biggest party ever!, 29:1:2023, 23:30, 1400, https://www.facebook.com

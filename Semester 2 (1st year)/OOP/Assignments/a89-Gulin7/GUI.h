@@ -73,6 +73,7 @@ private:
     QComboBox* editMonthComboBox;
 
     QPushButton* addEventButton;
+    QPushButton* removeEventButton;
     QPushButton* skipEventButton;
     QPushButton* getEventButton;
     QPushButton* changeFileTypeButton;
@@ -80,8 +81,10 @@ private:
 
     void connectSignals();
     void showNextEvent();
+    void showCurrentEvent();
     void reloadEventlist();
     void addEvent();
+    void removeEvent();
     void skipEvent();
     void changeFile();
     void getEvents();
@@ -89,8 +92,8 @@ private:
 
 public:
     explicit UserGUI(UserService& user, AdministratorService& admin);
-    int currentPosition = 0;
-    int currentMonth = 10;
+    int currentPosition = -1;
+    int currentMonth = 1;
 };
 
 
