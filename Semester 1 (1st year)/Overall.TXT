@@ -1,0 +1,38 @@
+TipsNTricks:
+- in general: do your own assignments, get as many seminar points as possible, really try hard for tests during semester so you can chill later, try to 
+do some seminar exercises extra each week ( I didn't but you should )
+1.  Linear alg: difficulty 3/10
+Finals: read the lectures, solve some seminar exercises
+minimum: 1 day, recommended 2-3 days
+During semester:
+pay close attention to the seminars
+Lecture: skip
+2. Comp logic: difficulty 4/10
+Finals: read the lectures, solve some seminar exercises
+minimum: 1.5 days, recommended 2-3 days
+During semester:
+chill
+Lecture: skip
+3.  Fundalmentals of Pr: difficulty 7.5/10
+Finals: 
+review your assignments, solve some exercises
+minimum: 1.5 days, recommended 3-4 days
+During semester:
+do your own assignments
+Lecture: skip
+4.  Math Analys: difficulty 7.5/10
+Finals: 
+lecture + seminar
+minimum: 2 days, recommended 3-4 days
+During semester:
+pay close attention to the seminars, they are very useful;
+try to solve exercises on your own
+Lecture: attend
+5.  Comp Sys Arh: difficulty 9/10
+Finals: 
+read the lectures a billion times 
+minimum: 2 days, recommended 5 days
+During semester:
+Do your own assignments, try to go through the lectures from time to time :p
+Lecture: attend
+---------------
