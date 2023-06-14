@@ -1,0 +1,3 @@
+sdgfsdfg|closed|John|Teodora
+error|open|Dani|-
+se sorteaza|closed|John|Dani

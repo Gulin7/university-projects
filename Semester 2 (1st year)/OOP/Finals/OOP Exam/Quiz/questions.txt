@@ -1,0 +1,11 @@
+1 | How are you? | Fine | 3
+2 | What kg stands for? | kilogram | 1
+3 | What is 1 meter in cm? | 100 | 2
+4 | Ce faci rares? | Rau | 23
+5 | Ce faci? | Bine | 23
+10 | ce faci | bine | 2
+100 | ana are mere? | nu | 23
+101 | CF | 23 | 12
+1023 | 23 | 12 | 12
+12344 | 1232 | 12 | 12
+123444 | 1232 | 12 | 12
