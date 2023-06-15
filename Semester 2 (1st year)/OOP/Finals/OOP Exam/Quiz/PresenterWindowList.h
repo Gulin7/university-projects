@@ -1,22 +1,3 @@
-#pragma once
-
-#include <QWidget>
-#include "ui_PresenterWindowList.h"
-#include "Service.h"
-
-class PresenterWindowList : public QWidget
-{
-	Q_OBJECT
-
-public:
-	PresenterWindowList(Service& service, QWidget *parent = nullptr);
-	~PresenterWindowList();
-
-public slots:
-	void addQuestion();
-	void handleDataChange();
-
-private:
-	Ui::PresenterWindowListClass ui;
-	Service& service;
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:5191fc5a13bfd7930b3c7d143a879ed1572ffc58568964595483473762e5b4ac
+size 397

@@ -1,22 +1,3 @@
-#pragma once
-
-#include <QWidget>
-#include "ui_UserWindowList.h"
-
-#include "Service.h"
-
-class UserWindowList : public QWidget
-{
-	Q_OBJECT
-
-public:
-	UserWindowList(Service& service, QWidget *parent = nullptr);
-	~UserWindowList();
-
-public slots:
-	void handleDataChange();
-
-private:
-	Ui::UserWindowListClass ui;
-	Service& service;
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:5a844922acbf47319df52cba2ef56fc783ff1d9df94ede30d609bb0de1843aa8
+size 352

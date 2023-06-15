@@ -1,16 +1,3 @@
-#include "ScreenWriter.h"
-
-ScreenWriter::ScreenWriter(string name, string expertise) :
-    name{ name }, expertise{ expertise }
-{
-}
-
-string ScreenWriter::getName()
-{
-    return this->name;
-}
-
-string ScreenWriter::getExpertise()
-{
-    return this->expertise;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:961253d87e24a627547bb397702b7b6ab73298792dfc24a1d4b221b7a38d7160
+size 276

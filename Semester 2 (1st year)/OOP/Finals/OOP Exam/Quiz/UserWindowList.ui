@@ -1,30 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ui version="4.0">
- <class>UserWindowListClass</class>
- <widget class="QWidget" name="UserWindowListClass">
-  <property name="geometry">
-   <rect>
-    <x>0</x>
-    <y>0</y>
-    <width>600</width>
-    <height>400</height>
-   </rect>
-  </property>
-  <property name="windowTitle">
-   <string>UserWindowList</string>
-  </property>
-  <widget class="QListView" name="questionsList">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>10</y>
-     <width>256</width>
-     <height>192</height>
-    </rect>
-   </property>
-  </widget>
- </widget>
- <layoutdefault spacing="6" margin="11"/>
- <resources/>
- <connections/>
-</ui>
+version https://git-lfs.github.com/spec/v1
+oid sha256:1a8d4ac5181e9dbd9134f7d7a363e4889311c1404b624fb94a2724ba00a6dc33
+size 695

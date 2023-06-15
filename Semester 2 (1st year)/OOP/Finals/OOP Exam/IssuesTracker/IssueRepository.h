@@ -1,32 +1,3 @@
-#pragma once
-
-#include <vector>
-
-#include "Issue.h"
-
-using std::vector;
-
-class IssueRepository
-{
-private:
-	vector<Issue> issues;
-
-	string filePath;
-
-public:
-	IssueRepository(string filePath);
-
-	void readFile();
-	void saveFile();
-
-	int findPosition(string issueDescription);
-
-	Issue& getIssueAtPosition(int position);
-	void add(Issue issueToAdd);
-	void remove(string issueDescription);
-
-	vector<Issue>& getAll();
-
-	~IssueRepository();
-};
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:b5a558199a890b0826c650c68e1003b1c70b9231e376e0a39178c08f66453b17
+size 470

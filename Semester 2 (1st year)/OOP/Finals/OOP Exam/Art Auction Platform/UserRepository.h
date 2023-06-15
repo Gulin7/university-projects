@@ -1,28 +1,3 @@
-#pragma once
-
-#include <vector>
-
-#include "User.h"
-
-using std::vector;
-
-class UserRepository
-{
-private:
-	vector<User> users;
-	string filePath;
-
-public:
-	UserRepository(string filePath);
-
-	void readFile();
-
-	int findUserPosition(int id);
-	User& getUserById(int id);
-	User& getUserByName(string name);
-
-	void add(User userToAdd);
-
-	vector<User>& getAll();
-};
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:dbb299c646f05ea13d2c824f558aa3bae38f3b134917a04fd70c1ac3a3176434
+size 386

@@ -1,31 +1,3 @@
-#include "Idea.h"
-
-Idea::Idea(string description, string status, string creator, int act) :
-    description{ description }, status{ status }, creator{ creator }, act{ act }
-{
-}
-
-string Idea::getDescription()
-{
-    return this->description;
-}
-
-string Idea::getStatus()
-{
-    return this->status;
-}
-
-string Idea::getCreator()
-{
-    return this->creator;
-}
-
-int Idea::getAct()
-{
-    return this->act;
-}
-
-void Idea::setStatus(string newStatus)
-{
-    this->status = newStatus;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6d31db38926e9a80ded9fe94500462a90996977949ef4be80894a68909957c30
+size 505

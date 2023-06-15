@@ -1,32 +1,3 @@
-#pragma once
-
-#include "IssueRepository.h"
-#include "UserRepository.h"
-
-#include <QAbstractTableModel>
-
-class Service : public QAbstractTableModel
-{
-private:
-	UserRepository& usersRepo;
-	IssueRepository& issuesRepo;
-
-public:
-	Service(UserRepository& users, IssueRepository& issues);
-
-	void addIssue(string description, string status, string reporter, string solver);
-	void removeIssue(int issueIndex);
-
-	Issue& getIssueAtPosition(int position);
-
-	void resolveIssue(QModelIndex& index, string userName);
-
-	User& getUserByName(string name);
-
-	int rowCount(const QModelIndex& parent = QModelIndex()) const;
-	int columnCount(const QModelIndex& parent = QModelIndex()) const;
-	QVariant data(const QModelIndex& index, int role = Qt::DisplayRole) const;
-	QVariant headerData(int section, Qt::Orientation orientation, int role = Qt::DisplayRole) const;
-	Qt::ItemFlags flags(const QModelIndex& index) const;
-};
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:774f0d640d4466f95d252098bd0d357c5e3ecb7fbb248f64798eb4140cef52f6
+size 935

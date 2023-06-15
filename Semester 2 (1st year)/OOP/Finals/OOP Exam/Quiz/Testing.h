@@ -1,17 +1,3 @@
-#pragma once
-
-#include "ParticipantsRepository.h"
-#include "QuestionsRepository.h"
-
-#include "Service.h"
-
-class Testing
-{
-public:
-	static void testAddQuestion();
-	static void testUpdateParticipantScore();
-
-
-	static void testAll();
-};
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:ea97a4a216207a4e54b57056cb16f3c469eb4c570aea76a61c60eb44e8bab99d
+size 252

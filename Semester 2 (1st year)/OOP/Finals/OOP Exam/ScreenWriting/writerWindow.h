@@ -1,28 +1,3 @@
-#pragma once
-
-#include <QtWidgets/QWidget>
-#include "ui_writerWindow.h"
-
-#include "Service.h"
-
-class writerWindow : public QWidget
-{
-    Q_OBJECT
-
-public:
-    writerWindow(QAbstractItemModel* model, Service& service, string writerName, QWidget *parent = nullptr);
-    ~writerWindow();
-
-    void connectSignals();
-
-public slots:
-    void addIdea();
-    void checkForDisableReviseButton();
-    void reviseIdea();
-
-private:
-    Ui::writerWindowClass ui;
-
-    string writerName;
-    Service& service;
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:c513d25503f3d90f6e3c29aa36a59fc8d15ccccc126a91c42db4199f0cde0099
+size 528

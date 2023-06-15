@@ -1,30 +1,3 @@
-#pragma once
-
-#include <vector>
-
-#include "Item.h"
-
-using std::vector;
-
-class ItemsRepository
-{
-private:
-	vector<Item> items;
-	string filePath;
-
-public:
-	ItemsRepository(string filePath);
-
-	void readFile();
-	void saveFile();
-
-	int findItemPosition(string name);
-	Item& getItemByName(string name);
-
-	void add(Item itemToAdd);
-
-	vector<Item>& getAll();
-
-	~ItemsRepository();
-};
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:8dc535d9afb160db1c8c4e40db290a288074b38319638fdb83ff97665d7e7cd7
+size 407

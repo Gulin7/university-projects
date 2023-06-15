@@ -1,27 +1,3 @@
-#pragma once
-
-#include <QWidget>
-#include "ui_PresenterWindow.h"
-
-#include "Service.h"
-#include "Observer.h"
-
-class PresenterWindow : public QWidget, public Observer
-{
-	Q_OBJECT
-
-public:
-	PresenterWindow(Service& service, QWidget *parent = nullptr);
-	~PresenterWindow();
-
-	void populateQuestionsList();
-	void update() override;
-
-public slots:
-	void addQuestion();
-
-private:
-	Ui::PresenterWindowClass ui;
-
-	Service& service;
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:c0bf0e05401572bc1319ef2381c88547f813d2ed9a7a5dde7f94552132d14687
+size 454

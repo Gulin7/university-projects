@@ -1,32 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ui version="4.0">
- <class>SearchWindowClass</class>
- <widget class="QWidget" name="SearchWindowClass">
-  <property name="geometry">
-   <rect>
-    <x>0</x>
-    <y>0</y>
-    <width>248</width>
-    <height>398</height>
-   </rect>
-  </property>
-  <property name="windowTitle">
-   <string>SearchWindow</string>
-  </property>
-  <layout class="QHBoxLayout" name="horizontalLayout">
-   <item>
-    <layout class="QVBoxLayout" name="verticalLayout">
-     <item>
-      <widget class="QListWidget" name="matchQuestionList"/>
-     </item>
-     <item>
-      <widget class="QLineEdit" name="questionInput"/>
-     </item>
-    </layout>
-   </item>
-  </layout>
- </widget>
- <layoutdefault spacing="6" margin="11"/>
- <resources/>
- <connections/>
-</ui>
+version https://git-lfs.github.com/spec/v1
+oid sha256:f699c0af397c145f7304e696534d72a273360b135a9380081bcb721912d61cc3
+size 804

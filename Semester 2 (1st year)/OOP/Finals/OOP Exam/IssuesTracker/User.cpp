@@ -1,15 +1,3 @@
-#include "User.h"
-
-User::User(string name, string type) : name{ name }, type{ type }
-{
-}
-
-string User::getName()
-{
-	return this->name;
-}
-
-string User::getType()
-{
-	return this->type;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a55dac73694e01e401bf3061857ec37bf4ddacbeb8947afa4c350168a48c03fb
+size 200

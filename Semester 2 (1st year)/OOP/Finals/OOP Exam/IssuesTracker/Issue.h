@@ -1,25 +1,3 @@
-#pragma once
-
-#include <string>
-
-using std::string;
-
-class Issue
-{
-private:
-	string description, status, reporter, solver;
-
-public:
-	Issue(string description, string status, string reporter, string solver);
-
-	string getDescription();
-	string getStatus();
-	string getReporter();
-	string getSolver();
-
-	string toString();
-
-	void setSolver(string newSolver);
-	void setStatus(string newStatus);
-};
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:fd755b449b32b857f47a2d45fa77308bcb79005350579f99af8cf54ca851d705
+size 420

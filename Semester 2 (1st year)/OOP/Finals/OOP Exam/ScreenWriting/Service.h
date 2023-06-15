@@ -1,29 +1,3 @@
-#pragma once
-
-#include "WritersRepository.h"
-#include "IdeasRepository.h"
-
-#include <QAbstractTableModel>
-
-class Service : public QAbstractTableModel
-{
-private:
-	WritersRepository& writersRepo;
-	IdeasRepository& ideasRepo;
-
-public:
-	Service(WritersRepository& writers, IdeasRepository& ideas);
-
-	void addIdea(string description, string status, string creator, int act);
-
-	ScreenWriter& getWriterByName(string name);
-	Idea& getIdeaByDescription(string description);
-	void reviseIdea(QModelIndex& position, string description);
-
-	// model methods
-	int rowCount(const QModelIndex& parent = QModelIndex()) const;
-	int columnCount(const QModelIndex& parent = QModelIndex()) const;
-	QVariant data(const QModelIndex& index, int role = Qt::DisplayRole) const;
-	QVariant headerData(int section, Qt::Orientation orientation, int role = Qt::DisplayRole) const;
-};
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:c6b5753799d43d9cd6aca64056ff3effaf6f8bf30d06af715924c52d159cc5f7
+size 883

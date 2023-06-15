@@ -1,29 +1,3 @@
-#include "StringOperations.h"
-
-#include <sstream>
-
-vector<string> splitString(string stringToSplit, char delimiter)
-{
-    std::stringstream splitStream{ stringToSplit };
-
-    vector<string> tokens;
-    string currentToken;
-
-    while (getline(splitStream, currentToken, delimiter))
-        tokens.push_back(stripString(currentToken));
-
-    return tokens;
-}
-
-string stripString(string stringToStrip)
-{
-    int firstNonSpace = 0, lastNonSpace = stringToStrip.size() - 1;
-
-    while (firstNonSpace < stringToStrip.size() - 1 && stringToStrip[firstNonSpace] == ' ')
-        firstNonSpace++;
-
-    while (lastNonSpace >= 0 && stringToStrip[lastNonSpace] == ' ')
-        lastNonSpace--;
-
-    return stringToStrip.substr(firstNonSpace, lastNonSpace - firstNonSpace + 1);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9df8b73139f16d9ac4ff9a1133ba1a2962ec2ed31daf889151162cb5649ec1fc
+size 794

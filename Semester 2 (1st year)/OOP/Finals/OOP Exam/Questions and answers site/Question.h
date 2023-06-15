@@ -1,20 +1,3 @@
-#pragma once
-
-#include <string>
-
-using std::string;
-
-class Question
-{
-private:
-	int id;
-	string text, userName;
-
-public:
-	Question(int id, string text, string userName) : id{ id }, text{ text }, userName{ userName } {};
-	Question() {}
-	int getId();
-	string getText();
-	string getUserName();
-};
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:a35d31d90b93730135c06b28deb8050bb75ecf8da8036f1948b23d2ddea1d326
+size 315

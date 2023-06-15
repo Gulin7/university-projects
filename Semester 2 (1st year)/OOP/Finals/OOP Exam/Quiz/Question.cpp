@@ -1,31 +1,3 @@
-#include "Question.h"
-
-Question::Question(int id, string text, string correctAnswer, int score) :
-	id{ id }, score{ score }, text{ text }, correctAnswer{ correctAnswer }
-{
-}
-
-int Question::getId()
-{
-	return this->id;
-}
-
-int Question::getScore()
-{
-	return this->score;
-}
-
-string Question::getText()
-{
-	return this->text;
-}
-
-string Question::getCorrectAnswer()
-{
-	return this->correctAnswer;
-}
-
-string Question::toString()
-{
-	return std::to_string(this->id) + " | " + this->text + " | " + this->correctAnswer + " | " + std::to_string(this->score);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e518ecc76e1a27ee1e12d079015d4feeee1250c735f610fce0e455f88777be41
+size 579

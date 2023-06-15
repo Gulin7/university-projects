@@ -1,31 +1,3 @@
-#pragma once
-
-#include "UserRepository.h"
-#include "QuestionsRepository.h"
-#include "AnswerRepository.h"
-
-#include "Subject.h"
-
-class Service : public Subject
-{
-private:
-	UserRepository& userRepo;
-	QuestionsRepository& questionsRepo;
-	AnswerRepository& answerRepo;
-
-	int computeMatches(string firstText, string secondText);
-
-public:
-	Service(UserRepository& userRepo, QuestionsRepository& questionsRepo, AnswerRepository& answerRepo);
-
-	vector<Question> getQuestionsSortedByAnswers();
-	Question getMatchedQuestion(string text);
-
-	vector<Answer> getAnswers(int questionId);
-	void addQuestion(string userName, string text);
-	int getQuestionId(string questionText);
-
-	void addAnswer(string userName, string text, int questionId);
-	void updateAnswerNumberOfVotes(int answerId, int newNumberOfVotes);
-};
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:cc13baf0c0aafe78b96a79e5ad9da271284f1670750b171c5ec91d67777b4f64
+size 831

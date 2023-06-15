@@ -1,34 +1,3 @@
-#pragma once
-#include "Subject.h"
-
-#include "ItemsRepository.h"
-#include "UserRepository.h"
-
-#include <set>
-
-using std::set;
-
-class Service :
-    public Subject
-{
-private:
-    UserRepository& userRepository;
-    ItemsRepository& itemsRepository;
-
-public:
-    Service(UserRepository& userRepository, ItemsRepository& itemsRepository);
-
-    vector<Item>& getAllItems();
-    vector<Item> getAllItemsFromCategory(string requiredCategory);
-
-    set<string> getAllCategories();
-
-    void addItem(string name, string category, int price);
-
-    Item& getItemByName(string name);
-
-    vector<Offer> getItemOffers(Item& item);
-
-    void updateCurrentPriceForItem(string userName, string itemName, int newCurrentPrice);
-};
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:2273208e5cb91ad6f5a7787310e4c5a390d32136ed3e23fe957103b2f77e4164
+size 747

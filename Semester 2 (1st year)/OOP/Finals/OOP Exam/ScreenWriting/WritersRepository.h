@@ -1,29 +1,3 @@
-#pragma once
-
-#include <vector>
-
-#include "ScreenWriter.h"
-#include "StringOperations.h"
-
-using std::vector;
-
-class WritersRepository
-{
-private:
-	vector<ScreenWriter> writers;
-	string filePath;
-
-public:
-	WritersRepository(string filePath);
-
-	void readFile();
-
-	int findPosition(string name);
-	ScreenWriter& getWriterAtPosition(int position);
-	ScreenWriter& getWriterByName(string name);
-
-	void add(ScreenWriter writerToAdd);
-
-	vector<ScreenWriter>& getAll();
-};
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:732123d285b95b61d1a654c16d505676b14e895304ca422a00ce569063186262
+size 492

@@ -1,12 +1,3 @@
-#include "Subject.h"
-
-void Subject::addObserver(Observer* observerToAdd)
-{
-	this->observers.push_back(observerToAdd);
-}
-
-void Subject::notify()
-{
-	for (auto& observer : observers)
-		observer->update();
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5d3b78db769b4b70ac22f129b0e95e7ad4d75592d750593e31920cc9d8577063
+size 216

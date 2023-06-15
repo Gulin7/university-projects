@@ -1,36 +1,3 @@
-#pragma once
-
-#include <QWidget>
-#include "ui_CollectorWindow.h"
-
-#include "Observer.h"
-#include "Service.h"
-
-class CollectorWindow : public QWidget, public Observer
-{
-	Q_OBJECT
-
-public:
-	CollectorWindow(Service& service, string userName, QWidget *parent = nullptr);
-	~CollectorWindow();
-
-	void connectSignals();
-
-	void update();
-	void populateItemsList(vector<Item> itemsToPopulate);
-	void populateComboBox();
-	void populateOffersList(vector<Offer> offersToPopulate);
-
-	void handleCategorySelection();
-	void handleItemSelection();
-	void handleBid();
-
-
-private:
-	Ui::CollectorWindowClass ui;
-
-	Service& service;
-	string userName;
-
-	Item* lastSelectedItem;
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:8d7908685b5ebd81095eda8b3425c9163386b19e8b541d73c748013a7972c964
+size 695

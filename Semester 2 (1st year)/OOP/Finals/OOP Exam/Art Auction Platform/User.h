@@ -1,20 +1,3 @@
-#pragma once
-
-#include <string>
-
-using std::string;
-
-class User
-{
-private:
-	string name, type;
-	int id;
-
-public:
-	User(string name, string type, int id);
-
-	string getName();
-	string getType();
-	int getId();
-};
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:19f0a5d401867c42e954880952334f969eff3dd5db43d0b430938cd1ffa6feb6
+size 231

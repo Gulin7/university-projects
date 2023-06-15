@@ -1,25 +1,3 @@
-#pragma once
-
-#include <vector>
-
-#include "Participant.h"
-
-using std::vector;
-
-class ParticipantsRepository
-{
-private:
-	vector<Participant> participants;
-	string filePath;
-
-public:
-	ParticipantsRepository(const string& filePath);
-
-	void readFile();
-
-	Participant& getParticipantAtPosition(int position);
-	int findByName(const string& name);
-	void add(Participant participantToAdd);
-	vector<Participant>& getAll();
-};
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:cfe67ee85e1894471ece5d775e4856424d67e5a61a20cfcf3ffd9f49de110fb3
+size 443
