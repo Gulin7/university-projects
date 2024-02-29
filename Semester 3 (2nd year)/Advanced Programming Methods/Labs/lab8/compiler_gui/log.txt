@@ -1,0 +1,357 @@
+Id=1
+ExeStack:
+int counter
+while(counter<10) {Fork(Fork(int a; a=counter; print(a))); counter=counter+1}
+
+SymTable:
+
+Output:
+
+File Table:
+
+Heap Table:
+
+Id=1
+ExeStack:
+while(counter<10) {Fork(Fork(int a; a=counter; print(a))); counter=counter+1}
+
+SymTable:
+counter = 0
+
+Output:
+
+File Table:
+
+Heap Table:
+
+Id=1
+ExeStack:
+Fork(Fork(int a; a=counter; print(a)))
+counter=counter+1
+while(counter<10) {Fork(Fork(int a; a=counter; print(a))); counter=counter+1}
+
+SymTable:
+counter = 0
+
+Output:
+
+File Table:
+
+Heap Table:
+
+Id=1
+ExeStack:
+Fork(Fork(int a; a=counter; print(a)))
+counter=counter+1
+while(counter<10) {Fork(Fork(int a; a=counter; print(a))); counter=counter+1}
+
+SymTable:
+counter = 0
+
+Output:
+
+File Table:
+
+Heap Table:
+
+Id=1
+ExeStack:
+counter=counter+1
+while(counter<10) {Fork(Fork(int a; a=counter; print(a))); counter=counter+1}
+
+SymTable:
+counter = 0
+
+Output:
+
+File Table:
+
+Heap Table:
+
+Id=2
+ExeStack:
+Fork(int a; a=counter; print(a))
+
+SymTable:
+counter = 0
+
+Output:
+
+File Table:
+
+Heap Table:
+
+Id=1
+ExeStack:
+while(counter<10) {Fork(Fork(int a; a=counter; print(a))); counter=counter+1}
+
+SymTable:
+counter = 1
+
+Output:
+
+File Table:
+
+Heap Table:
+
+Id=2
+ExeStack:
+
+SymTable:
+counter = 0
+
+Output:
+
+File Table:
+
+Heap Table:
+
+Id=3
+ExeStack:
+int a
+a=counter
+print(a)
+
+SymTable:
+counter = 0
+
+Output:
+
+File Table:
+
+Heap Table:
+
+Id=1
+ExeStack:
+Fork(Fork(int a; a=counter; print(a)))
+counter=counter+1
+while(counter<10) {Fork(Fork(int a; a=counter; print(a))); counter=counter+1}
+
+SymTable:
+counter = 1
+
+Output:
+
+File Table:
+
+Heap Table:
+
+Id=3
+ExeStack:
+int a
+a=counter
+print(a)
+
+SymTable:
+counter = 0
+
+Output:
+
+File Table:
+
+Heap Table:
+
+Id=1
+ExeStack:
+Fork(Fork(int a; a=counter; print(a)))
+counter=counter+1
+while(counter<10) {Fork(Fork(int a; a=counter; print(a))); counter=counter+1}
+
+SymTable:
+counter = 1
+
+Output:
+
+File Table:
+
+Heap Table:
+
+Id=3
+ExeStack:
+a=counter
+print(a)
+
+SymTable:
+a = 0
+counter = 0
+
+Output:
+
+File Table:
+
+Heap Table:
+
+Id=1
+ExeStack:
+counter=counter+1
+while(counter<10) {Fork(Fork(int a; a=counter; print(a))); counter=counter+1}
+
+SymTable:
+counter = 1
+
+Output:
+
+File Table:
+
+Heap Table:
+
+Id=3
+ExeStack:
+a=counter
+print(a)
+
+SymTable:
+a = 0
+counter = 0
+
+Output:
+
+File Table:
+
+Heap Table:
+
+Id=4
+ExeStack:
+Fork(int a; a=counter; print(a))
+
+SymTable:
+counter = 1
+
+Output:
+
+File Table:
+
+Heap Table:
+
+Id=1
+ExeStack:
+while(counter<10) {Fork(Fork(int a; a=counter; print(a))); counter=counter+1}
+
+SymTable:
+counter = 2
+
+Output:
+
+File Table:
+
+Heap Table:
+
+Id=3
+ExeStack:
+print(a)
+
+SymTable:
+a = 0
+counter = 0
+
+Output:
+
+File Table:
+
+Heap Table:
+
+Id=4
+ExeStack:
+
+SymTable:
+counter = 1
+
+Output:
+
+File Table:
+
+Heap Table:
+
+Id=5
+ExeStack:
+int a
+a=counter
+print(a)
+
+SymTable:
+counter = 1
+
+Output:
+
+File Table:
+
+Heap Table:
+
+Id=1
+ExeStack:
+Fork(Fork(int a; a=counter; print(a)))
+counter=counter+1
+while(counter<10) {Fork(Fork(int a; a=counter; print(a))); counter=counter+1}
+
+SymTable:
+counter = 2
+
+Output:
+0
+
+File Table:
+
+Heap Table:
+
+Id=3
+ExeStack:
+
+SymTable:
+a = 0
+counter = 0
+
+Output:
+0
+
+File Table:
+
+Heap Table:
+
+Id=5
+ExeStack:
+int a
+a=counter
+print(a)
+
+SymTable:
+counter = 1
+
+Output:
+0
+
+File Table:
+
+Heap Table:
+
+Id=1
+ExeStack:
+Fork(Fork(int a; a=counter; print(a)))
+counter=counter+1
+while(counter<10) {Fork(Fork(int a; a=counter; print(a))); counter=counter+1}
+
+SymTable:
+counter = 2
+
+Output:
+0
+
+File Table:
+
+Heap Table:
+
+Id=5
+ExeStack:
+a=counter
+print(a)
+
+SymTable:
+a = 0
+counter = 1
+
+Output:
+0
+
+File Table:
+
+Heap Table:
+

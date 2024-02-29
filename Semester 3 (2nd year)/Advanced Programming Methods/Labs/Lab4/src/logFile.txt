@@ -1,0 +1,190 @@
+ProgramState:
+executionStack = [(string varf;
+(varf = C:\Codes\university-projects\Semester 3 (2nd year)\Advanced Pr Methods\Labs\Lab4\Lab4\test.in;
+(OpenFile(varf)
+(int varc;
+(ReadFile(varf, varc)
+(print(varc);
+(ReadFile(varf, varc)
+(print(varc);
+CloseFile(varf)))))))))]
+symbolTable = {}
+outputList = []
+ filetable = []
+
+
+ProgramState:
+executionStack = [string varf;, (varf = C:\Codes\university-projects\Semester 3 (2nd year)\Advanced Pr Methods\Labs\Lab4\Lab4\test.in;
+(OpenFile(varf)
+(int varc;
+(ReadFile(varf, varc)
+(print(varc);
+(ReadFile(varf, varc)
+(print(varc);
+CloseFile(varf))))))))]
+symbolTable = {}
+outputList = []
+ filetable = []
+
+
+ProgramState:
+executionStack = [(varf = C:\Codes\university-projects\Semester 3 (2nd year)\Advanced Pr Methods\Labs\Lab4\Lab4\test.in;
+(OpenFile(varf)
+(int varc;
+(ReadFile(varf, varc)
+(print(varc);
+(ReadFile(varf, varc)
+(print(varc);
+CloseFile(varf))))))))]
+symbolTable = {varf=}
+outputList = []
+ filetable = []
+
+
+ProgramState:
+executionStack = [varf = C:\Codes\university-projects\Semester 3 (2nd year)\Advanced Pr Methods\Labs\Lab4\Lab4\test.in;, (OpenFile(varf)
+(int varc;
+(ReadFile(varf, varc)
+(print(varc);
+(ReadFile(varf, varc)
+(print(varc);
+CloseFile(varf)))))))]
+symbolTable = {varf=}
+outputList = []
+ filetable = []
+
+
+ProgramState:
+executionStack = [(OpenFile(varf)
+(int varc;
+(ReadFile(varf, varc)
+(print(varc);
+(ReadFile(varf, varc)
+(print(varc);
+CloseFile(varf)))))))]
+symbolTable = {varf=C:\Codes\university-projects\Semester 3 (2nd year)\Advanced Pr Methods\Labs\Lab4\Lab4\test.in}
+outputList = []
+ filetable = []
+
+
+ProgramState:
+executionStack = [OpenFile(varf), (int varc;
+(ReadFile(varf, varc)
+(print(varc);
+(ReadFile(varf, varc)
+(print(varc);
+CloseFile(varf))))))]
+symbolTable = {varf=C:\Codes\university-projects\Semester 3 (2nd year)\Advanced Pr Methods\Labs\Lab4\Lab4\test.in}
+outputList = []
+ filetable = []
+
+
+ProgramState:
+executionStack = [(int varc;
+(ReadFile(varf, varc)
+(print(varc);
+(ReadFile(varf, varc)
+(print(varc);
+CloseFile(varf))))))]
+symbolTable = {varf=C:\Codes\university-projects\Semester 3 (2nd year)\Advanced Pr Methods\Labs\Lab4\Lab4\test.in}
+outputList = []
+ filetable = [C:\Codes\university-projects\Semester 3 (2nd year)\Advanced Pr Methods\Labs\Lab4\Lab4\test.in]
+
+
+ProgramState:
+executionStack = [int varc;, (ReadFile(varf, varc)
+(print(varc);
+(ReadFile(varf, varc)
+(print(varc);
+CloseFile(varf)))))]
+symbolTable = {varf=C:\Codes\university-projects\Semester 3 (2nd year)\Advanced Pr Methods\Labs\Lab4\Lab4\test.in}
+outputList = []
+ filetable = [C:\Codes\university-projects\Semester 3 (2nd year)\Advanced Pr Methods\Labs\Lab4\Lab4\test.in]
+
+
+ProgramState:
+executionStack = [(ReadFile(varf, varc)
+(print(varc);
+(ReadFile(varf, varc)
+(print(varc);
+CloseFile(varf)))))]
+symbolTable = {varf=C:\Codes\university-projects\Semester 3 (2nd year)\Advanced Pr Methods\Labs\Lab4\Lab4\test.in, varc=0}
+outputList = []
+ filetable = [C:\Codes\university-projects\Semester 3 (2nd year)\Advanced Pr Methods\Labs\Lab4\Lab4\test.in]
+
+
+ProgramState:
+executionStack = [ReadFile(varf, varc), (print(varc);
+(ReadFile(varf, varc)
+(print(varc);
+CloseFile(varf))))]
+symbolTable = {varf=C:\Codes\university-projects\Semester 3 (2nd year)\Advanced Pr Methods\Labs\Lab4\Lab4\test.in, varc=0}
+outputList = []
+ filetable = [C:\Codes\university-projects\Semester 3 (2nd year)\Advanced Pr Methods\Labs\Lab4\Lab4\test.in]
+
+
+ProgramState:
+executionStack = [(print(varc);
+(ReadFile(varf, varc)
+(print(varc);
+CloseFile(varf))))]
+symbolTable = {varf=C:\Codes\university-projects\Semester 3 (2nd year)\Advanced Pr Methods\Labs\Lab4\Lab4\test.in, varc=25}
+outputList = []
+ filetable = [C:\Codes\university-projects\Semester 3 (2nd year)\Advanced Pr Methods\Labs\Lab4\Lab4\test.in]
+
+
+ProgramState:
+executionStack = [print(varc);, (ReadFile(varf, varc)
+(print(varc);
+CloseFile(varf)))]
+symbolTable = {varf=C:\Codes\university-projects\Semester 3 (2nd year)\Advanced Pr Methods\Labs\Lab4\Lab4\test.in, varc=25}
+outputList = []
+ filetable = [C:\Codes\university-projects\Semester 3 (2nd year)\Advanced Pr Methods\Labs\Lab4\Lab4\test.in]
+
+
+ProgramState:
+executionStack = [(ReadFile(varf, varc)
+(print(varc);
+CloseFile(varf)))]
+symbolTable = {varf=C:\Codes\university-projects\Semester 3 (2nd year)\Advanced Pr Methods\Labs\Lab4\Lab4\test.in, varc=25}
+outputList = [25]
+ filetable = [C:\Codes\university-projects\Semester 3 (2nd year)\Advanced Pr Methods\Labs\Lab4\Lab4\test.in]
+
+
+ProgramState:
+executionStack = [ReadFile(varf, varc), (print(varc);
+CloseFile(varf))]
+symbolTable = {varf=C:\Codes\university-projects\Semester 3 (2nd year)\Advanced Pr Methods\Labs\Lab4\Lab4\test.in, varc=25}
+outputList = [25]
+ filetable = [C:\Codes\university-projects\Semester 3 (2nd year)\Advanced Pr Methods\Labs\Lab4\Lab4\test.in]
+
+
+ProgramState:
+executionStack = [(print(varc);
+CloseFile(varf))]
+symbolTable = {varf=C:\Codes\university-projects\Semester 3 (2nd year)\Advanced Pr Methods\Labs\Lab4\Lab4\test.in, varc=50}
+outputList = [25]
+ filetable = [C:\Codes\university-projects\Semester 3 (2nd year)\Advanced Pr Methods\Labs\Lab4\Lab4\test.in]
+
+
+ProgramState:
+executionStack = [print(varc);, CloseFile(varf)]
+symbolTable = {varf=C:\Codes\university-projects\Semester 3 (2nd year)\Advanced Pr Methods\Labs\Lab4\Lab4\test.in, varc=50}
+outputList = [25]
+ filetable = [C:\Codes\university-projects\Semester 3 (2nd year)\Advanced Pr Methods\Labs\Lab4\Lab4\test.in]
+
+
+ProgramState:
+executionStack = [CloseFile(varf)]
+symbolTable = {varf=C:\Codes\university-projects\Semester 3 (2nd year)\Advanced Pr Methods\Labs\Lab4\Lab4\test.in, varc=50}
+outputList = [25, 50]
+ filetable = [C:\Codes\university-projects\Semester 3 (2nd year)\Advanced Pr Methods\Labs\Lab4\Lab4\test.in]
+
+
+ProgramState:
+executionStack = []
+symbolTable = {varf=C:\Codes\university-projects\Semester 3 (2nd year)\Advanced Pr Methods\Labs\Lab4\Lab4\test.in, varc=50}
+outputList = [25, 50]
+ filetable = []
+
+
