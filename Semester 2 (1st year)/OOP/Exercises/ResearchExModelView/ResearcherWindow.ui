@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ResearcherWindowClass</class>
+ <widget class="QMainWindow" name="ResearcherWindowClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>807</width>
+    <height>609</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ResearcherWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QFormLayout" name="formLayout_2">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Position</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>unknown</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTableView" name="tableView"/>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <layout class="QFormLayout" name="formLayout">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>Title</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="titlelineEdit"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Description</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="descriptionlineEdit"/>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Duration</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="durationlineEdit"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QPushButton" name="addpushButton">
+        <property name="text">
+         <string>Add</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="developpushButton">
+        <property name="text">
+         <string>Develop</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="saveAllpushButton">
+        <property name="text">
+         <string>SaveAll</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="savepushButton">
+        <property name="text">
+         <string>Save</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="acceptpushButton">
+        <property name="text">
+         <string>Accept</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>807</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="ResearcherWindow.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>developpushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>ResearcherWindowClass</receiver>
+   <slot>develop()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>124</x>
+     <y>559</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>872</x>
+     <y>134</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>saveAllpushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>ResearcherWindowClass</receiver>
+   <slot>saveAll()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>307</x>
+     <y>567</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>839</x>
+     <y>315</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>savepushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>ResearcherWindowClass</receiver>
+   <slot>save()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>528</x>
+     <y>572</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>842</x>
+     <y>191</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>acceptpushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>ResearcherWindowClass</receiver>
+   <slot>acceptIdea()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>663</x>
+     <y>559</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>848</x>
+     <y>408</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>addpushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>ResearcherWindowClass</receiver>
+   <slot>addNewIdea()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>744</x>
+     <y>515</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>886</x>
+     <y>360</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>develop()</slot>
+  <slot>save()</slot>
+  <slot>saveAll()</slot>
+  <slot>acceptIdea()</slot>
+  <slot>addNewIdea()</slot>
+ </slots>
+</ui>

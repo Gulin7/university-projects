@@ -1,0 +1,4 @@
+SuperIdea;We will do smth super;proposed;Dania;1
+NewROTMG;We will create a rotmg 2.0;accepted;Tudor;3
+CyclismApp;Cyclism app cool;proposed;David;1
+SupremumApp;Coolest app;proposed;Rares;2

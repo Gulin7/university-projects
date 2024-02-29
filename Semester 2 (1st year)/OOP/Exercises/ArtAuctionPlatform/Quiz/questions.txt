@@ -1,0 +1,5 @@
+1;Cati ani are Tudor?;20;1
+2;Milsugi?;Da;5
+3;Cat luam la OOP?;5+;10
+4;Este Gabi Mircea un ratat?;Nu;100
+5;69?da sau nu;da;69
