@@ -1,0 +1,5 @@
+Dorel;undiagnosed;;;20.3.2023
+Marcel;cancer;cardiology;Vasi;12.4.2023
+Ana;cataracta;orl;Tudor;15.3.2023
+Dora;undiagnosed;;;20.5.2023
+Rares;undiagnosed;;;12.5.2023

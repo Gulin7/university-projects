@@ -1,0 +1,6 @@
+Dorel;problem;cardiology;Vasi;20.3.2023
+Marcel;cancer;cardiology;Vasi;12.4.2023
+Ana;problem;cardiology;Vasi;15.3.2023
+Dora;problem;cardiology;Vasi;20.5.2023
+Rares;problem;cardiology;Vasi;12.5.2023
+Ana;undiagnosed;;;1.1.2024
