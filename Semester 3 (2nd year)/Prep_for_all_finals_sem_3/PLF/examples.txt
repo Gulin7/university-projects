@@ -1,0 +1,246 @@
+I.
+1.2024 ex1
+(defun f(l)
+  (cond
+    ((null l) nil)
+    ((listp (car l)) (append (f (car l)) (f cdr l) (car (f (car l)))))
+    (t (list (car l)))
+  )
+)
+
+(defun f(l)
+  (
+	(lambda (t)
+    		(cond
+      			((null l) nil)
+      			((listp (car l)) (append (f (car l)) (f cdr l) (car (f (car l)))))
+      			(t (list (car l)))
+    )
+  )
+  (f (car l))
+  )
+)
+; we use a lambda expression and give as parameter the call to (f (Car l))
+; this way we call the function only once and avoid double recursion
+===================================================
+2.f(0, 0):- !.
+f(I, Y):- J is I - 1, f(J, V), V > 1, !, K is I - 2, Y is K.	
+f(I, Y):- J is I - 1, f(J, V), Y is V + 1.
+
+f(0, 0):- !.
+f(I, Y):- J is I - 1, f(J, V), aux(V, I, Y).
+
+aux(V, I, Y):-
+    V > 1, !, K is I - 2, Y is K.
+
+aux(V, , Y):-
+    Y is V + 1.
+
+
+f(0, 0):- !.
+f(I, Y):- J is I - 1, I > 0, f(J, V), V > 1, !, K is I - 2, Y is K.
+f(I, Y):- J is I - 1, f(J, V), Y is V + 1.
+
+f(0, 0):- !.
+f(I, Y):- J is I - 1, f(J, V), I > 0, V > 1, !, K is I - 2, Y is K.
+f(I, Y):- J is I - 1, f(J, V), Y is V + 1.
+
+aux(V, I, Y):-
+    I > 0, V > 1, !, K is I - 2, Y is K.
+
+aux(V, , Y):-
+    Y is V + 1.
+
+f(0, 0):- !.
+f(I, Y):- J is I - 1, f(J, V), aux(V, I, Y).
+we use an auxiliary predicate and factorization
+===================================================
+===================================================
+3.(defun f (x &optional y)
+  (cond
+    ((null y) (cdr x))
+    (t (cons (car x) y))
+  )
+)
+
+(write (append (f '(1 2)) (f '(3 4) '(5 6))))
+
+; (append (f '(1 2)) (f '(3 4) '(5 6)))
+
+; f '(1 2) => x = (1 2) y = null => (2)
+; f (3 4) (5 6) => x = (3 4), y = (5 6) => (3 5 6)
+; (2 3 5 6)
+
+(defun f (x &rest y)
+  (cond
+    ((null y) (cdr x))
+    (t (cons (car x) y))
+  )
+)
+
+(f 2 3 4) => ; x = 2, y = (3 4)
+(f 2) => ; x = 2 , y = null
+(f 2 '(3 4)) => ; x = 2, y = ((3 4))
+===================================================
+===================================================
+II.
+% generate(yc, fc): [], fc == 0
+%                  : ['Y'] U generate(yc + 1, fc - 1), if yc < 3
+%                  : ['R'] U generate(yc, fc - 1), otherwise
+
+% generate(YC, FC, R) has the flow model as (i, i, o)
+% YC - how many yellow chairs we have until now
+% FC - how many chairs we can still add
+% R - result representing the chairs arrangement
+
+generate(_, 0, []):- !.
+generate(YC, FC, R):- 
+    YC < 3,
+    YC1 is YC + 1,
+    FC1 is FC - 1,
+    generate(YC1, FC1, R1),
+    R = ['Y'|R1].
+
+generate(YC, FC, R):- 
+    FC1 is FC - 1,
+    generate(YC, FC1, R1),
+    R = ['R'|R1].
+===================================================
+===================================================
+III.
+; myReplace(l, e, e1, lvl): nil, n == 0
+;                         : e1, lvl % 2 == 1 and l = e
+;                         : l, atom(l)
+;                         : myReplace(l1, e, e1, lvl + 1) U ... U myReplace(ln, e, e1, lvl + 1), otherwise
+
+(defun f(l e e1 lvl)
+  (cond
+    ((null l) nil)
+    ((and (= (mod lvl 2) 1) (equal l e)) e1)
+    ((atom l) l)
+    (t (mapcar #'(lambda (a) (f a e e1 (+ lvl 1)) ) l))
+  )
+)
+
+(write  (f '(1 d (2 d (d))) 'd 'f 0))
+================================
+===============================
+II.
+prod([], C, C).
+prod([H|T], C,P):-
+    P1 is C*H, 
+    prod(T,P1,P).
+%prod flow model (i,i,o)
+%prod([l1,l2,...,ln],C,P): C, if n==0
+%			: prod([l2,l3,...,ln],l1*C,P), otherwise
+% C - current product, starting from 1.
+% P final product, result.
+insert(E,L,[E|L]).
+insert(E,[H|T],[H|R]):-
+    insert(E,T,R).
+
+arr([E|_],1,[E]).
+arr([_|T],K,R):- arr(T,K,R).
+arr([H|T],K,R1):-
+    K>1,
+    K1 is K-1,
+    arr(T,K1,R),
+    insert(H,R,R1).
+
+main(L,K,P,Rez):-
+    arr(L,K,R),
+    prod(R,1,Pr),
+    P=:=Pr,
+    Rez = R.
+
+allSols(L,K,P,R):-
+    findall(R1, main(L,K,P,R1), R).
+    ==============================
+=================================
+I.1.(defun fct(f l)
+  ((lambda x)
+    (cond
+      ((null l ) nil)
+      (x (cons x (fct f(cdr l))))
+      (t nil)
+    )
+  ) (funcall f (car l)))
+)
+
+;we use lambda expression and give it the parameter funcall f (car l) 
+; this way we avoid the double recursive call to funcall f (car l)
+    ==============================
+=================================
+III.; f(l e lvl) - e, the element we replace with, lvl - the current lvl, l -curr elem 
+;f(l e lvl): nil, if l is null
+;           : e, if ( and (atom l) (= (mod lvl 2) 1))
+;           : l, if (atom l)
+;           : f(l1 e lvl+1) U f(l2 e lvl+1) U...Uf(ln e lvl+1), otherwise ( if l list)
+
+(defun f(l e lvl)
+  (cond 
+    ((null l) nil)
+    ((and (and (atom l) (= (mod lvl 2) 1)) (equal l 'a')) (list e))
+    ((atom l) (list l))
+    (t (list(mapcan #'(lambda(a) (f a e (+ lvl 1))) l)))
+  )
+)
+
+(write (car (f '(a (b (g)) (c (d (e)) (f))) 'h -1 )))
+====================
+===================
+MAPCAN : return (list atom) ALWAys
+1. flat list => mapcan simple + remove element or replace element
+2. remove element and retain structure => (list mapcan), works for both remove and replace; remember to write (car ..)
+================================
+=================================
+II.insert(E,L,[E|L]).
+insert(E,[H|T],[H|R]):-
+    insert(E,T,R).
+
+perm([],[]).
+perm([H|T],R):-
+    perm(T,R1),
+    insert(H,R1,R).
+    
+arr([H|_],1,[H]).
+arr([_|T],K,R):-
+    arr(T,K,R).
+arr([H|T],K,R):-
+    K>1,
+    K1 is K-1,
+    arr(T,K1,R1),
+    insert(H,R1,R).
+
+comb([H|_],1,[H]).
+comb([_|T],K,R):-
+    comb(T,K,R).
+comb([H|T], K, [H|R] ):-
+    K>1,
+    K1 is K-1,
+    comb(T,K1,R).
+%----------------------
+prod([],C,C).
+prod([H|T],C,P):-
+    C1 is H*C,
+    prod(T,C1,P).
+
+oneSol(L,K,P,RL):-
+    arr(L,K,RL),
+    prod(RL,1,P1),
+    P1 =:= P.
+
+allSols(L,K,P,R):-findall(RL,oneSol(L,K,P,RL),R).
+==========================
+ii.check([]).
+check([_]).
+check([H1,H2|T]):-
+    P is abs(H1-H2),
+    P =<3,
+    check([H2|T]).
+
+oneSol2(L,R):-
+    perm(L,R),
+    check(R).
+
+allSols2(L,R):-findall(RL,oneSol2(L,RL),R).
