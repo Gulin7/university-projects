@@ -1,0 +1,8 @@
+//CondAssignUtils
+IStmt ex12 = new CompStmt(new VarDeclStmt("b", new BoolType()),
+                new CompStmt(new VarDeclStmt("c", new IntType()),
+                        new CompStmt(new AssignStmt("b", new ValueExp(new BoolValue(true))),
+                                new CompStmt(new CondAssignStmt("c", new VarExp("b"), new ValueExp(new IntValue(100)), new ValueExp(new IntValue(200))),
+                                        new CompStmt(new PrintStmt(new VarExp("c")),
+                                                new CompStmt(new CondAssignStmt("c", new ValueExp(new BoolValue(false)), new ValueExp(new IntValue(100)), new ValueExp(new IntValue(200))),
+                                                        new PrintStmt(new VarExp("c"))))))));

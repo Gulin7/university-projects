@@ -1,0 +1,3571 @@
+[PROCESS ID]: 1
+[EXE STACK]: 
+(Ref(int) a|(Ref(int) b|(int v|(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))))))))
+
+[SYMBOL TABLE]: 
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+Ref(int) a
+(Ref(int) b|(int v|(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))))))
+
+[SYMBOL TABLE]: 
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+Ref(int) a
+(Ref(int) b|(int v|(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))))))
+
+[SYMBOL TABLE]: 
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(Ref(int) b|(int v|(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(Ref(int) b|(int v|(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+Ref(int) b
+(int v|(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+Ref(int) b
+(int v|(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(int v|(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+b -> (0, int)
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(int v|(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+b -> (0, int)
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+int v
+(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+b -> (0, int)
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+int v
+(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+b -> (0, int)
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+b -> (0, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+b -> (0, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+new(a, 0);
+(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+b -> (0, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+new(a, 0);
+(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+b -> (0, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (0, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (0, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+new(b, 0);
+(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (0, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+new(b, 0);
+(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (0, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 0
+2 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 0
+2 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+WriteHeap(a, 1)
+(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 0
+2 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+WriteHeap(a, 1)
+(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 0
+2 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+WriteHeap(b, 2)
+(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+WriteHeap(b, 2)
+(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200
+(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200
+(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+if(ReadHeap(a) < ReadHeap(b)){v = 100}else{v = 200}
+(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+if(ReadHeap(a) < ReadHeap(b)){v = 100}else{v = 200}
+(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+v = 100
+(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+v = 100
+(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 100
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 100
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+Print(v)
+(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 100
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+Print(v)
+(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 100
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 100
+
+[OUTPUT LIST]: 
+100
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 100
+
+[OUTPUT LIST]: 
+100
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200
+Print(v)
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 100
+
+[OUTPUT LIST]: 
+100
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200
+Print(v)
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 100
+
+[OUTPUT LIST]: 
+100
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+if(ReadHeap(b) - 2 > ReadHeap(a)){v = 100}else{v = 200}
+Print(v)
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 100
+
+[OUTPUT LIST]: 
+100
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+if(ReadHeap(b) - 2 > ReadHeap(a)){v = 100}else{v = 200}
+Print(v)
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 100
+
+[OUTPUT LIST]: 
+100
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+v = 200
+Print(v)
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 100
+
+[OUTPUT LIST]: 
+100
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+v = 200
+Print(v)
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 100
+
+[OUTPUT LIST]: 
+100
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+Print(v)
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 200
+
+[OUTPUT LIST]: 
+100
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+Print(v)
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 200
+
+[OUTPUT LIST]: 
+100
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 200
+
+[OUTPUT LIST]: 
+100
+200
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(Ref(int) a|(Ref(int) b|(int v|(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))))))))
+
+[SYMBOL TABLE]: 
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+Ref(int) a
+(Ref(int) b|(int v|(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))))))
+
+[SYMBOL TABLE]: 
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+Ref(int) a
+(Ref(int) b|(int v|(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))))))
+
+[SYMBOL TABLE]: 
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(Ref(int) b|(int v|(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(Ref(int) b|(int v|(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+Ref(int) b
+(int v|(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+Ref(int) b
+(int v|(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(int v|(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+b -> (0, int)
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(int v|(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+b -> (0, int)
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+int v
+(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+b -> (0, int)
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+int v
+(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+b -> (0, int)
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+b -> (0, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+b -> (0, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+new(a, 0);
+(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+b -> (0, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+new(a, 0);
+(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+b -> (0, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (0, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (0, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+new(b, 0);
+(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (0, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+new(b, 0);
+(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (0, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 0
+2 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 0
+2 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+WriteHeap(a, 1)
+(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 0
+2 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+WriteHeap(a, 1)
+(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 0
+2 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+WriteHeap(b, 2)
+(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+WriteHeap(b, 2)
+(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200
+(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200
+(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+if(ReadHeap(a) < ReadHeap(b)){v = 100}else{v = 200}
+(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+if(ReadHeap(a) < ReadHeap(b)){v = 100}else{v = 200}
+(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+v = 100
+(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+v = 100
+(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 100
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 100
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+Print(v)
+(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 100
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+Print(v)
+(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 100
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 100
+
+[OUTPUT LIST]: 
+100
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 100
+
+[OUTPUT LIST]: 
+100
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200
+Print(v)
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 100
+
+[OUTPUT LIST]: 
+100
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200
+Print(v)
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 100
+
+[OUTPUT LIST]: 
+100
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+if(ReadHeap(b) - 2 > ReadHeap(a)){v = 100}else{v = 200}
+Print(v)
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 100
+
+[OUTPUT LIST]: 
+100
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+if(ReadHeap(b) - 2 > ReadHeap(a)){v = 100}else{v = 200}
+Print(v)
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 100
+
+[OUTPUT LIST]: 
+100
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+v = 200
+Print(v)
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 100
+
+[OUTPUT LIST]: 
+100
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+v = 200
+Print(v)
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 100
+
+[OUTPUT LIST]: 
+100
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+Print(v)
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 200
+
+[OUTPUT LIST]: 
+100
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+Print(v)
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 200
+
+[OUTPUT LIST]: 
+100
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 200
+
+[OUTPUT LIST]: 
+100
+200
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+(Ref(int) a|(Ref(int) b|(int v|(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))))))))
+
+[SYMBOL TABLE]: 
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+Ref(int) a
+(Ref(int) b|(int v|(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))))))
+
+[SYMBOL TABLE]: 
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+Ref(int) a
+(Ref(int) b|(int v|(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))))))
+
+[SYMBOL TABLE]: 
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+(Ref(int) b|(int v|(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+(Ref(int) b|(int v|(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+Ref(int) b
+(int v|(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+Ref(int) b
+(int v|(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+(int v|(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+b -> (0, int)
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+(int v|(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+b -> (0, int)
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+int v
+(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+b -> (0, int)
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+int v
+(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+b -> (0, int)
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+b -> (0, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+b -> (0, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+new(a, 0);
+(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+b -> (0, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+new(a, 0);
+(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+b -> (0, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (0, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (0, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+new(b, 0);
+(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (0, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+new(b, 0);
+(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (0, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 0
+2 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 0
+2 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+WriteHeap(a, 1)
+(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 0
+2 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+WriteHeap(a, 1)
+(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 0
+2 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+WriteHeap(b, 2)
+(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+WriteHeap(b, 2)
+(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200
+(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200
+(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+if(ReadHeap(a) < ReadHeap(b)){v = 100}else{v = 200}
+(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+if(ReadHeap(a) < ReadHeap(b)){v = 100}else{v = 200}
+(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+v = 100
+(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+v = 100
+(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 100
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 100
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+Print(v)
+(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 100
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+Print(v)
+(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 100
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 100
+
+[OUTPUT LIST]: 
+100
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 100
+
+[OUTPUT LIST]: 
+100
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200
+Print(v)
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 100
+
+[OUTPUT LIST]: 
+100
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200
+Print(v)
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 100
+
+[OUTPUT LIST]: 
+100
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+if(ReadHeap(b) - 2 > ReadHeap(a)){v = 100}else{v = 200}
+Print(v)
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 100
+
+[OUTPUT LIST]: 
+100
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+if(ReadHeap(b) - 2 > ReadHeap(a)){v = 100}else{v = 200}
+Print(v)
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 100
+
+[OUTPUT LIST]: 
+100
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+v = 200
+Print(v)
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 100
+
+[OUTPUT LIST]: 
+100
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+v = 200
+Print(v)
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 100
+
+[OUTPUT LIST]: 
+100
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+Print(v)
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 200
+
+[OUTPUT LIST]: 
+100
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+Print(v)
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 200
+
+[OUTPUT LIST]: 
+100
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 2
+[EXE STACK]: 
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 200
+
+[OUTPUT LIST]: 
+100
+200
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(Ref(int) a|(Ref(int) b|(int v|(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))))))))
+
+[SYMBOL TABLE]: 
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+Ref(int) a
+(Ref(int) b|(int v|(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))))))
+
+[SYMBOL TABLE]: 
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+Ref(int) a
+(Ref(int) b|(int v|(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))))))
+
+[SYMBOL TABLE]: 
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(Ref(int) b|(int v|(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(Ref(int) b|(int v|(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+Ref(int) b
+(int v|(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+Ref(int) b
+(int v|(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(int v|(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+b -> (0, int)
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(int v|(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+b -> (0, int)
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+int v
+(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+b -> (0, int)
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+int v
+(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+b -> (0, int)
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+b -> (0, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(new(a, 0);|(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+b -> (0, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+new(a, 0);
+(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+b -> (0, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+new(a, 0);
+(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))))
+
+[SYMBOL TABLE]: 
+a -> (0, int)
+b -> (0, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (0, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(new(b, 0);|(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (0, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+new(b, 0);
+(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (0, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+new(b, 0);
+(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (0, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 0
+2 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(WriteHeap(a, 1)|(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 0
+2 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+WriteHeap(a, 1)
+(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 0
+2 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+WriteHeap(a, 1)
+(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 0
+2 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(WriteHeap(b, 2)|(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+WriteHeap(b, 2)
+(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+WriteHeap(b, 2)
+(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 0
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200|(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200
+(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+v = (ReadHeap(a) < ReadHeap(b)) ? 100 : 200
+(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+if(ReadHeap(a) < ReadHeap(b)){v = 100}else{v = 200}
+(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+if(ReadHeap(a) < ReadHeap(b)){v = 100}else{v = 200}
+(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+v = 100
+(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+v = 100
+(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 0
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 100
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(Print(v)|(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v)))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 100
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+Print(v)
+(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 100
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+Print(v)
+(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 100
+
+[OUTPUT LIST]: 
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 100
+
+[OUTPUT LIST]: 
+100
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+(v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200|Print(v))
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 100
+
+[OUTPUT LIST]: 
+100
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}
+[PROCESS ID]: 1
+[EXE STACK]: 
+v = (ReadHeap(b) - 2 > ReadHeap(a)) ? 100 : 200
+Print(v)
+
+[SYMBOL TABLE]: 
+a -> (1, int)
+b -> (2, int)
+v -> 100
+
+[OUTPUT LIST]: 
+100
+
+[FILE TABLE]:
+
+[HEAP STORAGE]:
+1 -> 1
+2 -> 2
+
+[LATCHES TABLE]:
+{}

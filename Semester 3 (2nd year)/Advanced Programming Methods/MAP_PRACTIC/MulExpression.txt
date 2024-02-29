@@ -1,0 +1,44 @@
+//MulExpression
+package src.domain.exp;
+
+
+import src.domain.exception.MyException;
+import src.domain.prgstate.MyIDictionary;
+import src.domain.type.IntType;
+import src.domain.type.Type;
+import src.domain.value.Value;
+
+// added for exam
+public class MulExpression implements Exp{
+    private final Exp expression1;
+    private final Exp expression2;
+
+    public MulExpression(Exp expression1, Exp expression2) {
+        this.expression1 = expression1;
+        this.expression2 = expression2;
+    }
+
+    @Override
+    public Value eval(MyIDictionary<String, Value> symTbl, MyIDictionary<Integer, Value> heap) throws MyException {
+        Exp converted = new ArithExp('-',
+                new ArithExp('*', this.expression1, this.expression2),
+                new ArithExp('+', this.expression1, this.expression2));
+
+        return converted.eval(symTbl, heap);
+    }
+
+    public Type typeCheck(MyIDictionary<String, Type> typeEnv) throws MyException {
+        Type type1 = this.expression1.typeCheck(typeEnv);
+        Type type2 = this.expression2.typeCheck(typeEnv);
+
+        if (!(type1.equals(new IntType()) && type2.equals(new IntType())))
+            throw new MyException("MULExpression: expressions should be int!");
+
+        return new IntType();
+    }
+
+    @Override
+    public String toString() {
+        return String.format("MUL(%s, %s)", this.expression1, this.expression2);
+    }
+}
