@@ -1,0 +1,149 @@
+/*
+* {
+	margin: 0;
+	padding: 0;
+}*/
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+body {
+	background-color: #f4f4f4;
+	color: #555555;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.container {
+	width: 80%;
+	margin: auto;
+}
+
+.clear {
+	clear: both;
+}
+
+.button {
+	background-color: #333;
+	color: #ccc;
+}
+
+.box-1 {
+	background-color: #333;
+	color: #fff;
+	border: 3px red dashed;
+	padding: 20px;
+	margin: 20px 0;
+}
+
+.box-1 h1 {
+	font-family: Tahoma;
+	font-weight: 800;
+	font-style: italic;
+	text-decoration: underline;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	word-spacing: 0.1em;
+}
+
+.navigation {
+	border: 1px #ccc solid;
+	border-radius: 15px;
+	padding: 20px;
+	margin: 20px;
+}
+
+.navigation ul {
+	padding: 0;
+	list-style: none;
+}
+
+.navigation li {
+	padding: 3px;
+	margin: 3px;
+	border-bottom: 1px dotted #ccc;
+	list-style-image: url("../images/arrow.jpg");
+}
+
+.my_form {
+	padding: 20px;
+}
+
+.my-form .form-group {
+	padding-bottom: 10px;
+}
+.my-form label {
+	display: block;
+}
+
+.my-form input[type="text"],
+.my-form input[type="email"],
+.my-form input[type="password"],
+.my-form textarea {
+	width: 100%;
+	padding: 10px;
+	margin: 10px 0;
+}
+
+.block {
+	width: 33.3%;
+	padding: 10px;
+	border-right: 1px solid cadetblue;
+	float: left;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+}
+
+#main-1 {
+	float: left;
+	width: 66.6%;
+	padding: 10px;
+	border-top: 1px solid cadetblue;
+	box-sizing: border-box;
+}
+
+#side-1 {
+	float: right;
+	width: 33.3%;
+	padding: 10px;
+	border-top: 1px solid cadetblue;
+	box-sizing: border-box;
+}
+
+.p-box {
+	color: darkslategray;
+	width: 960px;
+	height: 500px;
+	border: 1px solid #ccc;
+	margin-top: 10px;
+	position: relative;
+	background-image: url("../images/main_background.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.p-box h1 {
+	position: absolute;
+	top: 40px;
+	left: 100px;
+}
+
+.top-button {
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	background-color: blueviolet;
+	padding: 10px;
+	border-radius: 20px;
+}
+
+.my-list li:nth-child(odd) {
+	background: coral;
+}
+
+.my-list li:nth-child(even) {
+	background-color: aquamarine;
+}

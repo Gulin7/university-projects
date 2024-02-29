@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My recipes</title>
+	</head>
+	<body>
+		<!-- Comments -->
+		<h1>My recipes</h1>
+		<p>Here is a list of my recipes:</p>
+		<ul>
+			<li><a href="recipes/pancakes.html"> Protein Pancakes </a></li>
+			<li>
+				<a href="recipes/cereal_and_milk.html">
+					<abbr title="Cereal and milk"> CAM</abbr>
+				</a>
+			</li>
+		</ul>
+		<table>
+			<thead>
+				<tr>
+					<th>Col1</th>
+					<th>Col2</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Row1Col1</td>
+					<td>Row1Col2</td>
+				</tr>
+				<tr>
+					<td>Row2Col1</td>
+					<td>Row2Col2</td>
+				</tr>
+			</tbody>
+		</table>
+		<br /><!-- br is for empty line, while hr is for horizontal line -->
+		<hr />
+		<br />
+		<form method="POST">
+			<div>
+				<label> First name </label>
+				<input type="text" name="first_name" />
+			</div>
+			<div>
+				<label> Last name </label>
+				<input type="text" name="last_name" />
+			</div>
+			<div>
+				<label> Email </label>
+				<input type="email" name="email" />
+			</div>
+			<div>
+				<label> Message </label>
+				<input type="message" name="message" />
+			</div>
+			<div>
+				<select name="gender">
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+					<option value="other">Other</option>
+				</select>
+			</div>
+			<br />
+			<div>
+				<input type="submit" value="Submit" />
+			</div>
+			<br />
+			<div>
+				<button>Just for show</button>
+			</div>
+			<a href="cooking.jpg" target="_blank">
+				<img src="cooking.jpg" alt="Cooking" width="200" />
+			</a>
+		</form>
+	</body>
+</html>
