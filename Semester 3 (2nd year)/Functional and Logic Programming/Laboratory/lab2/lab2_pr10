@@ -1,0 +1,20 @@
+has_valley([]).
+has_valley([_]).
+has_valley([A, B | Rest]) :-
+    decreasing_sequence([A, B | Rest]).
+
+decreasing_sequence([]).
+decreasing_sequence([A, B | Rest]) :-
+    A > B, decreasing_sequence([B | Rest]).
+decreasing_sequence([A,B | Rest]) :-
+    A =<B, increasing_sequence([B | Rest]).
+increasing_sequence([]).
+increasing_sequence([_]).
+increasing_sequence([A, B | Rest]) :- A =< B, increasing_sequence([B | Rest]).
+
+alternate_sum([], _, 0).
+alternate_sum([L1], sign, sign*L1).
+alternate_sum([L1 | Rest], Sign, Sum) :-
+    Sign1 is -Sign,
+    alternate_sum(Rest, Sign1, Sum1),
+    Sum is Sum1 + Sign * L1.

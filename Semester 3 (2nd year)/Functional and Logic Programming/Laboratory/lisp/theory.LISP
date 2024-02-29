@@ -1,0 +1,23 @@
+;(defun numeFunction(parametrii)
+;cond = switch case 
+;pui un base case null l => nil
+;numberp => verifica daca e numar
+;car l => ia head-ul current (primul element)
+;cdr l => tailul = tot inafara de primul element, ca la prolog
+;atom verifica daca e litera
+;listp daca e lista
+; mod (car l) 2 => restul la 2
+; equal x => egal x
+;cons creaza o list noua, concatenare
+;t makes anything else true
+;run: (dublarePare '(1 2 3 4 5 6 c) )
+; '=compilatoru stie ca e lista
+; atentie la paranteze niggere
+(defun dublarePare(l)
+  (cond
+   ((null l) nil)
+   ((and (numberp (car l)) (equal 0 (mod (car l) 2))) (cons (* (car l) 2) (dublarePare(cdr l))))
+   ((listp (car l)) (cons (dublarePare(car l)) (dublarePare(cdr l))))
+   (t (cons (car l) (dublarePare(cdr l)))) ))
+;insereaza un element din n in n pozitii
+(defun 

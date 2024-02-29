@@ -1,0 +1,213 @@
+# 1.1
+(defun f(l1 l2)
+  (append (f (car l1) l2)
+    (cond
+      ((null l1) (cdr l2))
+      (t (list (f (car l1) l2) (car l2)))
+    )
+  )
+)
+
+; in order to avoid the double recursive call we will use a lambda function
+; with one parameter, and we will pass the result of the recursive call
+; (f (car l1) l2) to it, this way we will only call once the function and have the
+; value in the parameter of the lambda for further using it
+
+(defun f(l1 l2)
+  ((lambda (x)
+    (
+      append x
+        (cond
+          ((null l1) (cdr l2))
+          (t (list x (car l2)))
+        )
+      
+    )
+  )
+  (f (car l1) l2)
+  )
+)
+
+
+
+#1.2
+f([], 0).
+f([H|T], S):- 
+	f(T, S1), 
+	S1 < H, 
+	!, 
+	S is H.
+f([_|T], S):- 
+	f(T, S1), 
+	S is S1.
+
+% in order to avoid the double recursive call of the predicate f(T, S1),
+% we will use an auxiliary predicate to which we define two clauses,
+% according to the factorization of f (ie. what is after the recursive call)
+% this way we will call f(T, S1) only once and then let the auxiliary predicate
+% to compute S accordingly to the result of the recursive call.
+
+f1([], 0).
+f1([H|T], S):- f1(T, S1), aux(S1, H, S).
+
+aux(S1, H, S):-
+    S1 < H,
+    !,
+    S is H.
+
+aux(S1, _, S):-
+    S is S1.
+
+
+#1.3
+(defun g (l)
+  (mapcon #'list l)
+)
+
+(apply #'append (mapcon #'g '(1 2)))
+
+; mapcon #'g '(1 2) => (apply nconc (maplist g (1 2)))
+; maplist g (1 2) => (list (g (1 2)) (g (2)))
+
+; g (1 2) => mapcon #'list (1 2) => (apply nconc (maplist #'list (1 2)))
+; maplist #'list (1 2) => (list (list (1 2)) (list (2))) = (list ((1 2)) ((2))) =>
+; (((1 2)) ((2)))
+; now we apply nconc on the list (((1 2)) ((2))) => (nconc ((1 2)) ((2))) 
+; => ((1 2)  (2))
+; so the result of (g (1 2)) is ((1 2) (2))
+
+; g (2) => mapcon #'list (2) => (apply nconc (maplist #'list (2)))
+; maplist #'list (2) => (list (list (2))) => (((2)))
+; now apply nconc on the list (((2))) => (nconc ((2))) => ( (2) )
+
+; so the result of (g (2)) is ((2))
+; hence, maplist g (1 2) returns ( ((1 2)) ((2)) ((2)) )
+; then mapcon g (1 2) returns ((1 2) (2) (2))
+; and then apply append will concat all the lists and returns (1 2 2 2)
+
+#1.4
+f([], []).
+f([H|T], [H|S]):- f(T, S).
+f([H|T], S):- H mod 2 =:= 0, f(T, S).
+
+% f([1,2,3], L) -> won't match the first definition of f since [1,2,3] is not the empty list
+% will match the second with H = 1, T = [2,3], and binding L to [1|S], where S is
+% the result of f(T, S) = f([2,3],S).
+% also f([1,2,3], L) wont match the last definition of f since H=1 is not even
+% meaning that when will come back from recursive calls this is all for this call.
+%   
+% for f([2,3], S) -> won't match the first because [2,3] is not empty
+% will match the second with H = 2, T = [3] and S is binded to [2|f(T,S)].
+% f(T, S) = f([3], S).
+% the last cause will be matched since 2 is even, so when coming back from recursive calls
+% we will take that also in consideration
+% 
+% f([3], S) will match the same as f([1,2,3], L), only the second clause.
+% H = 3, T = [], and S is binded to [3|f(T,S)]. f(T, S) = f([], S).
+% f([], S) will match only the first clause => S is binded to [].
+% now we go back from the recursive calls and construct a solution since everything
+% evaluated to true.
+% f([3], S) => S = [3]
+% f([2,3],S) => S = [2, 3]
+% f([1,2,3], S) => S = [1, 2, 3]
+% 
+% now we continue with generating, since f([3], S) matches only one clause we backtrack
+% f([2,3], S) on the third clause => f([3], S).
+% f([3], S) we know from above that matches only one clause and binds S to [3].
+% now we construct the solution
+% f([2,3], S) => S = [3]
+% f([1,2,3], S) => S = [1, 3]
+% 
+% and we do not have any other cases => f([1,2,3], L) => [[1,2,3], [1,3]]
+
+# 2
+% in order to solve the problem we will generate all the permutations
+% of the given list and then we will use an auxiliary predicate for each
+% permutation to check if it verifies the given condition
+
+% insert(L, E, R) used to insert an element E on each position of L
+%insert(l1,...,ln, e): e U l1,...,ln
+%					 : l1 U insert(e, l2,...,ln).
+% flow model (i, i, o)
+% L - list in which we want to insert E
+% E - the element we want to insert
+% R - output list containing E inserted on a position of L
+
+insert(L, E, [E|L]).
+	insert([H|T], E, R):- 
+	insert(T, E, R1), 
+	R = [H|R1].
+
+% perm(L, R) used to generate all permutations
+
+% perm(l1,...,ln): [], n == 0
+% 				 : insert(l1, perm(l2,...,ln)), if verify(R) is true
+%				 : false, otherwise
+
+% flow model (i, o)
+% L - input list we want to permute
+% R - a permutation of L
+
+perm([], []).
+perm([H|T], R):-
+    perm(T, R1),
+    insert(R1, H, R),
+    verify(R).
+
+% verify(L) used to check the required condition
+% verify(l1,l2,...,ln): true, if n <= 1
+%					  : verify(l2,...,ln), if abs(l1-l2) <= 3
+%					  : false, otherwise
+
+% flow model (i)
+% L - input list for which we check the conditions
+
+verify([]).
+verify([_]).
+verify([H1, H2|T]):-
+    abs(H1-H2) =< 3,
+   	verify([H2|T]).
+
+% main(L, R) used to generate all the good permutations
+% main(l1,...,ln): all the permutations of [l1,...,ln] that satisfies the required condition
+
+% flow model (i, o)
+% L- input list for which we generate permutations
+% R - list containing all the permutations that satisfies the required condition
+
+main(L, R):-
+    findall(R1, perm(L, R1), R).
+
+#3
+; we will use a function that will return elements of the processed list
+; accordingly to the given condition
+
+; f(l): nil, null(l)
+;     : nil, if l is number and l % 3 == 0
+;     : [l], if l is atom
+;     : f(l1) U f(l2) U ... U f(ln), otherwise
+
+; flow model (i)
+; l - representing what we are currently processing, can be list or atom
+
+(defun f(l)
+  (cond
+    ((null l) nil)
+    ((and (numberp l) (= (mod l 3) 0)) nil)
+    ((atom l) (list l))
+    (t (list (mapcan #'f l)))
+  )
+)
+
+; since we use mapcan that facilitates easily removal of nil
+; we had to return (list mapcan) to keep the initial structure of the list
+; and the result is wrapped in another list, ie (result)
+; so we define a function that returns car of this list
+
+; wrapper(l): car f (l)
+
+(defun wrapper(l)
+  (car (f l))
+)
+
+(write (wrapper '(1 (2 A (3 A)) (6))))

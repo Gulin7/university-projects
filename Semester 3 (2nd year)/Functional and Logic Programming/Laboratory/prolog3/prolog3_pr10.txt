@@ -1,0 +1,24 @@
+% 10. For a list a1... an with integer and distinct numbers, define a predicate to determine all subsets with
+%     sum of elements divisible with n
+
+subsets([],[]).
+subsets([H|T],[H|R]):-
+    subsets(T,R).
+subsets([_|T],R):-
+    subsets(T,R).
+
+computeSum([],0).
+computeSum([H|T], R1):-
+    computeSum(T,R),
+    R1 is H + R.
+
+checkDivisibility(S,N):-S mod N =:= 0.
+
+findSubsetsWithDivisibleSum(L,N,R):-
+    subsets(L,R),
+    computeSum(R,RS),
+    checkDivisibility(RS,N).
+
+%put them together
+allSols(L,N,R):-
+    findall(RPartial,findSubsetsWithDivisibleSum(L,N,RPartial),R).

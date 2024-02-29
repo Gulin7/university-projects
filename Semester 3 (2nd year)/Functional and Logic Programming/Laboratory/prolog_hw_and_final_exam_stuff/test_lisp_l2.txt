@@ -1,0 +1,1143 @@
+
+; 1. For a given tree of type (1) return the path from the root node to a certain given node X.
+
+
+; pargurg_st(l1l2...ln, nrNoduri, nrMuchii) = 
+; = nil, if n = 0
+; = nil, if nrNoduri = 1 + nrMuchii
+; = {l1} U {l2} U parcurg_st(l3...ln, nrNoduri + 1, l2 + nrMuchii), otherwise
+
+(defun parcurg_st (l nrNoduri nrMuchii)
+  (cond
+    ((null l) nil)
+    ((= nrNoduri ( + 1 nrMuchii)) nil)
+    (t (cons (car l) (cons (cadr l) (parcurg_st (cddr l) (+ 1 nrNoduri) (+ (cadr l) nrMuchii)))))
+  )
+)
+
+
+; parcurg_dr(l1l2...ln, nrNoduri, nrMuchii) =
+; = nil, if n = 0
+; = l1l2...ln, if nrNoduri = 1 + nrMuchii
+; = parcurg_dr(l3...ln, nrNoduri + 1, nrMuchii + l2), otherwise
+
+
+(defun parcurg_dr (l nrNoduri nrMuchii)
+  (cond
+    ((null l) nil)
+    ((= nrNoduri (+ 1 nrMuchii)) l)
+    (t (parcurg_dr (cddr l) (+ 1 nrNoduri) (+ (cadr l) nrMuchii)))
+  )
+)
+
+
+;stang(l1l2...ln) = 
+; = parcurg_st(l3...ln, 0,0)
+
+(defun stang(l)
+  (parcurg_st (cddr l) 0 0)
+)
+
+
+;drept(l1l2...ln) =
+; = parcurg_dr(l3...ln, 0, 0)
+
+(defun drept(l)
+  (parcurg_dr (cddr l) 0 0)
+)
+
+
+; myAppend(l1l2...ln, p1p2...pm) = 
+; = p1p2...pm, if n = 0
+; = {l1} U myAppend(l2...ln, p1p2...pm), otherwise
+
+(defun myAppend(l p)
+  (cond
+    ((null l) p)
+    (t (cons (car l) (myAppend (cdr l) p)))
+  )
+)
+
+
+; checkExistence(l1l2...ln, elem) = 
+; = true, if l1 = elem
+; = false , if n = 0
+; = checkExistence(l2...ln, elem), otherwise
+
+
+(defun checkExistence(l elem)
+  (cond
+    ((null l) nil)
+    ((equal (car l) elem) t)
+    (t (checkExistence (cdr l) elem))
+  )
+)
+
+
+(defun checkExistenceLeft(l elem)
+  (checkExistence (stang l) elem)
+)
+
+(defun checkExistenceRight(l elem)
+  (checkExistence (drept l) elem)
+)
+
+
+; path(l1l2...ln, elem) = 
+; = nil, if n = 0
+; = list(elem), if elem = l1
+; = {l1} U path(drept(l1l2...ln), elem), if checkExistenceRight(l, elem) = true
+; = {l1} U path(stang(l1l2...ln), elem), if checkExistenceLeft(l, elem) = true
+
+
+(defun path(l elem)
+  (cond
+    ((null l) nil)
+    ((equal (car l) elem) (list elem))
+    ((checkExistenceRight l elem) (cons (car l) (path (drept l) elem)))
+    ((checkExistenceLeft l elem) (cons (car l) (path (stang l) elem)))
+  )
+)
+
+
+
+/////////////////////////2
+
+; 2. Return the list of nodes on the k-th level of a tree of type (1).
+
+
+; pargurg_st(l1l2...ln, nrNoduri, nrMuchii) = 
+; = nil, if n = 0
+; = nil, if nrNoduri = 1 + nrMuchii
+; = {l1} U {l2} U parcurg_st(l3...ln, nrNoduri + 1, l2 + nrMuchii), otherwise
+
+(defun parcurg_st (l nrNoduri nrMuchii)
+  (cond
+    ((null l) nil)
+    ((= nrNoduri ( + 1 nrMuchii)) nil)
+    (t (cons (car l) (cons (cadr l) (parcurg_st (cddr l) (+ 1 nrNoduri) (+ (cadr l) nrMuchii)))))
+  )
+)
+
+
+; parcurg_dr(l1l2...ln, nrNoduri, nrMuchii) =
+; = nil, if n = 0
+; = l1l2...ln, if nrNoduri = 1 + nrMuchii
+; = parcurg_dr(l3...ln, nrNoduri + 1, nrMuchii + l2), otherwise
+
+
+(defun parcurg_dr (l nrNoduri nrMuchii)
+  (cond
+    ((null l) nil)
+    ((= nrNoduri (+ 1 nrMuchii)) l)
+    (t (parcurg_dr (cddr l) (+ 1 nrNoduri) (+ (cadr l) nrMuchii)))
+  )
+)
+
+
+;stang(l1l2...ln) = 
+; = parcurg_st(l3...ln, 0,0)
+
+(defun stang(l)
+  (parcurg_st (cddr l) 0 0)
+)
+
+
+;drept(l1l2...ln) =
+; = parcurg_dr(l3...ln, 0, 0)
+
+(defun drept(l)
+  (parcurg_dr (cddr l) 0 0)
+)
+
+
+; myAppend(l1l2...ln, p1p2...pm) = 
+; = p1p2...pm, if n = 0
+; = {l1} U myAppend(l2...ln, p1p2...pm), otherwise
+
+(defun myAppend(l p)
+  (cond
+    ((null l) p)
+    (t (cons (car l) (myAppend (cdr l) p)))
+  )
+)
+
+
+; nodes(l1l2...ln, counter, level) = 
+; = nil, if n = 0 
+; = l1 , if counter = level
+; = myAppend(nodes(stang(l1l2...ln), (c + 1), level), nodes(drept(l1l2...ln), (c + 1), level)), otherwise
+
+
+(defun nodes(l counter level)
+  (cond
+    ((null l) nil)
+    ((equal counter level) (list (car l)))
+    (t (myAppend (nodes (stang l) (+ 1 counter) level) (nodes (drept l) (+ 1 counter) level)))
+  )
+)
+
+(defun main(l level)
+  (nodes l 0 level)
+)
+
+
+//////////////////////////////3
+
+
+
+
+; 3. Return the number of levels of a tree of type (1).
+
+
+; pargurg_st(l1l2...ln, nrNoduri, nrMuchii) = 
+; = nil, if n = 0
+; = nil, if nrNoduri = 1 + nrMuchii
+; = {l1} U {l2} U parcurg_st(l3...ln, nrNoduri + 1, l2 + nrMuchii), otherwise
+
+(defun parcurg_st (l nrNoduri nrMuchii)
+  (cond
+    ((null l) nil)
+    ((= nrNoduri ( + 1 nrMuchii)) nil)
+    (t (cons (car l) (cons (cadr l) (parcurg_st (cddr l) (+ 1 nrNoduri) (+ (cadr l) nrMuchii)))))
+  )
+)
+
+
+; parcurg_dr(l1l2...ln, nrNoduri, nrMuchii) =
+; = nil, if n = 0
+; = l1l2...ln, if nrNoduri = 1 + nrMuchii
+; = parcurg_dr(l3...ln, nrNoduri + 1, nrMuchii + l2), otherwise
+
+
+(defun parcurg_dr (l nrNoduri nrMuchii)
+  (cond
+    ((null l) nil)
+    ((= nrNoduri (+ 1 nrMuchii)) l)
+    (t (parcurg_dr (cddr l) (+ 1 nrNoduri) (+ (cadr l) nrMuchii)))
+  )
+)
+
+
+;stang(l1l2...ln) = 
+; = parcurg_st(l3...ln, 0,0)
+
+(defun stang(l)
+  (parcurg_st (cddr l) 0 0)
+)
+
+
+;drept(l1l2...ln) =
+; = parcurg_dr(l3...ln, 0, 0)
+
+(defun drept(l)
+  (parcurg_dr (cddr l) 0 0)
+)
+
+
+; myAppend(l1l2...ln, p1p2...pm) = 
+; = p1p2...pm, if n = 0
+; = {l1} U myAppend(l2...ln, p1p2...pm), otherwise
+
+(defun myAppend(l p)
+  (cond
+    ((null l) p)
+    (t (cons (car l) (myAppend (cdr l) p)))
+  )
+)
+
+
+; myMax(a, b) = 
+; = a , if a > b
+; = b , otherwise
+
+(defun myMax(a b)
+  (cond
+    ((> a b) a)
+    (t b)
+  )
+)
+
+
+; levels(l1l2...ln, counter) = 
+; = counter, if n = 0
+; = myMax(levels(stang(l1l2...ln), counter + 1), levels(drept(l1l2...ln), counter + 1)), otherwise
+
+
+(defun levels(l counter)
+  (cond
+    ((null l) counter)
+    (t (myMax (levels (stang l) (+ 1 counter)) (levels (drept l) (+ 1 counter))))
+  )
+)
+
+(defun main(l)
+  (levels l -1)
+)
+
+
+///////////////////////////4
+
+
+; 4. Convert a tree of type (2) to type (1).
+
+; (A (B) (C (D) (E (F)))) -> (A 2 B 0 C 2 D 0 E 1 F 0) 
+
+
+; convert_tree(l1l2l3) = 
+; = nil, if l1l2l3 is null
+; = myAppend(list(l1), myAppend(list(2), myAppend(convert_tree(l2), convert_tree(l3)))), if l2 != null, and l3 != null
+; = myAppend(list(l1), myAppend(list(1), convert_tree(l2))), if l2 != null
+; = myAppend(list(l1), myAppend(list(1), convert_tree(l3))), if l3 != null
+; = myAppend(list(l1), list(0)), otherwise
+
+(defun convert_tree(l)
+    (cond
+         ((null l) nil)
+         ((and (not (null (cadr l))) (not (null (caddr l)))) (append (list (car l)) '(2) (convert_tree(cadr l))
+                                                                     (convert_tree(caddr l))))
+         ((not (null (cadr l))) (append (list (car l)) '(1) (convert_tree(cadr l)) ))
+         ((not (null (caddr l))) (append (list (car l)) '(1) (convert_tree(caddr l)) ))
+         (T (append (list (car l)) '(0)))
+    )
+)
+
+
+/////////////////////////////5
+
+
+
+;5. Return the level (depth) of a node in a tree of type (1). The level of the root element is 0.
+
+
+; pargurg_st(l1l2...ln, nrNoduri, nrMuchii) = 
+; = nil, if n = 0
+; = nil, if nrNoduri = 1 + nrMuchii
+; = {l1} U {l2} U parcurg_st(l3...ln, nrNoduri + 1, l2 + nrMuchii), otherwise
+
+(defun parcurg_st (l nrNoduri nrMuchii)
+  (cond
+    ((null l) nil)
+    ((= nrNoduri ( + 1 nrMuchii)) nil)
+    (t (cons (car l) (cons (cadr l) (parcurg_st (cddr l) (+ 1 nrNoduri) (+ (cadr l) nrMuchii)))))
+  )
+)
+
+
+; parcurg_dr(l1l2...ln, nrNoduri, nrMuchii) =
+; = nil, if n = 0
+; = l1l2...ln, if nrNoduri = 1 + nrMuchii
+; = parcurg_dr(l3...ln, nrNoduri + 1, nrMuchii + l2), otherwise
+
+
+(defun parcurg_dr (l nrNoduri nrMuchii)
+  (cond
+    ((null l) nil)
+    ((= nrNoduri (+ 1 nrMuchii)) l)
+    (t (parcurg_dr (cddr l) (+ 1 nrNoduri) (+ (cadr l) nrMuchii)))
+  )
+)
+
+
+;stang(l1l2...ln) = 
+; = parcurg_st(l3...ln, 0,0)
+
+(defun stang(l)
+  (parcurg_st (cddr l) 0 0)
+)
+
+
+;drept(l1l2...ln) =
+; = parcurg_dr(l3...ln, 0, 0)
+
+(defun drept(l)
+  (parcurg_dr (cddr l) 0 0)
+)
+
+
+; findDepth(l1l2...ln, elem, level) = 
+; = 0, if n = 0
+; = level - 1, if l1 = elem
+; = findDepth(stang(l), elem, level + 1) + findDepth(drept(l), elem, level + 1)
+
+(defun findDepth(l elem level)
+  (cond
+    ((null l) 0)
+    ((equal (car l) elem) level)
+    (t (+ (findDepth (stang l) elem (+ 1 level)) (findDepth (drept l) elem (+ 1 level))))
+  )
+)
+
+
+(defun main(l elem)
+  (findDepth l elem 0)
+)
+
+
+/////////////////////////6
+
+
+
+;6. Return the list of nodes of a tree of type (1) accessed inorder.
+
+
+; pargurg_st(l1l2...ln, nrNoduri, nrMuchii) = 
+; = nil, if n = 0
+; = nil, if nrNoduri = 1 + nrMuchii
+; = {l1} U {l2} U parcurg_st(l3...ln, nrNoduri + 1, l2 + nrMuchii), otherwise
+
+(defun parcurg_st (l nrNoduri nrMuchii)
+  (cond
+    ((null l) nil)
+    ((= nrNoduri ( + 1 nrMuchii)) nil)
+    (t (cons (car l) (cons (cadr l) (parcurg_st (cddr l) (+ 1 nrNoduri) (+ (cadr l) nrMuchii)))))
+  )
+)
+
+
+; parcurg_dr(l1l2...ln, nrNoduri, nrMuchii) =
+; = nil, if n = 0
+; = l1l2...ln, if nrNoduri = 1 + nrMuchii
+; = parcurg_dr(l3...ln, nrNoduri + 1, nrMuchii + l2), otherwise
+
+
+(defun parcurg_dr (l nrNoduri nrMuchii)
+  (cond
+    ((null l) nil)
+    ((= nrNoduri (+ 1 nrMuchii)) l)
+    (t (parcurg_dr (cddr l) (+ 1 nrNoduri) (+ (cadr l) nrMuchii)))
+  )
+)
+
+
+;stang(l1l2...ln) = 
+; = parcurg_st(l3...ln, 0,0)
+
+(defun stang(l)
+  (parcurg_st (cddr l) 0 0)
+)
+
+
+;drept(l1l2...ln) =
+; = parcurg_dr(l3...ln, 0, 0)
+
+(defun drept(l)
+  (parcurg_dr (cddr l) 0 0)
+)
+
+
+; myAppend(l1l2...ln, p1p2...pm) = 
+; = p1p2...pm, if n = 0
+; = {l1} U myAppend(l2...ln, p1p2...pm), otherwise
+
+(defun myAppend(l p)
+  (cond
+    ((null l) p)
+    (t (cons (car l) (myAppend (cdr l) p)))
+  )
+)
+
+
+; inorder(l1l2...ln) = 
+; = nil, if n = 0
+; = myAppend(inorder(stang(l1l2...ln)), myAppend(list(l1), inorder(drept(l1l2...ln)))), otherwise
+
+(defun inorder (l)
+  (cond
+    ((null l) nil)
+    (t (myAppend (inorder (stang l)) (myAppend (list (car l)) (inorder (drept l)))))
+  )
+)
+
+
+
+//////////////////////////7
+
+
+;Return the level of a node X in a tree of type (1). The level of the root element is 0.
+
+; pargurg_st(l1l2...ln, nrNoduri, nrMuchii) = 
+; = nil, if n = 0
+; = nil, if nrNoduri = 1 + nrMuchii
+; = {l1} U {l2} U parcurg_st(l3...ln, nrNoduri + 1, l2 + nrMuchii), otherwise
+
+(defun parcurg_st (l nrNoduri nrMuchii)
+  (cond
+    ((null l) nil)
+    ((= nrNoduri ( + 1 nrMuchii)) nil)
+    (t (cons (car l) (cons (cadr l) (parcurg_st (cddr l) (+ 1 nrNoduri) (+ (cadr l) nrMuchii)))))
+  )
+)
+
+
+; parcurg_dr(l1l2...ln, nrNoduri, nrMuchii) =
+; = nil, if n = 0
+; = l1l2...ln, if nrNoduri = 1 + nrMuchii
+; = parcurg_dr(l3...ln, nrNoduri + 1, nrMuchii + l2), otherwise
+
+
+(defun parcurg_dr (l nrNoduri nrMuchii)
+  (cond
+    ((null l) nil)
+    ((= nrNoduri (+ 1 nrMuchii)) l)
+    (t (parcurg_dr (cddr l) (+ 1 nrNoduri) (+ (cadr l) nrMuchii)))
+  )
+)
+
+
+;stang(l1l2...ln) = 
+; = parcurg_st(l3...ln, 0,0)
+
+(defun stang(l)
+  (parcurg_st (cddr l) 0 0)
+)
+
+
+;drept(l1l2...ln) =
+; = parcurg_dr(l3...ln, 0, 0)
+
+(defun drept(l)
+  (parcurg_dr (cddr l) 0 0)
+)
+
+
+; myAppend(l1l2...ln, p1p2...pm) = 
+; = p1p2...pm, if n = 0
+; = {l1} U myAppend(l2...ln, p1p2...pm), otherwise
+
+(defun myAppend(l p)
+  (cond
+    ((null l) p)
+    (t (cons (car l) (myAppend (cdr l) p)))
+  )
+)
+
+
+; findLevel(l1l2...ln, elem, level) = 
+; = 0, if n = 0
+; = level, if l1 = elem
+; = findLevel(stang(l), elem, level + 1) + findLevel(drept(l), elem, level + 1)
+
+(defun findLevel(l elem level)
+  (cond
+    ((null l) 0)
+    ((equal (car l) elem) level)
+    (t (+ (findLevel (stang l) elem (+ 1 level)) (findLevel (drept l) elem (+ 1 level))))
+  )
+)
+
+
+; nodesFromLevel(l1l2...ln, level, counter) = 
+; = nil, if n = 0
+; = list(l1), if level = counter
+; = myAppend(nodesFromLevel(stang(l1l2...ln), level, counter + 1), nodesFromLevel(drept(l1l2...ln), level, counter + 1)), otherwise
+
+
+(defun nodesFromLevel(l level counter)
+  (cond
+    ((null l) nil)
+    ((equal level counter) (list (car l)))
+    (t (myAppend (nodesFromLevel (stang l) level (+ 1 counter)) (nodesFromLevel (drept l) level (+ 1 counter))))
+  )
+)
+
+; checkExistence(l1l2...ln, elem) = 
+; = true, if l1 = elem
+; = false, if n = 0
+; = checkExistence(l2...ln, elem), otherwise
+
+(defun checkExistence(l elem)
+  (cond 
+    ((null l) nil)
+    ((equal (car l) elem) t)
+    (t (checkExistence (cdr l) elem))
+  )
+)
+
+(defun main(l elem)
+  (cond
+    ((checkExistence l elem) (nodesFromLevel l (findLevel l elem 0) 0))
+    (t nil)
+  )
+)
+
+
+////////////////////////////////8
+
+
+; 8. Return the list of nodes of a tree of type (2) accessed inorder.
+
+; (car l) - the first element of the list is the root of the tree
+; (cadr l) - the second element of the list, at superficial level, is the left subtree
+; (caddr l) - the third element of the list, at the superficial level, is the right subtree
+
+
+; myAppend(l1l2...ln, p1p2...pm) = 
+; = p1p2...pm, if n = 0
+; = {l1} U myAppend(l2...ln, p1p2...pm), otherwise
+
+
+(defun myAppend (l p)
+  (cond
+    ((null l) p)
+    (t (cons (car l) (myAppend (cdr l) p)))
+  )
+)
+
+; inorder(l1l2l3) = 
+; = nil, if n = 0 
+; = myAppend(inorder(l2), myAppend(list(l1), inorder(l3))), otherwise
+
+
+(defun inorder(l)
+  (cond
+    ((null l) nil)
+    (t (myAppend (inorder (cadr l)) (myAppend (list (car l)) (inorder (caddr l)))))
+  )
+)
+
+
+////////////////////////9
+
+
+; 9. Convert a tree of type (1) to type (2).
+
+; (A 2 B 0 C 2 D 0 E 1 F 0) -> (A (B) (C (D) (E (F))))
+
+; pargurg_st(l1l2...ln, nrNoduri, nrMuchii) = 
+; = nil, if n = 0
+; = nil, if nrNoduri = 1 + nrMuchii
+; = {l1} U {l2} U parcurg_st(l3...ln, nrNoduri + 1, l2 + nrMuchii), otherwise
+
+(defun parcurg_st (l nrNoduri nrMuchii)
+  (cond
+    ((null l) nil)
+    ((= nrNoduri ( + 1 nrMuchii)) nil)
+    (t (cons (car l) (cons (cadr l) (parcurg_st (cddr l) (+ 1 nrNoduri) (+ (cadr l) nrMuchii)))))
+  )
+)
+
+; parcurg_dr(l1l2...ln, nrNoduri, nrMuchii) =
+; = nil, if n = 0
+; = l1l2...ln, if nrNoduri = 1 + nrMuchii
+; = parcurg_dr(l3...ln, nrNoduri + 1, nrMuchii + l2), otherwise
+
+
+(defun parcurg_dr (l nrNoduri nrMuchii)
+  (cond
+    ((null l) nil)
+    ((= nrNoduri (+ 1 nrMuchii)) l)
+    (t (parcurg_dr (cddr l) (+ 1 nrNoduri) (+ (cadr l) nrMuchii)))
+  )
+)
+
+;stang(l1l2...ln) = 
+; = parcurg_st(l3...ln, 0,0)
+
+(defun stang(l)
+  (parcurg_st (cddr l) 0 0)
+)
+
+
+;drept(l1l2...ln) =
+; = parcurg_dr(l3...ln, 0, 0)
+
+(defun drept(l)
+  (parcurg_dr (cddr l) 0 0)
+)
+
+; myAppend(l1l2...ln, p1p2...pm) = 
+; = p1p2...pm, if n = 0
+; = {l1} U myAppend(l2...ln, p1p2...pm), otherwise
+
+(defun myAppend(l p)
+  (cond
+    ((null l) p)
+    (t (cons (car l) (myAppend (cdr l) p)))
+  )
+)
+
+; convert_back(l1l2..ln) = 
+; = nil , if n = 0
+; = myAppend(list(l1), convert_back(stang(l1l2...ln)) U list(convert_back(drept(l1l2...ln)))), if l2 = 1
+; = myAppend(list(l1), list(convert_back(stang(l1l2...ln)))), if l2 = 1
+; = list(l1), if l2 = 0
+
+(defun convert_back(l)
+  (cond
+    ((null l) nil)
+    ((equal (cadr l) 2) (myAppend (list (car l)) (cons (convert_back(stang l)) (list (convert_back(drept l))))))
+    ((equal (cadr l) 1) (myAppend (list (car l)) (list (convert_back(stang l)))))
+    (t (list (car l)))
+  )
+)
+
+
+
+//////////////////////////////10
+
+
+; 10. Return the level of a node X in a tree of type (2). The level of the root element is 0.
+
+
+; (car l) - the first element of the list is the root of the tree
+; (cadr l) - the second element of the list, at superficial level, is the left subtree
+; (caddr l) - the third element of the list, at the superficial level, is the right subtree
+
+
+; myAppend(l1l2...ln, p1p2...pm) = 
+; = p1p2...pm, if n = 0
+; = {l1} U myAppend(l2...ln, p1p2...pm), otherwise
+
+
+(defun myAppend (l p)
+  (cond
+    ((null l) p)
+    (t (cons (car l) (myAppend (cdr l) p)))
+  )
+)
+
+; inorder(l1l2l3) = 
+; = nil, if n = 0 
+; = myAppend(inorder(l2), myAppend(list(l1), inorder(l3))), otherwise
+
+
+; findLevel(l1l2l3, elem, counter) = 
+; = 0, if l1l2l3 is empty
+; = counter, if elem = l1
+; = findLevel(l2) + findLevel(l3), otherwise
+
+
+(defun findLevel(l elem counter)
+  (cond
+    ((null l) 0)
+    ((equal elem (car l)) counter)
+    (t (+ (findLevel (cadr l) elem (+ 1 counter)) (findLevel (caddr l) elem (+ 1 counter))))
+  )
+)
+
+
+; nodesFromLevel(l1l2l3, level, counter)
+; = nil, if l1l2l3 is empty
+; = l1 , if counter = level
+; = myAppend((list (nodesFromLevel(l2, level, counter + 1))) (list (nodesFromLevel(l3, level, counter + 1)))), otherwise
+
+(defun nodesFromLevel(l level counter)
+  (cond
+    ((null l) nil)
+    ((equal counter level) (list (car l)))
+    (t (myAppend (nodesFromLevel (cadr l) level (+ 1 counter)) (nodesFromLevel (caddr l) level (+ 1 counter))))
+  )
+)
+
+
+; checkExistence(l1l2...ln, elem) = 
+; = true, if elem = l1
+; = false, if n = 0
+; = checkExistence(l1, elem) or checkExistence(l2...ln, elem), if l1 is a list
+; = checkExistence(l2...ln, elem), otherwise
+
+
+(defun checkExistence(l elem)
+  (cond
+    ((null l) nil)
+    ((equal (car l) elem) t)
+    ((listp (car l)) (or (checkExistence (car l) elem) (checkExistence (cdr l) elem)))
+    (t (checkExistence (cdr l) elem))
+  )
+)
+
+
+
+(defun main(l elem)
+  (cond
+    ((checkExistence l elem) (nodesFromLevel l (findLevel l elem 0) 0))
+    (t nil)
+  ) 
+)
+
+
+///////////////////////////11
+
+
+
+; 11. Return the level (and coresponded list of nodes) with maximum number of nodes for a tree of type (2).
+;      The level of the root element is 0.
+
+; (car l) - the first element of the list is the root of the tree
+; (cadr l) - the second element of the list, at superficial level, is the left subtree
+; (caddr l) - the third element of the list, at the superficial level, is the right subtree
+
+
+; myAppend(l1l2...ln, p1p2...pm) = 
+; = p1p2...pm, if n = 0
+; = {l1} U myAppend(l2...ln, p1p2...pm), otherwise
+
+
+(defun myAppend (l p)
+  (cond
+    ((null l) p)
+    (t (cons (car l) (myAppend (cdr l) p)))
+  )
+)
+
+; myMax(a,b) = 
+; = a, if a > b
+; = b, otherwise
+
+(defun myMax(a b)
+  (cond
+    ((> a b) a)
+    (t b)
+  )
+)
+
+; findLevel(l1l2l3, elem, counter) = 
+; = counter, if l1l2l3 is empty
+; = myMax(findLevel(l2, elem, counter + 1),findLevel(l3, elem, counter + 1)), otherwise
+
+(defun findMaxLevel(l counter)
+  (cond
+    ((null l) counter)
+    (t (myMax (findMaxLevel (cadr l) (+ 1 counter)) (findMaxLevel (caddr l) (+ 1 counter))))
+  )
+)
+
+
+; nodesFromLevel(l1l2l3, level, counter)
+; = nil, if l1l2l3 is empty
+; = l1 , if counter = level
+; = myAppend((list (nodesFromLevel(l2, level, counter + 1))) (list (nodesFromLevel(l3, level, counter + 1)))), otherwise
+
+(defun nodesFromLevel(l level counter)
+  (cond
+    ((null l) nil)
+    ((equal counter level) (list (car l)))
+    (t (myAppend (nodesFromLevel (cadr l) level (+ 1 counter)) (nodesFromLevel (caddr l) level (+ 1 counter))))
+  )
+)
+
+
+(defun main(l)
+  (nodesFromLevel l (findMaxLevel l -1) 0)
+)
+
+
+
+//////////////////////12
+
+
+
+; 11. Return the level (and coresponded list of nodes) with maximum number of nodes for a tree of type (2).
+;      The level of the root element is 0.
+
+; (car l) - the first element of the list is the root of the tree
+; (cadr l) - the second element of the list, at superficial level, is the left subtree
+; (caddr l) - the third element of the list, at the superficial level, is the right subtree
+
+
+; myAppend(l1l2...ln, p1p2...pm) =
+; = p1p2...pm, if n = 0
+; = {l1} U myAppend(l2...ln, p1p2...pm), otherwise
+
+(defun myAppend (l p)
+  (cond
+    ((null l) p)
+    (t (cons (car l) (myAppend (cdr l) p)))
+  )
+)
+
+; myLenght(l1l2...ln) = 
+; = 0, if n = 0
+; = 1 + myLenght(l2...ln), otherwise
+
+(defun myLength (l)
+  (cond
+    ((null l) 0)
+    (t (+ 1 (myLength (cdr l))))
+  )
+)
+
+
+; getNodesFromLevel(l1l2l3, level) = 
+; = [], if l1l2l3 is empty
+; = list(l1), if level = 0
+; = myAppend(getNodesFromLevel(l2, level - 1), getNodesFromLevel(l3, level - 1)), otherwise
+
+(defun getNodesFromLevel(l lvl) 
+  (cond
+    ((null l) nil)
+    ((equal lvl 0) (list (car l)))
+    (t (myAppend (getNodesFromLevel (cadr l) (- lvl 1)) (getNodesFromLevel (caddr l) (- lvl 1))))
+  )
+)
+
+; getMaxNodes(tree, max, auxMax, level) = 
+; = max, if tree is empty
+; = getMaxNodes(tree, auxMax, getNodesFromLevel(tree, level + 1), level + 1) , if myLength(auxMax) > myLength(max)
+; = getMaxNodes(tree, max, getNodesFromLevel(tree, level + 1), level + 1), otherwise
+
+(defun getMaxNodes(tree max auxMax level)
+  (cond
+    ((null auxMax) max)
+    ((> (myLength auxMax) (myLength max)) (getMaxNodes tree auxMax (getNodesFromLevel tree (+ 1 level)) (+ 1 level)))
+    (t (getMaxNodes tree max (getNodesFromLevel tree (+ 1 level)) (+ 1 level)))
+  )
+)
+
+(defun main(tree)
+  (getMaxNodes tree '() (getNodesFromLevel tree 0) 1)
+)
+
+
+/////////////////////////13
+
+
+
+; 13. For a given tree of type (2) return the path from the root node to a certain given node X.
+
+
+; (car l) - the first element of the list is the root of the tree
+; (cadr l) - the second element of the list, at superficial level, is the left subtree
+; (caddr l) - the third element of the list, at the superficial level, is the right subtree
+
+
+; myAppend(l1l2...ln, p1p2...pm) = 
+; = p1p2...pm, if n = 0
+; = {l1} U myAppend(l2...ln, p1p2...pm), otherwise
+
+
+(defun myAppend (l p)
+  (cond
+    ((null l) p)
+    (t (cons (car l) (myAppend (cdr l) p)))
+  )
+)
+
+
+; checkExistence(l1l2...ln, elem) = 
+; = true, if l1 = elem
+; = false, if n = 0
+; = checkExistence(l1, elem) or checkExistence(l2...ln, elem), if l1 is a list
+; = checkExistence(l2...ln, elem), otherwise
+
+
+(defun checkExistence(l elem)
+  (cond
+    ((null l) nil)
+    ((equal (car l) elem) t)
+    ((listp (car l)) (or (checkExistence (car l) elem) (checkExistence (cdr l) elem)))
+    (t (checkExistence (cdr l) elem))
+  )
+)
+
+
+; path(l1l2l3, elem) = 
+; = nil, if l1l2l3 is empty
+; = l1, if elem = l1
+; = path(l2), if checkExistence(l2) = true
+; = path(l3), if checkExistence(l3) = true
+
+(defun path(l elem)
+  (cond 
+    ((null l) nil)
+    ((equal (car l) elem) (list (car l)))
+    ((checkExistence (cadr l) elem) (cons (car l) (path (cadr l) elem)))
+    ((checkExistence (caddr l) elem) (cons (car l) (path (caddr l) elem)))
+  )
+)
+
+
+
+//////////////////////////14
+
+
+
+; 15. Determine the list of nodes accesed in postorder in a tree of type (1).
+
+; pargurg_st(l1l2...ln, nrNoduri, nrMuchii) = 
+; = nil, if n = 0
+; = nil, if nrNoduri = 1 + nrMuchii
+; = {l1} U {l2} U parcurg_st(l3...ln, nrNoduri + 1, l2 + nrMuchii), otherwise
+
+(defun parcurg_st (l nrNoduri nrMuchii)
+  (cond
+    ((null l) nil)
+    ((= nrNoduri ( + 1 nrMuchii)) nil)
+    (t (cons (car l) (cons (cadr l) (parcurg_st (cddr l) (+ 1 nrNoduri) (+ (cadr l) nrMuchii)))))
+  )
+)
+
+
+; parcurg_dr(l1l2...ln, nrNoduri, nrMuchii) =
+; = nil, if n = 0
+; = l1l2...ln, if nrNoduri = 1 + nrMuchii
+; = parcurg_dr(l3...ln, nrNoduri + 1, nrMuchii + l2), otherwise
+
+
+(defun parcurg_dr (l nrNoduri nrMuchii)
+  (cond
+    ((null l) nil)
+    ((= nrNoduri (+ 1 nrMuchii)) l)
+    (t (parcurg_dr (cddr l) (+ 1 nrNoduri) (+ (cadr l) nrMuchii)))
+  )
+)
+
+
+;stang(l1l2...ln) = 
+; = parcurg_st(l3...ln, 0,0)
+
+(defun stang(l)
+  (parcurg_st (cddr l) 0 0)
+)
+
+
+;drept(l1l2...ln) =
+; = parcurg_dr(l3...ln, 0, 0)
+
+(defun drept(l)
+  (parcurg_dr (cddr l) 0 0)
+)
+
+
+; postorder(l1l2...ln) = 
+; = nil , if n = 0
+; = myAppend(postorder(stang(l1l2...ln), myAppend(postorder(dreptl1l2...ln), list(l1))) , otherwise
+
+
+; myAppend(l1l2...ln, p1p2...pm) = 
+; = p1p2...pm, if n = 0
+; = {l1} U myAppend(l2...ln, p1p2...pm), otherwise
+
+(defun myAppend(l p)
+  (cond
+    ((null l) p)
+    (t (cons (car l) (myAppend (cdr l) p)))
+  )
+)
+
+
+(defun postorder (l)
+  (cond
+    ((null l) nil)
+    (t (myAppend (postorder(stang l)) (myAppend (postorder(drept l)) (list (car l)))))
+  )
+) 
+
+
+; (postorder '(A 2 B 1 F 0 D 2 E 0 G 0))
+; (postorder '(A 2 B 1 F 0 D 1 E 0))
+
+
+
+
+////////////////////////////15
+
+
+
+; 15. Determine the list of nodes accesed in postorder in a tree of type (2).
+
+
+; (car l) - the first element of the list is the root of the tree
+; (cadr l) - the second element of the list, at superficial level, is the left subtree
+; (caddr l) - the third element of the list, at the superficial level, is the right subtree
+
+
+; myAppend(l1l2...ln, p1p2...pm) = 
+; = p1p2...pm, if n = 0
+; = {l1} U myAppend(l2...ln, p1p2...pm), otherwise
+
+
+(defun myAppend (l p)
+  (cond
+    ((null l) p)
+    (t (cons (car l) (myAppend (cdr l) p)))
+  )
+)
+
+
+; postorder(l1l2l3) = 
+; = nil, if l1l2l3 is empty
+; = myAppend(postorder(l2), myAppend(postorder(l3, list(l1)))), otherwise
+
+
+(defun postorder(l)
+  (cond
+    ((null l) nil)
+    (t (myAppend (postorder (cadr l)) (myAppend (postorder (caddr l)) (list (car l)))))
+  )
+)
+
+
+
+//////////////////////////16
+
+
+
+
+; 16. Determine if a tree of type (2) is ballanced (the difference between the depth of two subtrees is equal to 1)
+
+
+; absoluteDiff(a, b) = 
+; = a - b, if a > b
+; = b - a, otherwise
+
+
+(defun absoluteDiff(a b)
+  (cond
+    ((> a b) (- a b))
+    (t (- b a))
+  )
+)
+
+; myMax(a, b) = 
+; = a, if a > b
+; = b, otherwise
+
+
+(defun  myMax(a b)
+  (cond
+    ((> a b) a)
+    (t b)
+  )
+)
+
+
+; getDepth(l1l2l3) = 
+; = 0, if l1l2l3 is null
+; = 1 + myMax(getDepth(l2), getDepth(l3)), otherwise
+
+
+(defun getDepth(l)
+  (cond
+    ((null l) 0)
+    (t (+ 1 (myMax (getDepth (cadr l)) (getDepth (caddr l)))))
+  )
+)
+
+
+; isBalanced(l1l2l3) = 
+; = true, if n = 0
+; =  nil, if absoluteDiff(getDepth(l2), getDepth(l3)) > 1
+; = isBalanced(l2) and isBalanced(l3), otherwise
+
+
+(defun isBalanced(l)
+  (cond
+    ((null l) t)
+    ((> (absoluteDiff (getDepth (cadr l)) (getDepth (caddr l))) 1) nil)
+    (t (and (isBalanced (cadr l)) (isBalanced (caddr l))))
+  )
+)
+
+
+; (isBalanced '(A)) -> yes
+; (isBalanced '(A (B (C) ()) ())) -> no
+; (isBalanced '(A (B (C) ()) (D))) -> yes
+; (isBalanced '(A (B (C) ()) (D (E () (F () (G))) ()))) -> no
+
+
+
+
+
+

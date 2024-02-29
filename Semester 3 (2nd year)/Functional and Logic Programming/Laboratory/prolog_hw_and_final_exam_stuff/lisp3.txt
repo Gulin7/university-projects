@@ -1,0 +1,9 @@
+;Write a function that removes all occurrences of an atom from any level of a list
+(defun removeAll (l elem)
+  (cond
+    ((null l) nil)
+    ((and (atom l) (equal elem l)) nil)
+    ((atom l) l)
+    (t (mapcar #'(lambda (x) (removeAll x elem)) l))))
+             
+(print (removeAll '(1 2 3 (4 1 (2 1) 3 2) 2) 2))

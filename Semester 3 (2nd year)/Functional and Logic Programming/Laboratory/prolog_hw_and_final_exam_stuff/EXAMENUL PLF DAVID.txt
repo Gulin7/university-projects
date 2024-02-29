@@ -1,0 +1,46 @@
+SB2 SI SB3!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+GENERAL KNOWLEDGE:
+-->Evita Recursivitatea dubla(sa mearga repede)
+-Lisp = Lambda*
+-Prolog = Auxiliar*/Intelegi programul si il modifici tu
+
+-MAP la lisp(lect w10) (ez)
+!Toate contentsurile de la lecture w10(fara labels)
+
+-Prolog !!Stiut backtrackingu de pe P3 + Alg de Combinari(Subseturi) si Permutari + Alg de Aranjamente
+Toate subseturile = Toate combinarile
+
+S2 + S3 = Explici codu+Reasoningu+Explici variabilele si meaningu lor(type+usage)+model matematic
+	+input output prolog (iti lasi jum de ora pt ele)
+
+S1 = sa explici cum ai gandit o 
+
+LABS:
+-P3
+-L1/L2/L3
+-----------------------------------
+Prolog
+Sintaxa, Backtracking, !, Fail, Functii tip data
+Lisp:
+Sintaxa, CAR CDR, Seturi, EVAL,, Apply, Funcall, MAP si Lamba functions
+--------------
+ambele: evita double recursive calls - prolog cu predicat auxiliar si lisp cu lambda
+-----------------------------------
+list_delete(X,[X|T], T).
+list_delete(X, [H|T], [H|R]) :- list_delete(X,T,R).
+
+perm([],[]).
+perm(L,[X|R]) :- list_delete(X,L,L1),perm(L1,R).
+
+comb(_,0,[]).
+comb([_|T],N,R) :- N > 0,
+                   comb(T,N,R).
+comb([H|T],N,[H|R]) :- N > 0,
+                        N1 is N-1,
+                        comb(T,N1,R).
+
+arran(L, K, NewRes) :- comb(L, K, Res),
+                       perm(Res, NewRes).
+
+allArran(L, K, Res) :- findall(X, arran(L, K, X), Res).

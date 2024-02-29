@@ -1,0 +1,59 @@
+;(defun numeFunction(parametrii)
+;cond = switch case 
+;pui un base case null l => nil
+;numberp => verifica daca e numar
+;car l => ia head-ul current (primul element)
+;cdr l => tailul = tot inafara de primul element, ca la prolog
+;atom verifica daca e litera
+;listp daca e lista
+; mod (car l) 2 => restul la 2
+; equal x => egal x
+;cons creaza o list noua, concatenare
+;t makes anything else true
+;run: (dublarePare '(1 2 3 4 5 6 c) )
+; '=compilatoru stie ca e lista
+; atentie la paranteze niggere
+(defun dublarePare(l)
+  (cond
+   ((null l) nil)
+   ((and (numberp (car l)) (equal 0 (mod (car l) 2))) (cons (* (car l) 2) (dublarePare(cdr l))))
+   ((listp (car l)) (cons (dublarePare(car l)) (dublarePare(cdr l))))
+   (t (cons (car l) (dublarePare(cdr l)))) ))
+;a b c a b c c
+;((a 2) (b 2) (c 3))
+(defun my-count (a L)
+  (cond
+   ((null L) 0)
+   ((equal a (car L)) (+ 1 (my-count a (cdr L))))
+   (t (my-count a (cdr L)))))
+
+(defun removeElem (l elem)
+  (cond
+   ((null l) nil)
+   ((not (equal elem (car l))) (cons (car l) (removeElem (cdr l) elem)))
+   (t (removeElem (cdr l) elem)) ))
+
+(defun createList(l)
+  (cond
+   ((null l) nil)
+   (t (cons (list (car l) (my-count (car l) l)) (createList (removeElem (cdr l) (car l))))) ))
+
+
+
+
+
+
+
+
+
+(defun double-numbers (l)
+  (cond
+    ((null l) nil)
+    ((numberp (car l)) 
+     (cons (* 2 (car l)) (double-numbers (cdr l))))
+    ((listp (car l)) 
+     (cons (double-numbers (car l)) (double-numbers (cdr l))))
+    (t 
+     (cons (car l) (double-numbers (cdr l))))))
+	
+
