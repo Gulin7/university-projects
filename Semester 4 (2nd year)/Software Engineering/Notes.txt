@@ -1,0 +1,26 @@
+PROFESIONAL PROFILE:
+- profile pic + frames
+- About, education, experience, certifications, skills, volunteering, languages sections
+- White and Dark theme
+- CV
+- privacy settings
+- premium monthly payment 	- you can endorse other's skills
+				- you have a bifa
+				- virtual business card
+- login for business account
+---------------------------------------------------------------------------------------------
+
+Database Tables
+
+1. User
+2. Education
+3. Experience
+4. Certifications
+5. Skills
+6. Volunteering
+7. Privacy
+8. ProfileTheme
+9. LinkedApps (linkedin,github...)
+10. Endorsements
+11. VirtualBussinessCard
+12. 
