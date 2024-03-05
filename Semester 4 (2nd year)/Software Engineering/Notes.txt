@@ -8,8 +8,10 @@ PROFESIONAL PROFILE:
 				- you have a bifa
 				- virtual business card
 - login for business account
----------------------------------------------------------------------------------------------
+- viewed your profile
+- notifications
 
+---------------------------------------------------------------------------------------------
 Database Tables
 
 1. User
@@ -19,8 +21,93 @@ Database Tables
 5. Skills
 6. Volunteering
 7. Privacy
-8. ProfileTheme
-9. LinkedApps (linkedin,github...)
-10. Endorsements
-11. VirtualBussinessCard
-12. 
+8. LinkedApps (linkedin,github...)
+9. Endorsements
+10. VirtualBussinessCard
+-----------------------------------------------------------------------------------------------
+Requirements
+1) User Registration and Authentication:
+
+Users can register using email/password or OAuth with social media accounts.
+Password reset functionality is available with email verification.
+
+2) Profile Setup:
+
+Users can upload a profile picture and add basic personal information (name, contact details, bio).
+Privacy settings allow users to control who can view their profile sections (public, private, connections only).
+Light and dark theme options are available for the interface.
+
+3) Sections:
+
+Users can add sections for:
+	Education:
+
+Users can add multiple educational entries, including:
+Degree/Certificate: Specify the degree or certificate obtained (e.g., Bachelor of Science, Master of Business Administration).
+Institution: Name of the educational institution attended (e.g., University of Example).
+Field of Study/Major: Field of study or major pursued (e.g., Computer Science, Economics).
+Graduation Date: Date of graduation or expected graduation.
+GPA (optional): Grade Point Average if applicable, along with the scale (e.g., 3.5/4.0).
+Experience:
+
+Users can add multiple work experience entries, including:
+Job Title: Title of the position held (e.g., Software Engineer, Marketing Manager).
+Company: Name of the company or organization where the user worked.
+Location: Location of the company (e.g., city, state, country).
+Employment Period: Start and end dates of employment.
+Responsibilities & Achievements: Description of roles, responsibilities, and notable achievements during the employment period.
+Certifications:
+
+Users can add certifications they have obtained, including:
+Certification Name: Name of the certification (e.g., Project Management Professional, AWS Certified Solutions Architect).
+Issuing Organization: Organization or entity that issued the certification.
+Date of Issuance: Date when the certification was issued.
+Expiration Date (if applicable): Date when the certification expires, if it has a validity period.
+Skills:
+
+Users can list their skills, including:
+Skill Name: Name of the skill (e.g., Java Programming, Digital Marketing).
+Proficiency Level: Level of proficiency in the skill (e.g., Beginner, Intermediate, Advanced).
+Volunteering:
+
+Users can showcase their volunteer experiences, including:
+Organization: Name of the volunteering organization or cause.
+Role/Position: Position or role held during the volunteering experience.
+Duration: Start and end dates of the volunteering period.
+Description: Description of the volunteering activities and contributions.
+Languages:
+
+Users can specify the languages they speak, including:
+Language: Name of the language (e.g., English, Spanish, French).
+Proficiency Level: Level of proficiency in the language (e.g., Fluent, Intermediate, Basic).
+
+4) Data Entry:
+
+Users can enter details for each section, such as educational qualifications, work experience, certifications, skills, volunteer experience, and languages spoken.
+
+5) Privacy Settings:
+
+Users can set privacy preferences for each section of their profile individually.
+
+6) Endorsements:
+
+Users can endorse each other's skills.
+Endorsements are visible on the endorsed user's profile.
+
+7) Premium Features:
+
+Premium subscription offers additional features like unlimited endorsements, premium frames for profile pictures, and enhanced privacy settings.
+
+8) Linked Apps:
+
+Integration with LinkedIn, GitHub, or other platforms to import data is available.
+
+9) Virtual Business Card:
+
+Premium users can create a virtual business card with contact details and a summary of their profile.
+Generates a shareable url/qr code for the card
+You can download the card on your local system
+
+10) Database Tables:
+
+Set up tables for user data, education, experience, certifications, skills, volunteering, privacy settings, linked apps, endorsements, and virtual business cards.

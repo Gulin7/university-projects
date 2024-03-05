@@ -1,0 +1,83 @@
+@import 'config';
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: $light-color;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.6;
+	font-size: 16px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.showcase {
+	@include set-background($primary-color);
+	height: 500px;
+
+	nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 30px;
+
+		.logo {
+			font-size: 30px;
+		}
+
+		ul {
+			display: flex;
+			list-style-type: none;
+
+			li {
+				padding: 10px;
+			}
+		}
+	}
+
+	a {
+		color: set-text-color($primary-color);
+	}
+
+	a:hover {
+		color: $secondary-color;
+	}
+
+	.showcase-content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		height: 100%;
+		padding: 0 20px;
+
+		img {
+			width: 50%;
+		}
+
+		h1 {
+			font-size: 50px;
+			margin-bottom: 20px;
+			line-height: 1.2;
+		}
+
+		p {
+			font-size: 20px;
+			margin: 20px 0;
+		}
+	}
+}
+
+img {
+	width: 100%;
+}
+
+@import 'utilities';
+@import 'buttons';
+@import 'mobile';
