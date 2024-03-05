@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	background: rgb(25, 25, 139);
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	max-width: 500px;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.container .form-wrap {
+	width: 80%;
+	background-color: white !important;
+	border: 0.5px solid black;
+	border-radius: 4px;
+	text-align: center;
+	margin-bottom: 8px;
+	margin: auto;
+}
+
+.container .form-wrap h1 {
+	padding: 15px 0;
+}
+
+.container .form-wrap .form-group {
+	display: block;
+	padding-top: 20px;
+}
+
+.form-group label {
+	display: block;
+	margin: auto;
+	text-align: left;
+	margin-left: 50px;
+}
+
+.form-group input {
+	width: 80%;
+	display: block;
+	height: 36px;
+	border: none;
+	border-radius: 5px;
+	padding: 5px;
+	margin: auto;
+	margin-top: 10px;
+}
+
+.form-group input:hover {
+	border: 1px solid black;
+}
+
+.container .form-wrap button {
+	width: 80%;
+	height: 36px;
+	background-color: rgb(41, 191, 141);
+	border-radius: 5px;
+	border: none;
+	color: white;
+	cursor: pointer;
+}
+
+.container .form-wrap button:hover {
+	background-color: rgb(25, 139, 103);
+}
+
+.form-wrap .bottom-text {
+	width: 80%;
+	padding: 10px;
+	margin: auto;
+}
+
+.form-wrap .bottom-text a {
+	color: rgb(28, 28, 152);
+	font-weight: bold;
+}
+.form-wrap .bottom-text a:hover {
+	color: rgb(25, 139, 103);
+}
+
+.container footer {
+	width: 80%;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	padding-top: 3px;
+	margin: auto;
+}
+
+.container footer a {
+	text-decoration: none;
+	color: rgb(41, 191, 141);
+	font-weight: 400;
+	padding-left: 6px;
+}
+
+.container footer a:hover {
+	color: rgb(53, 225, 168);
+	font-weight: 500;
+}

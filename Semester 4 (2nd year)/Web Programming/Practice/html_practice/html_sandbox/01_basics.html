@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- Create boilerplate with ! + TAB -->
+<html lang="en">
+	<!-- lang="" just sets the language, not needed -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- This is the description of my empire-->
+		<meta name="description" content="This is my empire" />
+		<!-- A few keywords -->
+		<meta name="keywords" content="empire, kingdom, ruler, html" />
+		<!-- If you don't want to index your webpage-->
+		<!-- <meta name="robots" content="noindex, nofollow" /> -->
+		<title>My Empire</title>
+	</head>
+	<!-- You comment with CTRL+?. Open w live server w ALT + L + O -->
+	<body>
+		<!-- Headings -->
+		<h1>Large heading</h1>
+		<h2>Medium heading</h2>
+		<h3>Small heading</h3>
+		<h4>Smaller heading</h4>
+		<h5>Even smaller heading</h5>
+		<!-- Paragraphs -->
+		<p>
+			Lorem ipsum dolor sit <strong>amet consectetur</strong> adipisicing elit.
+			<b>Enim excepturi velit</b> sunt laborum aperiam, sint obcaecati fugiat numquam deserunt
+			vitae rem impedit sit ab nisi<del>fuga repellat sequi error</del> voluptate provident
+			esse necessitatibus.
+			<!--Line break-->
+			<br />
+			Illum vel molestias dolore maxime &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+			<!-- Non breaking space -->
+			&nbsp; doloremque magni temporibus quasi voluptatibus repellendus maiores obcaecati
+			quia, vero dolor itaque!
+		</p>
+		<p>Entities: &copy; &lt; &gt; &amp; &cent; &pound; &yen; &euro; &reg; &trade;</p>
+		<div>
+			<code>This is a code like text</code><br />
+			<kbd>Same as this</kbd>
+		</div>
+
+		<!-- Links -->
+		<a href="./01_basics.html">Google</a>
+		<!-- Internal link -->
+		<!-- External  link-->
+		<!-- target="_blank" to open in a new tab-->
+		<a href="https://www.google.com" target="_blank">Google</a>
+		<!-- Images -->
+		<br />
+		<img
+			src="https://source.unsplash.com/random/200x200"
+			alt="Random image - if the image can't load"
+		/>
+		<!-- Lists -->
+		<ul>
+			<li>Item 1</li>
+			<li>
+				Item 2
+				<ul>
+					<li>Subitem 1</li>
+					<li>Subitem 2</li>
+				</ul>
+			</li>
+			<li>Item 3</li>
+		</ul>
+		<ol>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+		</ol>
+		<!-- Tables -->
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Email</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>John Doe</td>
+					<td>johndoe@gmail.com</td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- Forms -->
+		<!-- class - so you can style all objects of this type the same in a css or whatever -->
+		<form action="process.py" class="my-form">
+			<div>
+				<label for="name">Name</label>
+				<input type="text" id="name" name="name" />
+			</div>
+			<div>
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email" placeholder="Enter your email" />
+			</div>
+			<div>
+				<label for="age">Age</label>
+				<input type="number" name="age" id="age" />
+			</div>
+			<div>
+				<label for="message">Message</label><br />
+				<textarea name="message" id="message"></textarea>
+			</div>
+			<div>
+				<label for="sex">Sex</label>
+				<select name="sex" id="sex">
+					<option value="male" selected>Male</option>
+					<option value="female">Female</option>
+					<option value="other">Other</option>
+				</select>
+			</div>
+			<div>
+				<br />
+				<button type="submit" value="Submit">Submit</button>
+			</div>
+			<div>
+				<button type="reset" value="Reset">Reset</button>
+			</div>
+		</form>
+	</body>
+</html>
