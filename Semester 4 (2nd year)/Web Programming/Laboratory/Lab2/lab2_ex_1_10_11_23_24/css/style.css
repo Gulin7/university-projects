@@ -33,7 +33,6 @@ ul {
 	display: flex;
 	flex-direction: column;
 }
-
 /*
 Exercise 1
 Style 3D buttons in 3 different ways
@@ -120,15 +119,21 @@ Div which is colored with a gradient color that is fully transparent on the left
 .main-header a:hover {
 	color: #00244b;
 }
+/* An implementation for ex 23/24*/
 
-.main-header .move-gradient {
-	width: 40px;
-	height: 40px;
-	border-radius: 20px;
-	background-color: #00244b;
+#myDiv {
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: top 5s ease, left 5s ease, background-color 5s ease;
 }
-
-.main-header .move-gradient:hover {
+#myDiv:hover {
+	top: calc(100% - 100px);
+	left: calc(100% - 100px);
+	background-color: red;
 }
 
 /*
