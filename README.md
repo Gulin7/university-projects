@@ -4,12 +4,12 @@
   <li>:open_file_folder: Semester 1
     <ul>
       <li> :straight_ruler:
-        <a href="https://github.com/Gulin7/university-projects/tree/main/Semester%201%20(1st%20year)/Algebra" text-decoration:none; color:#1ABC9C; font-weight:600;> 
+        <a href="https://github.com/Gulin7/university-projects/tree/main/Semester%201%20(1st%20year)/Algebra" text-decoration="none" color="#1ABC9C" font-weight="600"> 
           Linear Algebra
         </a>
       </li>
       <li>:trollface:  
-        <a href="https://github.com/Gulin7/university-projects/tree/main/Semester%201%20(1st%20year)/Computational%20Logic" text-decoration:none; color:#1ABC9C; font-weight:600;> 
+        <a href="https://github.com/Gulin7/university-projects/tree/main/Semester%201%20(1st%20year)/Computational%20Logic" > 
           Computational Logic 
         </a>
       </li>
