@@ -81,7 +81,7 @@
             Databases 
         </a>
       </li>
-      <li>:older_man:  :scroll:
+      <li>:older_man:
         <a href="https://github.com/Gulin7/university-projects/tree/main/Semester%203%20(2nd%20year)/Functional%20and%20Logic%20Programming" color="#1ABC9C"> 
           Functional and Logic Programming 
         </a>
