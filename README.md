@@ -1,5 +1,12 @@
 # UBB
 
+<style>
+  a{
+    text-decoration:none;
+    color:#1ABC9C;
+    font-weight:600;
+  }
+</style>
 <ul>
   <li>:open_file_folder: Semester 1
     <ul>
@@ -182,8 +189,8 @@
 </ul>
 
 <br>
-<p> Babeş-Bolyai University of Cluj Napoca </p>
-<p> Faculty of Mathematics and Computer Science </p>
+<p> <a href="https://www.ubbcluj.ro/ro/"> Babeş-Bolyai University of Cluj Napoca </a></p>
+<p> <a href="https://www.ubbcluj.ro/ro/facultati/matematica_informatica"> Faculty of Mathematics and Computer Science</a> </p>
 <p> Bachelor’s in Computer Science </p>
 </a>
 <br>
