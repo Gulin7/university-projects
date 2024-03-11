@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+	background: #6495ed;
+}
+
+.container {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-around;
+	margin: auto;
+	background: #2050a7;
+	height: 80px;
+	width: 100%;
+	align-items: center;
+}
+
+.item {
+	background: #6495ed;
+	border: darkblue solid 0.8px;
+	border-radius: 5px;
+	text-align: center;
+	height: 60px;
+	padding: 16px;
+	margin: 10px;
+}
+
+.item:hover {
+	background: #2ebcdf;
+	border: rgb(107, 102, 102) solid 1px;
+	transform: scale(0.93);
+}
