@@ -1,10 +1,5 @@
 # UBB
 
-<style>
-  a{
-    
-  }
-</style>
 <ul>
   <li>:open_file_folder: Semester 1
     <ul>
