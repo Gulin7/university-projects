@@ -12,13 +12,14 @@ body {
 
 .container {
 	display: flex;
-	flex-direction: row-reverse;
+	/* flex-direction: row-reverse; */
 	justify-content: space-around;
 	margin: auto;
 	background: #2050a7;
 	height: 80px;
 	width: 100%;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 .item {
@@ -28,7 +29,12 @@ body {
 	text-align: center;
 	height: 60px;
 	padding: 16px;
-	margin: 10px;
+	margin: 10px 4px;
+	flex: 1;
+}
+
+.item:first-child {
+	flex: 4;
 }
 
 .item:hover {
