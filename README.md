@@ -14,7 +14,7 @@
         </a>
       </li>
       <li>:snake:  
-        <a href="https://github.com/Pufcorina/Fundamental-of-Programming"> 
+        <a href="https://github.com/Pufcorina/Fundamental-of-Programming" color="#1ABC9C"> 
           Fundamental of Programming 
         </a>
       </li>
@@ -160,6 +160,7 @@
         </a>
       </li>
       <li> :scroll:
+        <a href="" color="#1ABC9C">
           -
         </a>
       </li>
@@ -169,6 +170,7 @@
         </a>
       </li>
       <li> :mortar_board:
+        <a href="" color="#1ABC9C">
           -
         </a>
       </li>
