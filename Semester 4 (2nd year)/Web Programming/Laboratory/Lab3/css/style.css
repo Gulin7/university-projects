@@ -353,6 +353,9 @@ a {
 	display: flex;
 	justify-content: center;
 	height: 8vh;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
 
 .main-footer .footer-content {
