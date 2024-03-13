@@ -1,0 +1,10 @@
+C:\Codes\university-projects\Semester 4 (2nd year)\Database management systems\Laboratory\lab1-windows-form\lab1-windows-form\bin\Debug\lab1-windows-form.exe.config
+C:\Codes\university-projects\Semester 4 (2nd year)\Database management systems\Laboratory\lab1-windows-form\lab1-windows-form\bin\Debug\lab1-windows-form.exe
+C:\Codes\university-projects\Semester 4 (2nd year)\Database management systems\Laboratory\lab1-windows-form\lab1-windows-form\bin\Debug\lab1-windows-form.pdb
+C:\Codes\university-projects\Semester 4 (2nd year)\Database management systems\Laboratory\lab1-windows-form\lab1-windows-form\obj\Debug\lab1-windows-form.csproj.AssemblyReference.cache
+C:\Codes\university-projects\Semester 4 (2nd year)\Database management systems\Laboratory\lab1-windows-form\lab1-windows-form\obj\Debug\lab1_windows_form.Form1.resources
+C:\Codes\university-projects\Semester 4 (2nd year)\Database management systems\Laboratory\lab1-windows-form\lab1-windows-form\obj\Debug\lab1_windows_form.Properties.Resources.resources
+C:\Codes\university-projects\Semester 4 (2nd year)\Database management systems\Laboratory\lab1-windows-form\lab1-windows-form\obj\Debug\lab1-windows-form.csproj.GenerateResource.cache
+C:\Codes\university-projects\Semester 4 (2nd year)\Database management systems\Laboratory\lab1-windows-form\lab1-windows-form\obj\Debug\lab1-windows-form.csproj.CoreCompileInputs.cache
+C:\Codes\university-projects\Semester 4 (2nd year)\Database management systems\Laboratory\lab1-windows-form\lab1-windows-form\obj\Debug\lab1-windows-form.exe
+C:\Codes\university-projects\Semester 4 (2nd year)\Database management systems\Laboratory\lab1-windows-form\lab1-windows-form\obj\Debug\lab1-windows-form.pdb
