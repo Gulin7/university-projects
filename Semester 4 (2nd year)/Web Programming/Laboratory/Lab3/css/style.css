@@ -1,0 +1,370 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: black;
+	font-size: 12px;
+	color: white;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+/*Utilities*/
+.btn {
+	border: none;
+	border-radius: 20px;
+	background-color: white;
+	color: black;
+	padding: 8px 12px;
+	margin: 2px;
+}
+
+.btn-transparent {
+	border: solid 1px white;
+	border-radius: 20px;
+	padding: 8px 12px;
+	margin: 2px;
+}
+
+.t-w {
+	color: white;
+}
+
+/*Root*/
+.root {
+	display: flex;
+	justify-content: center;
+	height: 92vh;
+}
+/*Header*/
+.main-header {
+	width: 15%;
+	height: 100%;
+	margin-left: 100px;
+}
+
+.header-items {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.header-item,
+.header-item h1,
+.header-item div {
+	padding: 0.3rem;
+	font-size: 20px;
+	border-radius: 20px;
+}
+
+.header-item a {
+	border-radius: 22px;
+	padding: 12px;
+}
+
+.header-item .settings {
+	margin-right: 8px;
+}
+
+.header-item a:hover {
+	background-color: rgb(43, 43, 43);
+}
+
+/*Main Conent*/
+.main-content {
+	width: 60%;
+	height: 100%;
+}
+
+.main-container {
+	width: 90%;
+	height: 100%;
+}
+
+.main-items {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	gap: 2rem;
+}
+
+.main-1 {
+	border: solid 1px grey;
+	border-top: none;
+	border-bottom: none;
+	width: 500px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.main-2 {
+	width: 30%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+/*Post and profile Section*/
+.content-top {
+	display: flex;
+	height: 40px;
+}
+
+.top-1 {
+	width: 40px;
+	align-items: start;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+.top-2 {
+	display: flex;
+	flex-direction: column;
+	padding-top: 4px;
+}
+
+.top-2 .top-title span {
+	font-size: 16px;
+	padding-right: 10px;
+}
+
+.top-2 .top-subtitle {
+	font-size: 12px;
+	color: rgba(130, 130, 130, 0.8);
+}
+
+/*Cover*/
+.cover-pic {
+	height: 20vh;
+	width: 100%;
+	background-color: grey;
+}
+
+.profile-pic {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin-left: 20px;
+	position: absolute;
+	top: 150px;
+}
+
+.profile-pic img {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	border: solid 2px black;
+	z-index: -1;
+}
+
+.profile-pic:hover {
+	background-color: rgba(0, 0, 0, 0.4);
+	z-index: 1;
+}
+
+/*Profile*/
+.profile {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	font-size: 12px;
+	padding: 20px;
+}
+
+.profile .follow {
+	height: 40px;
+	font-size: 16px;
+	align-self: flex-end;
+}
+
+.profile .user-name {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.profile .user-name span {
+	padding-right: 10px;
+}
+
+.profile .user-at {
+	color: rgba(130, 130, 130, 0.8);
+	margin-bottom: 10px;
+}
+
+.profile .user-description {
+	margin-bottom: 10px;
+}
+
+.profile .user-description a {
+	color: rgb(48, 117, 255);
+}
+
+.profile .user-date {
+	color: rgba(130, 130, 130, 0.8);
+	margin-bottom: 10px;
+}
+
+.profile .user-followers {
+	color: rgba(130, 130, 130, 0.8);
+	margin-bottom: 10px;
+}
+
+/*Posts*/
+.main-posts {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: center;
+}
+
+.post {
+	padding: 40px 20px;
+	margin: 32px auto;
+	width: 66%;
+}
+
+.post .post-header {
+	font-weight: 700;
+	font-size: 30px;
+	padding-bottom: 8px;
+}
+
+.post .post-content {
+	font-size: 14px;
+	color: rgba(130, 130, 130, 0.8);
+}
+
+.post .post-content a {
+	color: rgb(48, 117, 255);
+}
+
+.post .post-content a:hover {
+	text-decoration: underline;
+}
+
+/* Separating Line*/
+.separator {
+	margin-top: 1px;
+	border-top: solid 2px rgba(255, 255, 255, 0.6);
+	height: 10px;
+}
+
+/*Trends*/
+.trends {
+	background-color: rgb(24, 24, 24);
+	border-radius: 10px;
+	height: 5rem;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.trends-container {
+	width: 80%;
+	height: 40%;
+	color: rgba(130, 130, 130, 0.8);
+}
+
+/*Log in section*/
+.log-in {
+	display: flex;
+	flex-direction: column;
+	border: solid 1px rgb(142, 142, 142);
+	border-radius: 10px;
+	margin: 10px 0px;
+	justify-content: center;
+}
+
+.log-in-item {
+	padding: 6px;
+}
+
+.log-in-options {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	width: 100%;
+}
+
+.log-in-option {
+	height: 24px;
+	background-color: white;
+	color: black;
+	padding: 4px;
+	height: 30px;
+	font-size: 14px;
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.log-in-icon {
+	margin-right: 5px;
+}
+
+.log-in-footer,
+.log-in-subtitle {
+	color: rgba(130, 130, 130, 0.8);
+}
+
+.log-in-footer a {
+	color: rgb(48, 117, 255);
+}
+
+.log-in-footer a:hover {
+	text-decoration: underline;
+}
+
+/*Navigation*/
+.navpolicy {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	font-size: 12px;
+	color: grey;
+	margin: 10px;
+	width: 90%;
+}
+
+.navpolicy .policy-item {
+	color: grey;
+	padding-right: 3px;
+	padding-bottom: 2px;
+}
+
+.navpolicy .policy-item span:hover {
+	text-decoration: underline;
+}
+
+/*Footer*/
+.main-footer {
+	background-color: rgb(33, 169, 253);
+	color: white;
+	display: flex;
+	justify-content: center;
+	height: 8vh;
+}
+
+.main-footer .footer-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 30%;
+}
+
+.main-footer .footer-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 20%;
+}
