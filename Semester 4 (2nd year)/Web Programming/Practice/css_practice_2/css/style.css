@@ -1,0 +1,192 @@
+:root {
+	--my-purple: rgba(126, 87, 225, 0.8);
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: Arial, sans-serif;
+	font-size: 24px;
+	color: white;
+	background-color: #333;
+}
+/* Child */
+header div > p {
+	color: red;
+}
+/* Next sibling */
+header div + p {
+	color: blue;
+}
+/* By attribute */
+/* All links that have the attribute target */
+/* a[target], */
+header a[target='_blank'] {
+	background-color: violet;
+}
+/* First child */
+header li:first-child {
+	background-color: green;
+}
+/* Last child */
+header li:last-child {
+	background-color: orange;
+}
+/* Position 3 */
+header li:nth-child(3) {
+	background-color: purple;
+}
+/* every 3rd*/
+header li:nth-child(3n + 0) {
+	background-color: turquoise;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 50vh;
+}
+
+header ul {
+	width: 100%;
+	list-style: none;
+}
+
+header:before {
+	content: '';
+	background: url('./images/tree.jpg') no-repeat center center/cover;
+	opacity: 0.3;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+#navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	position: sticky;
+	width: 100%;
+	top: 0;
+	left: 0;
+	color: white;
+	font-weight: 500;
+	background-color: rgba(10, 10, 10, 0.5);
+}
+
+#navbar .logo {
+	font-size: 28px;
+	font-weight: 600;
+}
+
+#navbar ul {
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+}
+
+#navbar ul li a {
+	color: white;
+	text-decoration: none;
+	padding: 12px;
+	background-color: none;
+	border-radius: 5px;
+	margin: 0 0.2rem;
+}
+
+#navbar ul li {
+	transition: all 1s ease-in-out;
+}
+
+#navbar ul li:hover {
+	background-color: rgba(209, 99, 16, 0.8);
+	border-radius: 15px;
+	transform: scale(0.9);
+}
+
+/* Boxes*/
+.boxes {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #333;
+	background-color: white;
+	width: 100%;
+	height: 40vh;
+}
+
+.boxes .box {
+	width: 20%;
+	background-color: orange;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px 1px var(--my-purple);
+	padding: 1rem;
+	margin: 1rem;
+	position: relative;
+}
+
+.boxes .box:nth-child(1) {
+	animation: left-box 4s forwards;
+}
+
+.boxes .box:nth-child(2) {
+	animation: middle-box 3.5s forwards;
+}
+
+.box:nth-child(3) {
+	animation: right-box 4s forwards;
+}
+
+.boxes .box h2 {
+	font-size: 36px;
+	font-weight: 600;
+	margin-bottom: 1rem;
+	text-shadow: -2px -2px 2px var(--my-purple);
+}
+
+.boxes .box p {
+	padding: 0.5rem 1rem;
+}
+
+@keyframes left-box {
+	0% {
+		left: -500px;
+		opacity: 0;
+	}
+	100% {
+		left: 0px;
+		opacity: 1;
+	}
+}
+
+@keyframes right-box {
+	0% {
+		right: -500px;
+		opacity: 0;
+	}
+	100% {
+		right: 0px;
+		opacity: 1;
+	}
+}
+@keyframes middle-box {
+	0% {
+		bottom: -500px;
+		opacity: 0;
+	}
+	100% {
+		bottom: 0px;
+		opacity: 1;
+	}
+}
