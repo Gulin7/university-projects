@@ -1,0 +1,44 @@
+@import 'variables';
+@import 'functions';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: $light-color;
+	font-family: $main-font;
+	line-height: 1.6;
+	color: set-color($light-color);
+}
+
+header {
+	background: $dark-color;
+	color: set-color($dark-color);
+	padding: 1rem;
+	text-align: center;
+	h1 {
+		font-size: 2rem;
+	}
+	p {
+		font-size: 1.2rem;
+	}
+}
+
+.section {
+	margin: 2rem;
+	padding: 2rem;
+	text-align: center;
+
+	&-1 {
+		background: $primary-color;
+		color: set-color($primary-color);
+	}
+
+	&-2 {
+		background: $secondary-color;
+		color: set-color($secondary-color);
+	}
+}
