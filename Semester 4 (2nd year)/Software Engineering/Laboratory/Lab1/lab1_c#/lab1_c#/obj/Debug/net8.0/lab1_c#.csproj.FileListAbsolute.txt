@@ -1,0 +1,15 @@
+C:\Codes\university-projects\Semester 4 (2nd year)\Software Engineering\Lab1\lab1_c#\lab1_c#\bin\Debug\net8.0\lab1_c#.exe
+C:\Codes\university-projects\Semester 4 (2nd year)\Software Engineering\Lab1\lab1_c#\lab1_c#\bin\Debug\net8.0\lab1_c#.deps.json
+C:\Codes\university-projects\Semester 4 (2nd year)\Software Engineering\Lab1\lab1_c#\lab1_c#\bin\Debug\net8.0\lab1_c#.runtimeconfig.json
+C:\Codes\university-projects\Semester 4 (2nd year)\Software Engineering\Lab1\lab1_c#\lab1_c#\bin\Debug\net8.0\lab1_c#.dll
+C:\Codes\university-projects\Semester 4 (2nd year)\Software Engineering\Lab1\lab1_c#\lab1_c#\bin\Debug\net8.0\lab1_c#.pdb
+C:\Codes\university-projects\Semester 4 (2nd year)\Software Engineering\Lab1\lab1_c#\lab1_c#\obj\Debug\net8.0\lab1_c#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Codes\university-projects\Semester 4 (2nd year)\Software Engineering\Lab1\lab1_c#\lab1_c#\obj\Debug\net8.0\lab1_c#.AssemblyInfoInputs.cache
+C:\Codes\university-projects\Semester 4 (2nd year)\Software Engineering\Lab1\lab1_c#\lab1_c#\obj\Debug\net8.0\lab1_c#.AssemblyInfo.cs
+C:\Codes\university-projects\Semester 4 (2nd year)\Software Engineering\Lab1\lab1_c#\lab1_c#\obj\Debug\net8.0\lab1_c#.csproj.CoreCompileInputs.cache
+C:\Codes\university-projects\Semester 4 (2nd year)\Software Engineering\Lab1\lab1_c#\lab1_c#\obj\Debug\net8.0\lab1_c#.sourcelink.json
+C:\Codes\university-projects\Semester 4 (2nd year)\Software Engineering\Lab1\lab1_c#\lab1_c#\obj\Debug\net8.0\lab1_c#.dll
+C:\Codes\university-projects\Semester 4 (2nd year)\Software Engineering\Lab1\lab1_c#\lab1_c#\obj\Debug\net8.0\refint\lab1_c#.dll
+C:\Codes\university-projects\Semester 4 (2nd year)\Software Engineering\Lab1\lab1_c#\lab1_c#\obj\Debug\net8.0\lab1_c#.pdb
+C:\Codes\university-projects\Semester 4 (2nd year)\Software Engineering\Lab1\lab1_c#\lab1_c#\obj\Debug\net8.0\lab1_c#.genruntimeconfig.cache
+C:\Codes\university-projects\Semester 4 (2nd year)\Software Engineering\Lab1\lab1_c#\lab1_c#\obj\Debug\net8.0\ref\lab1_c#.dll
