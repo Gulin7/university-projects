@@ -1,0 +1,15 @@
+C:\Codes\university-projects\Semester 4 (2nd year)\Software Engineering\Laboratory\Lab2\griga\griga\obj\Debug\net8.0\griga.GeneratedMSBuildEditorConfig.editorconfig
+C:\Codes\university-projects\Semester 4 (2nd year)\Software Engineering\Laboratory\Lab2\griga\griga\obj\Debug\net8.0\griga.AssemblyInfoInputs.cache
+C:\Codes\university-projects\Semester 4 (2nd year)\Software Engineering\Laboratory\Lab2\griga\griga\obj\Debug\net8.0\griga.AssemblyInfo.cs
+C:\Codes\university-projects\Semester 4 (2nd year)\Software Engineering\Laboratory\Lab2\griga\griga\obj\Debug\net8.0\griga.csproj.CoreCompileInputs.cache
+C:\Codes\university-projects\Semester 4 (2nd year)\Software Engineering\Laboratory\Lab2\griga\griga\obj\Debug\net8.0\griga.sourcelink.json
+C:\Codes\university-projects\Semester 4 (2nd year)\Software Engineering\Laboratory\Lab2\griga\griga\bin\Debug\net8.0\griga.exe
+C:\Codes\university-projects\Semester 4 (2nd year)\Software Engineering\Laboratory\Lab2\griga\griga\bin\Debug\net8.0\griga.deps.json
+C:\Codes\university-projects\Semester 4 (2nd year)\Software Engineering\Laboratory\Lab2\griga\griga\bin\Debug\net8.0\griga.runtimeconfig.json
+C:\Codes\university-projects\Semester 4 (2nd year)\Software Engineering\Laboratory\Lab2\griga\griga\bin\Debug\net8.0\griga.dll
+C:\Codes\university-projects\Semester 4 (2nd year)\Software Engineering\Laboratory\Lab2\griga\griga\bin\Debug\net8.0\griga.pdb
+C:\Codes\university-projects\Semester 4 (2nd year)\Software Engineering\Laboratory\Lab2\griga\griga\obj\Debug\net8.0\griga.dll
+C:\Codes\university-projects\Semester 4 (2nd year)\Software Engineering\Laboratory\Lab2\griga\griga\obj\Debug\net8.0\refint\griga.dll
+C:\Codes\university-projects\Semester 4 (2nd year)\Software Engineering\Laboratory\Lab2\griga\griga\obj\Debug\net8.0\griga.pdb
+C:\Codes\university-projects\Semester 4 (2nd year)\Software Engineering\Laboratory\Lab2\griga\griga\obj\Debug\net8.0\griga.genruntimeconfig.cache
+C:\Codes\university-projects\Semester 4 (2nd year)\Software Engineering\Laboratory\Lab2\griga\griga\obj\Debug\net8.0\ref\griga.dll

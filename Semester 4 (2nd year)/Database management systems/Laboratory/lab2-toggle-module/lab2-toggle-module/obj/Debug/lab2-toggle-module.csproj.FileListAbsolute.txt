@@ -1,0 +1,7 @@
+C:\Codes\university-projects\Semester 4 (2nd year)\Database management systems\Laboratory\lab2-toggle-module\lab2-toggle-module\bin\Debug\lab2-toggle-module.exe.config
+C:\Codes\university-projects\Semester 4 (2nd year)\Database management systems\Laboratory\lab2-toggle-module\lab2-toggle-module\bin\Debug\lab2-toggle-module.exe
+C:\Codes\university-projects\Semester 4 (2nd year)\Database management systems\Laboratory\lab2-toggle-module\lab2-toggle-module\bin\Debug\lab2-toggle-module.pdb
+C:\Codes\university-projects\Semester 4 (2nd year)\Database management systems\Laboratory\lab2-toggle-module\lab2-toggle-module\obj\Debug\lab2-toggle-module.csproj.AssemblyReference.cache
+C:\Codes\university-projects\Semester 4 (2nd year)\Database management systems\Laboratory\lab2-toggle-module\lab2-toggle-module\obj\Debug\lab2-toggle-module.csproj.CoreCompileInputs.cache
+C:\Codes\university-projects\Semester 4 (2nd year)\Database management systems\Laboratory\lab2-toggle-module\lab2-toggle-module\obj\Debug\lab2-toggle-module.exe
+C:\Codes\university-projects\Semester 4 (2nd year)\Database management systems\Laboratory\lab2-toggle-module\lab2-toggle-module\obj\Debug\lab2-toggle-module.pdb
