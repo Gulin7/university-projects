@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("griga")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb9df1f0cea4c3dfb82ddeac96de32e9e7211393")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c2d7a41db7c449d519ba8538c1a8f692f6d46e1c")]
 [assembly: System.Reflection.AssemblyProductAttribute("griga")]
 [assembly: System.Reflection.AssemblyTitleAttribute("griga")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

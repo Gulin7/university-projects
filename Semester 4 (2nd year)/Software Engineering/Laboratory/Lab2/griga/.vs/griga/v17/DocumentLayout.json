@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{5A5E201F-EF1D-40AB-9A4D-237A9B9514E3}|griga\\griga.csproj|solutionrelative:griga\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A5E201F-EF1D-40AB-9A4D-237A9B9514E3}|griga\\griga.csproj|c:\\codes\\university-projects\\semester 4 (2nd year)\\software engineering\\laboratory\\lab2\\griga\\griga\\togglefeatures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A5E201F-EF1D-40AB-9A4D-237A9B9514E3}|griga\\griga.csproj|solutionrelative:griga\\togglefeatures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5A5E201F-EF1D-40AB-9A4D-237A9B9514E3}|griga\\griga.csproj|c:\\codes\\university-projects\\semester 4 (2nd year)\\software engineering\\laboratory\\lab2\\griga\\griga\\tests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5A5E201F-EF1D-40AB-9A4D-237A9B9514E3}|griga\\griga.csproj|solutionrelative:griga\\tests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A5E201F-EF1D-40AB-9A4D-237A9B9514E3}|griga\\griga.csproj|c:\\codes\\university-projects\\semester 4 (2nd year)\\software engineering\\laboratory\\lab2\\griga\\griga\\togglefeatures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A5E201F-EF1D-40AB-9A4D-237A9B9514E3}|griga\\griga.csproj|solutionrelative:griga\\togglefeatures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,26 +26,26 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Tests.cs",
               "DocumentMoniker": "C:\\Codes\\university-projects\\Semester 4 (2nd year)\\Software Engineering\\Laboratory\\Lab2\\griga\\griga\\Tests.cs",
               "RelativeDocumentMoniker": "griga\\Tests.cs",
               "ToolTip": "C:\\Codes\\university-projects\\Semester 4 (2nd year)\\Software Engineering\\Laboratory\\Lab2\\griga\\griga\\Tests.cs",
               "RelativeToolTip": "griga\\Tests.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABEAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwB8AAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-20T12:05:03.308Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ToggleFeatures.cs",
               "DocumentMoniker": "C:\\Codes\\university-projects\\Semester 4 (2nd year)\\Software Engineering\\Laboratory\\Lab2\\griga\\griga\\ToggleFeatures.cs",
               "RelativeDocumentMoniker": "griga\\ToggleFeatures.cs",
               "ToolTip": "C:\\Codes\\university-projects\\Semester 4 (2nd year)\\Software Engineering\\Laboratory\\Lab2\\griga\\griga\\ToggleFeatures.cs",
               "RelativeToolTip": "griga\\ToggleFeatures.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADwAAAAyAAAA",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAAUAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-20T12:04:14.237Z",
               "EditorCaption": ""
@@ -58,7 +58,7 @@
               "RelativeDocumentMoniker": "griga\\Program.cs",
               "ToolTip": "C:\\Codes\\university-projects\\Semester 4 (2nd year)\\Software Engineering\\Laboratory\\Lab2\\griga\\griga\\Program.cs",
               "RelativeToolTip": "griga\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAgwCMAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-20T12:03:56.305Z",
               "EditorCaption": ""

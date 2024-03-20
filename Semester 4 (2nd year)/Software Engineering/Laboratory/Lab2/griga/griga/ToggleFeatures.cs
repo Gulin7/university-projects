@@ -11,12 +11,12 @@ using System.Collections.Generic;
  */
 public class ToggleFeatures
 {
-    private Dictionary<string, Action> featureActions;
+    private Dictionary<string, Action<object[]>> featureActions;
     private Dictionary<string, bool> featureStates;
 
     public ToggleFeatures()
     {
-        featureActions = new Dictionary<string, Action>();  
+        featureActions = new Dictionary<string, Action<object[]>>();  
         featureStates = new Dictionary<string, bool>(); 
     }
     /*
@@ -24,7 +24,7 @@ public class ToggleFeatures
      fuction to add a feature, has 3 parameters: string name of feature, Action name of function and a bool value
     */
 
-    public void AddFeature(string featureName, Action featureAction, bool featureState) 
+    public void AddFeature(string featureName, Action<object[]> featureAction, bool featureState) 
     {
         if (!featureActions.ContainsKey(featureName)) 
         {
@@ -42,15 +42,15 @@ public class ToggleFeatures
     function to execute features that are enabled, has as a parameter the name of the feature as string
     */
 
-    public void ExecuteFeatureFunction(string featureName)//
+    public void ExecuteFeatureFunction(string featureName, params object[] parameters)
     {
         if (featureActions.ContainsKey(featureName) && featureStates[featureName])
         {
-            featureActions[featureName](); 
+            featureActions[featureName](parameters); 
         }
         else
         {
-            Tests.FeatureDisabledText(); 
+            Tests.FeatureDisabledText(parameters); 
         }
     }
     /*
