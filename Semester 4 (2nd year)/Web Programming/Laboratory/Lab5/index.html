@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<!-- Write a javascript which will be used in an html document that contains a tabel with 3 columns and several lines. When the user clicks the table header the script will sort in ascending order the elements from the current column. If the user clicks again on the column header, the elements will be sorted in descending order.
+         -->
+
+		<table>
+			<tr>
+				<th onClick="sortTable(0)">FirstName</th>
+				<th onClick="sortTable(1)">LastName</th>
+				<th onClick="sortTable(2)">Age</th>
+			</tr>
+			<tbody id="sort-table" class="table">
+				<tr class="row">
+					<td>Tudor</td>
+					<td>Gulin</td>
+					<td>20</td>
+				</tr>
+				<tr class="row">
+					<td>Oana</td>
+					<td>Marcel</td>
+					<td>15</td>
+				</tr>
+				<tr class="row">
+					<td>Cristi</td>
+					<td>Pop</td>
+					<td>22</td>
+				</tr>
+				<tr class="row">
+					<td>Bogdan</td>
+					<td>Zaharia</td>
+					<td>40</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<script src="./tableSort.js"></script>
+	</body>
+</html>

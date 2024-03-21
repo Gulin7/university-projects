@@ -92,8 +92,8 @@ a {
 }
 
 .main-items {
-	overflow-y: scroll;
-	min-height: 200vh;
+	overflow-y: auto;
+	height: 100vh;
 	width: 100%;
 	display: flex;
 	gap: 2rem;
@@ -105,7 +105,7 @@ a {
 	border-top: none;
 	border-bottom: none;
 	width: 500px;
-	height: 100%;
+	height: 100vh;
 	display: flex;
 	flex-direction: column;
 }
@@ -364,8 +364,9 @@ a {
 	display: flex;
 	justify-content: center;
 	height: 8vh;
-	position: sticky;
+	position: absolute;
 	bottom: 0;
+	left: 0;
 	width: 100%;
 }
 

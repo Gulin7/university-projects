@@ -1,0 +1,37 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: #f4f4f4;
+}
+
+.table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 20px 0;
+	gap: 1rem;
+}
+
+tr {
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem;
+	font-size: 1rem;
+	font-weight: 500;
+
+	border: 1px solid #aaa;
+}
+
+td {
+	flex: 1;
+	text-align: center;
+	padding: 1rem;
+}
+
+th:hover {
+	cursor: pointer;
+}
