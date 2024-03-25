@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Codes\\university-projects\\Semester 4 (2nd year)\\Database management systems\\Laboratory\\lab2-toggle-module\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DCCE9435-D142-42B1-AA1C-0DE3D0872451}|lab2-toggle-module\\lab2-toggle-module.csproj|c:\\codes\\university-projects\\semester 4 (2nd year)\\database management systems\\laboratory\\lab2-toggle-module\\lab2-toggle-module\\togglefeatures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCCE9435-D142-42B1-AA1C-0DE3D0872451}|lab2-toggle-module\\lab2-toggle-module.csproj|solutionrelative:lab2-toggle-module\\togglefeatures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCCE9435-D142-42B1-AA1C-0DE3D0872451}|lab2-toggle-module\\lab2-toggle-module.csproj|c:\\codes\\university-projects\\semester 4 (2nd year)\\database management systems\\laboratory\\lab2-toggle-module\\lab2-toggle-module\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCCE9435-D142-42B1-AA1C-0DE3D0872451}|lab2-toggle-module\\lab2-toggle-module.csproj|solutionrelative:lab2-toggle-module\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCCE9435-D142-42B1-AA1C-0DE3D0872451}|lab2-toggle-module\\lab2-toggle-module.csproj|c:\\codes\\university-projects\\semester 4 (2nd year)\\database management systems\\laboratory\\lab2-toggle-module\\lab2-toggle-module\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCCE9435-D142-42B1-AA1C-0DE3D0872451}|lab2-toggle-module\\lab2-toggle-module.csproj|solutionrelative:lab2-toggle-module\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 155,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ToggleFeatures.cs",
+              "DocumentMoniker": "C:\\Codes\\university-projects\\Semester 4 (2nd year)\\Database management systems\\Laboratory\\lab2-toggle-module\\lab2-toggle-module\\ToggleFeatures.cs",
+              "RelativeDocumentMoniker": "lab2-toggle-module\\ToggleFeatures.cs",
+              "ToolTip": "C:\\Codes\\university-projects\\Semester 4 (2nd year)\\Database management systems\\Laboratory\\lab2-toggle-module\\lab2-toggle-module\\ToggleFeatures.cs",
+              "RelativeToolTip": "lab2-toggle-module\\ToggleFeatures.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACYAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T11:57:18.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "test.cs",
+              "DocumentMoniker": "C:\\Codes\\university-projects\\Semester 4 (2nd year)\\Database management systems\\Laboratory\\lab2-toggle-module\\lab2-toggle-module\\test.cs",
+              "RelativeDocumentMoniker": "lab2-toggle-module\\test.cs",
+              "ToolTip": "C:\\Codes\\university-projects\\Semester 4 (2nd year)\\Database management systems\\Laboratory\\lab2-toggle-module\\lab2-toggle-module\\test.cs",
+              "RelativeToolTip": "lab2-toggle-module\\test.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABsAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T11:56:07.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Codes\\university-projects\\Semester 4 (2nd year)\\Database management systems\\Laboratory\\lab2-toggle-module\\lab2-toggle-module\\Program.cs",
+              "RelativeDocumentMoniker": "lab2-toggle-module\\Program.cs",
+              "ToolTip": "C:\\Codes\\university-projects\\Semester 4 (2nd year)\\Database management systems\\Laboratory\\lab2-toggle-module\\lab2-toggle-module\\Program.cs",
+              "RelativeToolTip": "lab2-toggle-module\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T11:54:18.149Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

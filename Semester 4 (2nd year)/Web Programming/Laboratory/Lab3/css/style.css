@@ -8,6 +8,7 @@ body {
 	background-color: black;
 	font-size: 12px;
 	color: white;
+	max-height: 100vh;
 }
 
 a {
@@ -47,6 +48,9 @@ a {
 	width: 15%;
 	height: 100%;
 	margin-left: 100px;
+	position: sticky;
+	top: 0;
+	left: 0;
 }
 
 .header-items {
@@ -88,10 +92,12 @@ a {
 }
 
 .main-items {
-	height: 100%;
+	overflow-y: auto;
+	height: 100vh;
 	width: 100%;
 	display: flex;
 	gap: 2rem;
+	position: relative;
 }
 
 .main-1 {
@@ -99,7 +105,7 @@ a {
 	border-top: none;
 	border-bottom: none;
 	width: 500px;
-	height: 100%;
+	height: 100vh;
 	display: flex;
 	flex-direction: column;
 }
@@ -109,6 +115,11 @@ a {
 	height: 100%;
 	display: flex;
 	flex-direction: column;
+}
+
+.content-top {
+	position: sticky;
+	top: 0;
 }
 
 /*Post and profile Section*/
@@ -152,8 +163,8 @@ a {
 	height: 100px;
 	border-radius: 50%;
 	margin-left: 20px;
-	position: absolute;
-	top: 150px;
+	margin-top: -2rem;
+	margin-bottom: -3rem;
 }
 
 .profile-pic img {
@@ -355,6 +366,7 @@ a {
 	height: 8vh;
 	position: absolute;
 	bottom: 0;
+	left: 0;
 	width: 100%;
 }
 
