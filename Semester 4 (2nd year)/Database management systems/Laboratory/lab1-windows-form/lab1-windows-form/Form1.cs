@@ -107,7 +107,14 @@ namespace lab1_windows_form
 
         private void button1_Click(object sender, EventArgs e)
         {
-            daDLCs.Update(myDataSet, "DLCs");
+            try { 
+                daDLCs.Update(myDataSet, "DLCs");
+            }
+            catch (Exception vsIsShit)
+            {
+                MessageBox.Show("The database update did not work \n" + vsIsShit.Message, "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
