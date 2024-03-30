@@ -14,7 +14,7 @@
         </a>
       </li>
       <li>:snake:  
-        <a href="https://github.com/Pufcorina/Fundamental-of-Programming" color="#1ABC9C"> 
+        <a href="https://github.com/Gulin7/university-projects/tree/main/Semester%201%20(1st%20year)/Fundamentals%20of%20programming" color="#1ABC9C"> 
           Fundamental of Programming 
         </a>
       </li>
@@ -53,7 +53,7 @@
       </a>
       </li>
       <li> :first_quarter_moon_with_face:
-        <a href="https://github.com/Pufcorina/Object-Oriented-Programming" color="#1ABC9C"> 
+        <a href="https://github.com/Gulin7/university-projects/tree/main/Semester%202%20(1st%20year)/OOP" color="#1ABC9C"> 
            Object Oriented Programming 
         </a>
       </li>
