@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Codes\\university-projects\\Semester 4 (2nd year)\\Database management systems\\Laboratory\\lab1-windows-form\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Codes\\university-projects\\Semester 4 (2nd year)\\Database management systems\\Laboratory\\lab1-windows-form\\lab1-windows-form\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:lab1-windows-form\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C7D9EABC-7A56-4AB4-B979-7A61D8D37570}|lab1-windows-form\\lab1-windows-form.csproj|C:\\Codes\\university-projects\\Semester 4 (2nd year)\\Database management systems\\Laboratory\\lab1-windows-form\\lab1-windows-form\\App.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{C7D9EABC-7A56-4AB4-B979-7A61D8D37570}|lab1-windows-form\\lab1-windows-form.csproj|solutionrelative:lab1-windows-form\\App.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Codes\\university-projects\\Semester 4 (2nd year)\\Database management systems\\Laboratory\\lab1-windows-form\\lab1-windows-form\\Form1.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:lab1-windows-form\\Form1.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C7D9EABC-7A56-4AB4-B979-7A61D8D37570}|lab1-windows-form\\lab1-windows-form.csproj|c:\\codes\\university-projects\\semester 4 (2nd year)\\database management systems\\laboratory\\lab1-windows-form\\lab1-windows-form\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7D9EABC-7A56-4AB4-B979-7A61D8D37570}|lab1-windows-form\\lab1-windows-form.csproj|solutionrelative:lab1-windows-form\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7D9EABC-7A56-4AB4-B979-7A61D8D37570}|lab1-windows-form\\lab1-windows-form.csproj|C:\\Codes\\university-projects\\Semester 4 (2nd year)\\Database management systems\\Laboratory\\lab1-windows-form\\lab1-windows-form\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7D9EABC-7A56-4AB4-B979-7A61D8D37570}|lab1-windows-form\\lab1-windows-form.csproj|solutionrelative:lab1-windows-form\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,31 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 155,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "C:\\Codes\\university-projects\\Semester 4 (2nd year)\\Database management systems\\Laboratory\\lab1-windows-form\\lab1-windows-form\\Form1.Designer.cs",
-              "RelativeDocumentMoniker": "lab1-windows-form\\Form1.Designer.cs",
-              "ToolTip": "C:\\Codes\\university-projects\\Semester 4 (2nd year)\\Database management systems\\Laboratory\\lab1-windows-form\\lab1-windows-form\\Form1.Designer.cs",
-              "RelativeToolTip": "lab1-windows-form\\Form1.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T17:17:36.337Z"
+              "DocumentIndex": 0,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Codes\\university-projects\\Semester 4 (2nd year)\\Database management systems\\Laboratory\\lab1-windows-form\\lab1-windows-form\\App.config",
+              "RelativeDocumentMoniker": "lab1-windows-form\\App.config",
+              "ToolTip": "C:\\Codes\\university-projects\\Semester 4 (2nd year)\\Database management systems\\Laboratory\\lab1-windows-form\\lab1-windows-form\\App.config",
+              "RelativeToolTip": "lab1-windows-form\\App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-04-10T06:30:16.114Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Codes\\university-projects\\Semester 4 (2nd year)\\Database management systems\\Laboratory\\lab1-windows-form\\lab1-windows-form\\Form1.cs",
               "RelativeDocumentMoniker": "lab1-windows-form\\Form1.cs",
               "ToolTip": "C:\\Codes\\university-projects\\Semester 4 (2nd year)\\Database management systems\\Laboratory\\lab1-windows-form\\lab1-windows-form\\Form1.cs",
               "RelativeToolTip": "lab1-windows-form\\Form1.cs",
-              "ViewState": "AQIAAFcAAAAAAAAAAAAgwEEAAAAAAAAA",
+              "ViewState": "AQIAACIAAAAAAAAAAAAAADEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-27T08:24:54.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Codes\\university-projects\\Semester 4 (2nd year)\\Database management systems\\Laboratory\\lab1-windows-form\\lab1-windows-form\\Program.cs",
+              "RelativeDocumentMoniker": "lab1-windows-form\\Program.cs",
+              "ToolTip": "C:\\Codes\\university-projects\\Semester 4 (2nd year)\\Database management systems\\Laboratory\\lab1-windows-form\\lab1-windows-form\\Program.cs",
+              "RelativeToolTip": "lab1-windows-form\\Program.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAcwBIAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T06:42:42.407Z",
               "EditorCaption": ""
             }
           ]

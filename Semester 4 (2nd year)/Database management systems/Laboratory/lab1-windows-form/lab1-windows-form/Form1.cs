@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data;
 using System.Data.SqlClient;
+using System.Configuration;
 
 
 namespace lab1_windows_form
@@ -16,16 +17,21 @@ namespace lab1_windows_form
     public partial class Form1 : Form
     {
         SqlConnection myConnection;
-        SqlDataAdapter daGames;
-        SqlDataAdapter daDLCs;
+        SqlDataAdapter daParent;
+        SqlDataAdapter daChild;
         DataSet myDataSet;
-        BindingSource bsGames;
-        BindingSource bsDLCs;
+        BindingSource bsParent;
+        BindingSource bsChild;
 
         SqlCommandBuilder myCommandBuilder;
 
-        string queryGames = "SELECT * FROM Games";
-        string queryDLCs = "SELECT * FROM DLCs";
+        //string parentTable = ConfigurationSettings.AppSettings[parentTable];
+        String parentTable;
+        String childTable;
+        String foreignKey;
+
+        String queryParent;
+        String queryChild; 
 
         public Form1()
         {
@@ -35,43 +41,51 @@ namespace lab1_windows_form
 
         void FillData()
         {
+            parentTable = ConfigurationManager.AppSettings["parentTable"];
+            childTable = ConfigurationManager.AppSettings["childTable"];
+            foreignKey = ConfigurationManager.AppSettings["foreignKey"];
+
+            queryParent = $"SELECT * FROM {parentTable}";
+            queryChild = $"SELECT * FROM {childTable}";
+
+
             //SQLConnection
             myConnection =
                 new SqlConnection(getConnectionString());
 
             //SqlDataAdapter (for parent table and child table), DataSet
-            daGames = new SqlDataAdapter(queryGames, myConnection);
-            daDLCs = new SqlDataAdapter(queryDLCs, myConnection);
+            daParent = new SqlDataAdapter(queryParent, myConnection);
+            daChild = new SqlDataAdapter(queryChild, myConnection);
             myDataSet = new DataSet();
-            daGames.Fill(myDataSet, "Games");
-            daDLCs.Fill(myDataSet, "DLCs");
+            daParent.Fill(myDataSet, parentTable);
+            daChild.Fill(myDataSet, childTable);
 
             //fill in insert, update, delete commands
-            myCommandBuilder = new SqlCommandBuilder(daDLCs);
+            myCommandBuilder = new SqlCommandBuilder(daChild);
 
             //DataRelation (parent-child rel) added to the DataSet
-            DataRelation drAreasDLCs = new DataRelation("GamesDLCs",
-                               myDataSet.Tables["Games"].Columns["game_id"],
-                                              myDataSet.Tables["DLCs"].Columns["game_id"]);
+            DataRelation drAreasDLCs = new DataRelation("tableRelation",
+                               myDataSet.Tables[parentTable].Columns[foreignKey],
+                                              myDataSet.Tables[childTable].Columns[foreignKey]);
             myDataSet.Relations.Add(drAreasDLCs);
 
             //Method 1:
             // fill data into the DataGridView using 
             // the properties DataSource, DataMember
-            this.GridGames.DataSource = myDataSet.Tables["Games"];
+            this.GridGames.DataSource = myDataSet.Tables[parentTable];
             this.GridDLCs.DataSource = this.GridGames.DataSource;
-            this.GridDLCs.DataMember = "GamesDLCs";
+            this.GridDLCs.DataMember = "tableRelation";
             // so from what I understand, it gets the data from the Games table
             // and then it gets the data from the DLCs table that is related to the Games table
 
             //Method 2:
             //fill data into the DataGridView using method2: using DataBinding
-            /* bsGames = new BindingSource();
-             bsGames.DataSource = myDataSet.Tables["Games"];
-             bsDLCs = new BindingSource(bsGames, "GamesDLCs");
+            /* bsParent = new BindingSource();
+             bsParent.DataSource = myDataSet.Tables["Games"];
+             bsChild = new BindingSource(bsParent, "GamesDLCs");
 
-             this.GridGames.DataSource = bsGames;
-             this.GridDLCs.DataSource = bsDLCs;*/
+             this.GridGames.DataSource = bsParent;
+             this.GridDLCs.DataSource = bsChild;*/
 
             /*
              * insert, update, delete commands: via SqlDataAdapter properties
@@ -108,7 +122,7 @@ namespace lab1_windows_form
         private void button1_Click(object sender, EventArgs e)
         {
             try { 
-                daDLCs.Update(myDataSet, "DLCs");
+                daChild.Update(myDataSet, childTable);
             }
             catch (Exception vsIsShit)
             {
@@ -123,28 +137,28 @@ namespace lab1_windows_form
             /* 
             myConnection = new SqlConnection(getConnectionString());
             myDataSet = new DataSet();
-            daGames = new SqlDataAdapter(queryGames, myConnection);
-            daDLCs = new SqlDataAdapter(queryDLCs, myConnection);
-            daGames.Fill(myDataSet, "Games");
-            daDLCs.Fill(myDataSet, "DLCs");
+            daParent = new SqlDataAdapter(queryParent, myConnection);
+            daChild = new SqlDataAdapter(queryChild, myConnection);
+            daParent.Fill(myDataSet, "Games");
+            daChild.Fill(myDataSet, "DLCs");
 
             //DataRelation (parent-child rel) added to the DataSet
-            DataRelation drGamesDLCs = new DataRelation("GamesDLCs",
+            DataRelation drGamesDLCs = new DataRelation("tableRelation",
                                myDataSet.Tables["Games"].Columns["game_id"],
                                               myDataSet.Tables["DLCs"].Columns["game_id"]);
             myDataSet.Relations.Add(drGamesDLCs);
 
-            bsGames = new BindingSource();
-            bsDLCs = new BindingSource();
+            bsParent = new BindingSource();
+            bsChild = new BindingSource();
 
-            bsGames.DataSource = myDataSet;
-            bsGames.DataMember = "Games";
+            bsParent.DataSource = myDataSet;
+            bsParent.DataMember = "Games";
 
-            bsDLCs.DataSource = bsGames;
-            bsDLCs.DataMember = "DLCs";
+            bsChild.DataSource = bsParent;
+            bsChild.DataMember = "DLCs";
 
-            this.GridGames.DataSource = bsGames;
-            this.GridDLCs.DataSource = bsDLCs;*/
+            this.GridGames.DataSource = bsParent;
+            this.GridDLCs.DataSource = bsChild;*/
         }
 
         private void GridProjects_CellContentClick(object sender, DataGridViewCellEventArgs e)
