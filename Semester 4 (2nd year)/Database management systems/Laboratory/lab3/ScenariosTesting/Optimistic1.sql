@@ -1,0 +1,13 @@
+USE UniversityDBMS
+
+ALTER DATABASE UniversityDBMS SET ALLOW_SNAPSHOT_ISOLATION ON
+
+SELECT * FROM Students
+INSERT INTO Students VALUES(33, 'Tudor', 'Gulin')
+DELETE Students
+
+WAITFOR DELAY '00:00:10'
+BEGIN TRAN
+UPDATE Students SET LastName = 'Pop' WHERE StudentID = 33;
+waitfor delay '00:00:10'
+COMMIT TRAN
