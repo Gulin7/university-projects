@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Context docBase="C:\Users\Sergiu\Desktop\Uni_projects\SEM4\web\HW\HW8_JSP\profile_management_web\src\main\webapp">
+  <Resources cacheMaxSize="10240">
+    <PreResources base="C:/Users/Sergiu/Desktop/Uni_projects/SEM4/web/HW/HW8_JSP/profile_management_web/target/classes" className="org.apache.catalina.webresources.DirResourceSet" webAppMount="/WEB-INF/classes"/>
+    <PostResources base="C:/Users/Sergiu/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/javax.servlet-api-3.1.0.jar"/>
+    <PostResources base="C:/Users/Sergiu/.m2/repository/mysql/mysql-connector-java/8.0.30/mysql-connector-java-8.0.30.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/mysql-connector-java-8.0.30.jar"/>
+    <PostResources base="C:/Users/Sergiu/.m2/repository/com/google/protobuf/protobuf-java/3.19.4/protobuf-java-3.19.4.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/protobuf-java-3.19.4.jar"/>
+  </Resources>
+</Context>
