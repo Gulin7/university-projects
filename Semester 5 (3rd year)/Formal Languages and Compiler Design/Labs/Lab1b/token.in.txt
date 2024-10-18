@@ -1,0 +1,7 @@
+break	try	catch	char	class	const	continue
+default	delete	auto	else	friend	for	float
+long	new	operator	private	protected	public	return
+short	sizeof	static	this	typedef	enum	throw
+mutable	struct	case	register	switch	and	or
+namespace	static_cast	goto	not	xor	bool	do
+double	int	unsigned	void	virtual	union	while
