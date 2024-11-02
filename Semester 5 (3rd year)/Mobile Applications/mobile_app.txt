@@ -1,0 +1,8 @@
+Labs 	- 1 Native App (kotlin)
+	- 1 Non-Native App (flutter)
+	- Database
+	- Server
+	- can present in advance => attendance not mandatory
+	- >= 4.5 to qualify for exam
+	- exam examples are on mr. Dan Cojocaru's GitHub (2h practical exam)
+Lecture - attend xD

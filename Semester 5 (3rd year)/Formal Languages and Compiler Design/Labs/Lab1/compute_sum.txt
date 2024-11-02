@@ -1,0 +1,12 @@
+#include <iostream>
+
+using namespace std
+
+// compute the sum of 2 numbers
+int main()
+{
+    int a, b
+    cin >> a >> b
+    cout << a + b
+    return 0
+}

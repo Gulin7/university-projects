@@ -1,0 +1,5 @@
+The G++ Programming Language works the same way as C++,
+but it has the following differences:
+- no ";" at the end of each line
+- replace "&&" with "and" and "||" with "or"
+- whenever you have a statement you must always use "{" and "}"

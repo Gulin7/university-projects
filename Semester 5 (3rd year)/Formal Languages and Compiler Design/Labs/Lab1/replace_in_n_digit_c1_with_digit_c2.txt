@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std
+long long a,n,c1,c2,nr,p=1
+
+// replace c1 with c2(digits) in n
+int main()
+{
+    cin>>n>>c1>>c2
+    while(n != 0)
+    {
+        a = n%10
+        if(a==c1)
+        {
+	   nr=nr+c2*p
+        }
+	else
+        {
+    	    nr=nr+a*p
+        }
+        n=n/10
+        p=p*10
+    }
+    if(n==0 && c1==0)
+    {
+        cout<<c2
+    }
+    else
+    {
+    	cout<<nr
+    }
+    return 0
+}

@@ -1,0 +1,43 @@
+#include <bits/stdc++.h>
+
+using namespace std
+
+
+// sort an array using quick_sort
+void quick_sort( int v[100005],int st,int dr)
+{
+    int i=st,j=dr,p=v[(i+j)/2]
+    while(i<=j)
+    {
+        while(v[i]<p) // missing "{" and "}"
+            i++
+        while(v[j]>p) // missing "{" and "}"
+            j--
+        if(i<=j)
+        {
+            swap(v[i],v[j])
+            i++
+            j--
+        }
+    }
+    if(st<j)
+            quick_sort(v,st,j)
+        if(dr>i)
+            quick_sort(v,i,dr)
+}
+
+int main()
+{
+    int n, v[100005]; // wrong syntax
+    cin>>n; // wrong syntax
+    for(int i=1;i<=n;i++)
+    {
+        cin>>v[i]
+    }
+    quick_sort(v,1,n)
+    for(int i=1;i<=n;i++)
+    {
+        cout<<v[i]<<' '
+    }
+    return 0
+}

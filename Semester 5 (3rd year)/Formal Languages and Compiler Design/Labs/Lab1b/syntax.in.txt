@@ -1,0 +1,39 @@
+program ::= "int main()" cmpdstmt decllist
+
+decllist ::= declaration ";" | declaration ";" decllist
+
+declaration ::= type IDENTIFIER
+
+type1 ::= "BOOL" | "CHAR" | "INT" | "FLOAT" | "DOUBLE" | "LONG LONG" | "UNSIGNED ..."
+
+arraydecl ::= type "[" nr "]"
+
+type  ::= type1|arraydecl
+
+cmpdstmt ::= "{" stmtlist "}"
+
+stmtlist ::= stmt | stmt ";" stmtlist
+
+stmt ::= simplstmt | structstmt
+
+simplstmt ::= assignstmt | iostmt
+
+assignstmt ::= IDENTIFIER "=" expression
+
+expression ::= expression "+" term | term
+
+term ::= term "*" factor | factor
+
+factor ::= "(" expression ")" | IDENTIFIER | constant
+
+iostmt ::= "READ" | "WRITE" "(" IDENTIFIER ")"
+
+structstmt ::= cmpdstmt | ifstmt | whilestmt
+
+ifstmt ::= "IF" condition "{" stmt "}" ["ELSE" "{" stmt "{"]
+
+whilestmt ::= "WHILE" condition "{" stmt "}"
+
+condition ::= "(" "(" expression RELATION expression ")" "and"/"or" ... ")"
+
+RELATION ::= "<" | "<=" | "=" | "!=" | ">=" | ">"

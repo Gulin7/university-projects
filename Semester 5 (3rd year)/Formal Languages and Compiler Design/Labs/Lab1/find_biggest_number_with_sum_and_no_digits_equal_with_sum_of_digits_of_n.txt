@@ -1,0 +1,32 @@
+#include <iostream>
+
+using namespace std
+
+// find the biggest natural number that has the sum of it's digits and the total
+// number of digits equal with the sum of digits of n
+int main()
+{
+    int n, sumac=0, nrcif=0
+    cin>>n
+    while(n>0)
+    {
+        sumac=sumac+n%10
+        n=n/10;
+    }
+    nrcif=sumac
+    while(nrcif > 0)
+    {
+        if(sumac>=9)
+        {
+            cout<<9
+            sumac=sumac-9
+        }
+        else
+        {
+            cout<<sumac
+            sumac=0
+        }
+        nrcif--
+    }
+    return 0
+}
