@@ -1,0 +1,27 @@
+<div>
+  <table>
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Rank</th>
+    </tr>
+    <tr *ngFor="let child of children; index as i">
+      <td>{{ i + 1 }}</td>
+      <label>
+        Name:
+        <input [(ngModel)]="child.name" name="name" required />
+      </label>
+      <label>
+        Rank:
+        <input [(ngModel)]="child.rank" name="rank" required />
+      </label>
+      <button (click)="saveChild(child.id, child.name, child.rank)">
+        Save
+      </button>
+    </tr>
+  </table>
+</div>
+<div *ngFor="let child of updatedChildren">
+  {{ child.name }}, {{ child.rank }}
+</div>
+<button (click)="submitRequest()">Submit All Children</button>

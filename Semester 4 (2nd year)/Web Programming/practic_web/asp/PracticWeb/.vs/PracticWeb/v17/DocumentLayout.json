@@ -1,0 +1,104 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Codes\\practic_web\\asp\\PracticWeb\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7568EAEA-52A1-415C-B0B3-39CBC8A0E66A}|PracticWeb.csproj|c:\\codes\\practic_web\\asp\\practicweb\\controllers\\childclasscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7568EAEA-52A1-415C-B0B3-39CBC8A0E66A}|PracticWeb.csproj|solutionrelative:controllers\\childclasscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7568EAEA-52A1-415C-B0B3-39CBC8A0E66A}|PracticWeb.csproj|c:\\codes\\practic_web\\asp\\practicweb\\controllers\\parentclasscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7568EAEA-52A1-415C-B0B3-39CBC8A0E66A}|PracticWeb.csproj|solutionrelative:controllers\\parentclasscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7568EAEA-52A1-415C-B0B3-39CBC8A0E66A}|PracticWeb.csproj|c:\\codes\\practic_web\\asp\\practicweb\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7568EAEA-52A1-415C-B0B3-39CBC8A0E66A}|PracticWeb.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7568EAEA-52A1-415C-B0B3-39CBC8A0E66A}|PracticWeb.csproj|c:\\codes\\practic_web\\asp\\practicweb\\model\\parentclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7568EAEA-52A1-415C-B0B3-39CBC8A0E66A}|PracticWeb.csproj|solutionrelative:model\\parentclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Codes\\practic_web\\asp\\PracticWeb\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "C:\\Codes\\practic_web\\asp\\PracticWeb\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T05:10:23.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ParentClassController.cs",
+              "DocumentMoniker": "C:\\Codes\\practic_web\\asp\\PracticWeb\\Controllers\\ParentClassController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ParentClassController.cs",
+              "ToolTip": "C:\\Codes\\practic_web\\asp\\PracticWeb\\Controllers\\ParentClassController.cs",
+              "RelativeToolTip": "Controllers\\ParentClassController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T04:38:03.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ChildClassController.cs",
+              "DocumentMoniker": "C:\\Codes\\practic_web\\asp\\PracticWeb\\Controllers\\ChildClassController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ChildClassController.cs",
+              "ToolTip": "C:\\Codes\\practic_web\\asp\\PracticWeb\\Controllers\\ChildClassController.cs",
+              "RelativeToolTip": "Controllers\\ChildClassController.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAkwD8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T20:10:37.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ParentClass.cs",
+              "DocumentMoniker": "C:\\Codes\\practic_web\\asp\\PracticWeb\\Model\\ParentClass.cs",
+              "RelativeDocumentMoniker": "Model\\ParentClass.cs",
+              "ToolTip": "C:\\Codes\\practic_web\\asp\\PracticWeb\\Model\\ParentClass.cs",
+              "RelativeToolTip": "Model\\ParentClass.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T04:38:26.335Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

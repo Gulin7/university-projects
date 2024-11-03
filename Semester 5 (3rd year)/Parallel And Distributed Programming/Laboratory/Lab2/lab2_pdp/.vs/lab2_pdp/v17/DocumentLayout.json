@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Codes\\university-projects\\Semester 5 (3rd year)\\Parallel And Distributed Programming\\Laboratory\\Lab2\\lab2_pdp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F78D5760-95D4-4E54-A510-1386AB1AFBF0}|lab2_pdp\\lab2_pdp.vcxproj|C:\\Codes\\university-projects\\Semester 5 (3rd year)\\Parallel And Distributed Programming\\Laboratory\\Lab2\\lab2_pdp\\lab2_pdp\\lab2_pdp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F78D5760-95D4-4E54-A510-1386AB1AFBF0}|lab2_pdp\\lab2_pdp.vcxproj|solutionrelative:lab2_pdp\\lab2_pdp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "lab2_pdp.cpp",
+              "DocumentMoniker": "C:\\Codes\\university-projects\\Semester 5 (3rd year)\\Parallel And Distributed Programming\\Laboratory\\Lab2\\lab2_pdp\\lab2_pdp\\lab2_pdp.cpp",
+              "RelativeDocumentMoniker": "lab2_pdp\\lab2_pdp.cpp",
+              "ToolTip": "C:\\Codes\\university-projects\\Semester 5 (3rd year)\\Parallel And Distributed Programming\\Laboratory\\Lab2\\lab2_pdp\\lab2_pdp\\lab2_pdp.cpp",
+              "RelativeToolTip": "lab2_pdp\\lab2_pdp.cpp",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAAD4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-28T15:24:19.193Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

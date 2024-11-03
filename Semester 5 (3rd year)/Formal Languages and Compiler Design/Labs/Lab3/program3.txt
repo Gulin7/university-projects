@@ -1,0 +1,13 @@
+int n
+cin>>n
+
+int sum = 0
+
+while ( n != 0) do {
+    int x
+    cin>>x
+    sum = sum +
+    n = n - 1
+}
+
+cout<<sum

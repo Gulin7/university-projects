@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1981ce3e-42b7-4e45-9078-82d8df0683cb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../Formal Languages and Compiler Design/Labs/Lab3/PIF.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Formal Languages and Compiler Design/Labs/Lab3/ST.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Formal Languages and Compiler Design/Labs/Lab3/analyzer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Formal Languages and Compiler Design/Labs/Lab3/documentation" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Formal Languages and Compiler Design/Labs/Lab3/hashtable.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Formal Languages and Compiler Design/Labs/Lab3/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Formal Languages and Compiler Design/Labs/Lab3/program1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Formal Languages and Compiler Design/Labs/Lab3/program2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Formal Languages and Compiler Design/Labs/Lab3/program3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Formal Languages and Compiler Design/Labs/Lab3/program_error.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Formal Languages and Compiler Design/Labs/Lab3/symboltables.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Formal Languages and Compiler Design/Labs/Lab3/token.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab2/belaso_cipher.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab2/carmichael_number.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab2/find_pseudoprime_bases.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab2/hill_cipher.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab3/millerRabin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab3/pollardsMethod.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Formal Languages and Compiler Design/Labs/Lab1b/~$lab1b.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Lab1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/gcd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject/.idea/pythonProject.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject/hashTable.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject/symbolTable.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject/testSymbolTableWithConstants.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject/testSymbolTableWithIdentifiers.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="2oKnrVuZwuR42hcUGBAB1nSyClC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1981ce3e-42b7-4e45-9078-82d8df0683cb" name="Changes" comment="" />
+      <created>1730627333679</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730627333679</updated>
+      <workItem from="1730627335113" duration="3000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

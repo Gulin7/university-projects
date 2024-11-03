@@ -1,0 +1,12 @@
+<form (ngSubmit)="createChild()">
+  <label>
+    Name:
+    <input [(ngModel)]="child.name" name="name" required />
+  </label>
+  <label>
+    Rank:
+    <input [(ngModel)]="child.rank" name="rank" required />
+  </label>
+
+  <button type="submit">Create</button>
+</form>

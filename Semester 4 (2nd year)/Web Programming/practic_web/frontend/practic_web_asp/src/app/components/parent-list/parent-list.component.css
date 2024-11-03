@@ -1,0 +1,12 @@
+table {
+  width: 100%;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+button {
+  margin-top: 10px;
+}

@@ -1,0 +1,7 @@
+<form (ngSubmit)="updateParent()">
+    <label>
+        Name:
+        <input [(ngModel)]="parent.name" name="name" required>
+    </label>
+    <button type="submit">Update</button>
+</form>

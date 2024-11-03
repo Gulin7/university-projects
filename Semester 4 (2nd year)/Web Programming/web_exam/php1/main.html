@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web App</title>
+</head>
+<body>
+    <h2>Websites</h2>
+    <table id="webtable">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Number of documents</th>
+        </tr>
+    </table>
+    <br>
+    <form id="formular">
+        <label for="id">Document Id</label>
+        <input type="number" id="id" name="id"><br>
+        <label for="keyword1">Keyword 1</label>
+        <input type="text" id="keyword1" name="keyword1"><br>
+        <label for="keyword2">Keyword 2</label>
+        <input type="text" id="keyword2" name="keyword2"><br>
+        <label for="keyword3">Keyword 3</label>
+        <input type="text" id="keyword3" name="keyword3"><br>
+        <label for="keyword4">Keyword 4</label>
+        <input type="text" id="keyword4" name="keyword4"><br>
+        <label for="keyword5">Keyword 5</label>
+        <input type="text" id="keyword5" name="keyword5"><br>
+        <input type="submit" value="edit">
+    </form>
+    <br>
+    <input type="text" id="keywords" name="keywords">
+    <button id="see">find matches</button>
+    <ul id="matches"></ul>
+    <script src="script.js"></script>
+</body>
+</html>
