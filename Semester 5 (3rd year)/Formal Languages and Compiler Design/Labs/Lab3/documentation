@@ -1,0 +1,83 @@
+# LexicalAnalyzer Documentation
+
+## Overview
+
+The `LexicalAnalyzer` class is designed to implement a lexical analysis algorithm that scans source code files to identify and categorize tokens. It generates a **Program Internal Form (PIF)** and manages symbol tables for constants and identifiers. The analyzer distinguishes between reserved words, operators, separators, identifiers, and constants based on predefined rules.
+
+### Dependencies
+
+- **Enum**: For defining token types using enumerations.
+- **re**: For regular expression operations to split and match tokens.
+- **SymbolTableConstants**: A symbol table for managing constants.
+- **SymbolTableIdentifiers**: A symbol table for managing identifiers.
+
+## Enum: TokenTypes
+
+An enumeration that defines various types of tokens that the lexical analyzer can recognize.
+
+### Members:
+- `IDENTIFIER`: Represents identifiers in the source code.
+- `CONSTANT`: Represents constant values in the source code.
+- `OPERATOR`: Represents operators (e.g., `+`, `-`, `*`, `/`).
+- `RESERVED_WORD`: Represents reserved keywords in the programming language.
+- `SEPARATOR`: Represents separators (e.g., `;`, `,`, `(`, `)`).
+
+## Class: LexicalAnalyzer
+
+### Attributes:
+- `filename`: The path to the source code file to be analyzed.
+- `token_file`: The path to the file containing token definitions.
+- `constant_table`: An instance of `SymbolTableConstants` for managing constant symbols.
+- `identifiers_table`: An instance of `SymbolTableIdentifiers` for managing identifier symbols.
+- `pif`: A list that stores the Program Internal Form (PIF) tuples.
+- `reserved_words`: A dictionary that maps reserved words to their corresponding values.
+- `operators`: A dictionary that maps operators to their corresponding values.
+- `separators`: A dictionary that maps separators to their corresponding values.
+- `constants_count`: A counter to keep track of the number of constants added.
+
+### Methods:
+
+#### `__init__(self, filename, token_file)`
+Initializes the `LexicalAnalyzer` with the specified source code and token file paths.
+- **Parameters**:
+  - `filename` (str): Path to the source code file.
+  - `token_file` (str): Path to the token definitions file.
+
+#### `scan_file(self)`
+Analyzes the source code file line by line, generates the PIF, and manages the symbol tables.
+- Reads the source code from `filename`.
+- Tokenizes each line using regular expressions to identify reserved words, operators, separators, identifiers, and constants.
+- Appends recognized tokens to the PIF.
+- Writes the contents of the identifier and constant tables to `ST.out` file.
+- Writes the PIF entries to `PIF.out` file.
+- Reports lexical errors, if any, during the scanning process.
+
+#### `get_tokens(self)`
+Parses token definitions from the token file and populates the dictionaries for reserved words, operators, and separators.
+- Reads the token definitions from `token_file`.
+- Updates `reserved_words`, `operators`, and `separators` dictionaries based on the contents of the token file.
+
+#### `is_identifier(self, string)`
+Checks if a given string is a valid identifier based on naming conventions.
+- **Parameters**:
+  - `string` (str): The string to check.
+- **Returns**:
+  - `bool`: `True` if valid, `False` otherwise.
+
+#### `is_constant(self, string)`
+Checks if a given string is a valid constant (numeric or character/string constant).
+- **Parameters**:
+  - `string` (str): The string to check.
+- **Returns**:
+  - `bool`: `True` if valid, `False` otherwise.
+
+## Usage Example
+
+```python
+from analyzer import LexicalAnalyzer
+
+# Create an instance of the LexicalAnalyzer
+analyzer = LexicalAnalyzer('path/to/source_code.txt', 'path/to/token_definitions.txt')
+
+# Perform lexical analysis
+analyzer.scan_file()

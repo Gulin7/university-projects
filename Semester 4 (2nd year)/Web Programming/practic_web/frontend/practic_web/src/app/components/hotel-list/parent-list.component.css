@@ -1,0 +1,12 @@
+table {
+  width: 70%;
+}
+
+td {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  margin-top: 10px;
+}

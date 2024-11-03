@@ -1,0 +1,100 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Codes\\university-projects\\Semester 4 (2nd year)\\Web Programming\\final_exam\\PDP_LAB1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4884DD1F-9D70-4646-82C4-1A87595EC0CC}|PDP_LAB1\\PDP_LAB1.vcxproj|C:\\Codes\\university-projects\\Semester 4 (2nd year)\\Web Programming\\final_exam\\PDP_LAB1\\PDP_LAB1\\PDP_LAB1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4884DD1F-9D70-4646-82C4-1A87595EC0CC}|PDP_LAB1\\PDP_LAB1.vcxproj|solutionrelative:PDP_LAB1\\PDP_LAB1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4884DD1F-9D70-4646-82C4-1A87595EC0CC}|PDP_LAB1\\PDP_LAB1.vcxproj|C:\\Codes\\university-projects\\Semester 4 (2nd year)\\Web Programming\\final_exam\\PDP_LAB1\\PDP_LAB1\\test_doc.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4884DD1F-9D70-4646-82C4-1A87595EC0CC}|PDP_LAB1\\PDP_LAB1.vcxproj|solutionrelative:PDP_LAB1\\test_doc.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4884DD1F-9D70-4646-82C4-1A87595EC0CC}|PDP_LAB1\\PDP_LAB1.vcxproj|C:\\Codes\\university-projects\\Semester 4 (2nd year)\\Web Programming\\final_exam\\PDP_LAB1\\PDP_LAB1\\accounts.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4884DD1F-9D70-4646-82C4-1A87595EC0CC}|PDP_LAB1\\PDP_LAB1.vcxproj|solutionrelative:PDP_LAB1\\accounts.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\include\\random||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "random",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\include\\random",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\include\\random",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\include\\random",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\include\\random",
+              "ViewState": "AQIAALkHAAAAAAAAAAAtwMcHAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-10-21T16:00:29.227Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "accounts.txt",
+              "DocumentMoniker": "C:\\Codes\\university-projects\\Semester 4 (2nd year)\\Web Programming\\final_exam\\PDP_LAB1\\PDP_LAB1\\accounts.txt",
+              "RelativeDocumentMoniker": "PDP_LAB1\\accounts.txt",
+              "ToolTip": "C:\\Codes\\university-projects\\Semester 4 (2nd year)\\Web Programming\\final_exam\\PDP_LAB1\\PDP_LAB1\\accounts.txt",
+              "RelativeToolTip": "PDP_LAB1\\accounts.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-10-21T15:06:32.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "test_doc.txt",
+              "DocumentMoniker": "C:\\Codes\\university-projects\\Semester 4 (2nd year)\\Web Programming\\final_exam\\PDP_LAB1\\PDP_LAB1\\test_doc.txt",
+              "RelativeDocumentMoniker": "PDP_LAB1\\test_doc.txt",
+              "ToolTip": "C:\\Codes\\university-projects\\Semester 4 (2nd year)\\Web Programming\\final_exam\\PDP_LAB1\\PDP_LAB1\\test_doc.txt",
+              "RelativeToolTip": "PDP_LAB1\\test_doc.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-10-21T14:09:47.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PDP_LAB1.cpp",
+              "DocumentMoniker": "C:\\Codes\\university-projects\\Semester 4 (2nd year)\\Web Programming\\final_exam\\PDP_LAB1\\PDP_LAB1\\PDP_LAB1.cpp",
+              "RelativeDocumentMoniker": "PDP_LAB1\\PDP_LAB1.cpp",
+              "ToolTip": "C:\\Codes\\university-projects\\Semester 4 (2nd year)\\Web Programming\\final_exam\\PDP_LAB1\\PDP_LAB1\\PDP_LAB1.cpp",
+              "RelativeToolTip": "PDP_LAB1\\PDP_LAB1.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAANkAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-21T13:55:13.543Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

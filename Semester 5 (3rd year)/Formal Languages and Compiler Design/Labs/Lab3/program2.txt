@@ -1,0 +1,6 @@
+string unu="a bc"
+string doi = "ab"
+char trei = 'a'
+cout<<unu
+cout<<doi
+cout<<trei

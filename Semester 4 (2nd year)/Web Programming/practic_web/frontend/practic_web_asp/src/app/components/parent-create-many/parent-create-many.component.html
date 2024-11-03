@@ -1,0 +1,8 @@
+<div>
+    <input [(ngModel)]="parentName" placeholder="Enter parent's name">
+    <button (click)="saveParent()">Save Parent</button>
+</div>
+<div *ngFor="let parent of parents">
+    {{parent.name}}
+</div>
+<button (click)="submitParents()">Submit All Parents</button>

@@ -1,0 +1,13 @@
+<nav>
+  <button (click)="hotelList()">MAKE HOTEL RESERVATION</button>
+  <button (click)="flightList()">MAKE FLIGHT RESERVATION</button>
+  <button (click)="cancelReservation()">CANCEL RESERVATIONS</button>
+</nav>
+<table>
+  <tr *ngFor="let child of children">
+    <td>{{ child.date }}</td>
+    <td>{{ child.destination }}</td>
+    <td>{{ child.available }}</td>
+    <button (click)="reserve(child)">Reserve</button>
+  </tr>
+</table>

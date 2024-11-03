@@ -1,0 +1,12 @@
+<table>
+    <tr *ngFor="let file of files">
+        <td>{{file.filename}}</td>
+        <td>{{file.filepath}}</td>
+    </tr>
+    <button (click)="nextPage()">Next</button>
+    <button (click)="previousPage()">Previous</button>
+    <label>Page: {{page}}</label>
+    <br />
+    <label>The file with most occurences is: {{filename}}</label>
+    <button (click)="logout()">Logout</button>
+</table>

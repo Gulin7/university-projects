@@ -1,0 +1,27 @@
+<button (click)="createChild()">Create Avatar</button>
+<button (click)="updateChildMany()">Update Many Avatars</button>
+<div>
+  <label>
+    Start:
+    <input [(ngModel)]="start" name="start" required />
+  </label>
+  <label>
+    End:
+    <input [(ngModel)]="end" name="end" required />
+  </label>
+  <button (click)="filter()">Filter Range</button>
+</div>
+<table>
+  <tr>
+    <th>#</th>
+    <th>Name</th>
+    <th>Rank</th>
+  </tr>
+  <tr *ngFor="let child of children; index as i">
+    <td>{{ i + 1 }}</td>
+    <td>{{ child.name }}</td>
+    <td>{{ child.rank }}</td>
+    <td><button (click)="updateChild(child.id)">Update</button></td>
+  </tr>
+</table>
+<button (click)="logout()">Logout</button>

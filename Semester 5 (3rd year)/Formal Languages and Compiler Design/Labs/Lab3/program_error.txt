@@ -1,0 +1,2 @@
+number = 0123
+print(3number);

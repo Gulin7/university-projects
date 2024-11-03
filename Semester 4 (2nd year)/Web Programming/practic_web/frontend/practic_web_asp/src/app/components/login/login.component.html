@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>Login Page</h1>
+
+  <div class="formWrapper">
+    <input type="text" name="username" placeholder="Username:" #username> <br>
+    <input type="password" name="password" placeholder="Password:" #password> <br>
+    <button (click)="login(username.value,password.value)">
+      Login
+    </button>
+    <button (click)="register(username.value, password.value)">
+      Register
+    </button>
+  </div>
+</div>

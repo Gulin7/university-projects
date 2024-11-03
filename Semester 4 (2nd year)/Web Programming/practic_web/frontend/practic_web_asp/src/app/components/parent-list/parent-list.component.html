@@ -1,0 +1,10 @@
+<button (click)="createParent()">Create Parent</button>
+<input type="text" placeholder="name:" #name (input)="refreshFrontend(name.value)" />
+<table>
+  <tr *ngFor="let parent of parents">
+    <td (dblclick)="updateParent(parent.id)">{{parent.name}}</td>
+    <td><button (click)="deleteParent(parent.id)">Delete</button></td>
+  </tr>
+</table>
+<button (click)="createParentMany()">Create Many Parents</button>
+<button (click)="logout()">Logout</button>

@@ -1,0 +1,19 @@
+<div class="container">
+  <h1>Login Page</h1>
+
+  <div class="formWrapper">
+    <input type="text" name="username" placeholder="Username:" #username />
+    <br />
+    <input type="text" name="date" placeholder="Date:" #date /> <br />
+    <input
+      type="text"
+      name="destination"
+      placeholder="Destination:"
+      #destination
+    />
+    <br />
+    <button (click)="register(username.value, date.value, destination.value)">
+      Begin Reservation
+    </button>
+  </div>
+</div>

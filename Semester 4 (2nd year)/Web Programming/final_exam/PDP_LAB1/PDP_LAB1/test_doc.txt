@@ -1,0 +1,28 @@
+DOCUMENTATION
+In the implementation, I have used 2 structures, one for the Operations and one for the Accounts.
+Each account uses a mutex to lock it's balance when trying to perform multiple operations on it.
+The critical section is the balance of the account. There is also a mutex which protects the
+global (shared) variable checkPassed, used by the threads for the periodical review.
+Accounts are stored in a .txt file.
+
+MUTEXES
+-> account_mutex -> locks the account
+
+====================================================================================================
+TEST
+-> Constants: 15 accounts
+1.	-> threads: 1
+	-> numberOfOperations: 100000
+	-> time: 12.2s
+2.	-> threads: 2
+	-> numberOfOperations: 100000
+	-> time: 7.2s
+3.	-> threads: 4
+	-> numberOfOperations: 100000
+	-> time: 4.2s
+4.	-> threads: 8
+	-> numberOfOperations: 100000
+	-> time: 1.1s
+5.	-> threads: 16
+	-> numberOfOperations: 100000
+	-> time: 0.84s
