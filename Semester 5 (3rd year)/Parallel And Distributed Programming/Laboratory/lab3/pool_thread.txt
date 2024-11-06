@@ -1,0 +1,155 @@
+#include <iostream>
+#include <vector>
+#include <thread>
+#include <queue>
+#include <mutex>
+#include <condition_variable>
+#include <functional>
+#include <future>
+#include <chrono>
+
+using Matrix = std::vector<std::vector<int>>;
+using std::cout;
+using std::endl;
+using std::vector;
+using std::future;
+using std::chrono::seconds;
+using std::this_thread::sleep_for;
+
+// Thread Pool Class
+class ThreadPool {
+public:
+    ThreadPool(size_t numThreads);
+    ~ThreadPool();
+
+    template<class F>
+    void enqueueTask(F&& task);
+
+private:
+    std::vector<std::thread> workers;
+    std::queue<std::function<void()>> tasks;
+
+    std::mutex queueMutex;
+    std::condition_variable condition;
+    bool stop;
+
+    void workerThread();
+};
+
+// Thread Pool Constructor: Initialize threads
+ThreadPool::ThreadPool(size_t numThreads) : stop(false) {
+    for (size_t i = 0; i < numThreads; ++i) {
+        workers.emplace_back(&ThreadPool::workerThread, this);
+    }
+}
+
+// Destructor: Join threads
+ThreadPool::~ThreadPool() {
+    {
+        std::unique_lock<std::mutex> lock(queueMutex);
+        stop = true;
+    }
+    condition.notify_all();
+    for (std::thread& worker : workers) {
+        if (worker.joinable()) {
+            worker.join();
+        }
+    }
+}
+
+// Enqueue a task into the queue
+template<class F>
+void ThreadPool::enqueueTask(F&& task) {
+    {
+        std::unique_lock<std::mutex> lock(queueMutex);
+        tasks.emplace(std::forward<F>(task));
+    }
+    condition.notify_one();
+}
+
+// Worker thread function: Process tasks from the queue
+void ThreadPool::workerThread() {
+    while (true) {
+        std::function<void()> task;
+        {
+            std::unique_lock<std::mutex> lock(queueMutex);
+            condition.wait(lock, [this]{ return stop || !tasks.empty(); });
+            if (stop && tasks.empty()) return;
+            task = std::move(tasks.front());
+            tasks.pop();
+        }
+        task();
+    }
+}
+
+// Function to print a matrix
+void printMatrix(const Matrix& matrix) {
+    for (const auto& row : matrix) {
+        for (auto val : row) {
+            cout << val << " ";
+        }
+        cout << endl;
+    }
+}
+
+// Compute a single element of the resulting matrix
+int computeElement(const Matrix& A, const Matrix& B, int row, int col) {
+    int sum = 0;
+    for (size_t i = 0; i < A[0].size(); ++i) {
+        sum += A[row][i] * B[i][col];
+    }
+    return sum;
+}
+
+// Compute task for a portion of the matrix by rows
+void computeTaskRow(const Matrix& A, const Matrix& B, Matrix& Result, int startRow, int endRow) {
+    for (int row = startRow; row < endRow; ++row) {
+        for (int col = 0; col < B[0].size(); ++col) {
+            Result[row][col] = computeElement(A, B, row, col);
+        }
+    }
+}
+
+int main() {
+    // Initialize matrices A and B
+    const int size = 1000; // Reduced for simpler output
+    Matrix A(size, std::vector<int>(size));
+    Matrix B(size, std::vector<int>(size));
+    Matrix Result(size, std::vector<int>(size, 0));
+
+    // Fill matrices with some values
+    for (int i = 0; i < size; i++) {
+        for (int j = 0; j < size; j++) {
+            A[i][j] = (i + j) % 5;
+            B[i][j] = (i + j) % 7;
+        }
+    }
+
+    int numberOfThreads = 8;
+    ThreadPool pool(numberOfThreads);
+
+    // Start timing
+    auto start = std::chrono::high_resolution_clock::now();
+
+    // Divide work by rows and enqueue tasks
+    int rowsPerTask = size / numberOfThreads;
+    for (int i = 0; i < numberOfThreads; ++i) {
+        int startRow = i * rowsPerTask;
+        int endRow = (i == numberOfThreads - 1) ? size : startRow + rowsPerTask;
+
+        pool.enqueueTask([&, startRow, endRow] {
+            computeTaskRow(A, B, Result, startRow, endRow);
+        });
+    }
+
+    // The thread pool destructor will wait for all threads to finish when main exits
+
+    // End timing
+    auto finish = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double> elapsed = finish - start;
+
+    // Print result
+    cout << "Time taken: " << elapsed.count() << " seconds\n";
+
+    return 0;
+}
