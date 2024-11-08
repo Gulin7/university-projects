@@ -134,7 +134,6 @@ class LexicalAnalyzer():
     def is_constant(self, string):
         pattern_char = re.compile("'[a-zA-Z0-9]'")
         pattern_string = re.compile('"[a-zA-Z0-9]*"')
-        if self.finite_automata.check_word_if_integer_constant(string) or pattern_char.fullmatch(
-                string) or pattern_string.fullmatch(string):
+        if self.finite_automata.check_word_if_integer_constant(string):
             return True
         return False
