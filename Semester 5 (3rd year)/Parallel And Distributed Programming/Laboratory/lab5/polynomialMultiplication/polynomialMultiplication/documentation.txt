@@ -1,0 +1,24 @@
+NAIVE
+10000	-> 5.5s
+30000	-> 18.3s
+-----
+NAIVE_THREADS
+4 threads
+10000	-> 6.2s
+30000	-> 9.45s
+8 threads
+10000	-> 3.7s
+30000	-> 6.48s
+-----
+KARATSUBA
+10000	->
+30000	->
+-----
+KARATSUBA_THREADS
+4 threads
+10000	->
+30000	->
+8 threads
+10000	->
+30000	->
+-----

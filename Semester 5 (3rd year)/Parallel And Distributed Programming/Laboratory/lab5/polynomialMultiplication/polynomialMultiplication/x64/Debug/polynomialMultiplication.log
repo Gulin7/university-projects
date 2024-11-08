@@ -1,0 +1,4 @@
+﻿  polynomialMultiplication.cpp
+C:\Codes\university-projects\Semester 5 (3rd year)\Parallel And Distributed Programming\Laboratory\lab5\polynomialMultiplication\polynomialMultiplication\polynomialMultiplication.cpp(60,17): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Codes\university-projects\Semester 5 (3rd year)\Parallel And Distributed Programming\Laboratory\lab5\polynomialMultiplication\polynomialMultiplication\polynomialMultiplication.cpp(79,17): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  polynomialMultiplication.vcxproj -> C:\Codes\university-projects\Semester 5 (3rd year)\Parallel And Distributed Programming\Laboratory\lab5\polynomialMultiplication\x64\Debug\polynomialMultiplication.exe
