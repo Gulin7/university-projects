@@ -1,5 +1,0 @@
-﻿  PDP_LAB1.cpp
-C:\Codes\university-projects\Semester 4 (2nd year)\Web Programming\final_exam\PDP_LAB1\PDP_LAB1\PDP_LAB1.cpp(90,83): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Codes\university-projects\Semester 4 (2nd year)\Web Programming\final_exam\PDP_LAB1\PDP_LAB1\PDP_LAB1.cpp(187,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Codes\university-projects\Semester 4 (2nd year)\Web Programming\final_exam\PDP_LAB1\PDP_LAB1\PDP_LAB1.cpp(189,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  PDP_LAB1.vcxproj -> C:\Codes\university-projects\Semester 4 (2nd year)\Web Programming\final_exam\PDP_LAB1\x64\Debug\PDP_LAB1.exe
