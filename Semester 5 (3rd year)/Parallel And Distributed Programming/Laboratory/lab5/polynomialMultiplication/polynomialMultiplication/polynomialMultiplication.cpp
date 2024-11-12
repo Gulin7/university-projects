@@ -222,9 +222,10 @@ void initialiseData()
     }
     for (int i = 0; i < n; ++i)
     {
-        firstPolynomial.push_back(1);
-        secondPolynomial.push_back(1);
+       firstPolynomial.push_back(1);
+       secondPolynomial.push_back(1);
     }
+
 
     resultPolynomial.resize(2 * n - 1, 0);
 }
