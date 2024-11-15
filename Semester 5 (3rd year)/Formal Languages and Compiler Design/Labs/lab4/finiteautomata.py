@@ -1,41 +1,6 @@
 import re
 
-
 class FiniteAutomata:
-    """ class FiniteAutomata will read the file when it is initialized, will parse the input file and then populate all the fields in the class
-
-    Attributes:
-        states: [] -> is an array which contains all the possible states
-        alphabet: [] -> is an array which contains all the possible letters
-        transitions: {} -> this would represent a map, where the key represents a pair between (state, alphabet_value) and the value represents the projection of the
-        initial_state: "" -> a simple string would be enough because we can have only one initial_state
-        final_states: [] -> the array of final states
-
-    Methods:
-        __init__:
-            - we initialize the FiniteAutomata with the filename
-            - we initialize all the fields
-            - we call the read_from_file method
-
-        read_from_file:
-            - we read from the file and populate all the fields
-
-        print_fa:
-            - we print the FiniteAutomata
-
-        start_menu:
-            - we start a menu where we can print any of the fields
-
-        print_menu:
-            - we print the menu
-
-        check_word_if_integer_constant:
-            - we check if a word is an integer constant
-
-        check_word_if_identifier:
-            - we check if a word is an identifier
-    """
-
     def __init__(self, _filename):
         self.states = []
         self.alphabet = []
@@ -122,6 +87,36 @@ class FiniteAutomata:
                 print(f"q0 = {self.initial_state}\n")
             if option == 5:
                 print(f"F = {self.final_states}\n")
+            if option == 6:
+                if self.is_deterministic():
+                    print("The finite automaton is deterministic.")
+                else:
+                    print("The finite automaton is not deterministic.")
+
+    def is_deterministic(self):
+        # Create a set to store (state, symbol) pairs
+        seen_transitions = set()
+
+        # Iterate over all transitions
+        for (state, symbol), target_state in self.transitions.items():
+            # Check for epsilon (ε) transitions
+            if symbol == "" or symbol == "ε":
+                print(
+                    f"Non-deterministic transition detected: Epsilon (ε) transition from state '{state}' to '{target_state}'.")
+                return False
+
+            # Check if the (state, symbol) pair is already in the set
+            if (state, symbol) in seen_transitions:
+                print(
+                    f"Non-deterministic transition detected: State '{state}' has multiple transitions for symbol '{symbol}'.")
+                return False
+
+            # Add the (state, symbol) pair to the set
+            seen_transitions.add((state, symbol))
+
+        # If no epsilon transitions and no duplicate (state, symbol) pairs are found, it is deterministic
+        print("The finite automaton is deterministic.")
+        return True
 
     def print_menu(self):
         print("press 0 to exit")
@@ -130,6 +125,7 @@ class FiniteAutomata:
         print("press 3 for set of transitions")
         print("press 4 for initial state")
         print("press 5 for final states")
+        print("press 6 to check if the finite automaton is deterministic")
 
     def check_word_if_integer_constant(self, word):
         state = 'q0'

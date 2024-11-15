@@ -1,3 +1,5 @@
+https://github.com/cs-ubbcluj-ro/lab-work-computer-science-2024-Gulin7
+
 ## Finite Automata Documentation
 
 ### 1. Alphabet:
@@ -34,23 +36,25 @@ constchar ::= "string" string ::= char {string} char ::= letter | digit
 The words - predefined tokens are specified between `" "`. The syntactical rules are defined as follows:
 
 #### a. Finite Automaton Definition:
-
-FA = M = {
-Q = q0, q2, q4, g5, q6
-E = _, a, b, c, d, e, f, g, h, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, +, -
+FA=
+M = {
+Q = q0, q1, q2, q3, q4, q5, q6
+E = _, a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, +, -, *, /
 RO =
 start
-q0, _ -> q2
-q2, [a, b, c, d, e, f, g, h, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z] -> q2
+q0, _ -> q1
+q1, [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z] -> q1
 q0, [1, 2, 3, 4, 5, 6, 7, 8, 9] -> q5
 q0, 0 -> q6
 q0, [+, -] -> q4
 q4, [1, 2, 3, 4, 5, 6, 7, 8, 9] -> q5
 q5, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> q5
+q0, [*, /] -> q3
+q3, [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z] -> q3
+q3, [1, 2, 3, 4, 5, 6, 7, 8, 9] -> q3
 end
 q0 = q0
-F = q2, q5, q6
-}
+F = q1, q5, q6
 
 M = {Q, E, RO, q0, F}
 
@@ -90,3 +94,14 @@ check_word_if_integer_constant(word)
 
 2. Identifier Check:
 check_word_if_identifier(word)
+--------------------------
+
+<program>   ::= <identifier> | <integer>
+
+<identifier> ::= "_" <letter> { <letter> }
+<letter>     ::= "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l" | "m" | "n" | "o" | "p" | "q" | "r" | "s" | "t" | "u" | "v" | "w" | "x" | "y" | "z"
+
+<integer>    ::= <signed-integer> | "0"
+<signed-integer> ::= [ "+" | "-" ] <non-zero-digit> { <digit> }
+<non-zero-digit> ::= "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
+<digit>      ::= "0" | <non-zero-digit>
