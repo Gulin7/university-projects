@@ -5,6 +5,26 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2E5025D-7EBF-4D98-948F-5B5EE9F29CCA}|lab4\\lab4.csproj|c:\\codes\\university-projects\\semester 5 (3rd year)\\parallel and distributed programming\\laboratory\\lab4\\lab4\\lab4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2E5025D-7EBF-4D98-948F-5B5EE9F29CCA}|lab4\\lab4.csproj|solutionrelative:lab4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2E5025D-7EBF-4D98-948F-5B5EE9F29CCA}|lab4\\lab4.csproj|c:\\codes\\university-projects\\semester 5 (3rd year)\\parallel and distributed programming\\laboratory\\lab4\\lab4\\lab4\\parser\\common.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2E5025D-7EBF-4D98-948F-5B5EE9F29CCA}|lab4\\lab4.csproj|solutionrelative:lab4\\parser\\common.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2E5025D-7EBF-4D98-948F-5B5EE9F29CCA}|lab4\\lab4.csproj|c:\\codes\\university-projects\\semester 5 (3rd year)\\parallel and distributed programming\\laboratory\\lab4\\lab4\\lab4\\parser\\tasksolution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2E5025D-7EBF-4D98-948F-5B5EE9F29CCA}|lab4\\lab4.csproj|solutionrelative:lab4\\parser\\tasksolution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2E5025D-7EBF-4D98-948F-5B5EE9F29CCA}|lab4\\lab4.csproj|c:\\codes\\university-projects\\semester 5 (3rd year)\\parallel and distributed programming\\laboratory\\lab4\\lab4\\lab4\\parser\\asyncawaitsolution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2E5025D-7EBF-4D98-948F-5B5EE9F29CCA}|lab4\\lab4.csproj|solutionrelative:lab4\\parser\\asyncawaitsolution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2E5025D-7EBF-4D98-948F-5B5EE9F29CCA}|lab4\\lab4.csproj|c:\\codes\\university-projects\\semester 5 (3rd year)\\parallel and distributed programming\\laboratory\\lab4\\lab4\\lab4\\parser\\callbacksolution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2E5025D-7EBF-4D98-948F-5B5EE9F29CCA}|lab4\\lab4.csproj|solutionrelative:lab4\\parser\\callbacksolution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2E5025D-7EBF-4D98-948F-5B5EE9F29CCA}|lab4\\lab4.csproj|c:\\codes\\university-projects\\semester 5 (3rd year)\\parallel and distributed programming\\laboratory\\lab4\\lab4\\lab4\\socket\\sockerhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2E5025D-7EBF-4D98-948F-5B5EE9F29CCA}|lab4\\lab4.csproj|solutionrelative:lab4\\socket\\sockerhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,13 +54,78 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Common.cs",
+              "DocumentMoniker": "C:\\Codes\\university-projects\\Semester 5 (3rd year)\\Parallel And Distributed Programming\\Laboratory\\lab4\\lab4\\lab4\\Parser\\Common.cs",
+              "RelativeDocumentMoniker": "lab4\\Parser\\Common.cs",
+              "ToolTip": "C:\\Codes\\university-projects\\Semester 5 (3rd year)\\Parallel And Distributed Programming\\Laboratory\\lab4\\lab4\\lab4\\Parser\\Common.cs",
+              "RelativeToolTip": "lab4\\Parser\\Common.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAQwDAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T13:19:38.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TaskSolution.cs",
+              "DocumentMoniker": "C:\\Codes\\university-projects\\Semester 5 (3rd year)\\Parallel And Distributed Programming\\Laboratory\\lab4\\lab4\\lab4\\Parser\\TaskSolution.cs",
+              "RelativeDocumentMoniker": "lab4\\Parser\\TaskSolution.cs",
+              "ToolTip": "C:\\Codes\\university-projects\\Semester 5 (3rd year)\\Parallel And Distributed Programming\\Laboratory\\lab4\\lab4\\lab4\\Parser\\TaskSolution.cs",
+              "RelativeToolTip": "lab4\\Parser\\TaskSolution.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAQwBMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T13:19:08.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CallbackSolution.cs",
+              "DocumentMoniker": "C:\\Codes\\university-projects\\Semester 5 (3rd year)\\Parallel And Distributed Programming\\Laboratory\\lab4\\lab4\\lab4\\Parser\\CallbackSolution.cs",
+              "RelativeDocumentMoniker": "lab4\\Parser\\CallbackSolution.cs",
+              "ToolTip": "C:\\Codes\\university-projects\\Semester 5 (3rd year)\\Parallel And Distributed Programming\\Laboratory\\lab4\\lab4\\lab4\\Parser\\CallbackSolution.cs",
+              "RelativeToolTip": "lab4\\Parser\\CallbackSolution.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC8AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T13:18:54.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AsyncAwaitSolution.cs",
+              "DocumentMoniker": "C:\\Codes\\university-projects\\Semester 5 (3rd year)\\Parallel And Distributed Programming\\Laboratory\\lab4\\lab4\\lab4\\Parser\\AsyncAwaitSolution.cs",
+              "RelativeDocumentMoniker": "lab4\\Parser\\AsyncAwaitSolution.cs",
+              "ToolTip": "C:\\Codes\\university-projects\\Semester 5 (3rd year)\\Parallel And Distributed Programming\\Laboratory\\lab4\\lab4\\lab4\\Parser\\AsyncAwaitSolution.cs",
+              "RelativeToolTip": "lab4\\Parser\\AsyncAwaitSolution.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T13:18:44.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SockerHandler.cs",
+              "DocumentMoniker": "C:\\Codes\\university-projects\\Semester 5 (3rd year)\\Parallel And Distributed Programming\\Laboratory\\lab4\\lab4\\lab4\\Socket\\SockerHandler.cs",
+              "RelativeDocumentMoniker": "lab4\\Socket\\SockerHandler.cs",
+              "ToolTip": "C:\\Codes\\university-projects\\Semester 5 (3rd year)\\Parallel And Distributed Programming\\Laboratory\\lab4\\lab4\\lab4\\Socket\\SockerHandler.cs",
+              "RelativeToolTip": "lab4\\Socket\\SockerHandler.cs",
+              "ViewState": "AQIAAFgAAAAAAAAAAAAQwH8AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T13:18:26.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Codes\\university-projects\\Semester 5 (3rd year)\\Parallel And Distributed Programming\\Laboratory\\lab4\\lab4\\lab4\\Program.cs",
               "RelativeDocumentMoniker": "lab4\\Program.cs",
               "ToolTip": "C:\\Codes\\university-projects\\Semester 5 (3rd year)\\Parallel And Distributed Programming\\Laboratory\\lab4\\lab4\\lab4\\Program.cs",
               "RelativeToolTip": "lab4\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-17T14:09:34.557Z",
               "EditorCaption": ""

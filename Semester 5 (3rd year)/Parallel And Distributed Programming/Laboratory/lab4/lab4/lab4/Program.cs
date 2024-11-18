@@ -1,2 +1,39 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+using Lab4.Parser;
+using System.Collections.Generic;
+
+namespace Lab4
+{
+    class Program
+    {
+        private static readonly List<string> Urls = new()
+        {
+            "www.retro-library.com/",
+            "www.kitsu.app/users/gulint/"
+
+        };
+
+        static void Main()
+        {
+            Console.WriteLine("1. Callback Parser");
+            Console.WriteLine("2. Task Parser");
+            Console.WriteLine("3. Async Await Parser");
+            string choice = Console.ReadLine();
+            switch (choice)
+            {
+                case "1":
+                    new CallbackSolution(Urls);
+                    break;
+                case "2":
+                    new TaskSolution(Urls);
+                    break;
+                case "3":
+                    new AsyncAwaitSolution(Urls);
+                    break;
+                default:
+                    Console.WriteLine("Invalid choice");
+                    break;
+            }
+        }
+    }
+}
