@@ -1,13 +1,17 @@
 import random
-from sympy import isprime, nextprime, mod_inverse
+from sympy import isprime, mod_inverse
+from sympy.ntheory import nextprime
 
 
 def generate_large_prime(bits):
     """Generate a large prime number of specified bit length."""
-    prime = random.getrandbits(bits) | 1  # Ensure the prime candidate is odd
-    while not isprime(prime):
-        prime = nextprime(prime)
-    return prime
+    while True:
+        # Ensure the bit length is exactly `bits`
+        prime = random.getrandbits(bits)
+        # Ensure the prime is odd
+        prime |= 1
+        if isprime(prime):
+            return prime
 
 
 def generate_keys(bits=512):
@@ -40,18 +44,18 @@ def decrypt(c, p, q):
     r4 = (q - r3) % q
 
     # Use Chinese Remainder Theorem to combine results
-    roots = [(r1, r3), (r1, r4), (r2, r3), (r2, r4)]
-    plaintexts = []
-
     n = p * q
-    for r_p, r_q in roots:
-        # Solve using CRT
-        m1 = (r_p + p * mod_inverse(p, q) * (r_q - r_p)) % n
-        m2 = n - m1  # The negative root is also a valid solution
-        plaintexts.extend([m1, m2])
+    inv_p = mod_inverse(p, q)
+    inv_q = mod_inverse(q, p)
 
-    # Return the unique plaintext candidates
-    return list(set(plaintexts))
+    roots = []
+    for rp, rq in [(r1, r3), (r1, r4), (r2, r3), (r2, r4)]:
+        m = (rp * q * inv_q + rq * p * inv_p) % n
+        roots.append(m)
+        roots.append(n - m)  # Include the negative root
+
+    # Return unique plaintext candidates
+    return list(set(roots))
 
 
 def main():

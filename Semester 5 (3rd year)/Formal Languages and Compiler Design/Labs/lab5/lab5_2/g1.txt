@@ -1,0 +1,6 @@
+S A B
+p q
+S
+S -> A B
+A -> p
+B -> q
