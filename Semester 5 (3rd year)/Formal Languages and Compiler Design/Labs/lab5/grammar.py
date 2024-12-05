@@ -46,6 +46,92 @@ class Grammar:
             for rule in production_rules:
                 print(f"{nonterminal} -> {rule}")
 
+    def first(self):
+        first_sets = {nonterminal: set() for nonterminal in self.nonterminals}
+
+        def compute_first(symbol):
+            if symbol in self.terminals:
+                return {symbol}
+
+            if symbol in first_sets and first_sets[symbol]:
+                return first_sets[symbol]
+
+            first_set = set()
+
+            for production in self.productions[symbol]:
+                for prod_symbol in production.split():
+                    symbol_first = compute_first(prod_symbol)
+                    first_set.update(symbol_first - {''})
+                    if '' not in symbol_first:
+                        break
+                else:
+                    first_set.add('')
+
+            first_sets[symbol] = first_set
+            return first_set
+
+        for nonterminal in self.nonterminals:
+            compute_first(nonterminal)
+
+        print("\nFirst Sets:")
+        for nonterminal, first_set in first_sets.items():
+            print(f"First({nonterminal}) = {first_set}")
+
+        return first_sets
+
+    def follow(self):
+        # Initialize follow sets: Each nonterminal gets an empty set initially.
+        follow_sets = {nonterminal: set() for nonterminal in self.nonterminals}
+
+        # The start symbol has $ in its follow set, indicating the end of input.
+        follow_sets[self.start_symbol].add('$')
+
+        # First, calculate the First sets
+        first_sets = self.first()
+
+        # Helper function to compute Follow for a nonterminal
+        def compute_follow(symbol):
+            # Return if the symbol is a terminal (no follow for terminals)
+            if symbol in self.terminals:
+                return set()
+
+            # If the follow set for the symbol has been computed before, return it
+            if follow_sets[symbol]:
+                return follow_sets[symbol]
+
+            follow_set = set()
+
+            # Go through all the production rules
+            for left, rights in self.productions.items():
+                for right in rights:
+                    # If the right side contains the symbol
+                    if symbol in right.split():
+                        # Find the position of the symbol in the production
+                        index = right.split().index(symbol)
+
+                        # Case 1: If the symbol is not the last one in the production
+                        if index + 1 < len(right.split()):
+                            next_symbol = right.split()[index + 1]
+                            # Add First(next_symbol) to Follow(symbol), but without '' (empty string)
+                            follow_set.update(first_sets.get(next_symbol, set()) - {''})
+                        # Case 2: If the symbol is the last one, or epsilon is in First(next_symbol)
+                        elif symbol != left:
+                            follow_set.update(compute_follow(left))
+
+            follow_sets[symbol] = follow_set
+            return follow_set
+
+        # Compute Follow for all nonterminals
+        for nonterminal in self.nonterminals:
+            compute_follow(nonterminal)
+
+        # Print the Follow sets
+        print("\nFollow Sets:")
+        for nonterminal, follow_set in follow_sets.items():
+            print(f"Follow({nonterminal}) = {follow_set}")
+
+        return follow_sets
+
     def print_productions_for_nonterminal(self, nonterminal):
         if nonterminal in self.productions:
             print(f"Productions for {nonterminal}:")
@@ -90,7 +176,10 @@ class Grammar:
         print("3. Print All Productions")
         print("4. Print Productions for a Nonterminal")
         print("5. Check if CFG")
+        print("6. Compute First Sets")
+        print("7. Compute Follow Sets")  # Added option for Follow sets
         print("0. Exit")
+
         choice = input("Enter your choice: ")
 
         if choice == '1':
@@ -104,6 +193,10 @@ class Grammar:
             self.print_productions_for_nonterminal(nonterminal)
         elif choice == '5':
             print("Is CFG:", self.is_cfg())
+        elif choice == '6':
+            self.first()
+        elif choice == '7':  # Added this to handle the Follow sets computation
+            self.follow()  # Call the follow function to compute Follow sets
         elif choice == '0':
             return
         else:
@@ -118,4 +211,3 @@ class Grammar:
 grammar = Grammar()
 grammar.read_from_file('g1.txt')
 grammar.display_menu()
-
