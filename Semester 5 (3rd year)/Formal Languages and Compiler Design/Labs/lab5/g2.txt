@@ -1,144 +1,124 @@
-ArrStatement AssignStatement BeginningOfIdentifier Condition Digit Expression ExpressionList FunctionCallStatement FunctionName Identifier IdentifierList IfStatement IntConstant IntExpression Letter MathematicalOperator MaybeEqualExpression MaybeSign NonZeroDigit PositiveNumber Program PureIdentifierList RelationalOperator RestOfIdentifier ReturnStatement Statement StringConstant StringExpression TheInteriorOfStringConstant TheRestOfIntConstant VarStatement WhileStatement
-" ( ) * + , - / 0 1 2 3 4 5 6 7 8 9 ; < <= = == > >= A B C D E F G H I J K L M N O P Q R S T U V W X Y Z _ a arr b c d digit e else epsilon f g get_nth h i if j k l m n o p print q r readInt readString return s set_nth t u v var w while x y z { }
-Program
-Program -> Statement ; Program
-Program -> epsilon
-Statement -> VarStatement
-Statement -> ArrStatement
-Statement -> AssignStatement
-Statement -> IfStatement
-Statement -> WhileStatement
-Statement -> ReturnStatement
-Statement -> FunctionCallStatement
-Statement -> VarStatement
-VarStatement -> var IdentifierList
-IdentifierList -> Identifier MaybeEqualExpression
-IdentifierList -> Identifier MaybeEqualExpression , IdentifierList
-MaybeEqualExpression -> = Expression
-MaybeEqualExpression -> epsilon
-Expression -> IntExpression
-Expression -> StringExpression
-MathematicalOperator -> +
-MathematicalOperator -> -
-MathematicalOperator -> *
-MathematicalOperator -> /
-IntExpression -> IntConstant
-IntExpression -> Identifier
-IntExpression -> IntExpression MathematicalOperator IntExpression
-IntExpression -> ( IntExpression MathematicalOperator IntExpression )
-StringExpression -> StringConstant
-StringExpression -> Identifier
-ExpressionList -> Expression
-ExpressionList -> Expression , ExpressionList
-ArrStatement -> arr < PositiveNumber > PureIdentifierList
-PureIdentifierList -> Identifier
-PureIdentifierList -> Identifier , PureIdentifierList
-AssignStatement -> Identifier = Expression
-IfStatement -> if ( Condition ) { Program }
-IfStatement -> if ( Condition ) { Program } else { Program }
-RelationalOperator -> ==
-RelationalOperator -> <
-RelationalOperator -> <=
-RelationalOperator -> >
-RelationalOperator -> >=
-Condition -> Expression RelationalOperator Expression
-WhileStatement -> while ( Condition ) { Program }
-ReturnStatement -> return Expression
-FunctionCallStatement -> FunctionName ( ExpressionList )
-FunctionCallStatement -> FunctionName ( )
-FunctionName -> print
-FunctionName -> set_nth
-FunctionName -> get_nth
-FunctionName -> readInt
-FunctionName -> readString
-Letter -> A
-Letter -> B
-Letter -> C
-Letter -> D
-Letter -> E
-Letter -> F
-Letter -> G
-Letter -> H
-Letter -> I
-Letter -> J
-Letter -> K
-Letter -> L
-Letter -> M
-Letter -> N
-Letter -> O
-Letter -> P
-Letter -> Q
-Letter -> R
-Letter -> S
-Letter -> T
-Letter -> U
-Letter -> V
-Letter -> W
-Letter -> X
-Letter -> Y
-Letter -> Z
-Letter -> a
-Letter -> b
-Letter -> c
-Letter -> d
-Letter -> e
-Letter -> f
-Letter -> g
-Letter -> h
-Letter -> i
-Letter -> j
-Letter -> k
-Letter -> l
-Letter -> m
-Letter -> n
-Letter -> o
-Letter -> p
-Letter -> q
-Letter -> r
-Letter -> s
-Letter -> t
-Letter -> u
-Letter -> v
-Letter -> w
-Letter -> x
-Letter -> y
-Letter -> z
-Digit -> 0
-Digit -> 1
-Digit -> 2
-Digit -> 3
-Digit -> 4
-Digit -> 5
-Digit -> 6
-Digit -> 7
-Digit -> 8
-Digit -> 9
-NonZeroDigit -> 1
-NonZeroDigit -> 2
-NonZeroDigit -> 3
-NonZeroDigit -> 4
-NonZeroDigit -> 5
-NonZeroDigit -> 6
-NonZeroDigit -> 7
-NonZeroDigit -> 8
-NonZeroDigit -> 9
-BeginningOfIdentifier -> Letter
-BeginningOfIdentifier -> _
-Identifier -> BeginningOfIdentifier RestOfIdentifier
-RestOfIdentifier -> epsilon
-RestOfIdentifier -> Letter RestOfIdentifier
-RestOfIdentifier -> Digit RestOfIdentifier
-RestOfIdentifier -> _ RestOfIdentifier
-MaybeSign -> +
-MaybeSign -> -
-MaybeSign -> epsilon
-IntConstant -> MaybeSign PositiveNumber
-IntConstant -> 0
-PositiveNumber -> NonZeroDigit TheRestOfIntConstant
-TheRestOfIntConstant -> epsilon
-TheRestOfIntConstant -> digit TheRestOfIntConstant
-StringConstant -> " TheInteriorOfStringConstant "
-TheInteriorOfStringConstant -> epsilon
-TheInteriorOfStringConstant -> Letter TheInteriorOfStringConstant
-TheInteriorOfStringConstant -> Digit TheInteriorOfStringConstant
-TheInteriorOfStringConstant -> _ TheInteriorOfStringConstant
+program cmpdstmt stmtlist stmt simplstmt structstmt assignstmt iostmt IDENTIFIER expression inputstmt arraydeclstmt arithmetic term integer string outputstmt ifstmt whilestmt condition RELATION number word letter digit non-zero-digit
+0 1 2 3 4 5 6 7 8 9 + - * / = < <= == != >= > # ( ) [ ] { } : ; , input print list int append pop if else while a b c d e f g h i j k l m n o p q r s t u v w x y z A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+program -> cmpdstmt
+cmpdstmt -> stmtlist
+stmtlist -> stmt
+stmtlist -> stmt ; stmtlist
+stmt -> simplstmt
+stmt -> structstmt
+simplstmt -> assignstmt
+simplstmt -> iostmt
+assignstmt -> IDENTIFIER = expression
+assignstmt -> IDENTIFIER = inputstmt
+assignstmt -> IDENTIFIER = arraydeclstmt
+arraydeclstmt -> list ( )
+expression -> expression arithmetic term
+expression -> expression term
+expression -> arithmetic term
+expression -> term
+arithmetic -> +
+arithmetic -> -
+arithmetic -> *
+arithmetic -> /
+term -> IDENTIFIER
+term -> integer
+term -> string
+iostmt -> inputstmt
+iostmt -> outputstmt
+inputstmt -> input ( )
+outputstmt -> print ( IDENTIFIER )
+structstmt -> cmpdstmt
+structstmt -> ifstmt
+structstmt -> whilestmt
+ifstmt -> if ( condition ) : stmt 
+ifstmt -> if ( condition ) : stmt else stmt
+whilestmt -> while ( condition ) : stmt
+condition -> expression RELATION expression
+RELATION -> <
+RELATION -> <=
+RELATION -> ==
+RELATION -> >=
+RELATION -> >
+RELATION -> !=
+IDENTIFIER -> word
+IDENTIFIER -> word number
+IDENTIFIER -> word IDENTIFIER
+IDENTIFIER -> IDENTIFIER word
+IDENTIFIER -> IDENTIFIER number
+word -> letter
+word -> letter word
+letter -> a
+letter -> b
+letter -> c
+letter -> d
+letter -> e
+letter -> f
+letter -> g
+letter -> h
+letter -> i
+letter -> j
+letter -> k
+letter -> l
+letter -> m
+letter -> n
+letter -> o
+letter -> p
+letter -> q
+letter -> r
+letter -> s
+letter -> t
+letter -> u
+letter -> v
+letter -> w
+letter -> x
+letter -> y
+letter -> z
+letter -> A
+letter -> B
+letter -> C
+letter -> D
+letter -> E
+letter -> F
+letter -> G
+letter -> H
+letter -> I
+letter -> J
+letter -> K
+letter -> L
+letter -> M
+letter -> N
+letter -> O
+letter -> P
+letter -> Q
+letter -> R
+letter -> S
+letter -> T
+letter -> U
+letter -> V
+letter -> W
+letter -> X
+letter -> Y
+letter -> Z
+number -> digit
+number -> - digit
+number -> non-zero-digit number
+number -> - non-zero-digit number
+digit -> 0
+digit -> 1
+digit -> 2
+digit -> 3
+digit -> 4
+digit -> 5
+digit -> 6
+digit -> 7
+digit -> 8
+digit -> 9
+non-zero-digit-> 1
+non-zero-digit-> 2
+non-zero-digit-> 3
+non-zero-digit-> 4
+non-zero-digit-> 5
+non-zero-digit-> 6
+non-zero-digit-> 7
+non-zero-digit-> 8
+non-zero-digit-> 9

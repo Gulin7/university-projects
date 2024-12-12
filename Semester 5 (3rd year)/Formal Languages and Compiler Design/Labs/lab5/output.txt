@@ -1,0 +1,7 @@
+Father: S, Sibling: a, Rule: ('A', 'B', 'C')
+Father: S, Sibling: b, Rule: ('A', 'B', 'C')
+Father: A, Sibling: a, Rule: ('a', 'c')
+Father: A, Sibling: b, Rule: ('b', 'c')
+Father: B, Sibling: b, Rule: ('b',)
+Father: B, Sibling: c, Rule: ('C',)
+Father: C, Sibling: c, Rule: ('c',)

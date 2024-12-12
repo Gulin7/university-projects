@@ -1,6 +1,9 @@
-S A B
-p q
+S A B C
+a b c
 S
-S -> A B
-A -> p
-B -> q
+S -> A B C
+A -> a
+A -> b c
+B -> b
+B -> C
+C -> c
