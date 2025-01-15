@@ -1,24 +1,25 @@
 from ll1 import Ll1
-from parser_output import ParserOutput
 
+# Example usage
+input_file = "g1.txt"  # Path to your grammar file
+pif_file = "PIF.out"  # Path to your PIF output file
 
-def main():
-    input_file = "g1.txt"
-    input_string = "abc"
+# Initialize Ll1 parser with grammar and PIF file
+ll1 = Ll1(input_file=input_file, pif_file=pif_file)
 
-    ll1 = Ll1(input_file=input_file)
-    result = ll1.parse(input=input_string)
+# Print the generated parsing table
+parsing_table = ll1.get_parsing_table()
+for non_terminal, row in parsing_table.items():
+    print(f"{non_terminal}: {dict(row)}")
 
-    if result:
-        print(f"Input string {input_string} is accepted by the grammar {input_file}")
+# Input string to be parsed
+input_string = "bcbc"
 
-    else:
-        print(f"Input string {input_string} is NOT accepted by the grammar {input_file}")
+# Parse the input string using the LL1 parsing table
+result = ll1.parse(input_string)
 
-    parser_output = ParserOutput(ll1.get_parsed_table())
-    parser_output.print_to_screen()
-    parser_output.print_to_file('output.txt')
-
-
-if __name__ == "__main__":
-    main()
+# Output whether the string is accepted or not by the grammar
+if result:
+    print(f"Input string '{input_string}' is accepted by the grammar.")
+else:
+    print(f"Input string '{input_string}' is NOT accepted by the grammar.")

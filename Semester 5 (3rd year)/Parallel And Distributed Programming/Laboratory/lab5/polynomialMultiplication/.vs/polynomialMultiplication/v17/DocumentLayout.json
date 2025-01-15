@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Codes\\university-projects\\Semester 5 (3rd year)\\Parallel And Distributed Programming\\Laboratory\\lab5\\polynomialMultiplication\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6D0D2E10-F180-4096-BBCA-DF578CBA551F}|polynomialMultiplication\\polynomialMultiplication.vcxproj|C:\\Codes\\university-projects\\Semester 5 (3rd year)\\Parallel And Distributed Programming\\Laboratory\\lab5\\polynomialMultiplication\\polynomialMultiplication\\polynomialMultiplication.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6D0D2E10-F180-4096-BBCA-DF578CBA551F}|polynomialMultiplication\\polynomialMultiplication.vcxproj|solutionrelative:polynomialMultiplication\\polynomialMultiplication.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6D0D2E10-F180-4096-BBCA-DF578CBA551F}|polynomialMultiplication\\polynomialMultiplication.vcxproj|C:\\Codes\\university-projects\\Semester 5 (3rd year)\\Parallel And Distributed Programming\\Laboratory\\lab5\\polynomialMultiplication\\polynomialMultiplication\\documentation.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{6D0D2E10-F180-4096-BBCA-DF578CBA551F}|polynomialMultiplication\\polynomialMultiplication.vcxproj|solutionrelative:polynomialMultiplication\\documentation.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
@@ -35,6 +39,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "polynomialMultiplication.cpp",
+              "DocumentMoniker": "C:\\Codes\\university-projects\\Semester 5 (3rd year)\\Parallel And Distributed Programming\\Laboratory\\lab5\\polynomialMultiplication\\polynomialMultiplication\\polynomialMultiplication.cpp",
+              "RelativeDocumentMoniker": "polynomialMultiplication\\polynomialMultiplication.cpp",
+              "ToolTip": "C:\\Codes\\university-projects\\Semester 5 (3rd year)\\Parallel And Distributed Programming\\Laboratory\\lab5\\polynomialMultiplication\\polynomialMultiplication\\polynomialMultiplication.cpp",
+              "RelativeToolTip": "polynomialMultiplication\\polynomialMultiplication.cpp",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-14T18:14:31.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "documentation.txt",
               "DocumentMoniker": "C:\\Codes\\university-projects\\Semester 5 (3rd year)\\Parallel And Distributed Programming\\Laboratory\\lab5\\polynomialMultiplication\\polynomialMultiplication\\documentation.txt",
               "RelativeDocumentMoniker": "polynomialMultiplication\\documentation.txt",
