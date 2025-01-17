@@ -1,0 +1,18 @@
+prog {
+n (int), original (int), reversed (int), remainder (int);
+print("Enter a number: ");
+read(n);
+original = n;
+reversed = 0;
+while n > 0 {
+    remainder = n ? 10; 
+    reversed = reversed * 10 + remainder;
+    n = n / 10;
+};
+
+if original == reversed {
+    print("The number is a palindrome.")
+} else {
+    print("The number is not a palindrome.")
+};
+}
