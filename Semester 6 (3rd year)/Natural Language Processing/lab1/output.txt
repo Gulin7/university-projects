@@ -69,6 +69,15 @@ Filtered text: new formula 1 season started spectacular race australia albert pa
 | chaos          | chaos          | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
 +----------------+----------------+-------+-------+----------+----------+----------+----------+
 ------------------------------
+Named Entities: 
+- 1 season (DATE)
+- australia (GPE)
+- the albert park circuit (ORG)
+- mclaren (PERSON)
+- lando norris (ORG)
+- two (CARDINAL)
+
+------------------------------
 Dependency Tree for Sentence: The new Formula 1 season started with a spectacular race in Australia. On the Albert Park circuit in Melbourne, it was confirmed that McLaren has the most powerful car, but the reigning constructors' champion narrowly avoided a major disappointment. Lando Norris and Oscar Piastri were in the top two positions when the rain caused a bit of chaos.
                  ROOT                
        ___________|_______________    
@@ -134,6 +143,10 @@ Filtered text: defended poorly lewandowski scored stunning goal doubts started a
 +---------------+---------------+-------+-------+----------+----------+----------+----------+
 | chances       | chance        | NOUN  | NNS   | N/A      | ['Plur'] | N/A      | N/A      |
 +---------------+---------------+-------+-------+----------+----------+----------+----------+
+------------------------------
+Named Entities: 
+No named entities found.
+
 ------------------------------
 Dependency Tree for Sentence: We defended poorly. Lewandowski scored a stunning goal, and doubts started to arise. We needed to be solid, to be strong to withstand these great players who played all or nothing. But we couldn’t stay strong, respond on the counterattack, and convert our chances.
                                                                ROOT                                                     
@@ -227,6 +240,13 @@ Filtered text: online payment service stripe present romania 2020 summer announc
 | leader      | leader      | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
 +-------------+-------------+-------+-------+----------+----------+----------+----------+
 ------------------------------
+Named Entities: 
+- 2020 (DATE)
+- this summer (DATE)
+- 50 billion dollars (MONEY)
+- first (ORDINAL)
+
+------------------------------
 Dependency Tree for Sentence: The online payment service Stripe has been present in Romania since 2020 and this summer announced the opening of an office in Bucharest. The capital's office will be strictly for engineering, and the company, valued at 50 billion dollars, has already begun forming its local team. The first employee is Horia Coman, with whom we talked about how to build the ideal engineering team for an industry leader.
                                   ROOT                                  
             _______________________|_________________________________    
@@ -301,6 +321,10 @@ Filtered text: natural language processing nlp study application techniques tool
 | science           | science           | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
 +-------------------+-------------------+-------+-------+----------+----------+----------+----------+
 ------------------------------
+Named Entities: 
+No named entities found.
+
+------------------------------
 Dependency Tree for Sentence: Natural Language Processing (NLP) is the study and application of techniques and tools that enable computers to process, analyze, interpret, and reason about human language. NLP is an interdisciplinary field that combines established techniques from areas such as linguistics and computer science.
        ROOT       
    _____|______    
@@ -368,6 +392,10 @@ Filtered text: video game electronic game interaction graphical interface genera
 +-------------+-------------+-------+-------+----------+----------+----------+----------+
 | game        | game        | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
 +-------------+-------------+-------+-------+----------+----------+----------+----------+
+------------------------------
+Named Entities: 
+No named entities found.
+
 ------------------------------
 Dependency Tree for Sentence: A video game is an electronic game in which interaction with a graphical interface generates a visual response on a screen. Video games generally have a user reward system, usually involving a scoring system, which depends on achieving certain objectives within the game.
                      ROOT                      
@@ -459,6 +487,15 @@ Filtered text: noul sezon formula 1 început cursă superbă australia circuitul
 | haos         | haos        | NOUN  | Ncms-n          | ['Masc'] | ['Sing'] | N/A      | N/A      |
 +--------------+-------------+-------+-----------------+----------+----------+----------+----------+
 ------------------------------
+Named Entities: 
+- mclaren (PRODUCT)
+- mașină (PRODUCT)
+- primele (ORDINAL)
+- două (NUMERIC_VALUE)
+- ploaia (GPE)
+- haos (PRODUCT)
+
+------------------------------
 Dependency Tree for Sentence: Noul sezon din Formula 1 a început cu o cursă superbă în Australia. Pe circuitul Albert Park din Melbourne s-a confirmat că McLaren are cea mai puternică mașină, dar puțin a lipsit ca deținătoarea titlului la constructori să sufere o mare dezamăgire. Lando Norris și Oscar Piastri erau pe primele două poziții când ploaia a generat un mic haos.
                            ROOT                                      
    _________________________|_____________________________________    
@@ -536,6 +573,12 @@ Filtered text: ne- apărat prost lewandowski marcat golazo început apară îndo
 +-------------+-------------+-------+-----------------+----------+----------+----------+----------+
 | ocaziile    | ocazie      | NOUN  | Ncfpry          | ['Fem']  | ['Plur'] | N/A      | N/A      |
 +-------------+-------------+-------+-----------------+----------+----------+----------+----------+
+------------------------------
+Named Entities: 
+- golazo (PERSON)
+- solizi (PERSON)
+- jucători (PERSON)
+
 ------------------------------
 Dependency Tree for Sentence: Ne-am apărat prost. Lewandowski a marcat un golazo şi au început să apară îndoielile. Trebuia să fim solizi, să fim puternici pentru a rezista în faţa acestor mari jucători care au jucat totul sau nimic. Dar nu am putut să rămânem puternici, să răspundem pe contraatac şi să ne transformăm ocaziile.
                          ROOT                          
@@ -629,6 +672,19 @@ Filtered text: serviciul plăţi online stripe prezent românia 2020 vara anunț
 | industriei  | industrie  | NOUN  | Ncfsoy  | ['Fem']  | ['Sing'] | N/A      | N/A      |
 +-------------+------------+-------+---------+----------+----------+----------+----------+
 ------------------------------
+Named Entities: 
+- românia (GPE)
+- 2020 (DATETIME)
+- vara (DATETIME)
+- bucurești (GPE)
+- biroul (ORGANIZATION)
+- capitală (LOC)
+- 50 de miliarde de dolari (MONEY)
+- primul (ORDINAL)
+- horia coman (PERSON)
+- lider (PERSON)
+
+------------------------------
 Dependency Tree for Sentence: Serviciul de plăţi online Stripe este prezent în România din 2020 și vara aceasta a anunțat și deschiderea unui sediu la București. Biroul din capitală va fi unul strict de inginerie, iar compania evaluată la 50 de miliarde de dolari deja a început formarea echipei locale. Primul angajat este Horia Coman, alături de care am povestit despre cum creezi o echipă ideală de ingineri pentru un lider al industriei.
                                   ROOT                          
        ____________________________|______________               
@@ -704,6 +760,10 @@ Filtered text: procesarea limbajului natural nlp studiul aplicarea tehnicilor in
 +------------------+------------------+-------+---------+----------+----------+----------+----------+
 | informatică      | informatic       | ADJ   | Afpfsrn | ['Fem']  | ['Sing'] | N/A      | N/A      |
 +------------------+------------------+-------+---------+----------+----------+----------+----------+
+------------------------------
+Named Entities: 
+No named entities found.
+
 ------------------------------
 Dependency Tree for Sentence: Procesarea limbajului natural (NLP) este studiul și aplicarea tehnicilor și instrumentelor care permit computerelor să proceseze, să analizeze, să interpreteze și să raționeze despre limbajul uman. NLP este un domeniu interdisciplinar și combină tehnici stabilite în domenii precum lingvistică și informatică.
                                               ROOT                                                       
@@ -784,6 +844,10 @@ Filtered text: joc video joc electronic interacționează interfață grafică g
 +-----------------+--------------+-------+---------+----------+----------+----------+----------+
 | joc             | joc          | NOUN  | Ncms-n  | ['Masc'] | ['Sing'] | N/A      | N/A      |
 +-----------------+--------------+-------+---------+----------+----------+----------+----------+
+------------------------------
+Named Entities: 
+- ecran (PRODUCT)
+
 ------------------------------
 Dependency Tree for Sentence: Un joc video este un joc electronic în care se interacționează cu o interfață grafică pentru a genera răspuns vizual pe un ecran. Jocurile video în general au un sistem de recompensare a utilizatorului, de obicei se ține scorul, acest sistem depinzând de îndeplinirea unor anumite obiective în joc.
                                           ROOT                                                   
