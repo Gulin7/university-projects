@@ -1,5 +1,8 @@
 import spacy
 import ast
+from tabulate import tabulate
+from nltk import Tree
+from io import StringIO
 
 class TextPreprocessor:
     def __init__(self):
@@ -20,14 +23,31 @@ class TextPreprocessor:
             raise ValueError("Input language is not supported.")
 
         doc = nlp(text.lower())
-        
-        # Filtered text (without stopwords, punctuation, and spaces)
-        filtered_text = " ".join([token.text for token in doc if not token.is_stop and not token.is_punct and not token.is_space])
 
-        # Processed text (returning token text and POS)
-        processed_text = [(token.text, token.pos_) for token in doc if not token.is_stop and not token.is_punct and not token.is_space]
+        filtered_tokens = []
+        token_info = []
 
-        return filtered_text, processed_text
+        for token in doc:
+            if not token.is_stop and not token.is_punct and not token.is_space:
+                filtered_tokens.append(token.text)  # Store filtered tokens
+                gender = token.morph.get("Gender", "N/A")
+                number = token.morph.get("Number", "N/A")
+                person = token.morph.get("Person", "N/A")
+                tense = token.morph.get("Tense", "N/A")
+
+                token_info.append({
+                    "text": token.text,
+                    "lemma": token.lemma_,
+                    "pos": token.pos_,
+                    "tag": token.tag_,
+                    "gender": gender,
+                    "number": number,
+                    "person": person,
+                    "tense": tense
+                })
+
+        filtered_text = " ".join(filtered_tokens)
+        return filtered_text, token_info, doc
 
     """
     Reads comma-separated quoted texts from a file and returns a list.
@@ -43,19 +63,61 @@ class TextPreprocessor:
             return []
 
     """
-    Writes the original, filtered, and processed texts to the output file
+    Writes the original, filtered text, lemma, POS, and tag information to the output file
     """
-    def writeToFile(self, output_filename, texts, filtered_texts, processed_texts):
+    def writeToFile(self, output_filename, texts, filtered_texts, processed_texts, dependency_trees):
         try:
             with open(output_filename, "w", encoding="utf-8") as output_file:
-                for i, (original, filtered, processed) in enumerate(zip(texts, filtered_texts, processed_texts)):
+                for i, (original, filtered, processed, dep_tree) in enumerate(zip(texts, filtered_texts, processed_texts, dependency_trees)):
                     output_file.write(f"Text index is: {i+1}\n")
                     output_file.write(f"Original text: {original}\n")
                     output_file.write(f"Filtered text: {filtered}\n")
-                    output_file.write(f"Processed text: {processed}\n")
-                    output_file.write("-" * 50 + "\n")
+
+                    token_table = []
+                    for token in processed:
+                        token_table.append([token['text'], token['lemma'], token['pos'], token['tag'], token['gender'], token['number'], token['person'], token['tense']])
+
+                    output_file.write(tabulate(token_table, headers=["Token", "Lemma", "POS", "Tag", "Gender", "Number", "Person", "Tense"], tablefmt="grid"))
+                    output_file.write("\n" + "-" * 30 + "\n")
+
+                    # Write the dependency tree to the file
+                    output_file.write(f"Dependency Tree for Sentence: {original}\n")
+                    output_file.write(dep_tree)
+                    output_file.write("\n" + "=" * 30 + "\n")
         except Exception as e:
             print(f"Error writing to file '{output_filename}': {e}")
+
+    """
+    Convert spaCy's dependency tree to an NLTK tree for visualization
+    """
+    def to_nltk_tree(self, token):
+        # If the token has children, build the tree recursively
+        if token.lefts or token.rights:
+            return Tree(token.dep_, [self.to_nltk_tree(child) for child in token.children])
+        else:
+            return token.text
+
+    """
+    Convert NLTK tree to a string (for writing to the output file)
+    """
+    def tree_to_string(self, tree):
+        # Capture the output of the pretty_print method in a string buffer
+        buffer = StringIO()
+        tree.pretty_print(stream=buffer)
+        return buffer.getvalue()
+
+    """
+    Generate and return the dependency tree for each sentence
+    """
+    def generate_dependency_trees(self, doc):
+        dependency_trees = []
+        # Iterate over sentences in the doc
+        for sent in doc.sents:
+            nltk_tree = self.to_nltk_tree(sent.root)  # Convert root token to nltk tree
+            tree_str = self.tree_to_string(nltk_tree)  # Get tree as a string
+            dependency_trees.append(tree_str)
+        return dependency_trees
+
 
 if __name__ == "__main__":
     text_preprocessor = TextPreprocessor()
@@ -71,19 +133,34 @@ if __name__ == "__main__":
     # Process texts
     filtered_texts = []
     processed_texts = []
+    docs = []
+    dependency_trees = []
 
     for text, lang in zip(texts, languages):
-        filtered, processed = text_preprocessor.preprocessText(text, lang)
+        filtered, processed, doc = text_preprocessor.preprocessText(text, lang)
         filtered_texts.append(filtered)
         processed_texts.append(processed)
+        docs.append(doc)
+
+    # Generate dependency trees
+    for doc in docs:
+        dep_trees = text_preprocessor.generate_dependency_trees(doc)
+        dependency_trees.extend(dep_trees)
 
     # Write the results to an output file
-    text_preprocessor.writeToFile("output.txt", texts, filtered_texts, processed_texts)
+    text_preprocessor.writeToFile("output.txt", texts, filtered_texts, processed_texts, dependency_trees)
 
-    # Optionally, print the results
-    for i, (original, filtered, processed) in enumerate(zip(texts, filtered_texts, processed_texts)):
+    # Optionally, print the results in the same format to the console
+    for i, (original, filtered, processed, dep_tree) in enumerate(zip(texts, filtered_texts, processed_texts, dependency_trees)):
         print(f"Text index is: {i+1}")
         print(f"Original text: {original}")
         print(f"Filtered text: {filtered}")
-        print(f"Processed text: {processed}")
-        print("-" * 50)
+        print(f"Processed tokens:")
+        token_table = []
+        for token in processed:
+            token_table.append([token['text'], token['lemma'], token['pos'], token['tag'], token['gender'], token['number'], token['person'], token['tense']])
+        print(tabulate(token_table, headers=["Token", "Lemma", "POS", "Tag", "Gender", "Number", "Person", "Tense"], tablefmt="grid"))
+        print("-" * 30)
+        print(f"Dependency Tree for Sentence: {original}")
+        print(dep_tree)
+        print("=" * 30)

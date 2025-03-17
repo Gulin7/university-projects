@@ -1,50 +1,808 @@
 Text index is: 1
 Original text: The new Formula 1 season started with a spectacular race in Australia. On the Albert Park circuit in Melbourne, it was confirmed that McLaren has the most powerful car, but the reigning constructors' champion narrowly avoided a major disappointment. Lando Norris and Oscar Piastri were in the top two positions when the rain caused a bit of chaos.
 Filtered text: new formula 1 season started spectacular race australia albert park circuit melbourne confirmed mclaren powerful car reigning constructors champion narrowly avoided major disappointment lando norris oscar piastri positions rain caused bit chaos
-Processed text: [('new', 'ADJ'), ('formula', 'NOUN'), ('1', 'NUM'), ('season', 'NOUN'), ('started', 'VERB'), ('spectacular', 'ADJ'), ('race', 'NOUN'), ('australia', 'PROPN'), ('albert', 'PROPN'), ('park', 'NOUN'), ('circuit', 'NOUN'), ('melbourne', 'NOUN'), ('confirmed', 'VERB'), ('mclaren', 'PROPN'), ('powerful', 'ADJ'), ('car', 'NOUN'), ('reigning', 'VERB'), ('constructors', 'NOUN'), ('champion', 'NOUN'), ('narrowly', 'ADV'), ('avoided', 'VERB'), ('major', 'ADJ'), ('disappointment', 'NOUN'), ('lando', 'PROPN'), ('norris', 'PROPN'), ('oscar', 'NOUN'), ('piastri', 'PROPN'), ('positions', 'NOUN'), ('rain', 'NOUN'), ('caused', 'VERB'), ('bit', 'NOUN'), ('chaos', 'NOUN')]
---------------------------------------------------
++----------------+----------------+-------+-------+----------+----------+----------+----------+
+| Token          | Lemma          | POS   | Tag   | Gender   | Number   | Person   | Tense    |
++================+================+=======+=======+==========+==========+==========+==========+
+| new            | new            | ADJ   | JJ    | N/A      | N/A      | N/A      | N/A      |
++----------------+----------------+-------+-------+----------+----------+----------+----------+
+| formula        | formula        | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++----------------+----------------+-------+-------+----------+----------+----------+----------+
+| 1              | 1              | NUM   | CD    | N/A      | N/A      | N/A      | N/A      |
++----------------+----------------+-------+-------+----------+----------+----------+----------+
+| season         | season         | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++----------------+----------------+-------+-------+----------+----------+----------+----------+
+| started        | start          | VERB  | VBD   | N/A      | N/A      | N/A      | ['Past'] |
++----------------+----------------+-------+-------+----------+----------+----------+----------+
+| spectacular    | spectacular    | ADJ   | JJ    | N/A      | N/A      | N/A      | N/A      |
++----------------+----------------+-------+-------+----------+----------+----------+----------+
+| race           | race           | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++----------------+----------------+-------+-------+----------+----------+----------+----------+
+| australia      | australia      | PROPN | NNP   | N/A      | ['Sing'] | N/A      | N/A      |
++----------------+----------------+-------+-------+----------+----------+----------+----------+
+| albert         | albert         | PROPN | NNP   | N/A      | ['Sing'] | N/A      | N/A      |
++----------------+----------------+-------+-------+----------+----------+----------+----------+
+| park           | park           | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++----------------+----------------+-------+-------+----------+----------+----------+----------+
+| circuit        | circuit        | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++----------------+----------------+-------+-------+----------+----------+----------+----------+
+| melbourne      | melbourne      | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++----------------+----------------+-------+-------+----------+----------+----------+----------+
+| confirmed      | confirm        | VERB  | VBN   | N/A      | N/A      | N/A      | ['Past'] |
++----------------+----------------+-------+-------+----------+----------+----------+----------+
+| mclaren        | mclaren        | PROPN | NNP   | N/A      | ['Sing'] | N/A      | N/A      |
++----------------+----------------+-------+-------+----------+----------+----------+----------+
+| powerful       | powerful       | ADJ   | JJ    | N/A      | N/A      | N/A      | N/A      |
++----------------+----------------+-------+-------+----------+----------+----------+----------+
+| car            | car            | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++----------------+----------------+-------+-------+----------+----------+----------+----------+
+| reigning       | reign          | VERB  | VBG   | N/A      | N/A      | N/A      | ['Pres'] |
++----------------+----------------+-------+-------+----------+----------+----------+----------+
+| constructors   | constructor    | NOUN  | NNS   | N/A      | ['Plur'] | N/A      | N/A      |
++----------------+----------------+-------+-------+----------+----------+----------+----------+
+| champion       | champion       | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++----------------+----------------+-------+-------+----------+----------+----------+----------+
+| narrowly       | narrowly       | ADV   | RB    | N/A      | N/A      | N/A      | N/A      |
++----------------+----------------+-------+-------+----------+----------+----------+----------+
+| avoided        | avoid          | VERB  | VBD   | N/A      | N/A      | N/A      | ['Past'] |
++----------------+----------------+-------+-------+----------+----------+----------+----------+
+| major          | major          | ADJ   | JJ    | N/A      | N/A      | N/A      | N/A      |
++----------------+----------------+-------+-------+----------+----------+----------+----------+
+| disappointment | disappointment | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++----------------+----------------+-------+-------+----------+----------+----------+----------+
+| lando          | lando          | PROPN | NNP   | N/A      | ['Sing'] | N/A      | N/A      |
++----------------+----------------+-------+-------+----------+----------+----------+----------+
+| norris         | norris         | PROPN | NNP   | N/A      | ['Sing'] | N/A      | N/A      |
++----------------+----------------+-------+-------+----------+----------+----------+----------+
+| oscar          | oscar          | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++----------------+----------------+-------+-------+----------+----------+----------+----------+
+| piastri        | piastri        | PROPN | NNP   | N/A      | ['Sing'] | N/A      | N/A      |
++----------------+----------------+-------+-------+----------+----------+----------+----------+
+| positions      | position       | NOUN  | NNS   | N/A      | ['Plur'] | N/A      | N/A      |
++----------------+----------------+-------+-------+----------+----------+----------+----------+
+| rain           | rain           | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++----------------+----------------+-------+-------+----------+----------+----------+----------+
+| caused         | cause          | VERB  | VBD   | N/A      | N/A      | N/A      | ['Past'] |
++----------------+----------------+-------+-------+----------+----------+----------+----------+
+| bit            | bit            | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++----------------+----------------+-------+-------+----------+----------+----------+----------+
+| chaos          | chaos          | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++----------------+----------------+-------+-------+----------+----------+----------+----------+
+------------------------------
+Dependency Tree for Sentence: The new Formula 1 season started with a spectacular race in Australia. On the Albert Park circuit in Melbourne, it was confirmed that McLaren has the most powerful car, but the reigning constructors' champion narrowly avoided a major disappointment. Lando Norris and Oscar Piastri were in the top two positions when the rain caused a bit of chaos.
+                 ROOT                
+       ___________|_______________    
+      |               prep        |  
+      |                |          |   
+    nsubj             pobj        |  
+  ____|_____       ____|____      |   
+ |    |   appos   |    |   prep   |  
+ |    |     |     |    |    |     |   
+det  amod nummod det  amod pobj punct
+ |    |     |     |    |    |     |   
+...  ...   ...   ...  ...  ...   ... 
+
+
+==============================
 Text index is: 2
 Original text: We defended poorly. Lewandowski scored a stunning goal, and doubts started to arise. We needed to be solid, to be strong to withstand these great players who played all or nothing. But we couldn’t stay strong, respond on the counterattack, and convert our chances.
 Filtered text: defended poorly lewandowski scored stunning goal doubts started arise needed solid strong withstand great players played stay strong respond counterattack convert chances
-Processed text: [('defended', 'VERB'), ('poorly', 'ADV'), ('lewandowski', 'PROPN'), ('scored', 'VERB'), ('stunning', 'ADJ'), ('goal', 'NOUN'), ('doubts', 'NOUN'), ('started', 'VERB'), ('arise', 'VERB'), ('needed', 'VERB'), ('solid', 'ADJ'), ('strong', 'ADJ'), ('withstand', 'VERB'), ('great', 'ADJ'), ('players', 'NOUN'), ('played', 'VERB'), ('stay', 'VERB'), ('strong', 'ADJ'), ('respond', 'VERB'), ('counterattack', 'NOUN'), ('convert', 'VERB'), ('chances', 'NOUN')]
---------------------------------------------------
++---------------+---------------+-------+-------+----------+----------+----------+----------+
+| Token         | Lemma         | POS   | Tag   | Gender   | Number   | Person   | Tense    |
++===============+===============+=======+=======+==========+==========+==========+==========+
+| defended      | defend        | VERB  | VBD   | N/A      | N/A      | N/A      | ['Past'] |
++---------------+---------------+-------+-------+----------+----------+----------+----------+
+| poorly        | poorly        | ADV   | RB    | N/A      | N/A      | N/A      | N/A      |
++---------------+---------------+-------+-------+----------+----------+----------+----------+
+| lewandowski   | lewandowski   | PROPN | NNP   | N/A      | ['Sing'] | N/A      | N/A      |
++---------------+---------------+-------+-------+----------+----------+----------+----------+
+| scored        | score         | VERB  | VBD   | N/A      | N/A      | N/A      | ['Past'] |
++---------------+---------------+-------+-------+----------+----------+----------+----------+
+| stunning      | stunning      | ADJ   | JJ    | N/A      | N/A      | N/A      | N/A      |
++---------------+---------------+-------+-------+----------+----------+----------+----------+
+| goal          | goal          | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++---------------+---------------+-------+-------+----------+----------+----------+----------+
+| doubts        | doubt         | NOUN  | NNS   | N/A      | ['Plur'] | N/A      | N/A      |
++---------------+---------------+-------+-------+----------+----------+----------+----------+
+| started       | start         | VERB  | VBD   | N/A      | N/A      | N/A      | ['Past'] |
++---------------+---------------+-------+-------+----------+----------+----------+----------+
+| arise         | arise         | VERB  | VB    | N/A      | N/A      | N/A      | N/A      |
++---------------+---------------+-------+-------+----------+----------+----------+----------+
+| needed        | need          | VERB  | VBD   | N/A      | N/A      | N/A      | ['Past'] |
++---------------+---------------+-------+-------+----------+----------+----------+----------+
+| solid         | solid         | ADJ   | JJ    | N/A      | N/A      | N/A      | N/A      |
++---------------+---------------+-------+-------+----------+----------+----------+----------+
+| strong        | strong        | ADJ   | JJ    | N/A      | N/A      | N/A      | N/A      |
++---------------+---------------+-------+-------+----------+----------+----------+----------+
+| withstand     | withstand     | VERB  | VB    | N/A      | N/A      | N/A      | N/A      |
++---------------+---------------+-------+-------+----------+----------+----------+----------+
+| great         | great         | ADJ   | JJ    | N/A      | N/A      | N/A      | N/A      |
++---------------+---------------+-------+-------+----------+----------+----------+----------+
+| players       | player        | NOUN  | NNS   | N/A      | ['Plur'] | N/A      | N/A      |
++---------------+---------------+-------+-------+----------+----------+----------+----------+
+| played        | play          | VERB  | VBD   | N/A      | N/A      | N/A      | ['Past'] |
++---------------+---------------+-------+-------+----------+----------+----------+----------+
+| stay          | stay          | VERB  | VB    | N/A      | N/A      | N/A      | N/A      |
++---------------+---------------+-------+-------+----------+----------+----------+----------+
+| strong        | strong        | ADJ   | JJ    | N/A      | N/A      | N/A      | N/A      |
++---------------+---------------+-------+-------+----------+----------+----------+----------+
+| respond       | respond       | VERB  | VB    | N/A      | N/A      | N/A      | N/A      |
++---------------+---------------+-------+-------+----------+----------+----------+----------+
+| counterattack | counterattack | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++---------------+---------------+-------+-------+----------+----------+----------+----------+
+| convert       | convert       | VERB  | VB    | N/A      | N/A      | N/A      | N/A      |
++---------------+---------------+-------+-------+----------+----------+----------+----------+
+| chances       | chance        | NOUN  | NNS   | N/A      | ['Plur'] | N/A      | N/A      |
++---------------+---------------+-------+-------+----------+----------+----------+----------+
+------------------------------
+Dependency Tree for Sentence: We defended poorly. Lewandowski scored a stunning goal, and doubts started to arise. We needed to be solid, to be strong to withstand these great players who played all or nothing. But we couldn’t stay strong, respond on the counterattack, and convert our chances.
+                                                               ROOT                                                     
+        ________________________________________________________|____________________________________________________    
+      prep          |       |        |         ccomp                   |    |            conj                        |  
+       |            |       |        |      _____|________             |    |         ____|_______________           |   
+      pobj          |       |        |     |     |       dobj          |    |      nsubj        |         |          |  
+  _____|______      |       |        |     |     |     ___|_____       |    |        |          |         |          |   
+ |  compound prep   |       |        |     |     |    |        amod    |    |       poss        |        dobj        |  
+ |     |      |     |       |        |     |     |    |         |      |    |    ____|____      |      ___|____      |   
+det compound pobj punct nsubjpass auxpass mark nsubj det      advmod punct  cc det  amod case advmod det      amod punct
+ |     |      |     |       |        |     |     |    |         |      |    |   |    |    |     |     |        |     |   
+...   ...    ...   ...     ...      ...   ...   ...  ...       ...    ...  ... ...  ...  ...   ...   ...      ...   ... 
+
+
+==============================
 Text index is: 3
 Original text: The online payment service Stripe has been present in Romania since 2020 and this summer announced the opening of an office in Bucharest. The capital's office will be strictly for engineering, and the company, valued at 50 billion dollars, has already begun forming its local team. The first employee is Horia Coman, with whom we talked about how to build the ideal engineering team for an industry leader.
 Filtered text: online payment service stripe present romania 2020 summer announced opening office bucharest capital office strictly engineering company valued 50 billion dollars begun forming local team employee horia coman talked build ideal engineering team industry leader
-Processed text: [('online', 'ADJ'), ('payment', 'NOUN'), ('service', 'NOUN'), ('stripe', 'NOUN'), ('present', 'ADJ'), ('romania', 'PROPN'), ('2020', 'NUM'), ('summer', 'NOUN'), ('announced', 'VERB'), ('opening', 'NOUN'), ('office', 'NOUN'), ('bucharest', 'PROPN'), ('capital', 'NOUN'), ('office', 'NOUN'), ('strictly', 'ADV'), ('engineering', 'NOUN'), ('company', 'NOUN'), ('valued', 'VERB'), ('50', 'NUM'), ('billion', 'NUM'), ('dollars', 'NOUN'), ('begun', 'VERB'), ('forming', 'VERB'), ('local', 'ADJ'), ('team', 'NOUN'), ('employee', 'NOUN'), ('horia', 'PROPN'), ('coman', 'PROPN'), ('talked', 'VERB'), ('build', 'VERB'), ('ideal', 'ADJ'), ('engineering', 'NOUN'), ('team', 'NOUN'), ('industry', 'NOUN'), ('leader', 'NOUN')]
---------------------------------------------------
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| Token       | Lemma       | POS   | Tag   | Gender   | Number   | Person   | Tense    |
++=============+=============+=======+=======+==========+==========+==========+==========+
+| online      | online      | ADJ   | JJ    | N/A      | N/A      | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| payment     | payment     | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| service     | service     | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| stripe      | stripe      | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| present     | present     | ADJ   | JJ    | N/A      | N/A      | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| romania     | romania     | PROPN | NNP   | N/A      | ['Sing'] | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| 2020        | 2020        | NUM   | CD    | N/A      | N/A      | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| summer      | summer      | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| announced   | announce    | VERB  | VBD   | N/A      | N/A      | N/A      | ['Past'] |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| opening     | opening     | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| office      | office      | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| bucharest   | bucharest   | PROPN | NNP   | N/A      | ['Sing'] | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| capital     | capital     | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| office      | office      | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| strictly    | strictly    | ADV   | RB    | N/A      | N/A      | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| engineering | engineering | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| company     | company     | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| valued      | value       | VERB  | VBN   | N/A      | N/A      | N/A      | ['Past'] |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| 50          | 50          | NUM   | CD    | N/A      | N/A      | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| billion     | billion     | NUM   | CD    | N/A      | N/A      | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| dollars     | dollar      | NOUN  | NNS   | N/A      | ['Plur'] | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| begun       | begin       | VERB  | VBN   | N/A      | N/A      | N/A      | ['Past'] |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| forming     | form        | VERB  | VBG   | N/A      | N/A      | N/A      | ['Pres'] |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| local       | local       | ADJ   | JJ    | N/A      | N/A      | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| team        | team        | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| employee    | employee    | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| horia       | horia       | PROPN | NNP   | N/A      | ['Sing'] | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| coman       | coman       | PROPN | NNP   | N/A      | ['Sing'] | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| talked      | talk        | VERB  | VBD   | N/A      | N/A      | N/A      | ['Past'] |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| build       | build       | VERB  | VB    | N/A      | N/A      | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| ideal       | ideal       | ADJ   | JJ    | N/A      | N/A      | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| engineering | engineering | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| team        | team        | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| industry    | industry    | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| leader      | leader      | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+------------------------------
+Dependency Tree for Sentence: The online payment service Stripe has been present in Romania since 2020 and this summer announced the opening of an office in Bucharest. The capital's office will be strictly for engineering, and the company, valued at 50 billion dollars, has already begun forming its local team. The first employee is Horia Coman, with whom we talked about how to build the ideal engineering team for an industry leader.
+                                  ROOT                                  
+            _______________________|_________________________________    
+           |                 |                 advcl                 |  
+           |                 |             ______|________           |   
+         nsubj              prep          |      |       dobj        |  
+    _______|______           |            |      |     ___|____      |   
+   |       |     conj       pobj          |    nsubj  |       prep   |  
+   |       |      |       ___|_____       |      |    |        |     |   
+compound   cc  compound det amod nummod advmod  det  det      pobj punct
+   |       |      |      |   |     |      |      |    |        |     |   
+  ...     ...    ...    ... ...   ...    ...    ...  ...      ...   ... 
+
+
+==============================
 Text index is: 4
 Original text: Natural Language Processing (NLP) is the study and application of techniques and tools that enable computers to process, analyze, interpret, and reason about human language. NLP is an interdisciplinary field that combines established techniques from areas such as linguistics and computer science.
 Filtered text: natural language processing nlp study application techniques tools enable computers process analyze interpret reason human language nlp interdisciplinary field combines established techniques areas linguistics computer science
-Processed text: [('natural', 'ADJ'), ('language', 'NOUN'), ('processing', 'NOUN'), ('nlp', 'PROPN'), ('study', 'NOUN'), ('application', 'NOUN'), ('techniques', 'NOUN'), ('tools', 'NOUN'), ('enable', 'VERB'), ('computers', 'NOUN'), ('process', 'VERB'), ('analyze', 'INTJ'), ('interpret', 'NOUN'), ('reason', 'NOUN'), ('human', 'ADJ'), ('language', 'NOUN'), ('nlp', 'PROPN'), ('interdisciplinary', 'ADJ'), ('field', 'NOUN'), ('combines', 'VERB'), ('established', 'VERB'), ('techniques', 'NOUN'), ('areas', 'NOUN'), ('linguistics', 'NOUN'), ('computer', 'NOUN'), ('science', 'NOUN')]
---------------------------------------------------
++-------------------+-------------------+-------+-------+----------+----------+----------+----------+
+| Token             | Lemma             | POS   | Tag   | Gender   | Number   | Person   | Tense    |
++===================+===================+=======+=======+==========+==========+==========+==========+
+| natural           | natural           | ADJ   | JJ    | N/A      | N/A      | N/A      | N/A      |
++-------------------+-------------------+-------+-------+----------+----------+----------+----------+
+| language          | language          | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++-------------------+-------------------+-------+-------+----------+----------+----------+----------+
+| processing        | processing        | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++-------------------+-------------------+-------+-------+----------+----------+----------+----------+
+| nlp               | nlp               | PROPN | NNP   | N/A      | ['Sing'] | N/A      | N/A      |
++-------------------+-------------------+-------+-------+----------+----------+----------+----------+
+| study             | study             | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++-------------------+-------------------+-------+-------+----------+----------+----------+----------+
+| application       | application       | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++-------------------+-------------------+-------+-------+----------+----------+----------+----------+
+| techniques        | technique         | NOUN  | NNS   | N/A      | ['Plur'] | N/A      | N/A      |
++-------------------+-------------------+-------+-------+----------+----------+----------+----------+
+| tools             | tool              | NOUN  | NNS   | N/A      | ['Plur'] | N/A      | N/A      |
++-------------------+-------------------+-------+-------+----------+----------+----------+----------+
+| enable            | enable            | VERB  | VBP   | N/A      | N/A      | N/A      | ['Pres'] |
++-------------------+-------------------+-------+-------+----------+----------+----------+----------+
+| computers         | computer          | NOUN  | NNS   | N/A      | ['Plur'] | N/A      | N/A      |
++-------------------+-------------------+-------+-------+----------+----------+----------+----------+
+| process           | process           | VERB  | VB    | N/A      | N/A      | N/A      | N/A      |
++-------------------+-------------------+-------+-------+----------+----------+----------+----------+
+| analyze           | analyze           | INTJ  | UH    | N/A      | N/A      | N/A      | N/A      |
++-------------------+-------------------+-------+-------+----------+----------+----------+----------+
+| interpret         | interpret         | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++-------------------+-------------------+-------+-------+----------+----------+----------+----------+
+| reason            | reason            | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++-------------------+-------------------+-------+-------+----------+----------+----------+----------+
+| human             | human             | ADJ   | JJ    | N/A      | N/A      | N/A      | N/A      |
++-------------------+-------------------+-------+-------+----------+----------+----------+----------+
+| language          | language          | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++-------------------+-------------------+-------+-------+----------+----------+----------+----------+
+| nlp               | nlp               | PROPN | NNP   | N/A      | ['Sing'] | N/A      | N/A      |
++-------------------+-------------------+-------+-------+----------+----------+----------+----------+
+| interdisciplinary | interdisciplinary | ADJ   | JJ    | N/A      | N/A      | N/A      | N/A      |
++-------------------+-------------------+-------+-------+----------+----------+----------+----------+
+| field             | field             | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++-------------------+-------------------+-------+-------+----------+----------+----------+----------+
+| combines          | combine           | VERB  | VBZ   | N/A      | ['Sing'] | ['3']    | ['Pres'] |
++-------------------+-------------------+-------+-------+----------+----------+----------+----------+
+| established       | establish         | VERB  | VBN   | N/A      | N/A      | N/A      | ['Past'] |
++-------------------+-------------------+-------+-------+----------+----------+----------+----------+
+| techniques        | technique         | NOUN  | NNS   | N/A      | ['Plur'] | N/A      | N/A      |
++-------------------+-------------------+-------+-------+----------+----------+----------+----------+
+| areas             | area              | NOUN  | NNS   | N/A      | ['Plur'] | N/A      | N/A      |
++-------------------+-------------------+-------+-------+----------+----------+----------+----------+
+| linguistics       | linguistic        | NOUN  | NNS   | N/A      | ['Plur'] | N/A      | N/A      |
++-------------------+-------------------+-------+-------+----------+----------+----------+----------+
+| computer          | computer          | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++-------------------+-------------------+-------+-------+----------+----------+----------+----------+
+| science           | science           | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++-------------------+-------------------+-------+-------+----------+----------+----------+----------+
+------------------------------
+Dependency Tree for Sentence: Natural Language Processing (NLP) is the study and application of techniques and tools that enable computers to process, analyze, interpret, and reason about human language. NLP is an interdisciplinary field that combines established techniques from areas such as linguistics and computer science.
+       ROOT       
+   _____|______    
+nsubj advmod punct
+  |     |      |   
+ ...   ...    ... 
+
+
+==============================
 Text index is: 5
 Original text: A video game is an electronic game in which interaction with a graphical interface generates a visual response on a screen. Video games generally have a user reward system, usually involving a scoring system, which depends on achieving certain objectives within the game.
 Filtered text: video game electronic game interaction graphical interface generates visual response screen video games generally user reward system usually involving scoring system depends achieving certain objectives game
-Processed text: [('video', 'NOUN'), ('game', 'NOUN'), ('electronic', 'ADJ'), ('game', 'NOUN'), ('interaction', 'NOUN'), ('graphical', 'ADJ'), ('interface', 'NOUN'), ('generates', 'VERB'), ('visual', 'ADJ'), ('response', 'NOUN'), ('screen', 'NOUN'), ('video', 'NOUN'), ('games', 'NOUN'), ('generally', 'ADV'), ('user', 'NOUN'), ('reward', 'NOUN'), ('system', 'NOUN'), ('usually', 'ADV'), ('involving', 'VERB'), ('scoring', 'NOUN'), ('system', 'NOUN'), ('depends', 'VERB'), ('achieving', 'VERB'), ('certain', 'ADJ'), ('objectives', 'NOUN'), ('game', 'NOUN')]
---------------------------------------------------
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| Token       | Lemma       | POS   | Tag   | Gender   | Number   | Person   | Tense    |
++=============+=============+=======+=======+==========+==========+==========+==========+
+| video       | video       | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| game        | game        | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| electronic  | electronic  | ADJ   | JJ    | N/A      | N/A      | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| game        | game        | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| interaction | interaction | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| graphical   | graphical   | ADJ   | JJ    | N/A      | N/A      | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| interface   | interface   | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| generates   | generate    | VERB  | VBZ   | N/A      | ['Sing'] | ['3']    | ['Pres'] |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| visual      | visual      | ADJ   | JJ    | N/A      | N/A      | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| response    | response    | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| screen      | screen      | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| video       | video       | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| games       | game        | NOUN  | NNS   | N/A      | ['Plur'] | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| generally   | generally   | ADV   | RB    | N/A      | N/A      | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| user        | user        | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| reward      | reward      | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| system      | system      | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| usually     | usually     | ADV   | RB    | N/A      | N/A      | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| involving   | involve     | VERB  | VBG   | N/A      | N/A      | N/A      | ['Pres'] |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| scoring     | scoring     | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| system      | system      | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| depends     | depend      | VERB  | VBZ   | N/A      | ['Sing'] | ['3']    | ['Pres'] |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| achieving   | achieve     | VERB  | VBG   | N/A      | N/A      | N/A      | ['Pres'] |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| certain     | certain     | ADJ   | JJ    | N/A      | N/A      | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| objectives  | objective   | NOUN  | NNS   | N/A      | ['Plur'] | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+| game        | game        | NOUN  | NN    | N/A      | ['Sing'] | N/A      | N/A      |
++-------------+-------------+-------+-------+----------+----------+----------+----------+
+------------------------------
+Dependency Tree for Sentence: A video game is an electronic game in which interaction with a graphical interface generates a visual response on a screen. Video games generally have a user reward system, usually involving a scoring system, which depends on achieving certain objectives within the game.
+                     ROOT                      
+   ___________________|_______________          
+  |        |          |    |         conj      
+  |        |          |    |     _____|_____    
+  |       dobj        |    |    |   xcomp   |  
+  |     ___|____      |    |    |     |     |   
+nsubj det      amod punct  cc nsubj  aux  punct
+  |    |        |     |    |    |     |     |   
+ ...  ...      ...   ...  ...  ...   ...   ... 
+
+
+==============================
 Text index is: 6
 Original text: Noul sezon din Formula 1 a început cu o cursă superbă în Australia. Pe circuitul Albert Park din Melbourne s-a confirmat că McLaren are cea mai puternică mașină, dar puțin a lipsit ca deținătoarea titlului la constructori să sufere o mare dezamăgire. Lando Norris și Oscar Piastri erau pe primele două poziții când ploaia a generat un mic haos.
 Filtered text: noul sezon formula 1 început cursă superbă australia circuitul albert park melbourne s- confirmat mclaren puternică mașină puțin lipsit deținătoarea titlului constructori sufere dezamăgire lando norris oscar piastri erau primele poziții ploaia generat mic haos
-Processed text: [('noul', 'ADJ'), ('sezon', 'NOUN'), ('formula', 'NOUN'), ('1', ''), ('început', 'VERB'), ('cursă', 'NOUN'), ('superbă', 'NOUN'), ('australia', 'NOUN'), ('circuitul', 'NOUN'), ('albert', 'ADJ'), ('park', 'PROPN'), ('melbourne', 'NOUN'), ('s-', 'PRON'), ('confirmat', 'VERB'), ('mclaren', 'NOUN'), ('puternică', 'ADJ'), ('mașină', 'NOUN'), ('puțin', 'ADV'), ('lipsit', 'VERB'), ('deținătoarea', 'NOUN'), ('titlului', 'NOUN'), ('constructori', 'NOUN'), ('sufere', 'AUX'), ('dezamăgire', 'NOUN'), ('lando', 'NOUN'), ('norris', 'ADJ'), ('oscar', 'PROPN'), ('piastri', 'ADJ'), ('erau', 'AUX'), ('primele', 'NUM'), ('poziții', 'NOUN'), ('ploaia', 'NOUN'), ('generat', 'VERB'), ('mic', 'ADJ'), ('haos', 'NOUN')]
---------------------------------------------------
++--------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| Token        | Lemma       | POS   | Tag             | Gender   | Number   | Person   | Tense    |
++==============+=============+=======+=================+==========+==========+==========+==========+
+| noul         | nou         | ADJ   | Afpmsry         | ['Masc'] | ['Sing'] | N/A      | N/A      |
++--------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| sezon        | sezon       | NOUN  | Ncms-n          | ['Masc'] | ['Sing'] | N/A      | N/A      |
++--------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| formula      | formulă     | NOUN  | Ncfsry          | ['Fem']  | ['Sing'] | N/A      | N/A      |
++--------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| 1            | 1           |       | Mc-s-d          | N/A      | N/A      | N/A      | N/A      |
++--------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| început      | începe      | VERB  | Vmp--sm         | ['Masc'] | ['Sing'] | N/A      | N/A      |
++--------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| cursă        | cursă       | NOUN  | Ncfsrn          | ['Fem']  | ['Sing'] | N/A      | N/A      |
++--------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| superbă      | superbă     | NOUN  | Ncfsrn          | ['Fem']  | ['Sing'] | N/A      | N/A      |
++--------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| australia    | australie   | NOUN  | Ncfsry          | ['Fem']  | ['Sing'] | N/A      | N/A      |
++--------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| circuitul    | circuit     | NOUN  | Ncmsry          | ['Masc'] | ['Sing'] | N/A      | N/A      |
++--------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| albert       | albert      | ADJ   | Afpms-n         | ['Masc'] | ['Sing'] | N/A      | N/A      |
++--------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| park         | park        | PROPN | Np              | N/A      | N/A      | N/A      | N/A      |
++--------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| melbourne    | melbourne   | NOUN  | Ncfsrn          | ['Fem']  | ['Sing'] | N/A      | N/A      |
++--------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| s-           | sine        | PRON  | Px3--a--y-----w | N/A      | N/A      | ['3']    | N/A      |
++--------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| confirmat    | confirma    | VERB  | Vmp--sm         | ['Masc'] | ['Sing'] | N/A      | N/A      |
++--------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| mclaren      | mclaren     | NOUN  | Ncms-n          | ['Masc'] | ['Sing'] | N/A      | N/A      |
++--------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| puternică    | puternic    | ADJ   | Afpfsrn         | ['Fem']  | ['Sing'] | N/A      | N/A      |
++--------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| mașină       | mașină      | NOUN  | Ncfsrn          | ['Fem']  | ['Sing'] | N/A      | N/A      |
++--------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| puțin        | puțin       | ADV   | Rgp             | N/A      | N/A      | N/A      | N/A      |
++--------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| lipsit       | lipsi       | VERB  | Vmp--sm         | ['Masc'] | ['Sing'] | N/A      | N/A      |
++--------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| deținătoarea | deținătoare | NOUN  | Ncfsry          | ['Fem']  | ['Sing'] | N/A      | N/A      |
++--------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| titlului     | titl        | NOUN  | Ncmsoy          | ['Masc'] | ['Sing'] | N/A      | N/A      |
++--------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| constructori | constructor | NOUN  | Ncmp-n          | ['Masc'] | ['Plur'] | N/A      | N/A      |
++--------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| sufere       | suferi      | AUX   | Vmsp3           | N/A      | N/A      | ['3']    | ['Pres'] |
++--------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| dezamăgire   | dezamăgire  | NOUN  | Ncfsrn          | ['Fem']  | ['Sing'] | N/A      | N/A      |
++--------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| lando        | lando       | NOUN  | Ncmp-n          | ['Masc'] | ['Plur'] | N/A      | N/A      |
++--------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| norris       | norris      | ADJ   | Afpms-n         | ['Masc'] | ['Sing'] | N/A      | N/A      |
++--------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| oscar        | oscar       | PROPN | Np              | N/A      | N/A      | N/A      | N/A      |
++--------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| piastri      | piastru     | ADJ   | Afpmp-n         | ['Masc'] | ['Plur'] | N/A      | N/A      |
++--------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| erau         | fi          | AUX   | Vaii3p          | N/A      | ['Plur'] | ['3']    | ['Imp']  |
++--------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| primele      | prim        | NUM   | Mofprly         | ['Fem']  | ['Plur'] | N/A      | N/A      |
++--------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| poziții      | poziție     | NOUN  | Ncfp-n          | ['Fem']  | ['Plur'] | N/A      | N/A      |
++--------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| ploaia       | ploaie      | NOUN  | Ncfsry          | ['Fem']  | ['Sing'] | N/A      | N/A      |
++--------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| generat      | genera      | VERB  | Vmp--sm         | ['Masc'] | ['Sing'] | N/A      | N/A      |
++--------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| mic          | mic         | ADJ   | Afpms-n         | ['Masc'] | ['Sing'] | N/A      | N/A      |
++--------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| haos         | haos        | NOUN  | Ncms-n          | ['Masc'] | ['Sing'] | N/A      | N/A      |
++--------------+-------------+-------+-----------------+----------+----------+----------+----------+
+------------------------------
+Dependency Tree for Sentence: Noul sezon din Formula 1 a început cu o cursă superbă în Australia. Pe circuitul Albert Park din Melbourne s-a confirmat că McLaren are cea mai puternică mașină, dar puțin a lipsit ca deținătoarea titlului la constructori să sufere o mare dezamăgire. Lando Norris și Oscar Piastri erau pe primele două poziții când ploaia a generat un mic haos.
+                           ROOT                                      
+   _________________________|_____________________________________    
+  |         |             advcl                                   |  
+  |         |           ____|_________                            |   
+  |         |          |            acomp                         |  
+  |         |          |              |                           |   
+  |         |          |            xcomp                         |  
+  |         |          |     _________|_____                      |   
+  |         |          |    |              dobj                   |  
+  |         |          |    |     __________|_____                |   
+  |         |          |    |    |    |         relcl             |  
+  |         |          |    |    |    |      _____|____           |   
+  |       xcomp        |    |    |    |     |         dobj        |  
+  |     ____|_____     |    |    |    |     |      ____|____      |   
+nsubj aux acomp punct aux  aux  det  amod nsubj   cc       conj punct
+  |    |    |     |    |    |    |    |     |     |         |     |   
+ ...  ...  ...   ...  ...  ...  ...  ...   ...   ...       ...   ... 
+
+
+==============================
 Text index is: 7
 Original text: Ne-am apărat prost. Lewandowski a marcat un golazo şi au început să apară îndoielile. Trebuia să fim solizi, să fim puternici pentru a rezista în faţa acestor mari jucători care au jucat totul sau nimic. Dar nu am putut să rămânem puternici, să răspundem pe contraatac şi să ne transformăm ocaziile.
 Filtered text: ne- apărat prost lewandowski marcat golazo început apară îndoielile trebuia solizi puternici rezista faţa acestor mari jucători jucat putut rămânem puternici răspundem contraatac transformăm ocaziile
-Processed text: [('ne-', 'PRON'), ('apărat', 'VERB'), ('prost', 'ADV'), ('lewandowski', 'PROPN'), ('marcat', 'VERB'), ('golazo', 'NOUN'), ('început', 'VERB'), ('apară', 'AUX'), ('îndoielile', 'NOUN'), ('trebuia', 'AUX'), ('solizi', 'ADJ'), ('puternici', 'ADJ'), ('rezista', 'VERB'), ('faţa', 'NOUN'), ('acestor', 'DET'), ('mari', 'ADJ'), ('jucători', 'NOUN'), ('jucat', 'VERB'), ('putut', 'VERB'), ('rămânem', 'VERB'), ('puternici', 'ADJ'), ('răspundem', 'VERB'), ('contraatac', 'NOUN'), ('transformăm', 'VERB'), ('ocaziile', 'NOUN')]
---------------------------------------------------
++-------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| Token       | Lemma       | POS   | Tag             | Gender   | Number   | Person   | Tense    |
++=============+=============+=======+=================+==========+==========+==========+==========+
+| ne-         | eu          | PRON  | Pp1-pa--y-----w | N/A      | ['Plur'] | ['1']    | N/A      |
++-------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| apărat      | apăra       | VERB  | Vmp--sm         | ['Masc'] | ['Sing'] | N/A      | N/A      |
++-------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| prost       | prost       | ADV   | Rgp             | N/A      | N/A      | N/A      | N/A      |
++-------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| lewandowski | lewandowski | PROPN | Np              | N/A      | N/A      | N/A      | N/A      |
++-------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| marcat      | marca       | VERB  | Vmp--sm         | ['Masc'] | ['Sing'] | N/A      | N/A      |
++-------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| golazo      | golazo      | NOUN  | Ncfp-n          | ['Fem']  | ['Plur'] | N/A      | N/A      |
++-------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| început     | începe      | VERB  | Vmp--sm         | ['Masc'] | ['Sing'] | N/A      | N/A      |
++-------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| apară       | apărea      | AUX   | Vmsp3           | N/A      | N/A      | ['3']    | ['Pres'] |
++-------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| îndoielile  | îndoiele    | NOUN  | Ncfpry          | ['Fem']  | ['Plur'] | N/A      | N/A      |
++-------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| trebuia     | trebui      | AUX   | Vmii3s          | N/A      | ['Sing'] | ['3']    | ['Imp']  |
++-------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| solizi      | solid       | ADJ   | Afpmp-n         | ['Masc'] | ['Plur'] | N/A      | N/A      |
++-------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| puternici   | puternic    | ADJ   | Afpmp-n         | ['Masc'] | ['Plur'] | N/A      | N/A      |
++-------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| rezista     | rezista     | VERB  | Vmnp            | N/A      | N/A      | N/A      | ['Pres'] |
++-------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| faţa        | faţa        | NOUN  | Ncfp-n          | ['Fem']  | ['Plur'] | N/A      | N/A      |
++-------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| acestor     | acest       | DET   | Dd3-po---e      | N/A      | ['Plur'] | ['3']    | N/A      |
++-------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| mari        | mare        | ADJ   | Afp-p-n         | N/A      | ['Plur'] | N/A      | N/A      |
++-------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| jucători    | jucător     | NOUN  | Ncmp-n          | ['Masc'] | ['Plur'] | N/A      | N/A      |
++-------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| jucat       | juca        | VERB  | Vmp--sm         | ['Masc'] | ['Sing'] | N/A      | N/A      |
++-------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| putut       | putea       | VERB  | Vmp--sm         | ['Masc'] | ['Sing'] | N/A      | N/A      |
++-------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| rămânem     | rămâne      | VERB  | Vmip1p          | N/A      | ['Plur'] | ['1']    | ['Pres'] |
++-------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| puternici   | puternic    | ADJ   | Afpmp-n         | ['Masc'] | ['Plur'] | N/A      | N/A      |
++-------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| răspundem   | răspunde    | VERB  | Vmip1p          | N/A      | ['Plur'] | ['1']    | ['Pres'] |
++-------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| contraatac  | contraatac  | NOUN  | Ncms-n          | ['Masc'] | ['Sing'] | N/A      | N/A      |
++-------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| transformăm | transforma  | VERB  | Vmip1p          | N/A      | ['Plur'] | ['1']    | ['Pres'] |
++-------------+-------------+-------+-----------------+----------+----------+----------+----------+
+| ocaziile    | ocazie      | NOUN  | Ncfpry          | ['Fem']  | ['Plur'] | N/A      | N/A      |
++-------------+-------------+-------+-----------------+----------+----------+----------+----------+
+------------------------------
+Dependency Tree for Sentence: Ne-am apărat prost. Lewandowski a marcat un golazo şi au început să apară îndoielile. Trebuia să fim solizi, să fim puternici pentru a rezista în faţa acestor mari jucători care au jucat totul sau nimic. Dar nu am putut să rămânem puternici, să răspundem pe contraatac şi să ne transformăm ocaziile.
+                         ROOT                          
+  ________________________|_________________________    
+ |    |    |   |    |     |         conj            |  
+ |    |    |   |    |     |     _____|________      |   
+ |    |    |   |    |     |   prep   |    |  conj   |  
+ |    |    |   |    |     |    |     |    |   |     |   
+ |    |    |   |    |     |   pobj   |    |  dobj   |  
+ |    |    |   |    |     |    |     |    |   |     |   
+ cc nsubj aux neg acomp punct det  punct  cc poss punct
+ |    |    |   |    |     |    |     |    |   |     |   
+...  ...  ... ...  ...   ...  ...   ...  ... ...   ... 
+
+
+==============================
 Text index is: 8
 Original text: Serviciul de plăţi online Stripe este prezent în România din 2020 și vara aceasta a anunțat și deschiderea unui sediu la București. Biroul din capitală va fi unul strict de inginerie, iar compania evaluată la 50 de miliarde de dolari deja a început formarea echipei locale. Primul angajat este Horia Coman, alături de care am povestit despre cum creezi o echipă ideală de ingineri pentru un lider al industriei.
 Filtered text: serviciul plăţi online stripe prezent românia 2020 vara anunțat deschiderea sediu bucurești biroul capitală strict inginerie compania evaluată 50 miliarde dolari început formarea echipei locale angajat horia coman povestit creezi echipă ideală ingineri lider industriei
-Processed text: [('serviciul', 'NOUN'), ('plăţi', 'VERB'), ('online', 'ADV'), ('stripe', 'PROPN'), ('prezent', 'NOUN'), ('românia', 'PROPN'), ('2020', ''), ('vara', 'ADV'), ('anunțat', 'VERB'), ('deschiderea', 'NOUN'), ('sediu', 'NOUN'), ('bucurești', 'PROPN'), ('biroul', 'NOUN'), ('capitală', 'NOUN'), ('strict', 'ADV'), ('inginerie', 'NOUN'), ('compania', 'NOUN'), ('evaluată', 'VERB'), ('50', ''), ('miliarde', 'NUM'), ('dolari', 'NOUN'), ('început', 'VERB'), ('formarea', 'NOUN'), ('echipei', 'NOUN'), ('locale', 'ADJ'), ('angajat', 'NOUN'), ('horia', 'NOUN'), ('coman', 'PROPN'), ('povestit', 'VERB'), ('creezi', 'AUX'), ('echipă', 'NOUN'), ('ideală', 'ADJ'), ('ingineri', 'NOUN'), ('lider', 'NOUN'), ('industriei', 'NOUN')]
---------------------------------------------------
++-------------+------------+-------+---------+----------+----------+----------+----------+
+| Token       | Lemma      | POS   | Tag     | Gender   | Number   | Person   | Tense    |
++=============+============+=======+=========+==========+==========+==========+==========+
+| serviciul   | serviciu   | NOUN  | Ncmsry  | ['Masc'] | ['Sing'] | N/A      | N/A      |
++-------------+------------+-------+---------+----------+----------+----------+----------+
+| plăţi       | plăţi      | VERB  | Vmnp    | N/A      | N/A      | N/A      | ['Pres'] |
++-------------+------------+-------+---------+----------+----------+----------+----------+
+| online      | online     | ADV   | Rgp     | N/A      | N/A      | N/A      | N/A      |
++-------------+------------+-------+---------+----------+----------+----------+----------+
+| stripe      | Stripe     | PROPN | Np      | N/A      | N/A      | N/A      | N/A      |
++-------------+------------+-------+---------+----------+----------+----------+----------+
+| prezent     | prezent    | NOUN  | Ncms-n  | ['Masc'] | ['Sing'] | N/A      | N/A      |
++-------------+------------+-------+---------+----------+----------+----------+----------+
+| românia     | România    | PROPN | Np      | N/A      | N/A      | N/A      | N/A      |
++-------------+------------+-------+---------+----------+----------+----------+----------+
+| 2020        | 2020       |       | Mc-s-d  | N/A      | N/A      | N/A      | N/A      |
++-------------+------------+-------+---------+----------+----------+----------+----------+
+| vara        | vara       | ADV   | Rgp     | N/A      | N/A      | N/A      | N/A      |
++-------------+------------+-------+---------+----------+----------+----------+----------+
+| anunțat     | anunța     | VERB  | Vmp--sm | ['Masc'] | ['Sing'] | N/A      | N/A      |
++-------------+------------+-------+---------+----------+----------+----------+----------+
+| deschiderea | deschidere | NOUN  | Ncfsry  | ['Fem']  | ['Sing'] | N/A      | N/A      |
++-------------+------------+-------+---------+----------+----------+----------+----------+
+| sediu       | sediu      | NOUN  | Ncms-n  | ['Masc'] | ['Sing'] | N/A      | N/A      |
++-------------+------------+-------+---------+----------+----------+----------+----------+
+| bucurești   | București  | PROPN | Np      | N/A      | N/A      | N/A      | N/A      |
++-------------+------------+-------+---------+----------+----------+----------+----------+
+| biroul      | birou      | NOUN  | Ncmsry  | ['Masc'] | ['Sing'] | N/A      | N/A      |
++-------------+------------+-------+---------+----------+----------+----------+----------+
+| capitală    | capitală   | NOUN  | Ncfsrn  | ['Fem']  | ['Sing'] | N/A      | N/A      |
++-------------+------------+-------+---------+----------+----------+----------+----------+
+| strict      | strict     | ADV   | Rgp     | N/A      | N/A      | N/A      | N/A      |
++-------------+------------+-------+---------+----------+----------+----------+----------+
+| inginerie   | inginerie  | NOUN  | Ncfsrn  | ['Fem']  | ['Sing'] | N/A      | N/A      |
++-------------+------------+-------+---------+----------+----------+----------+----------+
+| compania    | companie   | NOUN  | Ncfsry  | ['Fem']  | ['Sing'] | N/A      | N/A      |
++-------------+------------+-------+---------+----------+----------+----------+----------+
+| evaluată    | evalua     | VERB  | Vmp--sf | ['Fem']  | ['Sing'] | N/A      | N/A      |
++-------------+------------+-------+---------+----------+----------+----------+----------+
+| 50          | 50         |       | Mc-s-d  | N/A      | N/A      | N/A      | N/A      |
++-------------+------------+-------+---------+----------+----------+----------+----------+
+| miliarde    | miliard    | NUM   | Mcfprln | ['Fem']  | ['Plur'] | N/A      | N/A      |
++-------------+------------+-------+---------+----------+----------+----------+----------+
+| dolari      | dolar      | NOUN  | Ncmp-n  | ['Masc'] | ['Plur'] | N/A      | N/A      |
++-------------+------------+-------+---------+----------+----------+----------+----------+
+| început     | începe     | VERB  | Vmp--sm | ['Masc'] | ['Sing'] | N/A      | N/A      |
++-------------+------------+-------+---------+----------+----------+----------+----------+
+| formarea    | formare    | NOUN  | Ncfsry  | ['Fem']  | ['Sing'] | N/A      | N/A      |
++-------------+------------+-------+---------+----------+----------+----------+----------+
+| echipei     | echipă     | NOUN  | Ncfsoy  | ['Fem']  | ['Sing'] | N/A      | N/A      |
++-------------+------------+-------+---------+----------+----------+----------+----------+
+| locale      | local      | ADJ   | Afpfson | ['Fem']  | ['Sing'] | N/A      | N/A      |
++-------------+------------+-------+---------+----------+----------+----------+----------+
+| angajat     | angajat    | NOUN  | Ncms-n  | ['Masc'] | ['Sing'] | N/A      | N/A      |
++-------------+------------+-------+---------+----------+----------+----------+----------+
+| horia       | horie      | NOUN  | Ncfsry  | ['Fem']  | ['Sing'] | N/A      | N/A      |
++-------------+------------+-------+---------+----------+----------+----------+----------+
+| coman       | coman      | PROPN | Np      | N/A      | N/A      | N/A      | N/A      |
++-------------+------------+-------+---------+----------+----------+----------+----------+
+| povestit    | povesti    | VERB  | Vmp--sm | ['Masc'] | ['Sing'] | N/A      | N/A      |
++-------------+------------+-------+---------+----------+----------+----------+----------+
+| creezi      | creez      | AUX   | Vmip2s  | N/A      | ['Sing'] | ['2']    | ['Pres'] |
++-------------+------------+-------+---------+----------+----------+----------+----------+
+| echipă      | echipă     | NOUN  | Ncfsrn  | ['Fem']  | ['Sing'] | N/A      | N/A      |
++-------------+------------+-------+---------+----------+----------+----------+----------+
+| ideală      | ideal      | ADJ   | Afpfsrn | ['Fem']  | ['Sing'] | N/A      | N/A      |
++-------------+------------+-------+---------+----------+----------+----------+----------+
+| ingineri    | inginer    | NOUN  | Ncmp-n  | ['Masc'] | ['Plur'] | N/A      | N/A      |
++-------------+------------+-------+---------+----------+----------+----------+----------+
+| lider       | lider      | NOUN  | Ncms-n  | ['Masc'] | ['Sing'] | N/A      | N/A      |
++-------------+------------+-------+---------+----------+----------+----------+----------+
+| industriei  | industrie  | NOUN  | Ncfsoy  | ['Fem']  | ['Sing'] | N/A      | N/A      |
++-------------+------------+-------+---------+----------+----------+----------+----------+
+------------------------------
+Dependency Tree for Sentence: Serviciul de plăţi online Stripe este prezent în România din 2020 și vara aceasta a anunțat și deschiderea unui sediu la București. Biroul din capitală va fi unul strict de inginerie, iar compania evaluată la 50 de miliarde de dolari deja a început formarea echipei locale. Primul angajat este Horia Coman, alături de care am povestit despre cum creezi o echipă ideală de ingineri pentru un lider al industriei.
+                                  ROOT                          
+       ____________________________|______________               
+      |             |    |    |    |             conj           
+      |             |    |    |    |      ________|__________    
+    nsubj           |    |    |    |     |       dobj        |  
+  ____|______       |    |    |    |     |     ___|____      |   
+ |        compound  |  acomp  |    |     |    |  prep  |     |  
+ |           |      |    |    |    |     |    |   |    |     |   
+ |        compound  |   prep prep  |   nsubj  |  pobj prep   |  
+ |           |      |    |    |    |     |    |   |    |     |   
+det         amod   aux  pobj pobj  cc   det  det det  pobj punct
+ |           |      |    |    |    |     |    |   |    |     |   
+...         ...    ...  ...  ...  ...   ...  ... ...  ...   ... 
+
+
+==============================
 Text index is: 9
 Original text: Procesarea limbajului natural (NLP) este studiul și aplicarea tehnicilor și instrumentelor care permit computerelor să proceseze, să analizeze, să interpreteze și să raționeze despre limbajul uman. NLP este un domeniu interdisciplinar și combină tehnici stabilite în domenii precum lingvistică și informatică.
 Filtered text: procesarea limbajului natural nlp studiul aplicarea tehnicilor instrumentelor permit computerelor proceseze analizeze interpreteze raționeze limbajul uman nlp domeniu interdisciplinar combină tehnici stabilite domenii precum lingvistică informatică
-Processed text: [('procesarea', 'NOUN'), ('limbajului', 'NOUN'), ('natural', 'ADJ'), ('nlp', 'NOUN'), ('studiul', 'NOUN'), ('aplicarea', 'NOUN'), ('tehnicilor', 'NOUN'), ('instrumentelor', 'NOUN'), ('permit', 'AUX'), ('computerelor', 'NOUN'), ('proceseze', 'AUX'), ('analizeze', 'AUX'), ('interpreteze', 'AUX'), ('raționeze', 'AUX'), ('limbajul', 'NOUN'), ('uman', 'ADJ'), ('nlp', 'NOUN'), ('domeniu', 'NOUN'), ('interdisciplinar', 'ADJ'), ('combină', 'NOUN'), ('tehnici', 'ADJ'), ('stabilite', 'VERB'), ('domenii', 'NOUN'), ('precum', 'ADV'), ('lingvistică', 'ADJ'), ('informatică', 'ADJ')]
---------------------------------------------------
++------------------+------------------+-------+---------+----------+----------+----------+----------+
+| Token            | Lemma            | POS   | Tag     | Gender   | Number   | Person   | Tense    |
++==================+==================+=======+=========+==========+==========+==========+==========+
+| procesarea       | procesare        | NOUN  | Ncfsry  | ['Fem']  | ['Sing'] | N/A      | N/A      |
++------------------+------------------+-------+---------+----------+----------+----------+----------+
+| limbajului       | limbaj           | NOUN  | Ncmsoy  | ['Masc'] | ['Sing'] | N/A      | N/A      |
++------------------+------------------+-------+---------+----------+----------+----------+----------+
+| natural          | natural          | ADJ   | Afpms-n | ['Masc'] | ['Sing'] | N/A      | N/A      |
++------------------+------------------+-------+---------+----------+----------+----------+----------+
+| nlp              | nlp              | NOUN  | Ncms-n  | ['Masc'] | ['Sing'] | N/A      | N/A      |
++------------------+------------------+-------+---------+----------+----------+----------+----------+
+| studiul          | studiu           | NOUN  | Ncmsry  | ['Masc'] | ['Sing'] | N/A      | N/A      |
++------------------+------------------+-------+---------+----------+----------+----------+----------+
+| aplicarea        | aplicare         | NOUN  | Ncfsry  | ['Fem']  | ['Sing'] | N/A      | N/A      |
++------------------+------------------+-------+---------+----------+----------+----------+----------+
+| tehnicilor       | tehnice          | NOUN  | Ncfpoy  | ['Fem']  | ['Plur'] | N/A      | N/A      |
++------------------+------------------+-------+---------+----------+----------+----------+----------+
+| instrumentelor   | instrument       | NOUN  | Ncfpoy  | ['Fem']  | ['Plur'] | N/A      | N/A      |
++------------------+------------------+-------+---------+----------+----------+----------+----------+
+| permit           | permite          | AUX   | Vmip3p  | N/A      | ['Plur'] | ['3']    | ['Pres'] |
++------------------+------------------+-------+---------+----------+----------+----------+----------+
+| computerelor     | computer         | NOUN  | Ncfpoy  | ['Fem']  | ['Plur'] | N/A      | N/A      |
++------------------+------------------+-------+---------+----------+----------+----------+----------+
+| proceseze        | procesa          | AUX   | Vmsp3   | N/A      | N/A      | ['3']    | ['Pres'] |
++------------------+------------------+-------+---------+----------+----------+----------+----------+
+| analizeze        | analiza          | AUX   | Vmsp3   | N/A      | N/A      | ['3']    | ['Pres'] |
++------------------+------------------+-------+---------+----------+----------+----------+----------+
+| interpreteze     | interpreta       | AUX   | Vmsp3   | N/A      | N/A      | ['3']    | ['Pres'] |
++------------------+------------------+-------+---------+----------+----------+----------+----------+
+| raționeze        | raționa          | AUX   | Vmsp3   | N/A      | N/A      | ['3']    | ['Pres'] |
++------------------+------------------+-------+---------+----------+----------+----------+----------+
+| limbajul         | limbaj           | NOUN  | Ncmsry  | ['Masc'] | ['Sing'] | N/A      | N/A      |
++------------------+------------------+-------+---------+----------+----------+----------+----------+
+| uman             | uman             | ADJ   | Afpms-n | ['Masc'] | ['Sing'] | N/A      | N/A      |
++------------------+------------------+-------+---------+----------+----------+----------+----------+
+| nlp              | nlp              | NOUN  | Ncms-n  | ['Masc'] | ['Sing'] | N/A      | N/A      |
++------------------+------------------+-------+---------+----------+----------+----------+----------+
+| domeniu          | domeniu          | NOUN  | Ncms-n  | ['Masc'] | ['Sing'] | N/A      | N/A      |
++------------------+------------------+-------+---------+----------+----------+----------+----------+
+| interdisciplinar | interdisciplinar | ADJ   | Afpms-n | ['Masc'] | ['Sing'] | N/A      | N/A      |
++------------------+------------------+-------+---------+----------+----------+----------+----------+
+| combină          | combină          | NOUN  | Ncfsrn  | ['Fem']  | ['Sing'] | N/A      | N/A      |
++------------------+------------------+-------+---------+----------+----------+----------+----------+
+| tehnici          | tehnic           | ADJ   | Afpmp-n | ['Masc'] | ['Plur'] | N/A      | N/A      |
++------------------+------------------+-------+---------+----------+----------+----------+----------+
+| stabilite        | stabili          | VERB  | Vmp--pf | ['Fem']  | ['Plur'] | N/A      | N/A      |
++------------------+------------------+-------+---------+----------+----------+----------+----------+
+| domenii          | domeniu          | NOUN  | Ncfp-n  | ['Fem']  | ['Plur'] | N/A      | N/A      |
++------------------+------------------+-------+---------+----------+----------+----------+----------+
+| precum           | precum           | ADV   | Rw      | N/A      | N/A      | N/A      | N/A      |
++------------------+------------------+-------+---------+----------+----------+----------+----------+
+| lingvistică      | lingvistic       | ADJ   | Afpfsrn | ['Fem']  | ['Sing'] | N/A      | N/A      |
++------------------+------------------+-------+---------+----------+----------+----------+----------+
+| informatică      | informatic       | ADJ   | Afpfsrn | ['Fem']  | ['Sing'] | N/A      | N/A      |
++------------------+------------------+-------+---------+----------+----------+----------+----------+
+------------------------------
+Dependency Tree for Sentence: Procesarea limbajului natural (NLP) este studiul și aplicarea tehnicilor și instrumentelor care permit computerelor să proceseze, să analizeze, să interpreteze și să raționeze despre limbajul uman. NLP este un domeniu interdisciplinar și combină tehnici stabilite în domenii precum lingvistică și informatică.
+                                              ROOT                                                       
+       ________________________________________|_________________________                                 
+      |         |          |          |    |                            conj                             
+      |         |          |          |    |          ___________________|____________________________    
+      |         |          |          |    |       nsubj                 |     |           |          |  
+      |         |          |          |    |    _____|______________     |     |           |          |   
+      |         |          |          |    |   |     |     acl      |    |     |           |          |  
+      |         |          |          |    |   |     |      |       |    |     |           |          |   
+      |         |          |          |    |   |     |     prep     |    |     |           |          |  
+      |         |          |          |    |   |     |      |       |    |     |           |          |   
+    nsubj       |          |          |    |   |     |     pobj     |    |     |         xcomp        |  
+      |         |          |          |    |   |     |      |       |    |     |           |          |   
+     poss       |         prep        |    |   |     |    nummod    |    |     |          dobj        |  
+  ____|____     |     _____|____      |    |   |     |      |       |    |     |      _____|____      |   
+det       case aux advmod      pobj punct  cc det  punct compound punct aux  advmod poss       amod punct
+ |         |    |    |          |     |    |   |     |      |       |    |     |     |          |     |   
+...       ...  ...  ...        ...   ...  ... ...   ...    ...     ...  ...   ...   ...        ...   ... 
+
+
+==============================
 Text index is: 10
 Original text: Un joc video este un joc electronic în care se interacționează cu o interfață grafică pentru a genera răspuns vizual pe un ecran. Jocurile video în general au un sistem de recompensare a utilizatorului, de obicei se ține scorul, acest sistem depinzând de îndeplinirea unor anumite obiective în joc.
 Filtered text: joc video joc electronic interacționează interfață grafică genera răspuns vizual ecran jocurile video general sistem recompensare utilizatorului obicei ține scorul sistem depinzând îndeplinirea anumite obiective joc
-Processed text: [('joc', 'NOUN'), ('video', 'ADJ'), ('joc', 'NOUN'), ('electronic', 'ADJ'), ('interacționează', 'VERB'), ('interfață', 'NOUN'), ('grafică', 'ADJ'), ('genera', 'VERB'), ('răspuns', 'NOUN'), ('vizual', 'ADJ'), ('ecran', 'NOUN'), ('jocurile', 'NOUN'), ('video', 'ADJ'), ('general', 'NOUN'), ('sistem', 'NOUN'), ('recompensare', 'NOUN'), ('utilizatorului', 'NOUN'), ('obicei', 'NOUN'), ('ține', 'AUX'), ('scorul', 'NOUN'), ('sistem', 'NOUN'), ('depinzând', 'AUX'), ('îndeplinirea', 'NOUN'), ('anumite', 'DET'), ('obiective', 'NOUN'), ('joc', 'NOUN')]
---------------------------------------------------
++-----------------+--------------+-------+---------+----------+----------+----------+----------+
+| Token           | Lemma        | POS   | Tag     | Gender   | Number   | Person   | Tense    |
++=================+==============+=======+=========+==========+==========+==========+==========+
+| joc             | joc          | NOUN  | Ncms-n  | ['Masc'] | ['Sing'] | N/A      | N/A      |
++-----------------+--------------+-------+---------+----------+----------+----------+----------+
+| video           | video        | ADJ   | Afp     | N/A      | N/A      | N/A      | N/A      |
++-----------------+--------------+-------+---------+----------+----------+----------+----------+
+| joc             | joc          | NOUN  | Ncms-n  | ['Masc'] | ['Sing'] | N/A      | N/A      |
++-----------------+--------------+-------+---------+----------+----------+----------+----------+
+| electronic      | electronic   | ADJ   | Afpms-n | ['Masc'] | ['Sing'] | N/A      | N/A      |
++-----------------+--------------+-------+---------+----------+----------+----------+----------+
+| interacționează | interacționa | VERB  | Vmip3   | N/A      | N/A      | ['3']    | ['Pres'] |
++-----------------+--------------+-------+---------+----------+----------+----------+----------+
+| interfață       | interfață    | NOUN  | Ncfsrn  | ['Fem']  | ['Sing'] | N/A      | N/A      |
++-----------------+--------------+-------+---------+----------+----------+----------+----------+
+| grafică         | grafic       | ADJ   | Afpfsrn | ['Fem']  | ['Sing'] | N/A      | N/A      |
++-----------------+--------------+-------+---------+----------+----------+----------+----------+
+| genera          | genera       | VERB  | Vmnp    | N/A      | N/A      | N/A      | ['Pres'] |
++-----------------+--------------+-------+---------+----------+----------+----------+----------+
+| răspuns         | răspuns      | NOUN  | Ncms-n  | ['Masc'] | ['Sing'] | N/A      | N/A      |
++-----------------+--------------+-------+---------+----------+----------+----------+----------+
+| vizual          | vizual       | ADJ   | Afpms-n | ['Masc'] | ['Sing'] | N/A      | N/A      |
++-----------------+--------------+-------+---------+----------+----------+----------+----------+
+| ecran           | ecran        | NOUN  | Ncms-n  | ['Masc'] | ['Sing'] | N/A      | N/A      |
++-----------------+--------------+-------+---------+----------+----------+----------+----------+
+| jocurile        | joc          | NOUN  | Ncfpry  | ['Fem']  | ['Plur'] | N/A      | N/A      |
++-----------------+--------------+-------+---------+----------+----------+----------+----------+
+| video           | video        | ADJ   | Afp     | N/A      | N/A      | N/A      | N/A      |
++-----------------+--------------+-------+---------+----------+----------+----------+----------+
+| general         | general      | NOUN  | Ncms-n  | ['Masc'] | ['Sing'] | N/A      | N/A      |
++-----------------+--------------+-------+---------+----------+----------+----------+----------+
+| sistem          | sistem       | NOUN  | Ncms-n  | ['Masc'] | ['Sing'] | N/A      | N/A      |
++-----------------+--------------+-------+---------+----------+----------+----------+----------+
+| recompensare    | recompensare | NOUN  | Ncfsrn  | ['Fem']  | ['Sing'] | N/A      | N/A      |
++-----------------+--------------+-------+---------+----------+----------+----------+----------+
+| utilizatorului  | utilizator   | NOUN  | Ncmsoy  | ['Masc'] | ['Sing'] | N/A      | N/A      |
++-----------------+--------------+-------+---------+----------+----------+----------+----------+
+| obicei          | obicei       | NOUN  | Ncms-n  | ['Masc'] | ['Sing'] | N/A      | N/A      |
++-----------------+--------------+-------+---------+----------+----------+----------+----------+
+| ține            | ține         | AUX   | Vmip3s  | N/A      | ['Sing'] | ['3']    | ['Pres'] |
++-----------------+--------------+-------+---------+----------+----------+----------+----------+
+| scorul          | scor         | NOUN  | Ncmsry  | ['Masc'] | ['Sing'] | N/A      | N/A      |
++-----------------+--------------+-------+---------+----------+----------+----------+----------+
+| sistem          | sistem       | NOUN  | Ncms-n  | ['Masc'] | ['Sing'] | N/A      | N/A      |
++-----------------+--------------+-------+---------+----------+----------+----------+----------+
+| depinzând       | depinza      | AUX   | Vmg     | N/A      | N/A      | N/A      | N/A      |
++-----------------+--------------+-------+---------+----------+----------+----------+----------+
+| îndeplinirea    | îndeplinire  | NOUN  | Ncfsry  | ['Fem']  | ['Sing'] | N/A      | N/A      |
++-----------------+--------------+-------+---------+----------+----------+----------+----------+
+| anumite         | anumit       | DET   | Di3fp   | ['Fem']  | ['Plur'] | ['3']    | N/A      |
++-----------------+--------------+-------+---------+----------+----------+----------+----------+
+| obiective       | obiectiv     | NOUN  | Ncfp-n  | ['Fem']  | ['Plur'] | N/A      | N/A      |
++-----------------+--------------+-------+---------+----------+----------+----------+----------+
+| joc             | joc          | NOUN  | Ncms-n  | ['Masc'] | ['Sing'] | N/A      | N/A      |
++-----------------+--------------+-------+---------+----------+----------+----------+----------+
+------------------------------
+Dependency Tree for Sentence: Un joc video este un joc electronic în care se interacționează cu o interfață grafică pentru a genera răspuns vizual pe un ecran. Jocurile video în general au un sistem de recompensare a utilizatorului, de obicei se ține scorul, acest sistem depinzând de îndeplinirea unor anumite obiective în joc.
+                                          ROOT                                                   
+       ____________________________________|__________________________________________________    
+      |                                         attr                                          |  
+      |            ______________________________|_____                                       |   
+      |           |       |                          relcl                                    |  
+      |           |       |     _______________________|_____                                 |   
+      |           |       |    |     |                      prep                              |  
+      |           |       |    |     |                       |                                |   
+      |           |       |    |     |                     pcomp                              |  
+      |           |       |    |     |      _________________|_________________               |   
+      |           |       |    |     |     |     |           |                prep            |  
+      |           |       |    |     |     |     |           |                 |              |   
+    nsubj         |       |   prep   |     |     |          dobj              pobj            |  
+  ____|____       |       |    |     |     |     |      _____|______        ___|______        |   
+det       amod compound punct pobj nsubj advmod aux   det   amod compound det      compound punct
+ |         |      |       |    |     |     |     |     |     |      |      |          |       |   
+...       ...    ...     ...  ...   ...   ...   ...   ...   ...    ...    ...        ...     ... 
+
+
+==============================
