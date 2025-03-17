@@ -20,8 +20,14 @@ class TextPreprocessor:
             raise ValueError("Input language is not supported.")
 
         doc = nlp(text.lower())
+        
+        # Filtered text (without stopwords, punctuation, and spaces)
+        filtered_text = " ".join([token.text for token in doc if not token.is_stop and not token.is_punct and not token.is_space])
 
-        return [(token.text, token.pos_) for token in doc if not token.is_stop and not token.is_punct and not token.is_space]
+        # Processed text (returning token text and POS)
+        processed_text = [(token.text, token.pos_) for token in doc if not token.is_stop and not token.is_punct and not token.is_space]
+
+        return filtered_text, processed_text
 
     """
     Reads comma-separated quoted texts from a file and returns a list.
@@ -36,23 +42,48 @@ class TextPreprocessor:
             print(f"Error reading file '{filename}': {e}")
             return []
 
+    """
+    Writes the original, filtered, and processed texts to the output file
+    """
+    def writeToFile(self, output_filename, texts, filtered_texts, processed_texts):
+        try:
+            with open(output_filename, "w", encoding="utf-8") as output_file:
+                for i, (original, filtered, processed) in enumerate(zip(texts, filtered_texts, processed_texts)):
+                    output_file.write(f"Text index is: {i+1}\n")
+                    output_file.write(f"Original text: {original}\n")
+                    output_file.write(f"Filtered text: {filtered}\n")
+                    output_file.write(f"Processed text: {processed}\n")
+                    output_file.write("-" * 50 + "\n")
+        except Exception as e:
+            print(f"Error writing to file '{output_filename}': {e}")
+
 if __name__ == "__main__":
-    textPreprocessor = TextPreprocessor()
+    text_preprocessor = TextPreprocessor()
 
     # Read texts from files
-    english_texts = textPreprocessor.readTextsFromFile("english.txt")
-    romanian_texts = textPreprocessor.readTextsFromFile("romanian.txt")
+    english_texts = text_preprocessor.readTextsFromFile("english.txt")
+    romanian_texts = text_preprocessor.readTextsFromFile("romanian.txt")
 
     # Assign languages
     texts = english_texts + romanian_texts
     languages = ["en"] * len(english_texts) + ["ro"] * len(romanian_texts)
 
     # Process texts
-    processed_texts = [textPreprocessor.preprocessText(text, lang) for text, lang in zip(texts, languages)]
+    filtered_texts = []
+    processed_texts = []
 
-    # Display results
-    for i, (original, processed) in enumerate(zip(texts, processed_texts)):
+    for text, lang in zip(texts, languages):
+        filtered, processed = text_preprocessor.preprocessText(text, lang)
+        filtered_texts.append(filtered)
+        processed_texts.append(processed)
+
+    # Write the results to an output file
+    text_preprocessor.writeToFile("output.txt", texts, filtered_texts, processed_texts)
+
+    # Optionally, print the results
+    for i, (original, filtered, processed) in enumerate(zip(texts, filtered_texts, processed_texts)):
         print(f"Text index is: {i+1}")
         print(f"Original text: {original}")
+        print(f"Filtered text: {filtered}")
         print(f"Processed text: {processed}")
         print("-" * 50)
